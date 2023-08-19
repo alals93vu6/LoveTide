@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TestAObj
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  gapTimer: 2
+  dialogDataDetails:
+  - ID: 1-1
+    sentenceDetails:
+    - speaker: 2
+      sentence: "\u311F\u5E79\u7A7F\u5C71\u7532\u8036"
+    - speaker: 1
+      sentence: "\u54EA\u88E1\u6709\u7A7F\u5C71\u7532"
+    - speaker: 3
+      sentence: "\u8001\u5B50\u7684\u8001\u4E8C\u5C31\u662F(\u958B\u6A5F\u8001\u5EAB\u7DF4)"
+  - ID: 
+    sentenceDetails:
+    - speaker: 0
+      sentence: AAAAA
+    - speaker: 1
+      sentence: BBBBB
+    - speaker: 0
+      sentence: CCCCC
