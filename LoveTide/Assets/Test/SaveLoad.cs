@@ -16,6 +16,7 @@ public class SaveLoad : MonoBehaviour
         [SerializeField] public int SaveTestA;
         [SerializeField] public int SaveTestB;
         [SerializeField] public int SaveTestC;
+        [SerializeField] public string SaveTime;
     }
     // Start is called before the first frame update
     private void Start()
@@ -26,30 +27,24 @@ public class SaveLoad : MonoBehaviour
     public void SetDate()
     {
         Myclass myObject = new Myclass();
+        var NTime = DateTime.Now;
         myObject.SaveTestA = TestIntA;
         myObject.SaveTestB = TestIntB;
         myObject.SaveTestC = TestIntC;
+        myObject.SaveTime = "第"+myObject.SaveTestA+"天"+NTime.Year+"/"+NTime.Month+"/"+NTime.Day+"  "+NTime.Hour+":"+NTime.Minute;
         json = JsonUtility.ToJson(myObject);
         Debug.Log(json);
         StreamWriter file = new StreamWriter(Path.Combine("Assets/GameJSONData", "JsonSaveDate.json"));
         file.Write(json);
         file.Close();
     }
-
-    public void logDate()
-    {
-        Myclass myObject = new Myclass();
-        string json = JsonUtility.ToJson(myObject);
-        Debug.Log(json);
-    }
-
     public void GetDate()
     {
         StreamReader file = new StreamReader(new FileStream(Path.Combine("Assets/GameJSONData/JsonSaveDate.json"), FileMode.Open));
         string saveDate = file.ReadToEnd();
         var getSaveDate = JsonUtility.FromJson<Myclass>(saveDate);
-        Debug.Log(getSaveDate.SaveTestA + "AA");
-        Debug.Log(getSaveDate.SaveTestB + "BB");
-        Debug.Log(getSaveDate.SaveTestC + "CC");
+        Debug.Log(saveDate);
+        Debug.Log(getSaveDate);
+        Debug.Log(getSaveDate.SaveTime);
     }
 }
