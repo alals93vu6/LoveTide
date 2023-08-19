@@ -16,12 +16,14 @@ public class TextManagerTest : MonoBehaviour
     }
     [SerializeField] private TextClass getTextDate;
 
-    [SerializeField] private bool Isover;
+    [SerializeField] private bool Isover = true;
+
+    [SerializeField] private bool StopLoop;
     // Start is called before the first frame update
     void Start()
     {
         TextDateLoad();
-        StartCoroutine(DisplayTextWithTypingEffect());
+        StartCoroutine(DisplayTextWithTypingEffect(false));
     }
 
     // Update is called once per frame
@@ -29,7 +31,14 @@ public class TextManagerTest : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            NextText();
+            if (Isover)
+            {
+                DownText();
+            }
+            else
+            {
+                NextText();
+            }
         }
     }
 
@@ -42,37 +51,57 @@ public class TextManagerTest : MonoBehaviour
         textfile.Close();
     }
 
-    private IEnumerator DisplayTextWithTypingEffect()
+    private IEnumerator DisplayTextWithTypingEffect(bool OnWork)
     {
-        if (getTextDate != null && getTextDate.TheText.Length > TextNumber)
+        Isover = true;
+        if ( getTextDate.TheText.Length > TextNumber)
         {
-            Isover = true;
             string targetText = getTextDate.TheText[TextNumber];
             showText.text = "";
 
-            for (int i = 0; i < targetText.Length; i++)
+            if (!OnWork)
             {
-                showText.text += targetText[i];
-                yield return new WaitForSeconds(letterSpeed);
+                for (int i = 0; i < targetText.Length; i++)
+                {
+                    if (StopLoop == true)
+                    {
+                        break;
+                    }
+                    showText.text += targetText[i];
+                    yield return new WaitForSeconds(letterSpeed);
+                    //Debug.Log("A");
+                }
+                Isover = false;
             }
-            Isover = false;
-            letterSpeed = 0.02f;
+            else
+            {
+                //Debug.Log("B");
+                showText.text = "";
+                showText.text = targetText;
+                Isover = false;
+            }
+            //letterSpeed = 0.02f;
         }
+    }
+    
+    private void ShowFullText()
+    {
+        showText.text = getTextDate.TheText[TextNumber];
     }
 
     private void NextText()
     {
         if (TextNumber < getTextDate.TheText.Length - 1)
         {
-            if (Isover)
-            {
-                letterSpeed = 0.0000000000001f;
-            }
-            else
-            {
-                TextNumber++;
-                StartCoroutine(DisplayTextWithTypingEffect());
-            }
+            StopLoop = false;
+            TextNumber++;
+            StartCoroutine(DisplayTextWithTypingEffect(false));
         }
+    }
+
+    private void DownText()
+    {
+        StopLoop = true;
+        StartCoroutine(DisplayTextWithTypingEffect(true));
     }
 }
