@@ -29,17 +29,7 @@ public class TextManagerTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (Isover)
-            {
-                DownText();
-            }
-            else
-            {
-                NextText();
-            }
-        }
+        TextCtrl();
     }
 
     private void TextDateLoad()
@@ -84,9 +74,19 @@ public class TextManagerTest : MonoBehaviour
         }
     }
     
-    private void ShowFullText()
+    private void TextCtrl()
     {
-        showText.text = getTextDate.TheText[TextNumber];
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (Isover)
+            {
+                DownText();
+            }
+            else
+            {
+                NextText();
+            }
+        }
     }
 
     private void NextText()
