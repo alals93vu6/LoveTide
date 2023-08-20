@@ -9,24 +9,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ec18ed9385c32c84a91ef01d25abe5c0, type: 3}
   m_Name: TestAObj
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
-  gapTimer: 2
+  gapTimer: 0
   dialogDataDetails:
   - ID: 1-1
     sentenceDetails:
-    - speaker: 2
-      sentence: "\u311F\u5E79\u7A7F\u5C71\u7532\u8036"
-    - speaker: 1
-      sentence: "\u54EA\u88E1\u6709\u7A7F\u5C71\u7532"
+    - speaker: 0
+      actorFace: 0
+      sentence: 121212121212121212
+      talkEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - speaker: 3
-      sentence: "\u8001\u5B50\u7684\u8001\u4E8C\u5C31\u662F(\u958B\u6A5F\u8001\u5EAB\u7DF4)"
-  - ID: 
-    sentenceDetails:
-    - speaker: 0
-      sentence: AAAAA
+      actorFace: 0
+      sentence: 5555555555555555555555555555555
+      talkEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - speaker: 1
-      sentence: BBBBB
-    - speaker: 0
-      sentence: CCCCC
+      actorFace: 0
+      sentence: 45454545454545454545
+      talkEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - speaker: 2
+      actorFace: 0
+      sentence: 12454554545454545454545454
+      talkEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - ID: 1-2
+    sentenceDetails: []
+  - ID: 1-3
+    sentenceDetails: []
