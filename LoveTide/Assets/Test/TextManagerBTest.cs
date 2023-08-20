@@ -9,7 +9,7 @@ using Task = System.Threading.Tasks.Task;
 
 public class TextManagerBTest : MonoBehaviour
 {
-    [SerializeField] private DialogData logDate;
+    [SerializeField] private DialogTestData logDate;
     [SerializeField] private Text LogText;
     [SerializeField] private Text nameText;
     [SerializeField] private bool TestBool;

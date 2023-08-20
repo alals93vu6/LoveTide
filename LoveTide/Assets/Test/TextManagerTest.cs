@@ -9,13 +9,10 @@ public class TextManagerTest : MonoBehaviour
     [SerializeField] public Text showText;
     [SerializeField] public float letterSpeed = 0.02f;
     [SerializeField] public int TextNumber = 0;
-    [SerializeField]
-    public class TextClass
-    {
-        public string[] TheText;
-    }
-    [SerializeField] private TextClass getTextDate;
-
+    [SerializeField] public DialogTestData DiaLog;
+    [SerializeField] public string[] getTextDate;
+    [SerializeField] private Text nameText;
+    
     [SerializeField] private bool Isover = true;
 
     [SerializeField] private bool StopLoop;
@@ -23,6 +20,7 @@ public class TextManagerTest : MonoBehaviour
     void Start()
     {
         TextDateLoad();
+        ChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
     }
 
@@ -34,19 +32,29 @@ public class TextManagerTest : MonoBehaviour
 
     private void TextDateLoad()
     {
+        var arraySize = DiaLog.dialogDataDetails.Count;
+        Debug.Log(arraySize);
+        //getTextDate.Length = arraySize;
+        for (int i = 0; i < DiaLog.dialogDataDetails.Count; i++)
+        {
+            getTextDate[i] = DiaLog.dialogDataDetails[i].sentence;
+        }
+        
+        /*
         string filepath = Path.Combine("Assets/Test/TextAssetsTest/TestAText.json");
         StreamReader textfile = new StreamReader(filepath);
         string stringText = textfile.ReadToEnd();
         getTextDate = JsonUtility.FromJson<TextClass>(stringText);
         textfile.Close();
+        */
     }
 
     private IEnumerator DisplayTextWithTypingEffect(bool OnWork)
     {
         Isover = true;
-        if ( getTextDate.TheText.Length > TextNumber)
+        if ( getTextDate.Length > TextNumber)
         {
-            string targetText = getTextDate.TheText[TextNumber];
+            string targetText = getTextDate[TextNumber];
             showText.text = "";
 
             if (!OnWork)
@@ -89,12 +97,28 @@ public class TextManagerTest : MonoBehaviour
         }
     }
 
+    private void ChickName()
+    {
+        switch (DiaLog.dialogDataDetails[TextNumber].actor)
+        {
+           case Actor.Player: nameText.text = "玩家"; break;
+           case Actor.Girlfriend: nameText.text = "織那久菜子"; break;
+           case Actor.Boyfriend: nameText.text = "苦主"; break;
+           case Actor.Steve: nameText.text = "史帝夫"; break;
+           case Actor.PoliceA: nameText.text = "警察A"; break;
+           case Actor.PoliceB: nameText.text = "警察B"; break;
+           case Actor.PassersbyA: nameText.text = "路人A"; break;
+           case Actor.PassersbyB: nameText.text = "路人B"; break;
+        }
+    }
+
     private void NextText()
     {
-        if (TextNumber < getTextDate.TheText.Length - 1)
+        if (TextNumber < DiaLog.dialogDataDetails.Count - 1)
         {
             StopLoop = false;
             TextNumber++;
+            ChickName();
             StartCoroutine(DisplayTextWithTypingEffect(false));
         }
     }
