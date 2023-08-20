@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class TextManagerTest : MonoBehaviour
@@ -32,12 +33,12 @@ public class TextManagerTest : MonoBehaviour
 
     private void TextDateLoad()
     {
-        var arraySize = DiaLog.dialogDataDetails.Count;
+        var arraySize = DiaLog.dialogDataDetailstest.Count;
         Debug.Log(arraySize);
         //getTextDate.Length = arraySize;
-        for (int i = 0; i < DiaLog.dialogDataDetails.Count; i++)
+        for (int i = 0; i < DiaLog.dialogDataDetailstest.Count; i++)
         {
-            getTextDate[i] = DiaLog.dialogDataDetails[i].sentence;
+            getTextDate[i] = DiaLog.dialogDataDetailstest[i].sentence;
         }
         
         /*
@@ -99,7 +100,7 @@ public class TextManagerTest : MonoBehaviour
 
     private void ChickName()
     {
-        switch (DiaLog.dialogDataDetails[TextNumber].actor)
+        switch (DiaLog.dialogDataDetailstest[TextNumber].actor)
         {
            case Actor.Player: nameText.text = "玩家"; break;
            case Actor.Girlfriend: nameText.text = "織那久菜子"; break;
@@ -114,13 +115,25 @@ public class TextManagerTest : MonoBehaviour
 
     private void NextText()
     {
-        if (TextNumber < DiaLog.dialogDataDetails.Count - 1)
+        if (TextNumber < DiaLog.dialogDataDetailstest.Count - 1)
         {
             StopLoop = false;
             TextNumber++;
+            ChangeFace();
             ChickName();
             StartCoroutine(DisplayTextWithTypingEffect(false));
         }
+    }
+
+    private void ChangeFace()
+    {
+        switch (DiaLog.dialogDataDetailstest[TextNumber].actor)
+        {
+            //找出更改表情
+        }
+        
+        //更變對應表情
+        //Todo
     }
 
     private void DownText()

@@ -12,34 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: DialogDataTest
   m_EditorClassIdentifier: Assembly-CSharp::DialogTestData
-  dialogDataDetails:
+  dialogDataDetailstest:
   - actor: 0
     actorFace: 0
-    sentence: AAAAAAAAAAAAAAAAAAAAAAAAAAA
+    sentence: AAAAAAAAAAA
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: 2
+  - actor: 0
     actorFace: 0
-    sentence: SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+    sentence: BBBBBBBBBBBBB
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: 1
+  - actor: 0
     actorFace: 0
-    sentence: DDDDDDDDDDDDDDDDDDDDDDDDDDD
+    sentence: CCCCCCCCC
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: 1
+  - actor: 0
     actorFace: 0
-    sentence: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+    sentence: DDDDDDDDDDDDD
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: 4
+  - actor: 0
     actorFace: 0
-    sentence: EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+    sentence: EEEEEEEEEEEEEEE
     talkEvent:
       m_PersistentCalls:
         m_Calls: []

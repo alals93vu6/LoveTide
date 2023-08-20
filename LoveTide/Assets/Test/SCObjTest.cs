@@ -19,7 +19,7 @@ public enum Actor
 [CreateAssetMenu(fileName = "DialogDataTest", menuName = "ScriptableObject/DialogDataTest")]
 public class DialogTestData : ScriptableObject
 {
-    public List<DialogDataDetailTest> dialogDataDetails;
+    public List<DialogDataDetailTest> dialogDataDetailstest;
 }
 
 [System.Serializable]
