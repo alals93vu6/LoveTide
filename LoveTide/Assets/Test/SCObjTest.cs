@@ -39,6 +39,7 @@ public class DialogDataDetailTest
 {
     public ActorTest actor;
     public ActorFaceTest actorFace;
+    public int actorLocation;
     public string sentence;
     public UnityEvent talkEvent;
 }

@@ -15,30 +15,46 @@ MonoBehaviour:
   dialogDataDetailstest:
   - actor: 0
     actorFace: 0
+    actorLocation: 7
     sentence: AAAAAAAAAAA
     talkEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - actor: 1
     actorFace: 1
+    actorLocation: 5
     sentence: BBBBBBBBBBBBB
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
   - actor: 2
     actorFace: 2
+    actorLocation: 2
     sentence: CCCCCCCCC
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
   - actor: 2
     actorFace: 3
+    actorLocation: 0
     sentence: DDDDDDDDDDDDD
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
   - actor: 1
     actorFace: 4
+    actorLocation: 2
     sentence: EEEEEEEEEEEEEEE
     talkEvent:
       m_PersistentCalls:

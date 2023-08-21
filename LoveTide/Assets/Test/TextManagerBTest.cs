@@ -12,8 +12,7 @@ public class TextManagerBTest : MonoBehaviour
     [SerializeField] private DialogTestData logDate;
     [SerializeField] private Text LogText;
     [SerializeField] private Text nameText;
-    [SerializeField] private bool TestBool;
-    
+
     [ContextMenu("ActorTest")]
     public void TestLOG()
     {

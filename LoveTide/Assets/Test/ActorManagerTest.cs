@@ -12,4 +12,9 @@ public class ActorManagerTest : MonoBehaviour
     {
         TheActor[targetActor].sprite = ActorImage[targetActor].ActorStandingDrawing[targetFace];
     }
+
+    public void MoveActorLocation(int targetActor,int targetLocation)
+    {
+        TheActor[targetActor].GetComponent<ActorLocationCtrl>().StayTarget = targetLocation;
+    }
 }

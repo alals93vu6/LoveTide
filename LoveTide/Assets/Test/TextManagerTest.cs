@@ -122,10 +122,11 @@ public class TextManagerTest : MonoBehaviour
             TextNumber++;
             ChangeFace();
             ChickName();
+            
             StartCoroutine(DisplayTextWithTypingEffect(false));
         }
     }
-
+    
     private void ChangeFace()
     {
         var targetActorInt =0;
@@ -153,6 +154,7 @@ public class TextManagerTest : MonoBehaviour
         }
         
         actorManager.ChangeA(targetActorInt,targetFaceInt);
+        actorManager.MoveActorLocation(targetActorInt,DiaLog.dialogDataDetailstest[TextNumber].actorLocation);
     }
 
     private void DownText()
