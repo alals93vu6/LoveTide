@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public enum Actor
+public enum ActorTest
 {
     Player,
     Girlfriend,
@@ -16,6 +16,18 @@ public enum Actor
     
 }
 
+public enum ActorFaceTest
+{
+    normal,//一般
+    happy,//快樂
+    blush,//害羞
+    hrony,//慾火焚身
+    upset,//傷心
+    angry,//憤怒
+    anxious,//焦慮
+    
+}
+
 [CreateAssetMenu(fileName = "DialogDataTest", menuName = "ScriptableObject/DialogDataTest")]
 public class DialogTestData : ScriptableObject
 {
@@ -25,8 +37,8 @@ public class DialogTestData : ScriptableObject
 [System.Serializable]
 public class DialogDataDetailTest
 {
-    public Actor actor;
-    public Face actorFace;
+    public ActorTest actor;
+    public ActorFaceTest actorFace;
     public string sentence;
     public UnityEvent talkEvent;
 }

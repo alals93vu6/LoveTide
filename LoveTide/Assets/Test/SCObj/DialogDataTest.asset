@@ -19,26 +19,26 @@ MonoBehaviour:
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: 0
-    actorFace: 0
+  - actor: 1
+    actorFace: 1
     sentence: BBBBBBBBBBBBB
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: 0
-    actorFace: 0
+  - actor: 2
+    actorFace: 2
     sentence: CCCCCCCCC
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: 0
-    actorFace: 0
+  - actor: 2
+    actorFace: 3
     sentence: DDDDDDDDDDDDD
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: 0
-    actorFace: 0
+  - actor: 1
+    actorFace: 4
     sentence: EEEEEEEEEEEEEEE
     talkEvent:
       m_PersistentCalls:

@@ -11,6 +11,7 @@ public class TextManagerTest : MonoBehaviour
     [SerializeField] public float letterSpeed = 0.02f;
     [SerializeField] public int TextNumber = 0;
     [SerializeField] public DialogTestData DiaLog;
+    [SerializeField] public ActorManagerTest actorManager;
     [SerializeField] public string[] getTextDate;
     [SerializeField] private Text nameText;
     
@@ -102,14 +103,14 @@ public class TextManagerTest : MonoBehaviour
     {
         switch (DiaLog.dialogDataDetailstest[TextNumber].actor)
         {
-           case Actor.Player: nameText.text = "玩家"; break;
-           case Actor.Girlfriend: nameText.text = "織那久菜子"; break;
-           case Actor.Boyfriend: nameText.text = "苦主"; break;
-           case Actor.Steve: nameText.text = "史帝夫"; break;
-           case Actor.PoliceA: nameText.text = "警察A"; break;
-           case Actor.PoliceB: nameText.text = "警察B"; break;
-           case Actor.PassersbyA: nameText.text = "路人A"; break;
-           case Actor.PassersbyB: nameText.text = "路人B"; break;
+           case ActorTest.Player: nameText.text = "玩家"; break;
+           case ActorTest.Girlfriend: nameText.text = "織那久菜子"; break;
+           case ActorTest.Boyfriend: nameText.text = "苦主"; break;
+           case ActorTest.Steve: nameText.text = "史帝夫"; break;
+           case ActorTest.PoliceA: nameText.text = "警察A"; break;
+           case ActorTest.PoliceB: nameText.text = "警察B"; break;
+           case ActorTest.PassersbyA: nameText.text = "路人A"; break;
+           case ActorTest.PassersbyB: nameText.text = "路人B"; break;
         }
     }
 
@@ -127,13 +128,31 @@ public class TextManagerTest : MonoBehaviour
 
     private void ChangeFace()
     {
+        var targetActorInt =0;
+        var targetFaceInt =0;
         switch (DiaLog.dialogDataDetailstest[TextNumber].actor)
         {
-            //找出更改表情
+            case ActorTest.Player: targetActorInt = 0; break;
+            case ActorTest.Girlfriend: targetActorInt = 1; break;
+            case ActorTest.Boyfriend: targetActorInt = 2; break;
+            case ActorTest.Steve: targetActorInt = 3; break;
+            case ActorTest.PoliceA: targetActorInt = 4; break;
+            case ActorTest.PoliceB: targetActorInt = 5; break;
+            case ActorTest.PassersbyA: targetActorInt = 6; break;
+            case ActorTest.PassersbyB: targetActorInt = 7; break;
+        }
+        switch (DiaLog.dialogDataDetailstest[TextNumber].actorFace)
+        {
+            case ActorFaceTest.normal: targetFaceInt = 0; break;
+            case ActorFaceTest.happy: targetFaceInt = 1; break;
+            case ActorFaceTest.blush: targetFaceInt = 2; break;
+            case ActorFaceTest.hrony: targetFaceInt = 3; break;
+            case ActorFaceTest.upset: targetFaceInt = 4; break;
+            case ActorFaceTest.angry: targetFaceInt = 5; break;
+            case ActorFaceTest.anxious: targetFaceInt = 6; break;
         }
         
-        //更變對應表情
-        //Todo
+        actorManager.ChangeA(targetActorInt,targetFaceInt);
     }
 
     private void DownText()
