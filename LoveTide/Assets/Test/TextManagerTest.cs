@@ -14,6 +14,7 @@ public class TextManagerTest : MonoBehaviour
     [SerializeField] public ActorManagerTest actorManager;
     [SerializeField] public string[] getTextDate;
     [SerializeField] private Text nameText;
+    [SerializeField] private GameObject gameCG;
     
     [SerializeField] private bool Isover = true;
 
@@ -21,6 +22,8 @@ public class TextManagerTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameCG.SetActive(false);
+        DiaLog.CGOrder = 0;
         TextDateLoad();
         ChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
@@ -30,6 +33,10 @@ public class TextManagerTest : MonoBehaviour
     void Update()
     {
         TextCtrl();
+        /*if (Input.GetKeyDown(KeyCode.T))
+        {
+            
+        }*/
     }
 
     private void TextDateLoad()
@@ -122,11 +129,36 @@ public class TextManagerTest : MonoBehaviour
             TextNumber++;
             ChangeFace();
             ChickName();
-            
+            CGCtrl();
             StartCoroutine(DisplayTextWithTypingEffect(false));
         }
     }
-    
+
+    private void CGCtrl()
+    {
+        if (DiaLog.dialogDataDetailstest[TextNumber].changeDisplayCG)
+        {
+            if (gameCG.activeSelf)
+            {
+                gameCG.SetActive(false);
+            }
+            else
+            {
+                gameCG.SetActive(true);
+            }
+        }
+
+        if (DiaLog.dialogDataDetailstest[TextNumber].switchCG)
+        {
+            DiaLog.CGOrder++;
+        }
+
+        if (gameCG.activeSelf)
+        {
+            gameCG.GetComponent<Image>().sprite = DiaLog.eventCG[DiaLog.CGOrder];
+        }
+    }
+
     private void ChangeFace()
     {
         var targetActorInt =0;

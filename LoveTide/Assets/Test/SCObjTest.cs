@@ -31,6 +31,8 @@ public enum ActorFaceTest
 [CreateAssetMenu(fileName = "DialogDataTest", menuName = "ScriptableObject/DialogDataTest")]
 public class DialogTestData : ScriptableObject
 {
+    public Sprite[] eventCG;
+    public int CGOrder;
     public List<DialogDataDetailTest> dialogDataDetailstest;
 }
 
@@ -41,5 +43,7 @@ public class DialogDataDetailTest
     public ActorFaceTest actorFace;
     public int actorLocation;
     public string sentence;
+    public bool changeDisplayCG;
+    public bool switchCG;
     public UnityEvent talkEvent;
 }

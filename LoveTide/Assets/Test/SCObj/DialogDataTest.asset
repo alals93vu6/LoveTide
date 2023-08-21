@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: DialogDataTest
   m_EditorClassIdentifier: Assembly-CSharp::DialogTestData
+  eventCG:
+  - {fileID: 21300000, guid: c3390ddaf0c513342a763cf99d4a0eba, type: 3}
+  - {fileID: 21300000, guid: 23ef852e24474104f89ae547147cdba5, type: 3}
+  - {fileID: 21300000, guid: 7df22e6241d78cb4381d695d5e1d0878, type: 3}
+  - {fileID: 21300000, guid: 3060d6da63e77db48b32bd261693c73f, type: 3}
+  - {fileID: 21300000, guid: 5315faa2dc5204a4f9ca568f2cc41904, type: 3}
+  CGOrder: 0
   dialogDataDetailstest:
   - actor: 0
     actorFace: 0
     actorLocation: 7
     sentence: AAAAAAAAAAA
+    changeDisplayCG: 0
+    switchCG: 0
     talkEvent:
       m_PersistentCalls:
         m_Calls:
@@ -35,6 +44,8 @@ MonoBehaviour:
     actorFace: 1
     actorLocation: 5
     sentence: BBBBBBBBBBBBB
+    changeDisplayCG: 0
+    switchCG: 0
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -42,6 +53,8 @@ MonoBehaviour:
     actorFace: 2
     actorLocation: 2
     sentence: CCCCCCCCC
+    changeDisplayCG: 0
+    switchCG: 0
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -49,6 +62,8 @@ MonoBehaviour:
     actorFace: 3
     actorLocation: 0
     sentence: DDDDDDDDDDDDD
+    changeDisplayCG: 0
+    switchCG: 0
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -56,6 +71,71 @@ MonoBehaviour:
     actorFace: 4
     actorLocation: 2
     sentence: EEEEEEEEEEEEEEE
+    changeDisplayCG: 0
+    switchCG: 0
+    talkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: 1
+    actorFace: 4
+    actorLocation: 2
+    sentence: FFFFFFFFFFFFFFFFFFFFFF
+    changeDisplayCG: 1
+    switchCG: 0
+    talkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: 1
+    actorFace: 4
+    actorLocation: 2
+    sentence: GGGGGGGGGGGGGGGGGG
+    changeDisplayCG: 0
+    switchCG: 1
+    talkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: 1
+    actorFace: 4
+    actorLocation: 2
+    sentence: HHHHHHHHHHHH
+    changeDisplayCG: 0
+    switchCG: 0
+    talkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: 1
+    actorFace: 4
+    actorLocation: 2
+    sentence: IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+    changeDisplayCG: 0
+    switchCG: 1
+    talkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: 1
+    actorFace: 4
+    actorLocation: 2
+    sentence: JJJJJJJJJJJJJJJJJJJJJJJJJJJ
+    changeDisplayCG: 0
+    switchCG: 1
+    talkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: 1
+    actorFace: 4
+    actorLocation: 2
+    sentence: KKKKKKKKKKKKKKKKKKKKKK
+    changeDisplayCG: 1
+    switchCG: 0
+    talkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: 1
+    actorFace: 4
+    actorLocation: 2
+    sentence: LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+    changeDisplayCG: 0
+    switchCG: 0
     talkEvent:
       m_PersistentCalls:
         m_Calls: []
