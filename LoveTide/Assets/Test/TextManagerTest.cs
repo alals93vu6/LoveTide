@@ -22,6 +22,7 @@ public class TextManagerTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DiaLog = Resources.Load<DialogTestData>("DialogDataTestB");
         gameCG.SetActive(false);
         DiaLog.CGOrder = 0;
         TextDateLoad();

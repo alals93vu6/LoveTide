@@ -302,7 +302,6 @@ GameObject:
   m_Component:
   - component: {fileID: 114864952}
   - component: {fileID: 114864954}
-  - component: {fileID: 114864955}
   - component: {fileID: 114864953}
   - component: {fileID: 114864956}
   m_Layer: 5
@@ -368,28 +367,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114864951}
   m_CullTransparentMesh: 0
---- !u!114 &114864955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114864951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 255ce2cb977ed24428ef99c2a77f7cb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StayLocation:
-  - {fileID: 759984777}
-  - {fileID: 2045805208}
-  - {fileID: 1640095123}
-  - {fileID: 1690986428}
-  - {fileID: 1333061994}
-  - {fileID: 605472439}
-  - {fileID: 218519508}
-  - {fileID: 1448641421}
-  StayTarget: 7
 --- !u!114 &114864956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,7 +2073,7 @@ MonoBehaviour:
   showText: {fileID: 913251562}
   letterSpeed: 0.02
   TextNumber: 0
-  DiaLog: {fileID: 11400000, guid: 249182642873456498edf00ef4210dcd, type: 2}
+  DiaLog: {fileID: 0}
   actorManager: {fileID: 1276705565}
   getTextDate:
   - 
