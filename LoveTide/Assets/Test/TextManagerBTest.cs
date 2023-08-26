@@ -36,13 +36,13 @@ public class TextManagerBTest : MonoBehaviour
     IEnumerator startDialog()
     {
         var dialogData = Resources.Load<DialogData>("TestAObj");
-        var dialogDataList = GetDialogDataDetail("1-1", dialogData);
+        //var dialogDataList = GetDialogDataDetail("1-1", dialogData);
 
         //LogText.text = dialogDataList.sentenceDetails[0].sentence;
-        foreach (var sentenceDetail in dialogDataList.sentenceDetails)
+        //foreach (var sentenceDetail in dialogDataList.sentenceDetails)
         {
-            SetDialogTalkName(sentenceDetail.speaker);
-            SetDialogText(sentenceDetail.sentence);
+            //SetDialogTalkName(sentenceDetail.speaker);
+            //SetDialogText(sentenceDetail.sentence);
             
             //DetectException(sentenceDetail.sentence);
 
@@ -53,11 +53,11 @@ public class TextManagerBTest : MonoBehaviour
         //SetDialogTextActive(false);
         //yield return null;
     }
-    
+    /*
     public DialogDataDetail GetDialogDataDetail(string _ID , DialogData dialogData)
     {
         //return dialogData.dialogDataDetails.Where(t => t.ID == _ID).FirstOrDefault();
-        return dialogData.dialogDataDetails.Where(t => t.ID == _ID).FirstOrDefault();
+        //return dialogData.dialogDataDetails.Where(t => t.ID == _ID).FirstOrDefault();
     }
     
     void SetDialogTextActive(bool active)
@@ -93,5 +93,5 @@ public class TextManagerBTest : MonoBehaviour
             case Speaker.PassersbyA:nameText.text = "路人甲"; break;
             case Speaker.PassersbyB:nameText.text = "路人乙"; break;
         }
-    }
+    }*/
 }

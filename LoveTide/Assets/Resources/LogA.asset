@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec18ed9385c32c84a91ef01d25abe5c0, type: 3}
+  m_Name: LogA
+  m_EditorClassIdentifier: 
+  disPlayCG: []
+  disPlayOrder: 0
+  dialogDataDetails:
+  - speaker: 0
+    actorFace: 0
+    sentence: AAAAAAAA
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 3
+    actorFace: 0
+    sentence: SSSSSSSSSSSS
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 1
+    actorFace: 0
+    sentence: BBBBBBBBBBBBBB
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 5
+    actorFace: 0
+    sentence: fDDDDDDDDDDDDD
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 6
+    actorFace: 0
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0

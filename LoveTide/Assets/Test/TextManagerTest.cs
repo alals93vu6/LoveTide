@@ -44,19 +44,10 @@ public class TextManagerTest : MonoBehaviour
     {
         var arraySize = DiaLog.dialogDataDetailstest.Count;
         Debug.Log(arraySize);
-        //getTextDate.Length = arraySize;
         for (int i = 0; i < DiaLog.dialogDataDetailstest.Count; i++)
         {
             getTextDate[i] = DiaLog.dialogDataDetailstest[i].sentence;
         }
-        
-        /*
-        string filepath = Path.Combine("Assets/Test/TextAssetsTest/TestAText.json");
-        StreamReader textfile = new StreamReader(filepath);
-        string stringText = textfile.ReadToEnd();
-        getTextDate = JsonUtility.FromJson<TextClass>(stringText);
-        textfile.Close();
-        */
     }
 
     private IEnumerator DisplayTextWithTypingEffect(bool OnWork)
@@ -77,18 +68,15 @@ public class TextManagerTest : MonoBehaviour
                     }
                     showText.text += targetText[i];
                     yield return new WaitForSeconds(letterSpeed);
-                    //Debug.Log("A");
                 }
                 Isover = false;
             }
             else
             {
-                //Debug.Log("B");
                 showText.text = "";
                 showText.text = targetText;
                 Isover = false;
             }
-            //letterSpeed = 0.02f;
         }
     }
     
