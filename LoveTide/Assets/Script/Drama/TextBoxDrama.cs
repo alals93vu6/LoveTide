@@ -14,6 +14,7 @@ public class TextBoxDrama : MonoBehaviour
     
     [Header("物件")]
     [SerializeField] public DialogData diaLog;
+    [SerializeField] private ScenarioChoseSystem scenarioChose;
     
     [Header("狀態")]
     [SerializeField] public bool isover = true;
@@ -22,7 +23,7 @@ public class TextBoxDrama : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        diaLog = Resources.Load<DialogData>("LogA");
+        diaLog = Resources.Load<DialogData>(scenarioChose.dataFile);
         TextDateLoad();
         ChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
@@ -37,7 +38,7 @@ public class TextBoxDrama : MonoBehaviour
     private void TextDateLoad()
     {
         var arraySize = diaLog.dialogDataDetails.Count;
-        Debug.Log(arraySize);
+        //Debug.Log(arraySize);
         for (int i = 0; i < diaLog.dialogDataDetails.Count; i++)
         {
             getTextDate[i] = diaLog.dialogDataDetails[i].sentence;
