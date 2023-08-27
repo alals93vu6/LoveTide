@@ -7,7 +7,8 @@ public class ActorManagerDrama : MonoBehaviour
 {
     [SerializeField]public Image[] theActor;
     [SerializeField]public ActorScObj[] actorImage;
-    [SerializeField] private DialogData dialog;
+    [SerializeField]private DialogData dialog;
+    [SerializeField] private int idleActor = 0;
     
     
     //todo dia判斷是否改變動作，
@@ -20,15 +21,23 @@ public class ActorManagerDrama : MonoBehaviour
         Debug.Log(textNumber);
     }
 
-    public void OnStart(DialogData diadata)
+    public void OnStart(DialogData diadata,int actorLocation)
     {
         dialog = diadata;
+        ActorCtrl(actorLocation);
     }
     
     public void ActorCtrl(int theActorLocation)
-    {
-        ChangeActorFace(ChickActor(0),ChickFace(0));
-        MoveActorLocation(ChickFace(0),theActorLocation);
+    {   
+        ChickActor();
+        if (theActorLocation != 0)
+        {
+            MoveActorLocation(idleActor,theActorLocation);
+        }
+        if (dialog.dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace != Face.nothiog)
+        {
+            ChangeActorFace(idleActor,ChickFace(0));
+        }
     }
 
     // Start is called before the first frame update
@@ -41,39 +50,38 @@ public class ActorManagerDrama : MonoBehaviour
     public void MoveActorLocation(int targetActor,int targetLocation)
     {
         theActor[targetActor].GetComponent<ActorLocationCtrl>().StayTarget = targetLocation;
+        Debug.Log("OnMove");
     }
     
     private int ChickFace(int faceNumber)
     {
         switch (dialog.dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace)
         {
-            case Face.nothiog: faceNumber = 0; break;
-            case Face.normal: faceNumber = 1; break;
-            case Face.haapy: faceNumber = 2; break;
-            case Face.blush: faceNumber = 3; break;
-            case Face.cry: faceNumber = 4; break;
-            case Face.hrony: faceNumber = 5; break;
-            case Face.angry: faceNumber = 6; break;
+            case Face.normal: faceNumber = 0; break;
+            case Face.haapy: faceNumber = 1; break;
+            case Face.blush: faceNumber = 2; break;
+            case Face.cry: faceNumber = 3; break;
+            case Face.hrony: faceNumber = 4; break;
+            case Face.angry: faceNumber = 5; break;
             case Face.anxious: faceNumber = 6; break;
         }
+        //Debug.Log("Face"+faceNumber);
         return faceNumber;
     }
 
-    private int ChickActor(int actorNumber)
+    private void ChickActor()
     {
         switch (dialog.dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].speaker)
         {
-            case Speaker.Player : actorNumber = 0; break;
-            case Speaker.GirlFriend : actorNumber = 1; break;
-            case Speaker.BoyFriend : actorNumber = 2; break;
-            case Speaker.Steve : actorNumber = 3; break;
-            case Speaker.PoliceA : actorNumber = 4; break;
-            case Speaker.PoliceB : actorNumber = 5; break;
-            case Speaker.PassersbyA : actorNumber = 6; break;
-            case Speaker.PassersbyB : actorNumber = 7; break;
+            case Speaker.Player : idleActor = 0; break;
+            case Speaker.GirlFriend : idleActor = 1; break;
+            case Speaker.BoyFriend : idleActor = 2; break;
+            case Speaker.Steve : idleActor = 3; break;
+            case Speaker.PoliceA : idleActor = 4; break;
+            case Speaker.PoliceB : idleActor = 5; break;
+            case Speaker.PassersbyA : idleActor = 6; break;
+            case Speaker.PassersbyB : idleActor = 7; break;
         }
-
-        return actorNumber;
     }
 
 }

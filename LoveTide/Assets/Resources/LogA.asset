@@ -15,32 +15,62 @@ MonoBehaviour:
   disPlayCG: []
   disPlayOrder: 0
   dialogDataDetails:
-  - speaker: 0
-    actorFace: 5
+  - speaker: 2
+    actorFace: 2
     sentence: AAAAAAAA
     stayLocation: 0
     SwitchCGDisplay: 0
     SwitchCGImage: 0
-  - speaker: 3
+  - speaker: 0
     actorFace: 0
     sentence: SSSSSSSSSSSS
     stayLocation: 0
     SwitchCGDisplay: 0
     SwitchCGImage: 0
-  - speaker: 1
-    actorFace: 0
+  - speaker: 0
+    actorFace: 1
     sentence: BBBBBBBBBBBBBB
-    stayLocation: 0
+    stayLocation: 2
     SwitchCGDisplay: 0
     SwitchCGImage: 0
-  - speaker: 5
+  - speaker: 0
     actorFace: 0
     sentence: fDDDDDDDDDDDDD
     stayLocation: 0
     SwitchCGDisplay: 0
     SwitchCGImage: 0
-  - speaker: 6
+  - speaker: 0
+    actorFace: 3
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 0
     actorFace: 0
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 3
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 1
+    actorFace: 1
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 0
+    actorFace: 0
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 1
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 2
+    actorFace: 0
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 1
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 0
+    actorFace: 4
     sentence: DDDDDDDDDDDDDDD
     stayLocation: 0
     SwitchCGDisplay: 0

@@ -22,7 +22,7 @@ public class PlayerCtrlDrama : MonoBehaviour
     {
         diaLog = Resources.Load<DialogData>(scenarioChose.dataFile);
         texBox.OnStart_TextBox(diaLog);
-        actorCtrl.OnStart(diaLog);
+        actorCtrl.OnStart(diaLog,diaLog.dialogDataDetails[talkOrder].stayLocation);
     }
 
     // Update is called once per frame
