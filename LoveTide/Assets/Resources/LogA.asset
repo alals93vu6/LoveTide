@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec18ed9385c32c84a91ef01d25abe5c0, type: 3}
   m_Name: LogA
   m_EditorClassIdentifier: 
-  disPlayCG: []
+  disPlayCG:
+  - {fileID: 21300000, guid: c3390ddaf0c513342a763cf99d4a0eba, type: 3}
+  - {fileID: 21300000, guid: 23ef852e24474104f89ae547147cdba5, type: 3}
+  - {fileID: 21300000, guid: 7df22e6241d78cb4381d695d5e1d0878, type: 3}
+  - {fileID: 21300000, guid: 3060d6da63e77db48b32bd261693c73f, type: 3}
+  - {fileID: 21300000, guid: 5315faa2dc5204a4f9ca568f2cc41904, type: 3}
   disPlayOrder: 0
   dialogDataDetails:
   - speaker: 2
@@ -31,14 +36,14 @@ MonoBehaviour:
     actorFace: 1
     sentence: BBBBBBBBBBBBBB
     stayLocation: 2
-    SwitchCGDisplay: 0
+    SwitchCGDisplay: 1
     SwitchCGImage: 0
   - speaker: 0
     actorFace: 0
     sentence: fDDDDDDDDDDDDD
     stayLocation: 0
     SwitchCGDisplay: 0
-    SwitchCGImage: 0
+    SwitchCGImage: 1
   - speaker: 0
     actorFace: 3
     sentence: DDDDDDDDDDDDDDD
@@ -50,13 +55,13 @@ MonoBehaviour:
     sentence: DDDDDDDDDDDDDDD
     stayLocation: 3
     SwitchCGDisplay: 0
-    SwitchCGImage: 0
+    SwitchCGImage: 1
   - speaker: 1
     actorFace: 1
     sentence: DDDDDDDDDDDDDDD
     stayLocation: 0
     SwitchCGDisplay: 0
-    SwitchCGImage: 0
+    SwitchCGImage: 1
   - speaker: 0
     actorFace: 0
     sentence: DDDDDDDDDDDDDDD
@@ -67,6 +72,36 @@ MonoBehaviour:
     actorFace: 0
     sentence: DDDDDDDDDDDDDDD
     stayLocation: 1
+    SwitchCGDisplay: 0
+    SwitchCGImage: 0
+  - speaker: 0
+    actorFace: 4
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 1
+  - speaker: 0
+    actorFace: 4
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 1
+  - speaker: 0
+    actorFace: 4
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 0
+    SwitchCGDisplay: 0
+    SwitchCGImage: 1
+  - speaker: 0
+    actorFace: 4
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 0
+    SwitchCGDisplay: 1
+    SwitchCGImage: 0
+  - speaker: 0
+    actorFace: 4
+    sentence: DDDDDDDDDDDDDDD
+    stayLocation: 0
     SwitchCGDisplay: 0
     SwitchCGImage: 0
   - speaker: 0

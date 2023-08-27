@@ -20,15 +20,21 @@ public class PlayerCtrlDrama : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        diaLog = Resources.Load<DialogData>(scenarioChose.dataFile);
-        texBox.OnStart_TextBox(diaLog);
-        actorCtrl.OnStart(diaLog,diaLog.dialogDataDetails[talkOrder].stayLocation);
+        OnStart();
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerClick();
+    }
+
+    private void OnStart()
+    {
+        diaLog = Resources.Load<DialogData>(scenarioChose.dataFile);
+        texBox.OnStart_TextBox(diaLog);
+        actorCtrl.OnStart(diaLog,diaLog.dialogDataDetails[talkOrder].stayLocation);
+        CGDisplay.OnStart(diaLog);
     }
 
     private void PlayerClick()
@@ -43,8 +49,9 @@ public class PlayerCtrlDrama : MonoBehaviour
             else
             {
                 texBox.NextText();
-                actorCtrl.ActorCtrl(diaLog.dialogDataDetails[talkOrder].stayLocation);
                 talkOrder = texBox.textNumber;
+                actorCtrl.ActorCtrl(diaLog.dialogDataDetails[talkOrder].stayLocation);
+                CGDisplay.DisplayCGChick(diaLog.dialogDataDetails[talkOrder].SwitchCGDisplay,diaLog.dialogDataDetails[talkOrder].SwitchCGImage);
             }
         }
 

@@ -50,7 +50,6 @@ public class ActorManagerDrama : MonoBehaviour
     public void MoveActorLocation(int targetActor,int targetLocation)
     {
         theActor[targetActor].GetComponent<ActorLocationCtrl>().StayTarget = targetLocation;
-        Debug.Log("OnMove");
     }
     
     private int ChickFace(int faceNumber)
