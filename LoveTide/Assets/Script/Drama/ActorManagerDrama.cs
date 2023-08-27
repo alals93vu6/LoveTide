@@ -25,10 +25,10 @@ public class ActorManagerDrama : MonoBehaviour
         dialog = diadata;
     }
     
-    public void ActorCtrl(int theTargetActor)
+    public void ActorCtrl(int theActorLocation)
     {
-        ChangeActorFace(theTargetActor,1);
-        MoveActorLocation(theTargetActor,1);
+        ChangeActorFace(ChickActor(0),ChickFace(0));
+        MoveActorLocation(ChickFace(0),theActorLocation);
     }
 
     // Start is called before the first frame update
@@ -58,4 +58,22 @@ public class ActorManagerDrama : MonoBehaviour
         }
         return faceNumber;
     }
+
+    private int ChickActor(int actorNumber)
+    {
+        switch (dialog.dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].speaker)
+        {
+            case Speaker.Player : actorNumber = 0; break;
+            case Speaker.GirlFriend : actorNumber = 1; break;
+            case Speaker.BoyFriend : actorNumber = 2; break;
+            case Speaker.Steve : actorNumber = 3; break;
+            case Speaker.PoliceA : actorNumber = 4; break;
+            case Speaker.PoliceB : actorNumber = 5; break;
+            case Speaker.PassersbyA : actorNumber = 6; break;
+            case Speaker.PassersbyB : actorNumber = 7; break;
+        }
+
+        return actorNumber;
+    }
+
 }

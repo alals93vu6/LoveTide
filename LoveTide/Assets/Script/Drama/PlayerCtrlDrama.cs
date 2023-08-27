@@ -43,6 +43,7 @@ public class PlayerCtrlDrama : MonoBehaviour
             else
             {
                 texBox.NextText();
+                actorCtrl.ActorCtrl(diaLog.dialogDataDetails[talkOrder].stayLocation);
                 talkOrder = texBox.textNumber;
             }
         }
