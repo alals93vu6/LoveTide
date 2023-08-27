@@ -14,8 +14,7 @@ public class TextBoxDrama : MonoBehaviour
     
     [Header("物件")]
     [SerializeField] public DialogData diaLog;
-    [SerializeField] private ScenarioChoseSystem scenarioChose;
-    
+
     [Header("狀態")]
     [SerializeField] public bool isover = true;
     [SerializeField] public bool stopLoop;
@@ -23,10 +22,7 @@ public class TextBoxDrama : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        diaLog = Resources.Load<DialogData>(scenarioChose.dataFile);
-        TextDateLoad();
-        ChickName();
-        StartCoroutine(DisplayTextWithTypingEffect(false));
+        
     }
 
     // Update is called once per frame
@@ -34,8 +30,16 @@ public class TextBoxDrama : MonoBehaviour
     {
         
     }
+
+    async public void OnStart_TextBox(DialogData diadata)
+    {
+        diaLog = diadata;
+        TextDataLoad();
+        ChickName();
+        StartCoroutine(DisplayTextWithTypingEffect(false)); 
+    }
     
-    private void TextDateLoad()
+    private void TextDataLoad()
     {
         var arraySize = diaLog.dialogDataDetails.Count;
         //Debug.Log(arraySize);
@@ -94,7 +98,7 @@ public class TextBoxDrama : MonoBehaviour
     
     private void ChickName()
     {
-        switch (diaLog.dialogDataDetails[textNumber].speaker)
+       switch (diaLog.dialogDataDetails[textNumber].speaker)
         {
             case Speaker.Player: nameText.text = "玩家"; break;
             case Speaker.GirlFriend: nameText.text = "織那久菜子"; break;

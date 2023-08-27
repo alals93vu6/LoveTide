@@ -16,7 +16,7 @@ MonoBehaviour:
   disPlayOrder: 0
   dialogDataDetails:
   - speaker: 0
-    actorFace: 0
+    actorFace: 5
     sentence: AAAAAAAA
     stayLocation: 0
     SwitchCGDisplay: 0
