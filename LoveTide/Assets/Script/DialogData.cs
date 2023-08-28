@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public enum Speaker
 {
     Ibid,
+    Chorus,
     Player,
     GirlFriend,
     BoyFriend,

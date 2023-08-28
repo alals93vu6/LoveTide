@@ -38,7 +38,7 @@ MonoBehaviour:
     stayLocation: 2
     SwitchCGDisplay: 1
     SwitchCGImage: 0
-  - speaker: 0
+  - speaker: 1
     actorFace: 0
     sentence: fDDDDDDDDDDDDD
     stayLocation: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     stayLocation: 3
     SwitchCGDisplay: 0
     SwitchCGImage: 1
-  - speaker: 1
+  - speaker: 2
     actorFace: 1
     sentence: DDDDDDDDDDDDDDD
     stayLocation: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
     stayLocation: 1
     SwitchCGDisplay: 0
     SwitchCGImage: 0
-  - speaker: 2
+  - speaker: 3
     actorFace: 0
     sentence: DDDDDDDDDDDDDDD
     stayLocation: 1
