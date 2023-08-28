@@ -41,11 +41,11 @@ public class TextBoxDrama : MonoBehaviour
     
     private void TextDataLoad()
     {
-        var arraySize = diaLog.dialogDataDetails.Count;
+        var arraySize = diaLog.plotOptionsList[0].dialogDataDetails.Count;
         //Debug.Log(arraySize);
-        for (int i = 0; i < diaLog.dialogDataDetails.Count; i++)
+        for (int i = 0; i < diaLog.plotOptionsList[0].dialogDataDetails.Count; i++)
         {
-            getTextDate[i] = diaLog.dialogDataDetails[i].sentence;
+            getTextDate[i] = diaLog.plotOptionsList[0].dialogDataDetails[i].sentence;
         }
     }
     
@@ -81,7 +81,7 @@ public class TextBoxDrama : MonoBehaviour
     
     public void NextText()
     {
-        if (textNumber < diaLog.dialogDataDetails.Count - 1)
+        if (textNumber < diaLog.plotOptionsList[0].dialogDataDetails.Count - 1)
         {
             stopLoop = false;
             textNumber++;
@@ -98,7 +98,7 @@ public class TextBoxDrama : MonoBehaviour
     
     private void ChickName()
     {
-       switch (diaLog.dialogDataDetails[textNumber].speaker)
+       switch (diaLog.plotOptionsList[0].dialogDataDetails[textNumber].speaker)
         {
             case Speaker.Chorus: nameText.text = ""; break;
             case Speaker.Player: nameText.text = "玩家"; break;

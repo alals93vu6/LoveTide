@@ -5,13 +5,18 @@ using UnityEngine;
 
 public class ScenarioChoseSystem : MonoBehaviour
 {
-    [SerializeField] public string dataFile;
-    // Start is called before the first frame update
-
+    #region Instance
+    static public ScenarioChoseSystem instance;
     private void Awake()
     {
+        instance = this;
         dataFile = "LogA";
     }
+    #endregion
+    
+    [SerializeField] public string dataFile;
+    // Start is called before the first frame update
+    
 
     void Start()
     {

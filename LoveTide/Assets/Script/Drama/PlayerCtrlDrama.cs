@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerCtrlDrama : MonoBehaviour
@@ -33,12 +34,13 @@ public class PlayerCtrlDrama : MonoBehaviour
     {
         diaLog = Resources.Load<DialogData>(scenarioChose.dataFile);
         texBox.OnStart_TextBox(diaLog);
-        actorCtrl.OnStart(diaLog,diaLog.dialogDataDetails[talkOrder].stayLocation);
+        actorCtrl.OnStart(diaLog,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].stayLocation);
         CGDisplay.OnStart(diaLog);
     }
 
     private void PlayerClick()
     {
+        string TestName;
         if (Input.GetMouseButtonDown(0))
         {
             SetTextBox(true);
@@ -50,8 +52,8 @@ public class PlayerCtrlDrama : MonoBehaviour
             {
                 texBox.NextText();
                 talkOrder = texBox.textNumber;
-                actorCtrl.ActorCtrl(diaLog.dialogDataDetails[talkOrder].stayLocation);
-                CGDisplay.DisplayCGChick(diaLog.dialogDataDetails[talkOrder].SwitchCGDisplay,diaLog.dialogDataDetails[talkOrder].SwitchCGImage);
+                actorCtrl.ActorCtrl(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].stayLocation);
+                CGDisplay.DisplayCGChick(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGDisplay,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGImage);
             }
         }
 

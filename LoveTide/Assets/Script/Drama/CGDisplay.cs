@@ -26,7 +26,7 @@ public class CGDisplay : MonoBehaviour
         dialog = diadata;
         CGimg.SetActive(false);
         CGOrder = 0;
-        DisplayCGChick(dialog.dialogDataDetails[0].SwitchCGDisplay,dialog.dialogDataDetails[0].SwitchCGImage);
+        DisplayCGChick(dialog.plotOptionsList[0].dialogDataDetails[0].switchCGDisplay,dialog.plotOptionsList[0].dialogDataDetails[0].switchCGImage);
     }
 
     public void DisplayCGChick(bool ShowCG,bool SwitchCG)
@@ -45,14 +45,14 @@ public class CGDisplay : MonoBehaviour
                 CGimg.SetActive(true);
             }
         }
-        if (SwitchCG && CGOrder < dialog.disPlayCG.Length -1)
+        if (SwitchCG && CGOrder < dialog.plotOptionsList[0].displayCG.Length -1)
         {
             CGOrder++;
         }
         
         if (CGimg.activeSelf)
         {
-            CGimg.GetComponent<Image>().sprite = dialog.disPlayCG[CGOrder];
+            CGimg.GetComponent<Image>().sprite = dialog.plotOptionsList[0].displayCG[CGOrder];
         }
         
     }

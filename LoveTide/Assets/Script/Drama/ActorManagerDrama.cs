@@ -34,7 +34,7 @@ public class ActorManagerDrama : MonoBehaviour
         {
             MoveActorLocation(idleActor,theActorLocation);
         }
-        if (dialog.dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace != Face.nothiog)
+        if (dialog.plotOptionsList[0].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace != Face.nothiog)
         {
             ChangeActorFace(idleActor,ChickFace(0));
         }
@@ -54,7 +54,7 @@ public class ActorManagerDrama : MonoBehaviour
     
     private int ChickFace(int faceNumber)
     {
-        switch (dialog.dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace)
+        switch (dialog.plotOptionsList[0].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace)
         {
             case Face.normal: faceNumber = 0; break;
             case Face.haapy: faceNumber = 1; break;
@@ -70,7 +70,7 @@ public class ActorManagerDrama : MonoBehaviour
 
     private void ChickActor()
     {
-        switch (dialog.dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].speaker)
+        switch (dialog.plotOptionsList[0].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].speaker)
         {
             case Speaker.Player : idleActor = 0; break;
             case Speaker.GirlFriend : idleActor = 1; break;

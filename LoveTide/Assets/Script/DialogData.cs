@@ -27,7 +27,15 @@ public enum Face
 [CreateAssetMenu(fileName = "DialogData", menuName = "ScriptableObject/DialogData")]
 public class DialogData : ScriptableObject
 {
-    public Sprite[] disPlayCG;
+    public List<PlotOptions> plotOptionsList;
+    
+}
+
+[System.Serializable]
+public class PlotOptions
+{
+    public string talkID;
+    public Sprite[] displayCG;
     public int disPlayOrder;
     public List<DialogDataDetail> dialogDataDetails;
 }
@@ -39,6 +47,8 @@ public class DialogDataDetail
     public Face actorFace;
     public string sentence;
     public int stayLocation;
-    public bool SwitchCGDisplay;
-    public bool SwitchCGImage;
+    public bool switchCGDisplay;
+    public bool switchCGImage;
 }
+
+
