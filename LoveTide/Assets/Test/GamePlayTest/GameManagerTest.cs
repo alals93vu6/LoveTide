@@ -25,6 +25,16 @@ public class GameManagerTest : MonoBehaviour
         timer.DetectedDayPassed();
     }
 
+    public void CheckActions()
+    {
+        background.ChickBackground(numberCtrl.aTimer);
+    }
+
+    public void OnActions()
+    {
+        
+    }
+
     public void TimeOffWork()
     {
         

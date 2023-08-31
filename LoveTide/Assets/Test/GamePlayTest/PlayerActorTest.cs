@@ -35,12 +35,17 @@ public class PlayerActorTest : MonoBehaviour
         
     }
     
-    public void Interactive_outing()
+    public void Interactive_Outing()
     {
         
     }
     
-    public void Interactive_sex()
+    public void Interactive_Sex()
+    {
+        
+    }
+    
+    public void Interactive_Sleep()
     {
         
     }
