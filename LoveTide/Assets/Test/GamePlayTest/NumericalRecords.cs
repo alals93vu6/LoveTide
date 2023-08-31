@@ -21,5 +21,12 @@ public class NumericalRecords : MonoBehaviour
     {
         
     }
-    
+
+    public void SetNumerica(int fds,int slt, int lst)
+    {
+        friendship += fds;
+        slutty += slt;
+        lust += lst;
+    }
+
 }

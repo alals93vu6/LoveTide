@@ -33,12 +33,13 @@ public class TimeManagerTest : MonoBehaviour
         }
         else
         {
-            DetectedPeriod();
+            
         }
     }
 
     public void DetectedPeriod()
     {
+        numberCtrl.aTimer++;
         if (numberCtrl.aTimer >= 7)
         {
             vacation = true;
