@@ -10,13 +10,16 @@ public class PlayerActorTest : MonoBehaviour
     {
         
     }
-
     // Update is called once per frame
     void Update()
     {
         
     }
-
+    public void Interactive_Speak()
+    {
+        
+    }
+    
     public void Interactive_InWork()
     {
         
@@ -26,4 +29,20 @@ public class PlayerActorTest : MonoBehaviour
     {
         
     }
+    
+    public void Interactive_Peeking()
+    {
+        
+    }
+    
+    public void Interactive_outing()
+    {
+        
+    }
+    
+    public void Interactive_sex()
+    {
+        
+    }
+    
 }
