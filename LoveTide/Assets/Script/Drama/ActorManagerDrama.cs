@@ -63,6 +63,7 @@ public class ActorManagerDrama : MonoBehaviour
             case Face.hrony: faceNumber = 4; break;
             case Face.angry: faceNumber = 5; break;
             case Face.anxious: faceNumber = 6; break;
+            case Face.sad: faceNumber = 7; break;
         }
         //Debug.Log("Face"+faceNumber);
         return faceNumber;
@@ -80,6 +81,7 @@ public class ActorManagerDrama : MonoBehaviour
             case Speaker.PoliceB : idleActor = 5; break;
             case Speaker.PassersbyA : idleActor = 6; break;
             case Speaker.PassersbyB : idleActor = 7; break;
+            
         }
     }
 

@@ -40,7 +40,6 @@ public class PlayerCtrlDrama : MonoBehaviour
 
     private void PlayerClick()
     {
-        string TestName;
         if (Input.GetMouseButtonDown(0))
         {
             SetTextBox(true);

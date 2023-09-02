@@ -20,8 +20,8 @@ public enum Speaker
 
 public enum Face
 {
-    nothiog,normal,haapy,blush,cry,hrony,angry,anxious,
-            //普通  開心  害羞   哭  齁逆   生氣   焦慮
+    nothiog,normal,haapy,blush,cry,hrony,angry,anxious,sad,
+            //普通  開心  害羞   哭  齁逆   生氣   焦慮     傷心
 }
 
 [CreateAssetMenu(fileName = "DialogData", menuName = "ScriptableObject/DialogData")]

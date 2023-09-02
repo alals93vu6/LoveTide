@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BackgroundCtrl : MonoBehaviour
 {
     [SerializeField] public Image displayImage;
+    [SerializeField] public GameObject[] sceneObject;
     [SerializeField] private Sprite[] backgrounds;
     [SerializeField] public int TestInt;
 
@@ -42,6 +43,8 @@ public class BackgroundCtrl : MonoBehaviour
             case 9: SwitchBackground(3); break;
         }
     }
+    
+    
 
     public void SwitchBackground(int backgroundNumber)
     {
