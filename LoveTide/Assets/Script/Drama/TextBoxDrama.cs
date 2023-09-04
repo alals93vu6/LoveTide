@@ -31,7 +31,7 @@ public class TextBoxDrama : MonoBehaviour
         
     }
 
-    async public void OnStart_TextBox(DialogData diadata)
+    public void OnStart_TextBox(DialogData diadata)
     {
         diaLog = diadata;
         TextDataLoad();

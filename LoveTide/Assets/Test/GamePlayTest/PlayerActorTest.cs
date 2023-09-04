@@ -44,11 +44,13 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_InWork(int fds,int slt, int lst)
     {
+        gameManager.textBox.OnDisplayText();
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
     public void Interactive_vacation(int fds,int slt, int lst)
     {
+        gameManager.textBox.OnDisplayText();
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     

@@ -15,6 +15,7 @@ public class TextBoxTestPlaying : MonoBehaviour
     
     [Header("物件")]
     [SerializeField] public DialogData diaLog;
+    [SerializeField] public GameObject talkObject;
 
     [Header("狀態")]
     [SerializeField] public bool isover = true;
@@ -32,14 +33,14 @@ public class TextBoxTestPlaying : MonoBehaviour
         
     }
 
-    async public void OnStart_TextBox(DialogData diadata)
+    public void OnStart_TextBox(DialogData diadata)
     {
         diaLog = diadata;
         TextDataLoad();
-        ChickName();
-        StartCoroutine(DisplayTextWithTypingEffect(false)); 
+        //ChickName();
+        //StartCoroutine(DisplayTextWithTypingEffect(false)); 
     }
-    
+
     private void TextDataLoad()
     {
         var arraySize = diaLog.plotOptionsList[0].dialogDataDetails.Count;
@@ -79,7 +80,14 @@ public class TextBoxTestPlaying : MonoBehaviour
             }
         }
     }
-    
+
+    public void OnDisplayText()
+    {
+        ChickName();
+        StartCoroutine(DisplayTextWithTypingEffect(false));
+        DisplayTextBox(true);
+    }
+
     public void NextText()
     {
         if (textNumber < diaLog.plotOptionsList[0].dialogDataDetails.Count - 1)
@@ -89,6 +97,10 @@ public class TextBoxTestPlaying : MonoBehaviour
             ChickName();
             StartCoroutine(DisplayTextWithTypingEffect(false));
         }
+        else
+        {
+            DisplayTextBox(false);
+        }
     }
     
     public void DownText()
@@ -96,7 +108,12 @@ public class TextBoxTestPlaying : MonoBehaviour
         stopLoop = true;
         StartCoroutine(DisplayTextWithTypingEffect(true));
     }
-    
+
+    public void DisplayTextBox(bool display)
+    {
+        talkObject.SetActive(display);
+    }
+
     private void ChickName()
     {
        switch (diaLog.plotOptionsList[0].dialogDataDetails[textNumber].speaker)
