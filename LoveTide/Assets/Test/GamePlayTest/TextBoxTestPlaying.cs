@@ -100,6 +100,7 @@ public class TextBoxTestPlaying : MonoBehaviour
         else
         {
             DisplayTextBox(false);
+            FindObjectOfType<GameManagerTest>().SetClickObject(0);
         }
     }
     

@@ -26,7 +26,7 @@ public class PlayerActorTest : MonoBehaviour
             case 4: Interactive_vacation(fds,slt,lst); break;
             case 5: Interactive_Peeking(fds,slt,lst); break;
             case 6: Interactive_Outing(fds,slt,lst); break;
-            case 7: Interactive_Sex(fds,slt,lst); break;
+            case 7: Interactive_Sex(); break;
             case 8: Interactive_Sleep(fds,slt,lst); break;
             case 9: OnClickTextBox(); break;
         }
@@ -34,7 +34,8 @@ public class PlayerActorTest : MonoBehaviour
 
     public void Interactive_Speak(int fds,int slt, int lst)
     {
-        
+        gameManager.isTalk = true;
+        gameManager.SetClickObject(0);
     }
     
     public void Interactive_Operate(int fds,int slt, int lst)
@@ -56,15 +57,16 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Peeking(int fds,int slt, int lst)
     {
-        
+        gameManager.SetClickObject(5);
     }
     
     public void Interactive_Outing(int fds,int slt, int lst)
     {
-        
+        gameManager.isTalk = false;
+        gameManager.SetClickObject(0);
     }
     
-    public void Interactive_Sex(int fds,int slt, int lst)
+    public void Interactive_Sex()
     {
         
     }
