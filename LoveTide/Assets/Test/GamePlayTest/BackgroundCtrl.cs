@@ -30,6 +30,8 @@ public class BackgroundCtrl : MonoBehaviour
 
     public void ChickBackground(int detectedTimePoint)
     {
+        //Todo 增加背景 
+        
         switch (detectedTimePoint)
         {
             case 1: SwitchBackground(0); break;

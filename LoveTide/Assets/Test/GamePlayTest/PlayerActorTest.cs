@@ -21,14 +21,15 @@ public class PlayerActorTest : MonoBehaviour
         switch (eventNumber)
         {
             case 1: Interactive_Speak(fds,slt,lst); break;
-            case 2: Interactive_Operate(fds,slt,lst); break;
-            case 3: Interactive_InWork(fds,slt,lst); break;
+            case 2: Interactive_Operate(fds,slt,lst); gameManager.numberCtrl.aTimer++; break;
+            case 3: Interactive_InWork(fds,slt,lst); gameManager.numberCtrl.aTimer++; break;
             case 4: Interactive_vacation(fds,slt,lst); break;
             case 5: Interactive_Peeking(fds,slt,lst); break;
             case 6: Interactive_Outing(fds,slt,lst); break;
-            case 7: Interactive_Sex(); break;
+            case 7: Interactive_Sex(); gameManager.numberCtrl.aTimer++; break;
             case 8: Interactive_Sleep(fds,slt,lst); break;
-            case 9: OnClickTextBox(); break;
+            case 9: Interactive_OnBack(); break;
+            case 10: OnClickTextBox(); break;
         }
     }
 
@@ -63,8 +64,8 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Outing(int fds,int slt, int lst)
     {
-        gameManager.isTalk = false;
-        gameManager.SetClickObject(0);
+        //gameManager.isTalk = false;
+        //gameManager.SetClickObject(0);
     }
     
     public void Interactive_Sex()
@@ -74,7 +75,13 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Sleep(int fds,int slt, int lst)
     {
-        gameManager.numberCtrl.SetNumerica(fds,slt,lst);
+        gameManager.DayPassedEvent(fds,slt,lst);
+    }
+
+    public void Interactive_OnBack()
+    {
+        gameManager.isTalk = false;
+        gameManager.SetClickObject(0);
     }
 
     public void OnClickTextBox()

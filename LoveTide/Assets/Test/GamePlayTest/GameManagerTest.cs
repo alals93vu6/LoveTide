@@ -80,6 +80,8 @@ public class GameManagerTest : MonoBehaviour
         {
             sceneObject[displayObject].SetActive(true);
         }
+        
+        CheckActions();
     }
 
     private int ChangeNumber(int objectNumber)
