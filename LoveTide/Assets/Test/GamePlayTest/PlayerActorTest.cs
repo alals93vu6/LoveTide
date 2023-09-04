@@ -35,7 +35,8 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Speak(int fds,int slt, int lst)
     {
         gameManager.isTalk = true;
-        gameManager.SetClickObject(0);
+        gameManager.SetClickObject(6);
+        gameManager.textBox.OnDisplayText();
     }
     
     public void Interactive_Operate(int fds,int slt, int lst)
@@ -57,7 +58,7 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Peeking(int fds,int slt, int lst)
     {
-        gameManager.SetClickObject(5);
+        gameManager.SetClickObject(6);
     }
     
     public void Interactive_Outing(int fds,int slt, int lst)

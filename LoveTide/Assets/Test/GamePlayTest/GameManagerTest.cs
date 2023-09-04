@@ -59,8 +59,6 @@ public class GameManagerTest : MonoBehaviour
         else
         {
             textBox.NextText();
-            //actorCtrl.ActorCtrl(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].stayLocation);
-            //CGDisplay.DisplayCGChick(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGDisplay,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGImage);
         }
     }
 

@@ -36,18 +36,18 @@ public class TextBoxTestPlaying : MonoBehaviour
     public void OnStart_TextBox(DialogData diadata)
     {
         diaLog = diadata;
-        TextDataLoad();
+        TextDataLoad(0);
         //ChickName();
         //StartCoroutine(DisplayTextWithTypingEffect(false)); 
     }
 
-    private void TextDataLoad()
+    private void TextDataLoad(int ID)
     {
-        var arraySize = diaLog.plotOptionsList[0].dialogDataDetails.Count;
+        var arraySize = diaLog.plotOptionsList[ID].dialogDataDetails.Count;
         //Debug.Log(arraySize);
-        for (int i = 0; i < diaLog.plotOptionsList[0].dialogDataDetails.Count; i++)
+        for (int i = 0; i < diaLog.plotOptionsList[ID].dialogDataDetails.Count; i++)
         {
-            getTextDate[i] = diaLog.plotOptionsList[0].dialogDataDetails[i].sentence;
+            getTextDate[i] = diaLog.plotOptionsList[ID].dialogDataDetails[i].sentence;
         }
     }
     
@@ -83,6 +83,7 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     public void OnDisplayText()
     {
+        TextDataLoad(0);
         ChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
         DisplayTextBox(true);
