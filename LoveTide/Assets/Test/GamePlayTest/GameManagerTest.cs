@@ -16,6 +16,9 @@ public class GameManagerTest : MonoBehaviour
 
     [Header("狀態")] 
     [SerializeField] public bool isTalk;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,34 +84,56 @@ public class GameManagerTest : MonoBehaviour
 
     private int ChangeNumber(int objectNumber)
     {
+
         if (isTalk)
         {
-            switch (numberCtrl.aTimer)
+            if (timer.vacation)
             {
-                case 1: objectNumber += 2; break;
-                case 2: objectNumber += 2; break;
-                case 3: objectNumber += 2; break;
-                case 4: objectNumber += 2; break;
-                case 5: objectNumber += 2; break;
-                case 6: objectNumber += 2; break;
-                case 7: objectNumber += 4; break;
-                case 8: objectNumber += 5; break;
-                case 9: objectNumber += 4; break;
+                if (numberCtrl.aTimer == 8)
+                {
+                    objectNumber += 5;
+                }
+                else
+                {
+                    objectNumber += 4;
+                }
+            }
+            else
+            {
+                switch (numberCtrl.aTimer)
+                {
+                    case 1: objectNumber += 2; break;
+                    case 2: objectNumber += 2; break;
+                    case 3: objectNumber += 2; break;
+                    case 4: objectNumber += 2; break;
+                    case 5: objectNumber += 2; break;
+                    case 6: objectNumber += 2; break;
+                    case 7: objectNumber += 4; break;
+                    case 8: objectNumber += 5; break;
+                    case 9: objectNumber += 4; break;
+                }
             }
         }
         else
         {
-            switch (numberCtrl.aTimer)
+            if (timer.vacation)
             {
-                case 1: objectNumber += 1; break;
-                case 2: objectNumber += 1; break;
-                case 3: objectNumber += 1; break;
-                case 4: objectNumber += 1; break;
-                case 5: objectNumber += 1; break;
-                case 6: objectNumber += 1; break;
-                case 7: objectNumber += 3; break;
-                case 8: objectNumber += 3; break;
-                case 9: objectNumber += 3; break;
+                objectNumber += 3;
+            }
+            else
+            {
+                switch (numberCtrl.aTimer)
+                {
+                    case 1: objectNumber += 1; break;
+                    case 2: objectNumber += 1; break;
+                    case 3: objectNumber += 1; break;
+                    case 4: objectNumber += 1; break;
+                    case 5: objectNumber += 1; break;
+                    case 6: objectNumber += 1; break;
+                    case 7: objectNumber += 3; break;
+                    case 8: objectNumber += 3; break;
+                    case 9: objectNumber += 3; break;
+                }
             }
         }
         //Debug.Log(objectNumber);

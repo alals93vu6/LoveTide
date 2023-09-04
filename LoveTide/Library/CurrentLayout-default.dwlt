@@ -113,10 +113,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 678, y: 442}
-  m_MaxSize: {x: 18004, y: 14021}
+  m_MinSize: {x: 679, y: 442}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 138
+  controlID: 93
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 342}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 38
+  controlID: 74
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,8 +161,8 @@ MonoBehaviour:
     y: 0
     width: 399
     height: 448
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 93
+  controlID: 94
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -295,10 +295,10 @@ MonoBehaviour:
     y: 0
     width: 388
     height: 947
-  m_MinSize: {x: 275, y: 321}
-  m_MaxSize: {x: 10001, y: 14021}
+  m_MinSize: {x: 276, y: 342}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 139
+  controlID: 146
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -472,23 +472,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 94e7fffff2e7fffffee7ffff0ee8ffff20e9ffff5efbffffba3c0000de3c0000b6470000884900009a490000c8490000
+      m_SelectedIDs: 323d0000
+      m_LastClickedID: 15666
+      m_ExpandedIDs: 5efbffffa83c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: GameManager
+        m_OriginalName: GameManager
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 15548
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 596.97314, y: 169.89383, z: -420.6321}
+    m_Target: {x: 235.05093, y: 165.73143, z: -1202.0941}
     speed: 2
-    m_Value: {x: 596.97314, y: 169.89383, z: -420.6321}
+    m_Value: {x: 235.05093, y: 165.73143, z: -1202.0941}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,9 +612,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 542.41266
+    m_Target: 352.60468
     speed: 2
-    m_Value: 542.41266
+    m_Value: 352.60468
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -757,7 +757,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -6388
+  m_LastSelectedObjectID: 15594
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -795,7 +795,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 437
+  m_LastVerticalScrollValue: 0
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -835,20 +835,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script/Drama
+    - Assets/Test/GamePlayTest
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/Script/Drama
+  - Assets/Test/GamePlayTest
   m_LastFoldersGridSize: 53
   m_LastProjectPath: D:\GitHub\LoveTide\LoveTide
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d23d0000
-    m_LastClickedID: 15826
-    m_ExpandedIDs: 00000000c23d0000c43d0000c63d0000c83d000000ca9a3b
+    m_SelectedIDs: 843e0000
+    m_LastClickedID: 16004
+    m_ExpandedIDs: 00000000703e0000723e0000743e0000763e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -876,7 +876,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c23d0000c43d0000c63d0000c83d0000
+    m_ExpandedIDs: 00000000703e0000723e0000743e0000763e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -907,18 +907,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000f2310000c6310000d4310000be310000a63100003a9afffff409000014310000d0310000cc3c000008310000d0300000e4300000f2300000c60c0000980b0000a20b0000843100001e0d000058300000a20f000028100000ec300000ec430000f043000000000000043d00001a3d00001c3d00001e3d0000ea3d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: TextBoxTestPlaying
-      m_OriginalName: TextBoxTestPlaying
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 20224
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:

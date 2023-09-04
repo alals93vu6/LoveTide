@@ -6,6 +6,8 @@ public class TimeManagerTest : MonoBehaviour
 {
     [SerializeField] private NumericalRecords numberCtrl;
     [SerializeField] public bool vacation;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
