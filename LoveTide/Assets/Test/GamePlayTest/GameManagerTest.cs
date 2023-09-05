@@ -24,6 +24,7 @@ public class GameManagerTest : MonoBehaviour
     {
         textBox.OnStart_TextBox(dialog);
         SetClickObject(0);
+        Debug.Log("fuck my life");
     }
 
     // Update is called once per frame
@@ -40,7 +41,7 @@ public class GameManagerTest : MonoBehaviour
 
     public void CheckActions()
     {
-        background.ChickBackground(numberCtrl.aTimer);
+        background.ChickBackground(ChangeBackGroundNumber(0));
     }
 
     public void OnActions()
@@ -74,7 +75,7 @@ public class GameManagerTest : MonoBehaviour
 
         if (displayObject == 0)
         {
-            sceneObject[ChangeNumber(0)].SetActive(true);
+            sceneObject[ChangeClickObjectNumber(0)].SetActive(true);
         }
         else
         {
@@ -84,7 +85,71 @@ public class GameManagerTest : MonoBehaviour
         CheckActions();
     }
 
-    private int ChangeNumber(int objectNumber)
+    private int ChangeBackGroundNumber(int BackNumber)
+    {
+        if (isTalk)
+        {
+            if (timer.vacation)
+            {
+                if (numberCtrl.aTimer == 8)
+                {
+                    BackNumber += 8;
+                }
+                else
+                {
+                    BackNumber += 7;
+                }
+            }
+            else
+            {
+                switch (numberCtrl.aTimer)
+                {
+                    case 1: BackNumber += 6; break;
+                    case 2: BackNumber += 6; break;
+                    case 3: BackNumber += 6; break;
+                    case 4: BackNumber += 6; break;
+                    case 5: BackNumber += 6; break;
+                    case 6: BackNumber += 6; break;
+                    case 7: BackNumber += 7; break;
+                    case 8: BackNumber += 8; break;
+                    case 9: BackNumber += 7; break;
+                }
+            }
+        }
+        else
+        {
+            if (timer.vacation)
+            {
+                if (numberCtrl.aTimer == 8)
+                {
+                    BackNumber += 5;
+                }
+                else
+                {
+                    BackNumber += 4;
+                }
+            }
+            else
+            {
+                switch (numberCtrl.aTimer)
+                {
+                    case 1: BackNumber += 1; break;
+                    case 2: BackNumber += 1; break;
+                    case 3: BackNumber += 2; break;
+                    case 4: BackNumber += 2; break;
+                    case 5: BackNumber += 3; break;
+                    case 6: BackNumber += 3; break;
+                    case 7: BackNumber += 4; break;
+                    case 8: BackNumber += 5; break;
+                    case 9: BackNumber += 4; break;
+                }
+            }
+        }
+
+        return BackNumber;
+    }
+
+    private int ChangeClickObjectNumber(int objectNumber)
     {
 
         if (isTalk)
