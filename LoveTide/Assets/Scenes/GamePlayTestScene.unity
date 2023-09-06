@@ -778,7 +778,7 @@ MonoBehaviour:
   - {fileID: 1075803078}
   - {fileID: 663425484}
   - {fileID: 1192848794}
-  isTalk: 1
+  isTalk: 0
 --- !u!1 &575946128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aDay: 0
-  aTimer: 8
+  aTimer: 1
   aWeek: 1
   friendship: 0
   slutty: 0
@@ -1961,7 +1961,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a66bd29a4d8cda348adfa054395c7b07, type: 3}
   - {fileID: 21300000, guid: 2fe775078280fb54881c7ae7033cf783, type: 3}
   - {fileID: 21300000, guid: 58f29c797d722ee428305bdd61cad73f, type: 3}
-  TestInt: 3
 --- !u!1 &1192848794
 GameObject:
   m_ObjectHideFlags: 0

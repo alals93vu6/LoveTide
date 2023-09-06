@@ -23,12 +23,12 @@ public class PlayerActorTest : MonoBehaviour
             case 1: Interactive_Speak(fds,slt,lst); break;
             case 2: Interactive_Operate(fds,slt,lst); gameManager.numberCtrl.aTimer++; break;
             case 3: Interactive_InWork(fds,slt,lst); gameManager.numberCtrl.aTimer++; break;
-            case 4: Interactive_vacation(fds,slt,lst); break;
+            case 4: Interactive_vacation(fds,slt,lst); gameManager.numberCtrl.aTimer++; break;
             case 5: Interactive_Peeking(fds,slt,lst); break;
-            case 6: Interactive_Outing(fds,slt,lst); break;
+            case 6: Interactive_Outing(fds,slt,lst); Debug.Log("Outing"); break;
             case 7: Interactive_Sex(); gameManager.numberCtrl.aTimer++; break;
-            case 8: Interactive_Sleep(fds,slt,lst); break;
-            case 9: Interactive_OnBack(); break;
+            case 8: Interactive_Sleep(fds,slt,lst); Debug.Log("sleep"); break;
+            case 9: Interactive_OnBack(); Debug.Log("quit"); break;
             case 10: OnClickTextBox(); break;
         }
     }
@@ -75,6 +75,7 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Sleep(int fds,int slt, int lst)
     {
+        gameManager.textBox.OnDisplayText();
         gameManager.DayPassedEvent(fds,slt,lst);
     }
 

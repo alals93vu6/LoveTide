@@ -8,13 +8,6 @@ public class BackgroundCtrl : MonoBehaviour
     [SerializeField] public Image displayImage;
     [SerializeField] public GameObject[] sceneObject;
     [SerializeField] private Sprite[] backgrounds;
-    [SerializeField] public int TestInt;
-
-    [ContextMenu("TestSwitch")]
-    public void Testswitch()
-    {
-        SwitchBackground(TestInt);
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +24,6 @@ public class BackgroundCtrl : MonoBehaviour
     public void ChickBackground(int detectedTimePoint)
     {
         //Todo 增加背景 
-        
         
         switch (detectedTimePoint)
         {

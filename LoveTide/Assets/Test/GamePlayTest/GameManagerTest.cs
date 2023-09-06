@@ -13,9 +13,11 @@ public class GameManagerTest : MonoBehaviour
 
     [Header("物件")] 
     [SerializeField] public GameObject[] sceneObject;
+    [SerializeField] public GameObject interactiveButton;
 
     [Header("狀態")] 
     [SerializeField] public bool isTalk;
+    [SerializeField] private bool inTextBox;
 
     
 
@@ -24,34 +26,26 @@ public class GameManagerTest : MonoBehaviour
     {
         textBox.OnStart_TextBox(dialog);
         SetClickObject(0);
-        Debug.Log("fuck my life");
+        //Debug.Log("fuck my life");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TimePassCheck()
     {
-        
+        if (numberCtrl.aTimer >= 10)
+        {
+            DayPassedEvent(0,0,0);
+        }
+        else
+        {
+            SetClickObject(0);
+        }
     }
 
     public void DayPassedEvent(int fds,int slt, int lst)
     {
         numberCtrl.SetNumerica(fds,slt,lst);
         timer.DetectedDayPassed();
-    }
-
-    public void CheckActions()
-    {
-        background.ChickBackground(ChangeBackGroundNumber(0));
-    }
-
-    public void OnActions()
-    {
-        
-    }
-
-    public void TimeOffWork()
-    {
-        
+        inTextBox = false;
     }
 
     public void ClickTextBoxEvent()
@@ -64,6 +58,12 @@ public class GameManagerTest : MonoBehaviour
         {
             textBox.NextText();
         }
+    }
+
+    public void OnTalkEvent()
+    {
+        textBox.OnDisplayText();
+        inTextBox = true;
     }
 
     public void SetClickObject(int displayObject)
@@ -83,6 +83,11 @@ public class GameManagerTest : MonoBehaviour
         }
         
         CheckActions();
+    }
+    
+    public void CheckActions()
+    {
+        background.ChickBackground(ChangeBackGroundNumber(0));
     }
 
     private int ChangeBackGroundNumber(int BackNumber)
