@@ -101,8 +101,7 @@ public class TextBoxTestPlaying : MonoBehaviour
         else
         {
             DisplayTextBox(false);
-            FindObjectOfType<GameManagerTest>().TimePassCheck();
-            
+            FindObjectOfType<GameManagerTest>().TalkDownEvent();
         }
     }
     

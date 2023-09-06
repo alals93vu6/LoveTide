@@ -36,30 +36,30 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Speak(int fds,int slt, int lst)
     {
         gameManager.isTalk = true;
-        gameManager.SetClickObject(6);
-        gameManager.textBox.OnDisplayText();
+        gameManager.OnTalkEvent();
     }
     
     public void Interactive_Operate(int fds,int slt, int lst)
     {
+        gameManager.OnTalkEvent();
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
     public void Interactive_InWork(int fds,int slt, int lst)
     {
-        gameManager.textBox.OnDisplayText();
+        gameManager.OnTalkEvent();
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
     public void Interactive_vacation(int fds,int slt, int lst)
     {
-        gameManager.textBox.OnDisplayText();
+        gameManager.OnTalkEvent();
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
     public void Interactive_Peeking(int fds,int slt, int lst)
     {
-        gameManager.SetClickObject(6);
+        gameManager.OnTalkEvent();
     }
     
     public void Interactive_Outing(int fds,int slt, int lst)
@@ -75,14 +75,14 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Sleep(int fds,int slt, int lst)
     {
-        gameManager.textBox.OnDisplayText();
+        gameManager.OnTalkEvent();
         gameManager.DayPassedEvent(fds,slt,lst);
     }
 
     public void Interactive_OnBack()
     {
         gameManager.isTalk = false;
-        gameManager.SetClickObject(0);
+        gameManager.actorCtrl.gameObject.SetActive(false);
     }
 
     public void OnClickTextBox()

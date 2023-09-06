@@ -14,12 +14,12 @@ public class GameManagerTest : MonoBehaviour
     [Header("物件")] 
     [SerializeField] public GameObject[] sceneObject;
     [SerializeField] public GameObject interactiveButton;
+    [SerializeField] public ActorLocationCtrl actorCtrl;
 
     [Header("狀態")] 
     [SerializeField] public bool isTalk;
-    [SerializeField] private bool inTextBox;
 
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +45,7 @@ public class GameManagerTest : MonoBehaviour
     {
         numberCtrl.SetNumerica(fds,slt,lst);
         timer.DetectedDayPassed();
-        inTextBox = false;
+        //inTextBox = false;
     }
 
     public void ClickTextBoxEvent()
@@ -63,7 +63,30 @@ public class GameManagerTest : MonoBehaviour
     public void OnTalkEvent()
     {
         textBox.OnDisplayText();
-        inTextBox = true;
+        SetClickObject(6);
+        actorCtrl.gameObject.SetActive(true);
+        interactiveButton.SetActive(false);
+        actorCtrl.StayTarget = 0;
+    }
+
+    public void TalkDownEvent()
+    {
+        TimePassCheck();
+        actorCtrl.StayTarget = 1;
+        if (isTalk)
+        {
+            SetInteractiveObject(true);
+        }
+        else
+        {
+            SetInteractiveObject(false);
+        }
+    }
+
+    public void SetInteractiveObject(bool isActive)
+    {
+        interactiveButton.SetActive(isActive);
+        actorCtrl.gameObject.SetActive(isActive);
     }
 
     public void SetClickObject(int displayObject)
