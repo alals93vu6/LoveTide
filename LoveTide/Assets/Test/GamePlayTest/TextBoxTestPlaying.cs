@@ -84,6 +84,7 @@ public class TextBoxTestPlaying : MonoBehaviour
     public void OnDisplayText()
     {
         TextDataLoad(0);
+        textNumber = 0;
         ChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
         DisplayTextBox(true);

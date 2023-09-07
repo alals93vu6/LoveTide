@@ -70,7 +70,12 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Sex()
     {
-        
+        Debug.Log("Sex");
+    }
+    
+    public void Interactive_Talk()
+    {
+        Debug.Log("OnTalk");
     }
     
     public void Interactive_Sleep(int fds,int slt, int lst)
@@ -83,6 +88,8 @@ public class PlayerActorTest : MonoBehaviour
     {
         gameManager.isTalk = false;
         gameManager.actorCtrl.gameObject.SetActive(false);
+        gameManager.SetClickObject(0);
+        gameManager.SetInteractiveObject(false);
     }
 
     public void OnClickTextBox()
