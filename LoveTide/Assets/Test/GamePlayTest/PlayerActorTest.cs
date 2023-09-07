@@ -75,7 +75,8 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Talk()
     {
-        Debug.Log("OnTalk");
+        gameManager.OnTalkEvent();
+        gameManager.numberCtrl.SetNumerica(1,0,0);
     }
     
     public void Interactive_Sleep(int fds,int slt, int lst)

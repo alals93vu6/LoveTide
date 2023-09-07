@@ -2095,7 +2095,7 @@ GameObject:
   - component: {fileID: 1228517955}
   - component: {fileID: 1228517954}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: SexButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2163,7 +2163,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1228517955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125431115}
+        m_MethodName: Interactive_Sex
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1228517955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2488,7 +2499,7 @@ GameObject:
   - component: {fileID: 1328522163}
   - component: {fileID: 1328522162}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2556,7 +2567,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1328522163}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125431115}
+        m_MethodName: Interactive_OnBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1328522163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2765,7 +2787,7 @@ GameObject:
   - component: {fileID: 1469108497}
   - component: {fileID: 1469108496}
   m_Layer: 5
-  m_Name: Button
+  m_Name: TalkButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2833,7 +2855,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1469108497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125431115}
+        m_MethodName: Interactive_Talk
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1469108497
 MonoBehaviour:
   m_ObjectHideFlags: 0
