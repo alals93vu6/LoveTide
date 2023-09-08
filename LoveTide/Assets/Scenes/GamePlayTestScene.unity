@@ -1289,7 +1289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aDay: 0
-  aTimer: 1
+  aTimer: 5
   aWeek: 1
   friendship: 0
   slutty: 0

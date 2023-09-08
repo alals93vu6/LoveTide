@@ -25,17 +25,18 @@ public class TimeManagerTest : MonoBehaviour
         if (numberCtrl.aWeek >= 7){numberCtrl.aWeek = 1;}else{numberCtrl.aWeek++;}
         numberCtrl.aTimer = 1;
         numberCtrl.aDay++;
+        VacationDetected();
     }
 
     public void VacationDetected()
     {
         if (numberCtrl.aWeek < 3 || numberCtrl.aWeek > 4)
         {
-            vacation = true;
+            vacation = false;
         }
         else
         {
-            vacation = false;
+            vacation = true;
         }
     }
 

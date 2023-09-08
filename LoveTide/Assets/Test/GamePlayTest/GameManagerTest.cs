@@ -26,6 +26,7 @@ public class GameManagerTest : MonoBehaviour
     {
         textBox.OnStart_TextBox(dialog);
         SetClickObject(0);
+        CheckActions();
         //Debug.Log("fuck my life");
     }
 
@@ -33,18 +34,44 @@ public class GameManagerTest : MonoBehaviour
     {
         if (numberCtrl.aTimer >= 10)
         {
-            DayPassedEvent(0,0,0);
+            if (timer.vacation)
+            {
+                OnTalkEvent();
+                timer.vacation = false;
+                Debug.Log("C");
+            }
+            else
+            {
+                Debug.Log("D");
+                DayPassedEvent(0,0,0);
+            }
         }
         else
         {
-            SetClickObject(0);
+            if (numberCtrl.aTimer == 7 && !timer.vacation)
+            {
+                OnTalkEvent();
+                timer.vacation = true;
+                Debug.Log("A");
+            }
+            else
+            {
+                SetClickObject(0);
+                CheckActions();
+                Debug.Log("B");
+            }
         }
+        
+        //Todo 互動中超過下班時間會延續互動
     }
 
     public void DayPassedEvent(int fds,int slt, int lst)
     {
         numberCtrl.SetNumerica(fds,slt,lst);
         timer.DetectedDayPassed();
+        SetClickObject(0);
+        CheckActions();
+        OnTalkEvent();
         //inTextBox = false;
     }
 
@@ -64,11 +91,23 @@ public class GameManagerTest : MonoBehaviour
     {
         textBox.OnDisplayText();
         SetClickObject(6);
+        if (numberCtrl.aTimer == 7 && !timer.vacation)
+        {
+            Debug.Log("OffWork");
+        }
+        else if (numberCtrl.aTimer == 10 && timer.vacation)
+        {
+            Debug.Log("TimeToSleep");
+        }
+        else
+        {
+            CheckActions();
+        }
         actorCtrl.gameObject.SetActive(true);
         interactiveButton.SetActive(false);
         actorCtrl.StayTarget = 0;
     }
-
+    
     public void TalkDownEvent()
     {
         TimePassCheck();
@@ -82,6 +121,7 @@ public class GameManagerTest : MonoBehaviour
             SetInteractiveObject(false);
         }
     }
+    
 
     public void SetInteractiveObject(bool isActive)
     {
@@ -104,13 +144,13 @@ public class GameManagerTest : MonoBehaviour
         {
             sceneObject[displayObject].SetActive(true);
         }
-        
-        CheckActions();
+        //CheckActions();
     }
     
     public void CheckActions()
     {
         background.ChickBackground(ChangeBackGroundNumber(0));
+        //Debug.Log("ChangeBackground");
     }
 
     private int ChangeBackGroundNumber(int BackNumber)
