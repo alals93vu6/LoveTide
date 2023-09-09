@@ -24,19 +24,39 @@ public class BackgroundCtrl : MonoBehaviour
     public void ChickBackground(int detectedTimePoint)
     {
         //Todo 增加背景 
-        
-        switch (detectedTimePoint)
+        var gameMNG = FindObjectOfType<GameManagerTest>();
+        if (gameMNG.isTalk)
         {
-            case 1: SwitchBackground(1); break;
-            case 2: SwitchBackground(2); break;
-            case 3: SwitchBackground(3); break;
-            case 4: SwitchBackground(4); break;
-            case 5: SwitchBackground(5); break;
-            case 6: SwitchBackground(6); break;
-            case 7: SwitchBackground(7); break;
-            case 8: SwitchBackground(8); break;
-            //case 9: SwitchBackground(3); break;
+            switch (detectedTimePoint)
+            {
+                case 1: SwitchBackground(1); break;
+                case 2: SwitchBackground(2); break;
+                case 3: SwitchBackground(3); break;
+                case 4: SwitchBackground(4); break;
+                case 5: SwitchBackground(5); break;
+                case 6: SwitchBackground(6); break;
+                case 7: SwitchBackground(7); break;
+                case 8: SwitchBackground(8); break;
+                case 9: SwitchBackground(3); break;
+            }
         }
+        else
+        {
+            switch (detectedTimePoint)
+            {
+                case 1: SwitchBackground(1); break;
+                case 2: SwitchBackground(2); break;
+                case 3: SwitchBackground(3); break;
+                case 4: SwitchBackground(4); break;
+                case 5: SwitchBackground(5); break;
+                case 6: SwitchBackground(6); break;
+                case 7: SwitchBackground(7); break;
+                case 8: SwitchBackground(8); break;
+                case 9: SwitchBackground(3); break;
+            }
+        }
+
+        
     }
     
     

@@ -86,8 +86,9 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Sleep(int fds,int slt, int lst)
     {
+        gameManager.numberCtrl.aTimer = 10;
         gameManager.OnTalkEvent();
-        gameManager.DayPassedEvent(fds,slt,lst);
+        //gameManager.DayPassedEvent(fds,slt,lst);
     }
 
     public void Interactive_OnBack()
@@ -95,6 +96,7 @@ public class PlayerActorTest : MonoBehaviour
         gameManager.isTalk = false;
         gameManager.actorCtrl.gameObject.SetActive(false);
         gameManager.SetClickObject(0);
+        gameManager.CheckActions();
         gameManager.SetInteractiveObject(false);
     }
 

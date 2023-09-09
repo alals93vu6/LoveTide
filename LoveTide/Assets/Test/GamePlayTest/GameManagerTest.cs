@@ -50,15 +50,16 @@ public class GameManagerTest : MonoBehaviour
         {
             if (numberCtrl.aTimer == 7 && !timer.vacation)
             {
+                isTalk = false;
                 OnTalkEvent();
                 timer.vacation = true;
-                Debug.Log("A");
+                //Debug.Log("A");
             }
             else
             {
                 SetClickObject(0);
                 CheckActions();
-                Debug.Log("B");
+                //Debug.Log("B");
             }
         }
         
@@ -69,8 +70,8 @@ public class GameManagerTest : MonoBehaviour
     {
         numberCtrl.SetNumerica(fds,slt,lst);
         timer.DetectedDayPassed();
-        SetClickObject(0);
-        CheckActions();
+        //SetClickObject(0);
+        //CheckActions();
         OnTalkEvent();
         //inTextBox = false;
     }
@@ -93,11 +94,11 @@ public class GameManagerTest : MonoBehaviour
         SetClickObject(6);
         if (numberCtrl.aTimer == 7 && !timer.vacation)
         {
-            Debug.Log("OffWork");
+            //Debug.Log("OffWork");
         }
         else if (numberCtrl.aTimer == 10 && timer.vacation)
         {
-            Debug.Log("TimeToSleep");
+            //Debug.Log("TimeToSleep");
         }
         else
         {
@@ -155,38 +156,20 @@ public class GameManagerTest : MonoBehaviour
 
     private int ChangeBackGroundNumber(int BackNumber)
     {
-        if (isTalk)
+        if (timer.vacation)
         {
-            if (timer.vacation)
+            if (isTalk)
             {
                 if (numberCtrl.aTimer == 8)
                 {
-                    BackNumber += 8;
+                    BackNumber += 10;
                 }
                 else
                 {
-                    BackNumber += 7;
+                    BackNumber += 9;
                 }
             }
             else
-            {
-                switch (numberCtrl.aTimer)
-                {
-                    case 1: BackNumber += 6; break;
-                    case 2: BackNumber += 6; break;
-                    case 3: BackNumber += 6; break;
-                    case 4: BackNumber += 6; break;
-                    case 5: BackNumber += 6; break;
-                    case 6: BackNumber += 6; break;
-                    case 7: BackNumber += 7; break;
-                    case 8: BackNumber += 8; break;
-                    case 9: BackNumber += 7; break;
-                }
-            }
-        }
-        else
-        {
-            if (timer.vacation)
             {
                 if (numberCtrl.aTimer == 8)
                 {
@@ -196,6 +179,24 @@ public class GameManagerTest : MonoBehaviour
                 {
                     BackNumber += 4;
                 }
+            }
+        }
+        else
+        {
+            if (isTalk)
+            {
+                switch (numberCtrl.aTimer)
+                {
+                    case 1: BackNumber += 6; break;
+                    case 2: BackNumber += 6; break;
+                    case 3: BackNumber += 7; break;
+                    case 4: BackNumber += 7; break;
+                    case 5: BackNumber += 8; break;
+                    case 6: BackNumber += 8; break;
+                    case 7: BackNumber += 8; break;
+                    case 8: BackNumber += 10; break;
+                    case 9: BackNumber += 9; break;
+                } 
             }
             else
             {
