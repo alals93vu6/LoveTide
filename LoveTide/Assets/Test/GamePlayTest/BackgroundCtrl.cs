@@ -23,7 +23,7 @@ public class BackgroundCtrl : MonoBehaviour
 
     public void ChickBackground(int detectedTimePoint)
     {
-        //Todo 增加背景 
+        
         var gameMNG = FindObjectOfType<GameManagerTest>();
         if (gameMNG.isTalk)
         {

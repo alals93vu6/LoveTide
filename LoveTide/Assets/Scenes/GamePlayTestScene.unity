@@ -1289,7 +1289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aDay: 0
-  aTimer: 5
+  aTimer: 1
   aWeek: 1
   friendship: 0
   slutty: 0
@@ -2048,7 +2048,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 945a9ab0783fee64bbe18fc864d55155, type: 3}
   - {fileID: 21300000, guid: fde8cbc12cb32064baafad9ab87249fe, type: 3}
   - {fileID: 21300000, guid: 0123b6823e3e82a4fa4468599456b508, type: 3}
-  - {fileID: 21300000, guid: a66bd29a4d8cda348adfa054395c7b07, type: 3}
+  - {fileID: 21300000, guid: b8e2e68330d55f04d82632b2687ff91c, type: 3}
+  - {fileID: 21300000, guid: e2ee94f3cb2d625498adadda4787f654, type: 3}
+  - {fileID: 21300000, guid: 6a808fa8585069c468659502448e614c, type: 3}
   - {fileID: 21300000, guid: 2fe775078280fb54881c7ae7033cf783, type: 3}
   - {fileID: 21300000, guid: 58f29c797d722ee428305bdd61cad73f, type: 3}
 --- !u!1 &1192848794
@@ -3858,7 +3860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberCtrl: {fileID: 766579686}
-  vacation: 0
+  vacation: 1
 --- !u!4 &1980644439
 Transform:
   m_ObjectHideFlags: 0

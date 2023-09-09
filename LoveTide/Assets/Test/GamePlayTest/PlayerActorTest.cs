@@ -87,7 +87,7 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Sleep(int fds,int slt, int lst)
     {
         gameManager.numberCtrl.aTimer = 10;
-        gameManager.OnTalkEvent();
+        //gameManager.OnTalkEvent();
         //gameManager.DayPassedEvent(fds,slt,lst);
     }
 

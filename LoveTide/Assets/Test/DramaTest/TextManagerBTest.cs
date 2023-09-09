@@ -51,7 +51,7 @@ public class TextManagerBTest : MonoBehaviour
         }
 
         //SetDialogTextActive(false);
-        //yield return null;
+        yield return null;
     }
     /*
     public DialogDataDetail GetDialogDataDetail(string _ID , DialogData dialogData)

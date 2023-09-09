@@ -63,7 +63,6 @@ public class GameManagerTest : MonoBehaviour
             }
         }
         
-        //Todo 互動中超過下班時間會延續互動
     }
 
     public void DayPassedEvent(int fds,int slt, int lst)
