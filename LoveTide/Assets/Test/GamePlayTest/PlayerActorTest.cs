@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerActorTest : MonoBehaviour
 {
     [SerializeField]public GameManagerTest gameManager;
+    [SerializeField] public DialogDataDetected diaDetected;
     // Start is called before the first frame update
     void Start()
     {

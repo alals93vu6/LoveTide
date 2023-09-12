@@ -16,6 +16,7 @@ public class TextBoxTestPlaying : MonoBehaviour
     [Header("物件")]
     [SerializeField] public DialogData diaLog;
     [SerializeField] public GameObject talkObject;
+    [SerializeField] public DialogDataDetected diaLogDetected;
 
     [Header("狀態")]
     [SerializeField] public bool isover = true;
@@ -43,7 +44,6 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     private void TextDataLoad(int ID)
     {
-        var arraySize = diaLog.plotOptionsList[ID].dialogDataDetails.Count;
         //Debug.Log(arraySize);
         for (int i = 0; i < diaLog.plotOptionsList[ID].dialogDataDetails.Count; i++)
         {
