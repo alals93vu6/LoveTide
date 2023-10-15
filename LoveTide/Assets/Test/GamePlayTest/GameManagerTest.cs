@@ -80,10 +80,12 @@ public class GameManagerTest : MonoBehaviour
         if (textBox.isover)
         {
             textBox.DownText();
+            //Debug.Log("VAR");
         }
         else
         {
             textBox.NextText();
+            //Debug.Log("VARB");
         }
     }
 
@@ -111,6 +113,7 @@ public class GameManagerTest : MonoBehaviour
     public void TalkDownEvent()
     {
         TimePassCheck();
+        textBox.stopLoop = false;
         actorCtrl.StayTarget = 1;
         if (isTalk)
         {

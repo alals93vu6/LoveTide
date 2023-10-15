@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 494522876}
+  diaDetected: {fileID: 0}
 --- !u!1 &179762987
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +807,7 @@ MonoBehaviour:
   background: {fileID: 1148651612}
   timer: {fileID: 1980644438}
   textBox: {fileID: 1643799231}
-  dialog: {fileID: 11400000, guid: 145013c15c633f244a59b8a289b107ac, type: 2}
+  dialog: {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   sceneObject:
   - {fileID: 692707716}
   - {fileID: 256865565}
@@ -3187,10 +3188,12 @@ MonoBehaviour:
   - 
   - 
   - 
-  diaLog: {fileID: 11400000, guid: 145013c15c633f244a59b8a289b107ac, type: 2}
+  diaLog: {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   talkObject: {fileID: 1294787932}
+  diaLogDetected: {fileID: 0}
   isover: 1
   stopLoop: 0
+  testnumber: 1
 --- !u!4 &1643799232
 Transform:
   m_ObjectHideFlags: 0
@@ -3860,7 +3863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberCtrl: {fileID: 766579686}
-  vacation: 1
+  vacation: 0
 --- !u!4 &1980644439
 Transform:
   m_ObjectHideFlags: 0

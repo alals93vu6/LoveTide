@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,11 +22,12 @@ public class TextBoxTestPlaying : MonoBehaviour
     [Header("狀態")]
     [SerializeField] public bool isover = true;
     [SerializeField] public bool stopLoop;
-    
+
+    [SerializeField] public int testnumber;
     // Start is called before the first frame update
     void Start()
     {
-        OnStart_TextBox(diaLog);
+        //OnStart_TextBox(diaLog);
     }
 
     // Update is called once per frame
@@ -37,18 +39,21 @@ public class TextBoxTestPlaying : MonoBehaviour
     public void OnStart_TextBox(DialogData diadata)
     {
         diaLog = diadata;
-        TextDataLoad(0);
+        TextDataLoad(testnumber);
+        //Debug.Log(diaLog.name);
         //ChickName();
         //StartCoroutine(DisplayTextWithTypingEffect(false)); 
     }
 
     private void TextDataLoad(int ID)
     {
+        //Array.Clear(getTextDate,0,50);
         //Debug.Log(arraySize);
         for (int i = 0; i < diaLog.plotOptionsList[ID].dialogDataDetails.Count; i++)
         {
             getTextDate[i] = diaLog.plotOptionsList[ID].dialogDataDetails[i].sentence;
         }
+        //Debug.Log("Onload");
     }
     
     private IEnumerator DisplayTextWithTypingEffect(bool OnWork)
@@ -58,7 +63,7 @@ public class TextBoxTestPlaying : MonoBehaviour
         {
             string targetText = getTextDate[textNumber];
             showText.text = "";
-
+            
             if (!OnWork)
             {
                 for (int i = 0; i < targetText.Length; i++)
@@ -83,7 +88,8 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     public void OnDisplayText()
     {
-        TextDataLoad(0);
+        //Debug.Log("displaytext");
+        TextDataLoad(testnumber);
         textNumber = 0;
         ChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
@@ -92,7 +98,7 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     public void NextText()
     {
-        if (textNumber < diaLog.plotOptionsList[0].dialogDataDetails.Count - 1)
+        if (textNumber < diaLog.plotOptionsList[testnumber].dialogDataDetails.Count-1)
         {
             stopLoop = false;
             textNumber++;
@@ -104,6 +110,8 @@ public class TextBoxTestPlaying : MonoBehaviour
             DisplayTextBox(false);
             FindObjectOfType<GameManagerTest>().TalkDownEvent();
         }
+
+        //Debug.Log(textNumber);
     }
     
     public void DownText()
@@ -119,9 +127,9 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     private void ChickName()
     {
-       switch (diaLog.plotOptionsList[0].dialogDataDetails[textNumber].speaker)
+       switch (diaLog.plotOptionsList[testnumber].dialogDataDetails[textNumber].speaker)
         {
-            case Speaker.Chorus: nameText.text = ""; break;
+            case Speaker.Chorus: nameText.text = " "; break;
             case Speaker.Player: nameText.text = "玩家"; break;
             case Speaker.GirlFriend: nameText.text = "織那久菜子"; break;
             case Speaker.BoyFriend: nameText.text = "苦主"; break;
