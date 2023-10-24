@@ -22,8 +22,7 @@ public class TextBoxTestPlaying : MonoBehaviour
     [Header("狀態")]
     [SerializeField] public bool isover = true;
     [SerializeField] public bool stopLoop;
-
-    [SerializeField] public int testnumber;
+    [SerializeField] public int listSerial;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,13 +38,13 @@ public class TextBoxTestPlaying : MonoBehaviour
     public void OnStart_TextBox(DialogData diadata)
     {
         diaLog = diadata;
-        TextDataLoad(testnumber);
+        TextDataLoad(listSerial);
         //Debug.Log(diaLog.name);
         //ChickName();
         //StartCoroutine(DisplayTextWithTypingEffect(false)); 
     }
 
-    private void TextDataLoad(int ID)
+    public void TextDataLoad(int ID)
     {
         //Array.Clear(getTextDate,0,50);
         //Debug.Log(arraySize);
@@ -88,8 +87,8 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     public void OnDisplayText()
     {
-        //Debug.Log("displaytext");
-        TextDataLoad(testnumber);
+        Debug.Log("displaytext");
+        TextDataLoad(listSerial);
         textNumber = 0;
         ChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
@@ -98,7 +97,7 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     public void NextText()
     {
-        if (textNumber < diaLog.plotOptionsList[testnumber].dialogDataDetails.Count-1)
+        if (textNumber < diaLog.plotOptionsList[listSerial].dialogDataDetails.Count-1)
         {
             stopLoop = false;
             textNumber++;
@@ -127,7 +126,7 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     private void ChickName()
     {
-       switch (diaLog.plotOptionsList[testnumber].dialogDataDetails[textNumber].speaker)
+       switch (diaLog.plotOptionsList[listSerial].dialogDataDetails[textNumber].speaker)
         {
             case Speaker.Chorus: nameText.text = " "; break;
             case Speaker.Player: nameText.text = "玩家"; break;

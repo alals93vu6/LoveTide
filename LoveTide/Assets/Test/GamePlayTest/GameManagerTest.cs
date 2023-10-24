@@ -36,7 +36,7 @@ public class GameManagerTest : MonoBehaviour
         {
             if (timer.vacation)
             {
-                OnTalkEvent();
+                OnTalkEvent(47);
                 timer.vacation = false;
                 Debug.Log("C");
             }
@@ -51,7 +51,7 @@ public class GameManagerTest : MonoBehaviour
             if (numberCtrl.aTimer == 7 && !timer.vacation)
             {
                 isTalk = false;
-                OnTalkEvent();
+                OnTalkEvent(43);
                 timer.vacation = true;
                 //Debug.Log("A");
             }
@@ -71,7 +71,7 @@ public class GameManagerTest : MonoBehaviour
         timer.DetectedDayPassed();
         //SetClickObject(0);
         //CheckActions();
-        OnTalkEvent();
+        OnTalkEvent(45);
         //inTextBox = false;
     }
 
@@ -89,8 +89,9 @@ public class GameManagerTest : MonoBehaviour
         }
     }
 
-    public void OnTalkEvent()
+    public void OnTalkEvent(int talkID)
     {
+        textBox.listSerial = talkID;
         textBox.OnDisplayText();
         SetClickObject(6);
         if (numberCtrl.aTimer == 7 && !timer.vacation)

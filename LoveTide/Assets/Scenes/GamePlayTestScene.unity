@@ -1779,7 +1779,7 @@ GameObject:
   - component: {fileID: 1025737133}
   - component: {fileID: 1025737132}
   m_Layer: 5
-  m_Name: flirt_Taik
+  m_Name: flirt_Talk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2501,7 +2501,7 @@ GameObject:
   - component: {fileID: 1314992738}
   - component: {fileID: 1314992737}
   m_Layer: 5
-  m_Name: flirt_Taik
+  m_Name: flirt_Talk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3077,7 +3077,7 @@ GameObject:
   - component: {fileID: 1620545720}
   - component: {fileID: 1620545719}
   m_Layer: 5
-  m_Name: flirt_Taik
+  m_Name: flirt_Talk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3272,7 +3272,7 @@ MonoBehaviour:
   diaLogDetected: {fileID: 0}
   isover: 1
   stopLoop: 0
-  testnumber: 1
+  listSerial: 2
 --- !u!4 &1643799232
 Transform:
   m_ObjectHideFlags: 0

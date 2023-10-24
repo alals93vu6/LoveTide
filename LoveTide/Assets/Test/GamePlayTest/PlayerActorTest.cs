@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class PlayerActorTest : MonoBehaviour
 {
@@ -21,10 +22,10 @@ public class PlayerActorTest : MonoBehaviour
     {
         switch (eventNumber)
         {
-            case 1: Interactive_Speak(fds,slt,lst); break;
-            case 2: Interactive_Operate(fds,slt,lst); break;
-            case 3: Interactive_InWork(fds,slt,lst); break;
-            case 4: Interactive_vacation(fds,slt,lst); break;
+            case 1: Interactive_Speak(fds,slt,lst); break;//開化
+            case 2: Interactive_Operate(fds,slt,lst); break;//幫忙工作
+            case 3: Interactive_InWork(fds,slt,lst); break;//上班調情
+            case 4: Interactive_vacation(fds,slt,lst); break;//宿舍調情
             case 5: Interactive_Peeking(fds,slt,lst); break;
             case 6: Interactive_Outing(fds,slt,lst); Debug.Log("Outing"); break;
             case 7: Interactive_Sex(); break;
@@ -37,34 +38,38 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Speak(int fds,int slt, int lst)
     {
         gameManager.isTalk = true;
-        gameManager.OnTalkEvent();
+        gameManager.OnTalkEvent(0);
     }
     
     public void Interactive_Operate(int fds,int slt, int lst)
     {
         gameManager.numberCtrl.aTimer++;
-        gameManager.OnTalkEvent();
+        int talkid = Random.Range(4,7);
+        gameManager.OnTalkEvent(talkid);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
     public void Interactive_InWork(int fds,int slt, int lst)
     {
         gameManager.numberCtrl.aTimer++;
-        gameManager.OnTalkEvent();
+        int talkid = Random.Range(14,17);
+        gameManager.OnTalkEvent(0);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
     public void Interactive_vacation(int fds,int slt, int lst)
     {
         gameManager.numberCtrl.aTimer++;
-        gameManager.OnTalkEvent();
+        int talkid = Random.Range(17,20);
+        gameManager.OnTalkEvent(0);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
     public void Interactive_Peeking(int fds,int slt, int lst)
     {
         gameManager.numberCtrl.aTimer++;
-        gameManager.OnTalkEvent();
+        //int talkid = Random.Range();
+        gameManager.OnTalkEvent(0);
     }
     
     public void Interactive_Outing(int fds,int slt, int lst)
@@ -81,15 +86,27 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Talk()
     {
         gameManager.numberCtrl.aTimer++;
-        gameManager.OnTalkEvent();
+        int talkid;
+        if (!gameManager.timer.vacation)
+        {
+            talkid = Random.Range(1, 4);
+        }
+        else
+        {
+            talkid = Random.Range(8, 11);
+        }
+        Debug.Log(talkid);
+        gameManager.OnTalkEvent(talkid);
         gameManager.numberCtrl.SetNumerica(1,0,0);
+        
     }
     
     public void Interactive_Sleep(int fds,int slt, int lst)
     {
         gameManager.numberCtrl.aTimer = 10;
-        //gameManager.OnTalkEvent();
-        //gameManager.DayPassedEvent(fds,slt,lst);
+        int talkid = Random.Range(4,7);
+        gameManager.OnTalkEvent(talkid);
+        gameManager.DayPassedEvent(fds,slt,lst);
     }
 
     public void Interactive_OnBack()
