@@ -151,7 +151,37 @@ MonoBehaviour:
   - talkID: "\u9152\u9928_\u5E6B\u5FD9\u5DE5\u4F5C2(5)"
     displayCG: []
     disPlayOrder: 0
-    dialogDataDetails: []
+    dialogDataDetails:
+    - speaker: 1
+      actorFace: 0
+      sentence: "\u770B\u8457\u7531\u9999\u4E00\u500B\u4EBA\u5728\u6AC3\u6AAF\u624B\u5FD9\u8173\u4E82\u7684 "
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+    - speaker: 2
+      actorFace: 0
+      sentence: "\u600E\u9EBC\u4E86\u55CE?\u770B\u4F60\u597D\u50CF\u5F88\u5FD9\u7684\u6A23\u5B50"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+    - speaker: 3
+      actorFace: 0
+      sentence: "\u963F\u54C8\u54C8...\u5BA2\u4EBA\u4E00\u76F4\u4F86\u9EDE\u9910\uFF0C\u7136\u5F8C\u53C8\u6709\u96FB\u8A71\u4E00\u76F4\u6253\u4F86\u8A62\u554F\u5B9A\u4F4D\uFF0C\u6709\u9EDE\u5FD9\u4E0D\u904E\u4F86\u5462..."
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+    - speaker: 2
+      actorFace: 0
+      sentence: "\u83DC\u55AE\u4EA4\u7D66\u6211\u5427\uFF0C\u6211\u8655\u7406\u5F97\u6BD4\u8F03\u5FEB\uFF0C\u6709\u96FB\u8A71\u6253\u4F86\u6216\u5F8C\u7E8C\u7684\u9EDE\u83DC\u5C31\u9EBB\u7169\u4F60\u4E86"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+    - speaker: 1
+      actorFace: 0
+      sentence: "\u770B\u8457\u7531\u9999\u5982\u91CB\u91CD\u64D4\u7684\u6A23\u5B50\uFF0C\u770B\u8D77\u4F86\u5979\u9084\u6C92\u6709\u5B8C\u5168\u7FD2\u6163\u9019\u4EFD\u5DE5\u4F5C\u5462"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
   - talkID: "\u9152\u9928_\u5E6B\u5FD9\u5DE5\u4F5C3(6)"
     displayCG: []
     disPlayOrder: 0

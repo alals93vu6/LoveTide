@@ -26,11 +26,11 @@ public class PlayerActorTest : MonoBehaviour
             case 2: Interactive_Operate(fds,slt,lst); break;//幫忙工作
             case 3: Interactive_InWork(fds,slt,lst); break;//上班調情
             case 4: Interactive_vacation(fds,slt,lst); break;//宿舍調情
-            case 5: Interactive_Peeking(fds,slt,lst); break;
-            case 6: Interactive_Outing(fds,slt,lst); Debug.Log("Outing"); break;
+            case 5: Interactive_Peeking(fds,slt,lst); break;//偷聽、進房間
+            case 6: Interactive_Outing(fds,slt,lst); break;
             case 7: Interactive_Sex(); break;
-            case 8: Interactive_Sleep(fds,slt,lst); Debug.Log("sleep"); break;
-            case 9: Interactive_OnBack(); Debug.Log("quit"); break;
+            case 8: Interactive_Sleep(fds,slt,lst); break;
+            case 9: Interactive_OnBack(); break;
             case 10: OnClickTextBox(); break;
         }
     }
@@ -43,7 +43,7 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Operate(int fds,int slt, int lst)
     {
-        gameManager.numberCtrl.aTimer++;
+        gameManager.timePass = true;
         int talkid = Random.Range(4,7);
         gameManager.OnTalkEvent(talkid);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
@@ -51,7 +51,7 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_InWork(int fds,int slt, int lst)
     {
-        gameManager.numberCtrl.aTimer++;
+        gameManager.timePass = true;
         int talkid = Random.Range(14,17);
         gameManager.OnTalkEvent(0);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
@@ -59,7 +59,7 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_vacation(int fds,int slt, int lst)
     {
-        gameManager.numberCtrl.aTimer++;
+        gameManager.timePass = true;
         int talkid = Random.Range(17,20);
         gameManager.OnTalkEvent(0);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
@@ -67,7 +67,7 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Peeking(int fds,int slt, int lst)
     {
-        gameManager.numberCtrl.aTimer++;
+        gameManager.timePass = true;
         //int talkid = Random.Range();
         gameManager.OnTalkEvent(0);
     }
@@ -85,7 +85,7 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Talk()
     {
-        gameManager.numberCtrl.aTimer++;
+        gameManager.timePass = true;
         int talkid;
         if (!gameManager.timer.vacation)
         {
@@ -103,10 +103,22 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Sleep(int fds,int slt, int lst)
     {
-        gameManager.numberCtrl.aTimer = 10;
-        int talkid = Random.Range(4,7);
-        gameManager.OnTalkEvent(talkid);
-        gameManager.DayPassedEvent(fds,slt,lst);
+        
+        if (gameManager.numberCtrl.aTimer <= 6)
+        {
+            gameManager.numberCtrl.aTimer = 12;
+        }
+        else if(gameManager.numberCtrl.aTimer >= 7 || gameManager.numberCtrl.aTimer <= 9)
+        {
+            gameManager.numberCtrl.aTimer = 13;
+        }
+        else
+        {
+            gameManager.numberCtrl.aTimer = 11;
+        }
+        gameManager.timePass = true;
+        gameManager.TimePassCheck();
+        //gameManager.DayPassedEvent(fds,slt,lst);
     }
 
     public void Interactive_OnBack()

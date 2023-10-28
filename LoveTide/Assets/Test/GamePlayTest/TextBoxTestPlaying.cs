@@ -87,7 +87,6 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     public void OnDisplayText()
     {
-        Debug.Log("displaytext");
         TextDataLoad(listSerial);
         textNumber = 0;
         ChickName();

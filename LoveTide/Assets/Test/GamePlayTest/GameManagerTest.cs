@@ -18,6 +18,7 @@ public class GameManagerTest : MonoBehaviour
 
     [Header("狀態")] 
     [SerializeField] public bool isTalk;
+    [SerializeField] public bool timePass;
 
 
 
@@ -36,9 +37,15 @@ public class GameManagerTest : MonoBehaviour
         {
             if (timer.vacation)
             {
-                OnTalkEvent(47);
-                timer.vacation = false;
                 Debug.Log("C");
+                switch (numberCtrl.aTimer)
+                {
+                    case 10 :OnTalkEvent(47); break;
+                    case 11 :OnTalkEvent(47); break;
+                    case 12 :OnTalkEvent(45); break;
+                    case 13 :OnTalkEvent(46); break;
+                }
+                timer.vacation = false;
             }
             else
             {
@@ -69,9 +76,9 @@ public class GameManagerTest : MonoBehaviour
     {
         numberCtrl.SetNumerica(fds,slt,lst);
         timer.DetectedDayPassed();
-        //SetClickObject(0);
-        //CheckActions();
-        OnTalkEvent(45);
+        SetClickObject(0);
+        CheckActions();
+        //OnTalkEvent(45);
         //inTextBox = false;
     }
 
@@ -113,6 +120,11 @@ public class GameManagerTest : MonoBehaviour
     
     public void TalkDownEvent()
     {
+        if (timePass)
+        {
+            numberCtrl.aTimer++;
+            timePass = false;
+        }
         TimePassCheck();
         textBox.stopLoop = false;
         actorCtrl.StayTarget = 1;
@@ -161,6 +173,7 @@ public class GameManagerTest : MonoBehaviour
     {
         if (timer.vacation)
         {
+            
             if (isTalk)
             {
                 if (numberCtrl.aTimer == 8)
@@ -217,7 +230,7 @@ public class GameManagerTest : MonoBehaviour
                 }
             }
         }
-
+        
         return BackNumber;
     }
 
