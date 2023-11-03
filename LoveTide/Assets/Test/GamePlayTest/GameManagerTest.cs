@@ -38,6 +38,8 @@ public class GameManagerTest : MonoBehaviour
             if (timer.vacation)
             {
                 Debug.Log("C");
+                isTalk = false;
+                SetInteractiveObject(false);
                 switch (numberCtrl.aTimer)
                 {
                     case 10 :OnTalkEvent(47); break;
@@ -58,6 +60,7 @@ public class GameManagerTest : MonoBehaviour
             if (numberCtrl.aTimer == 7 && !timer.vacation)
             {
                 isTalk = false;
+                SetInteractiveObject(false);
                 OnTalkEvent(43);
                 timer.vacation = true;
                 //Debug.Log("A");
@@ -125,9 +128,9 @@ public class GameManagerTest : MonoBehaviour
             numberCtrl.aTimer++;
             timePass = false;
         }
-        TimePassCheck();
         textBox.stopLoop = false;
         actorCtrl.StayTarget = 1;
+        TimePassCheck();
         if (isTalk)
         {
             SetInteractiveObject(true);

@@ -897,6 +897,7 @@ MonoBehaviour:
   interactiveButton: {fileID: 1711451707}
   actorCtrl: {fileID: 576478771}
   isTalk: 0
+  timePass: 0
 --- !u!1 &575946128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,7 +1369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aDay: 0
-  aTimer: 1
+  aTimer: 6
   aWeek: 1
   friendship: 0
   slutty: 0
