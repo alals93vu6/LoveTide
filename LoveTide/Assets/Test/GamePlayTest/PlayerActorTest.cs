@@ -44,7 +44,16 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Operate(int fds,int slt, int lst)
     {
         gameManager.timePass = true;
-        int talkid = Random.Range(4,7);
+        int talkid = 0;
+        if (gameManager.numberCtrl.aTimer <= 6)
+        {
+            talkid = Random.Range(4,7);
+        }
+        else
+        {
+            talkid = Random.Range(11,14);
+        }
+
         gameManager.OnTalkEvent(talkid);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
