@@ -18,6 +18,7 @@ public class TextBoxTestPlaying : MonoBehaviour
     [SerializeField] public DialogData diaLog;
     [SerializeField] public GameObject talkObject;
     [SerializeField] public DialogDataDetected diaLogDetected;
+    [SerializeField] public ActorManagerTest actorCtrl;
 
     [Header("狀態")]
     [SerializeField] public bool isover = true;
@@ -90,6 +91,7 @@ public class TextBoxTestPlaying : MonoBehaviour
         TextDataLoad(listSerial);
         textNumber = 0;
         ChickName();
+        actorCtrl.ActorCtrl();
         StartCoroutine(DisplayTextWithTypingEffect(false));
         DisplayTextBox(true);
     }
@@ -101,6 +103,7 @@ public class TextBoxTestPlaying : MonoBehaviour
             stopLoop = false;
             textNumber++;
             ChickName();
+            actorCtrl.ActorCtrl();
             StartCoroutine(DisplayTextWithTypingEffect(false));
         }
         else

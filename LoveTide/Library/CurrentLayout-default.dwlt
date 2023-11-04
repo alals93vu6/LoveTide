@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 421}
   m_MaxSize: {x: 18004, y: 14021}
   vertical: 0
-  controlID: 93
+  controlID: 139
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,8 +187,8 @@ MonoBehaviour:
     y: 448
     width: 396
     height: 499
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -238,8 +238,8 @@ MonoBehaviour:
     y: 0
     width: 1102
     height: 449
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -472,23 +472,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 043d0000
-      m_LastClickedID: 15620
-      m_ExpandedIDs: 5efbffffbc3c0000743d0000b43d0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5efbffff903c0000bc3c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: flirt_Talk
-        m_OriginalName: flirt_Talk
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 15788
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 393.49863, y: 197.02194, z: -64.12812}
+    m_Target: {x: 325.69498, y: 174.447, z: -1853.3223}
     speed: 2
-    m_Value: {x: 393.49863, y: 197.02194, z: -64.12812}
+    m_Value: {x: 325.69498, y: 174.447, z: -1853.3223}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,9 +612,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 324.53354
+    m_Target: 337.54672
     speed: 2
-    m_Value: 324.53354
+    m_Value: 337.54672
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -757,7 +757,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 15620
+  m_LastSelectedObjectID: 15800
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52

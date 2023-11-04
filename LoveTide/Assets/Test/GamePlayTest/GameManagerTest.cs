@@ -9,6 +9,7 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public BackgroundCtrl background;
     [SerializeField] public TimeManagerTest timer;
     [SerializeField] public TextBoxTestPlaying textBox;
+    [SerializeField] public ActorManagerTest actorManager;
     [SerializeField] private DialogData dialog;
 
     [Header("物件")] 
@@ -19,6 +20,7 @@ public class GameManagerTest : MonoBehaviour
     [Header("狀態")] 
     [SerializeField] public bool isTalk;
     [SerializeField] public bool timePass;
+    [SerializeField] public bool isAlone;
 
 
 
@@ -26,6 +28,7 @@ public class GameManagerTest : MonoBehaviour
     void Start()
     {
         textBox.OnStart_TextBox(dialog);
+        actorManager.OnStart(dialog);
         SetClickObject(0);
         CheckActions();
         //Debug.Log("fuck my life");
@@ -48,6 +51,7 @@ public class GameManagerTest : MonoBehaviour
                     case 13 :OnTalkEvent(46); break;
                 }
                 timer.vacation = false;
+                isAlone = false;
             }
             else
             {
@@ -64,6 +68,13 @@ public class GameManagerTest : MonoBehaviour
                 OnTalkEvent(43);
                 timer.vacation = true;
                 //Debug.Log("A");
+            }
+            else if (numberCtrl.aTimer == 8 && !isAlone)
+            {
+                isTalk = false;
+                SetInteractiveObject(false);
+                OnTalkEvent(52);
+                isAlone = true;
             }
             else
             {
@@ -130,6 +141,7 @@ public class GameManagerTest : MonoBehaviour
         }
         textBox.stopLoop = false;
         actorCtrl.StayTarget = 1;
+        actorManager.ChangeFace(1,0);
         TimePassCheck();
         if (isTalk)
         {

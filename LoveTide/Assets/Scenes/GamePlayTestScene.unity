@@ -898,6 +898,7 @@ MonoBehaviour:
   actorCtrl: {fileID: 576478771}
   isTalk: 0
   timePass: 0
+  isAlone: 0
 --- !u!1 &575946128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,7 +1370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aDay: 0
-  aTimer: 6
+  aTimer: 1
   aWeek: 1
   friendship: 0
   slutty: 0
@@ -3738,9 +3739,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TheActor:
-  - {fileID: 0}
+  - {fileID: 576478769}
+  - {fileID: 576478769}
   ActorImage:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: aaec0f7a8b86dd84392556171d5053e3, type: 2}
+  - {fileID: 11400000, guid: aaec0f7a8b86dd84392556171d5053e3, type: 2}
 --- !u!4 &1937069865
 Transform:
   m_ObjectHideFlags: 0

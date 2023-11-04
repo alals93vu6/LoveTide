@@ -49,6 +49,10 @@ public class PlayerActorTest : MonoBehaviour
         {
             talkid = Random.Range(4,7);
         }
+        else if(gameManager.numberCtrl.aTimer == 8)
+        {
+            talkid = 50;
+        }
         else
         {
             talkid = Random.Range(11,14);
@@ -76,9 +80,19 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Peeking(int fds,int slt, int lst)
     {
-        gameManager.timePass = true;
+        //gameManager.timePass = true;
         //int talkid = Random.Range();
-        gameManager.OnTalkEvent(0);
+        gameManager.SetInteractiveObject(false);
+        int talkid = 0;
+        if (gameManager.numberCtrl.aTimer != 8)
+        {
+            talkid = 53;
+        }
+        else
+        {
+            talkid = 51;
+        }
+        gameManager.OnTalkEvent(talkid);
     }
     
     public void Interactive_Outing(int fds,int slt, int lst)
@@ -104,7 +118,7 @@ public class PlayerActorTest : MonoBehaviour
         {
             talkid = Random.Range(8, 11);
         }
-        Debug.Log(talkid);
+        //Debug.Log(talkid);
         gameManager.OnTalkEvent(talkid);
         gameManager.numberCtrl.SetNumerica(1,0,0);
         

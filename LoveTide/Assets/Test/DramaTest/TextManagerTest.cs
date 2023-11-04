@@ -118,6 +118,7 @@ public class TextManagerTest : MonoBehaviour
             TextNumber++;
             ChangeFace();
             ChickName();
+            //actorManager.ActorCtrl();
             CGCtrl();
             StartCoroutine(DisplayTextWithTypingEffect(false));
         }
@@ -174,7 +175,7 @@ public class TextManagerTest : MonoBehaviour
             case ActorFaceTest.anxious: targetFaceInt = 6; break;
         }
         
-        actorManager.ChangeA(targetActorInt,targetFaceInt);
+        actorManager.ChangeFace(targetActorInt,targetFaceInt);
         actorManager.MoveActorLocation(targetActorInt,DiaLog.dialogDataDetailstest[TextNumber].actorLocation);
     }
 

@@ -35,6 +35,7 @@ public class DialogData : ScriptableObject
 public class PlotOptions
 {
     public string talkID;
+    public bool notActor;
     public Sprite[] displayCG;
     public int disPlayOrder;
     public List<DialogDataDetail> dialogDataDetails;

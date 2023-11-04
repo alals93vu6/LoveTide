@@ -31,8 +31,8 @@ public class CGDisplay : MonoBehaviour
 
     public void DisplayCGChick(bool ShowCG,bool SwitchCG)
     {
-        Debug.Log(ShowCG);
-        Debug.Log(SwitchCG);
+        //Debug.Log(ShowCG);
+        //Debug.Log(SwitchCG);
         
         if (ShowCG)
         {
