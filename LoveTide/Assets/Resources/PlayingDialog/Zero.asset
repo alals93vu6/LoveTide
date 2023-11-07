@@ -1481,7 +1481,18 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
-  - talkID: "\u623F\u9580(53)"
+  - talkID: "\u7368\u81EA\u4E00\u4EBA_\u5C0D\u8A71(53)"
+    notActor: 1
+    displayCG: []
+    disPlayOrder: 0
+    dialogDataDetails:
+    - speaker: 1
+      actorFace: 0
+      sentence: "\u6C99\u767C\u7A7A\u8569\u8569\u7684\uFF0C\u5F88\u9069\u5408\u62FF\u4F86\u8EBA\u8457"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+  - talkID: "\u623F\u9580(54)"
     notActor: 1
     displayCG: []
     disPlayOrder: 0
