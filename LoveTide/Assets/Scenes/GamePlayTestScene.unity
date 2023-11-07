@@ -885,6 +885,7 @@ MonoBehaviour:
   background: {fileID: 1148651612}
   timer: {fileID: 1980644438}
   textBox: {fileID: 1643799231}
+  actorManager: {fileID: 1937069864}
   dialog: {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   sceneObject:
   - {fileID: 692707716}
@@ -1370,7 +1371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aDay: 0
-  aTimer: 1
+  aTimer: 6
   aWeek: 1
   friendship: 0
   slutty: 0
@@ -3272,6 +3273,7 @@ MonoBehaviour:
   diaLog: {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   talkObject: {fileID: 1294787932}
   diaLogDetected: {fileID: 0}
+  actorCtrl: {fileID: 1937069864}
   isover: 1
   stopLoop: 0
   listSerial: 2
@@ -3744,6 +3746,8 @@ MonoBehaviour:
   ActorImage:
   - {fileID: 11400000, guid: aaec0f7a8b86dd84392556171d5053e3, type: 2}
   - {fileID: 11400000, guid: aaec0f7a8b86dd84392556171d5053e3, type: 2}
+  dialog: {fileID: 0}
+  idleActor: 0
 --- !u!4 &1937069865
 Transform:
   m_ObjectHideFlags: 0

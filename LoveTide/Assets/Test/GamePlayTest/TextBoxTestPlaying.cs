@@ -91,9 +91,10 @@ public class TextBoxTestPlaying : MonoBehaviour
         TextDataLoad(listSerial);
         textNumber = 0;
         ChickName();
-        actorCtrl.ActorCtrl();
         StartCoroutine(DisplayTextWithTypingEffect(false));
         DisplayTextBox(true);
+        actorCtrl.ActorCtrl();
+        
     }
 
     public void NextText()
@@ -103,6 +104,7 @@ public class TextBoxTestPlaying : MonoBehaviour
             stopLoop = false;
             textNumber++;
             ChickName();
+            //actorCtrl.TheActor[1].gameObject.SetActive(false);
             actorCtrl.ActorCtrl();
             StartCoroutine(DisplayTextWithTypingEffect(false));
         }

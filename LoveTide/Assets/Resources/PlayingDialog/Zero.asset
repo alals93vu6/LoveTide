@@ -30,7 +30,7 @@ MonoBehaviour:
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
-      actorFace: 0
+      actorFace: 2
       sentence: "\u76EE\u524D\u505A\u4E0B\u4F86\u89BA\u5F97\u9084\u53EF\u4EE5\u55CE?"
       stayLocation: 0
       switchCGDisplay: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 3
-      actorFace: 0
+      actorFace: 3
       sentence: "\u53EF\u662F\u5E97\u9577...\u73FE\u5728\u9084\u6C92\u4E0B\u73ED\u5462..... "
       stayLocation: 0
       switchCGDisplay: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 3
-      actorFace: 0
+      actorFace: 2
       sentence: "\u5E97\u9577\u597D\u72E0\uFF5E\u6211\u5011\u9084\u662F\u5B89\u5206\u4E00\u9EDE\u5730\u628A\u5DE5\u4F5C\u4E00\u8D77\u505A\u5B8C\u5427\uFF0C\u7B49\u7B49\u4E0B\u73ED\u6709\u6A5F\u6703\u518D\u4E00\u8D77\u53BB\u4E5F\u4E0D\u9072\u5566~"
       stayLocation: 0
       switchCGDisplay: 0
@@ -1196,7 +1196,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u81EA\u767D_\u958B\u696D1(38)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1207,7 +1207,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u81EA\u767D_\u958B\u696D2(39)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1218,7 +1218,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u81EA\u767D_\u958B\u696D3(40)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1229,7 +1229,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u81EA\u767D_\u958B\u696D4(41)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1240,7 +1240,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u81EA\u767D_\u958B\u696D5(42)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1274,7 +1274,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u81EA\u767D_\u653E\u5047(44)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1285,7 +1285,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u81EA\u767D_\u7761\u89BA1(45)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1296,7 +1296,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u81EA\u767D_\u7761\u89BA2(46)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1307,7 +1307,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u81EA\u767D_\u7761\u89BA3(47)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1449,7 +1449,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u7368\u81EA\u4E00\u4EBA_\u559D\u9152(50)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1460,7 +1460,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u7368\u81EA\u4E00\u4EBA_\u623F\u9580\u5077\u807D(51)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1471,7 +1471,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u7368\u81EA\u4E00\u4EBA\u6642(52)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:
@@ -1482,7 +1482,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
   - talkID: "\u623F\u9580(53)"
-    notActor: 0
+    notActor: 1
     displayCG: []
     disPlayOrder: 0
     dialogDataDetails:

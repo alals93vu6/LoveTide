@@ -127,8 +127,16 @@ public class GameManagerTest : MonoBehaviour
         {
             CheckActions();
         }
-        actorCtrl.gameObject.SetActive(true);
-        interactiveButton.SetActive(false);
+
+        if (dialog.plotOptionsList[textBox.listSerial].notActor)
+        {
+            SetInteractiveObject(false);
+        }
+        else
+        {
+            actorCtrl.gameObject.SetActive(true);
+            interactiveButton.SetActive(false);
+        }
         actorCtrl.StayTarget = 0;
     }
     

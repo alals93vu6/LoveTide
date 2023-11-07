@@ -37,8 +37,15 @@ public class PlayerActorTest : MonoBehaviour
 
     public void Interactive_Speak(int fds,int slt, int lst)
     {
-        gameManager.isTalk = true;
-        gameManager.OnTalkEvent(0);
+        if (gameManager.numberCtrl.aTimer == 8)
+        {
+            gameManager.OnTalkEvent(53);
+        }
+        else
+        {
+            gameManager.isTalk = true;
+            gameManager.OnTalkEvent(0);
+        }
     }
     
     public void Interactive_Operate(int fds,int slt, int lst)
@@ -86,7 +93,7 @@ public class PlayerActorTest : MonoBehaviour
         int talkid = 0;
         if (gameManager.numberCtrl.aTimer != 8)
         {
-            talkid = 53;
+            talkid = 54;
         }
         else
         {
