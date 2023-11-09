@@ -160,6 +160,11 @@ public class PlayerActorTest : MonoBehaviour
         gameManager.SetInteractiveObject(false);
     }
 
+    public void Interactive_Travel()
+    {
+        Debug.Log("Travel");
+    }
+
     public void OnClickTextBox()
     {
         gameManager.ClickTextBoxEvent();
