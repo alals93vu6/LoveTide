@@ -104,8 +104,6 @@ public class PlayerActorTest : MonoBehaviour
     
     public void Interactive_Outing(int fds,int slt, int lst)
     {
-        //gameManager.isTalk = false;
-        //gameManager.SetClickObject(0);
         gameManager.ReadyOuting();
     }
 
@@ -169,6 +167,26 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Travel()
     {
         Debug.Log("Travel");
+    }
+
+    public void GotoBeach()
+    {
+        Debug.Log("Beach");
+    }
+    
+    public void GotoParks()
+    {
+        Debug.Log("Parks");
+    }
+    
+    public void GotoHills()
+    {
+        Debug.Log("Hills");
+    }
+    
+    public void GotoStreets()
+    {
+        Debug.Log("Streets");
     }
 
     public void OnClickTextBox()

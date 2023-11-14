@@ -166,7 +166,7 @@ public class GameManagerTest : MonoBehaviour
         SetInteractiveObject(false);
         interactiveButton[1].SetActive(true);
         background.ChickBackground(11);
-        
+        SetClickObject(-1);
     }
     
     public void CancelOuting()
@@ -174,6 +174,7 @@ public class GameManagerTest : MonoBehaviour
         SetInteractiveObject(false);
         interactiveButton[1].SetActive(false);
         background.ChickBackground(ChangeBackGroundNumber(0));
+        SetClickObject(0);
     }
 
     public void SetInteractiveObject(bool isActive)
@@ -192,6 +193,10 @@ public class GameManagerTest : MonoBehaviour
         if (displayObject == 0)
         {
             sceneObject[ChangeClickObjectNumber(0)].SetActive(true);
+        }
+        else if(displayObject == -1)
+        {
+            sceneObject[0].SetActive(true);
         }
         else
         {
