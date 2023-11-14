@@ -14,7 +14,7 @@ public class GameManagerTest : MonoBehaviour
 
     [Header("物件")] 
     [SerializeField] public GameObject[] sceneObject;
-    [SerializeField] public GameObject interactiveButton;
+    [SerializeField] public GameObject[] interactiveButton;
     [SerializeField] public ActorLocationCtrl actorCtrl;
 
     [Header("狀態")] 
@@ -135,7 +135,7 @@ public class GameManagerTest : MonoBehaviour
         else
         {
             actorCtrl.gameObject.SetActive(true);
-            interactiveButton.SetActive(false);
+            interactiveButton[0].SetActive(false);
         }
         actorCtrl.StayTarget = 0;
     }
@@ -160,11 +160,25 @@ public class GameManagerTest : MonoBehaviour
             SetInteractiveObject(false);
         }
     }
+
+    public void ReadyOuting()
+    {
+        SetInteractiveObject(false);
+        interactiveButton[1].SetActive(true);
+        background.ChickBackground(11);
+        
+    }
     
+    public void CancelOuting()
+    {
+        SetInteractiveObject(false);
+        interactiveButton[1].SetActive(false);
+        background.ChickBackground(ChangeBackGroundNumber(0));
+    }
 
     public void SetInteractiveObject(bool isActive)
     {
-        interactiveButton.SetActive(isActive);
+        interactiveButton[0].SetActive(isActive);
         actorCtrl.gameObject.SetActive(isActive);
     }
 

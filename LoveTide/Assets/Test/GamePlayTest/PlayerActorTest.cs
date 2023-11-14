@@ -106,8 +106,14 @@ public class PlayerActorTest : MonoBehaviour
     {
         //gameManager.isTalk = false;
         //gameManager.SetClickObject(0);
+        gameManager.ReadyOuting();
     }
-    
+
+    public void CancelOuting()
+    {
+        gameManager.CancelOuting();
+    }
+
     public void Interactive_Sex()
     {
         Debug.Log("Sex");

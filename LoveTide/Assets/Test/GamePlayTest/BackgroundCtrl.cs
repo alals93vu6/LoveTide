@@ -35,6 +35,7 @@ public class BackgroundCtrl : MonoBehaviour
             case 8: SwitchBackground(8); break;
             case 9: SwitchBackground(9); break;
             case 10: SwitchBackground(10); break;
+            case 11: SwitchBackground(11); break;
         }
     }
     
