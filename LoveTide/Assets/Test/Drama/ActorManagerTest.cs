@@ -47,7 +47,8 @@ public class ActorManagerTest : MonoBehaviour
             case Face.hrony: faceNumber = 4; break;
             case Face.angry: faceNumber = 5; break;
             case Face.anxious: faceNumber = 6; break;
-            case Face.sad: faceNumber = 7; break;
+            case Face.sad: faceNumber = 7; break; 
+            case Face.superise: faceNumber = 8; break;
         }
         //Debug.Log("Face"+faceNumber);
         return faceNumber;
@@ -58,7 +59,7 @@ public class ActorManagerTest : MonoBehaviour
         
         switch (dialog.plotOptionsList[FindObjectOfType<TextBoxTestPlaying>().listSerial].dialogDataDetails[FindObjectOfType<TextBoxTestPlaying>().textNumber].speaker)
         {
-            case Speaker.Player : idleActor = 0; break;
+            case Speaker.Player : idleActor = 1; break;
             case Speaker.GirlFriend : idleActor = 1; break;
             case Speaker.BoyFriend : idleActor = 2; break;
             case Speaker.Steve : idleActor = 3; break;
@@ -66,7 +67,7 @@ public class ActorManagerTest : MonoBehaviour
             case Speaker.PoliceB : idleActor = 5; break;
             case Speaker.PassersbyA : idleActor = 6; break;
             case Speaker.PassersbyB : idleActor = 7; break;
-            
+            case Speaker.Chorus : idleActor = 1; break;
         }
     }
 }

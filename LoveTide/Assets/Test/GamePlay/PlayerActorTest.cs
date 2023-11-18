@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms;
 
 public class PlayerActorTest : MonoBehaviour
@@ -190,13 +191,14 @@ public class PlayerActorTest : MonoBehaviour
     {
         if (isAlon)
         {
-            
+            gameManager.numberCtrl.party++;
         }
         else
         {
-            
+            gameManager.numberCtrl.SetNumerica(5,0,0);
         }
-
+        gameManager.numberCtrl.GameDataSave();
+        SceneManager.LoadScene("DramaScene");
         Debug.Log("Beach");
     }
     

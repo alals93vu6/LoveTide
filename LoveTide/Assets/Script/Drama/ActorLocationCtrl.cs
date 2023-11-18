@@ -10,7 +10,7 @@ public class ActorLocationCtrl : MonoBehaviour
     void Update()
     {
         this.transform.position = Vector3.Lerp(this.transform.position,
-            new Vector3(StayLocation[StayTarget].transform.position.x, this.transform.position.y, this.transform.position.z), 0.03f);
+            new Vector3(StayLocation[StayTarget].transform.position.x, this.transform.position.y, this.transform.position.z), 0.008f);
         
     }
 }

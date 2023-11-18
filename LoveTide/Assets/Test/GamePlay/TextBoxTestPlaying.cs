@@ -134,7 +134,7 @@ public class TextBoxTestPlaying : MonoBehaviour
         {
             case Speaker.Chorus: nameText.text = " "; break;
             case Speaker.Player: nameText.text = "玩家"; break;
-            case Speaker.GirlFriend: nameText.text = "織那久菜子"; break;
+            case Speaker.GirlFriend: nameText.text = "由香"; break;
             case Speaker.BoyFriend: nameText.text = "苦主"; break;
             case Speaker.Steve: nameText.text = "史帝夫"; break;
             case Speaker.PoliceA: nameText.text = "警察A"; break;

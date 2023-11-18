@@ -20,7 +20,7 @@ public enum Speaker
 
 public enum Face
 {
-    nothiog,normal,haapy,blush,cry,hrony,angry,anxious,sad,
+    nothiog,normal,haapy,blush,cry,hrony,angry,anxious,sad,superise,
             //普通  開心  害羞   哭  齁逆   生氣   焦慮     傷心
 }
 

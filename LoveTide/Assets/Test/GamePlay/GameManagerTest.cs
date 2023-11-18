@@ -185,13 +185,13 @@ public class GameManagerTest : MonoBehaviour
     {
         SetInteractiveObject(false);
         interactiveButton[1].SetActive(true);
-        background.ChickBackground(11);
+        background.ChickBackground_Outing(0);
         SetClickObject(-1);
     }
-    
+
     public void CancelOuting()
     {
-        SetInteractiveObject(false);
+        SetInteractiveObject(true);
         interactiveButton[1].SetActive(false);
         background.ChickBackground(ChangeBackGroundNumber(0));
         SetClickObject(0);

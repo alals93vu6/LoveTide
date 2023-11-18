@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb7acada6a8860418e62cb0c3f18c64, type: 3}
+  m_Name: Actress_Nomal
+  m_EditorClassIdentifier: 
+  ActorStandingDrawing:
+  - {fileID: 21300000, guid: 239141739976fd54798b58a6d8e7971b, type: 3}
+  - {fileID: 21300000, guid: 14d4367b00f16e842939cf9427720dd0, type: 3}
+  - {fileID: 21300000, guid: 813f0c9218af3e44bb5a61e8d79f67a6, type: 3}
+  - {fileID: 21300000, guid: f466ece29c90ab8499aed7a8351f0828, type: 3}
+  - {fileID: 21300000, guid: c4eefec45fbd0f54d808b2f5ec903015, type: 3}
+  - {fileID: 21300000, guid: 4074db3a6cc361244bf069920a9b3e98, type: 3}
+  - {fileID: 21300000, guid: 70e8a2af07aa2de47aba2624a41f6c42, type: 3}
+  - {fileID: 21300000, guid: a1b65e14613537849b13f74a9e307796, type: 3}
+  - {fileID: 21300000, guid: 54853476874a146429914ea68374a843, type: 3}
