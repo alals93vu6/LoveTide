@@ -7,6 +7,8 @@ public class PlayerActorTest : MonoBehaviour
 {
     [SerializeField]public GameManagerTest gameManager;
     [SerializeField] public DialogDataDetected diaDetected;
+
+    [SerializeField] private bool isAlon;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,14 +26,15 @@ public class PlayerActorTest : MonoBehaviour
         {
             case 1: Interactive_Speak(fds,slt,lst); break;//開化
             case 2: Interactive_Operate(fds,slt,lst); break;//幫忙工作
-            case 3: Interactive_InWork(fds,slt,lst); break;//上班調情
-            case 4: Interactive_vacation(fds,slt,lst); break;//宿舍調情
+            case 3: Interactive_FlirtTalk(fds,slt,lst); break;//情話
+            case 4: Interactive_Molest(fds,slt,lst); break;//肢體調情
             case 5: Interactive_Peeking(fds,slt,lst); break;//偷聽、進房間
-            case 6: Interactive_Outing(fds,slt,lst); break;
+            case 6: Interactive_Outing(); break;
             case 7: Interactive_Sex(); break;
             case 8: Interactive_Sleep(fds,slt,lst); break;
             case 9: Interactive_OnBack(); break;
             case 10: OnClickTextBox(); break;
+            case 11: Interactive_TwoPersonOuting(); break;
         }
     }
 
@@ -69,19 +72,26 @@ public class PlayerActorTest : MonoBehaviour
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
-    public void Interactive_InWork(int fds,int slt, int lst)
+    public void Interactive_FlirtTalk(int fds,int slt, int lst)
     {
         gameManager.timePass = true;
-        int talkid = Random.Range(14,17);
-        gameManager.OnTalkEvent(0);
+        int talkid = 0;
+        if (gameManager.numberCtrl.aTimer <= 7)
+        {
+            talkid = Random.Range(14,17);
+        }
+        else
+        {
+            talkid = Random.Range(17,20);
+        }
+        gameManager.OnTalkEvent(talkid);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
-    public void Interactive_vacation(int fds,int slt, int lst)
+    public void Interactive_Molest(int fds,int slt, int lst)
     {
         gameManager.timePass = true;
-        int talkid = Random.Range(17,20);
-        gameManager.OnTalkEvent(0);
+        gameManager.OnTalkEvent(55);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
@@ -102,8 +112,15 @@ public class PlayerActorTest : MonoBehaviour
         gameManager.OnTalkEvent(talkid);
     }
     
-    public void Interactive_Outing(int fds,int slt, int lst)
+    public void Interactive_Outing()
     {
+        isAlon = true;
+        gameManager.ReadyOuting();
+    }
+    
+    public void Interactive_TwoPersonOuting()
+    {
+        isAlon = false;
         gameManager.ReadyOuting();
     }
 
@@ -171,21 +188,54 @@ public class PlayerActorTest : MonoBehaviour
 
     public void GotoBeach()
     {
+        if (isAlon)
+        {
+            
+        }
+        else
+        {
+            
+        }
+
         Debug.Log("Beach");
     }
     
     public void GotoParks()
     {
+        if (isAlon)
+        {
+            
+        }
+        else
+        {
+            
+        }
         Debug.Log("Parks");
     }
     
     public void GotoHills()
     {
+        if (isAlon)
+        {
+            
+        }
+        else
+        {
+            
+        }
         Debug.Log("Hills");
     }
     
     public void GotoStreets()
     {
+        if (isAlon)
+        {
+            
+        }
+        else
+        {
+            
+        }
         Debug.Log("Streets");
     }
 

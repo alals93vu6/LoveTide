@@ -285,6 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 494522876}
   diaDetected: {fileID: 0}
+  isAlon: 0
 --- !u!1 &179762987
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,8 +414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 3
-  setFDS: 0
+  eventNumber: 4
+  setFDS: -2
   setSLT: 0
   setLST: 0
 --- !u!61 &275978297
@@ -493,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 2
-  setFDS: 0
+  setFDS: 1
   setSLT: 0
   setLST: 0
 --- !u!61 &280319613
@@ -684,7 +685,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 125431115}
-        m_MethodName: Interactive_Travel
+        m_MethodName: Interactive_TwoPersonOuting
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1255,7 +1256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: 0
+  setFDS: -2
   setSLT: 0
   setLST: 0
 --- !u!61 &453034663
@@ -2109,8 +2110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 3
-  setFDS: 0
+  eventNumber: 4
+  setFDS: -1
   setSLT: 0
   setLST: 0
 --- !u!61 &731962884
@@ -2188,6 +2189,9 @@ MonoBehaviour:
   friendship: 0
   slutty: 0
   lust: 0
+  party: 0
+  alonOuting: 0
+  mainMission: 0
 --- !u!1 &800051292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,7 +2399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 2
-  setFDS: 0
+  setFDS: 1
   setSLT: 0
   setLST: 0
 --- !u!61 &920955422
@@ -2553,7 +2557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: 0
+  setFDS: -1
   setSLT: 0
   setLST: 0
 --- !u!61 &1006129985
@@ -2631,7 +2635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 4
+  eventNumber: 3
   setFDS: 0
   setSLT: 0
   setLST: 0
@@ -2711,7 +2715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 2
-  setFDS: 0
+  setFDS: 1
   setSLT: 0
   setLST: 0
 --- !u!61 &1051626301
@@ -2950,7 +2954,17 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6a808fa8585069c468659502448e614c, type: 3}
   - {fileID: 21300000, guid: 2fe775078280fb54881c7ae7033cf783, type: 3}
   - {fileID: 21300000, guid: 58f29c797d722ee428305bdd61cad73f, type: 3}
+  outingBackgrounds:
   - {fileID: 21300000, guid: 9d6edbdfadfd75347a335ed9f3430294, type: 3}
+  - {fileID: 21300000, guid: 6603da24e1ea42341a5b46ede6453807, type: 3}
+  - {fileID: 21300000, guid: aec13b58763b562449c7c8ba2cd4857b, type: 3}
+  - {fileID: 21300000, guid: d34826ee7eb1c7e44a2c16157d7dc67e, type: 3}
+  - {fileID: 21300000, guid: 8d02f96f036397a418aab510c42531ea, type: 3}
+  - {fileID: 21300000, guid: f981f679b0e02b44da4094891e67d927, type: 3}
+  - {fileID: 21300000, guid: 7932eb4c682049a48bdcc122a6e60403, type: 3}
+  - {fileID: 21300000, guid: bdb3b98ace923ba41b5002e9c17e3fed, type: 3}
+  - {fileID: 21300000, guid: a4c4c77ab889d5f47bab8a645cd8d3dd, type: 3}
+  - {fileID: 21300000, guid: 0d5e22c38d9e1a940ae4ae38d65216c1, type: 3}
   - {fileID: 21300000, guid: 3f062ae9f81a01f41b13d23aa7c9a58e, type: 3}
   - {fileID: 21300000, guid: ad56212a2177be04faf62d5ca4d31003, type: 3}
   - {fileID: 21300000, guid: c155e59512a1d3243abc180b7867527a, type: 3}
@@ -3480,8 +3494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 3
-  setFDS: 0
+  eventNumber: 4
+  setFDS: -2
   setSLT: 0
   setLST: 0
 --- !u!61 &1245441657
@@ -3807,7 +3821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 2
-  setFDS: 0
+  setFDS: 1
   setSLT: 0
   setLST: 0
 --- !u!61 &1381862167
@@ -5728,8 +5742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 3
-  setFDS: 0
+  eventNumber: 4
+  setFDS: -2
   setSLT: 0
   setLST: 0
 --- !u!61 &1969308264
@@ -6214,7 +6228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 2
-  setFDS: 0
+  setFDS: 1
   setSLT: 0
   setLST: 0
 --- !u!61 &2075634856

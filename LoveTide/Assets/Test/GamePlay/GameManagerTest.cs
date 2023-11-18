@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerTest : MonoBehaviour
 {
@@ -38,9 +39,17 @@ public class GameManagerTest : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.S))
         {
             numberCtrl.GameDataSave();
+            Debug.Log("SaveData");
+        }
+        
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
+        {
+            numberCtrl.GameDataReset();
+            Debug.Log("ResetData");
+            SceneManager.LoadScene(0);
         }
     }
 
@@ -102,6 +111,7 @@ public class GameManagerTest : MonoBehaviour
         timer.DetectedDayPassed();
         SetClickObject(0);
         CheckActions();
+        numberCtrl.GameDataSave();
         //OnTalkEvent(45);
         //inTextBox = false;
     }

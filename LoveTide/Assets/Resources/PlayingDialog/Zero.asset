@@ -1503,3 +1503,14 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+  - talkID: "\u8ABF\u60C5_\u80A2\u9AD4\u63A5\u89F8(55)"
+    notActor: 0
+    displayCG: []
+    disPlayOrder: 0
+    dialogDataDetails:
+    - speaker: 3
+      actorFace: 6
+      sentence: "\u771F\u662F\u7684!!\u5E97\u9577\u773C\u775B\u5728\u770B\u54EA\u88E1\u5462!!"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0

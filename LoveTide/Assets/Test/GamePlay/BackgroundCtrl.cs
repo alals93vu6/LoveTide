@@ -8,6 +8,7 @@ public class BackgroundCtrl : MonoBehaviour
     [SerializeField] public Image displayImage;
     [SerializeField] public GameObject[] sceneObject;
     [SerializeField] private Sprite[] backgrounds;
+    [SerializeField] private Sprite[] outingBackgrounds;
 
     // Start is called before the first frame update
     void Start()
