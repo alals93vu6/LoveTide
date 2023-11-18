@@ -77,7 +77,7 @@ public class PlayerActorTest : MonoBehaviour
     {
         gameManager.timePass = true;
         int talkid = 0;
-        if (gameManager.numberCtrl.aTimer <= 7)
+        if (gameManager.timer.vacation == false)
         {
             talkid = Random.Range(14,17);
         }

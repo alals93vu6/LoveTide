@@ -348,13 +348,13 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 2
-      actorFace: 0
+      actorFace: 8
       sentence: "\u55DA\u2026\u771F\u96E3\u904E\uFF0C\u90A3\u9019\u6A23\u4EE5\u5F8C\u5C31\u898B\u4E0D\u5230\u7531\u9999\u4E86\u5462\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 1
-      actorFace: 0
+      actorFace: 8
       sentence: "\u7531\u9999\u9677\u5165\u4E86\u6C89\u9ED8\u5F8C\uFF0C\u4E0D\u5230\u7247\u523B\u53C8\u56DE\u5230\u4E86\u539F\u4F86\u7684\u6A23\u5B50\uFF0C\u5F8C\u4F86\u4E5F\u6109\u5FEB\u7684\u5C0F\u804A\u4E86\u4E00\u9663\u5B50\u3002 "
       stayLocation: 0
       switchCGDisplay: 0
@@ -712,19 +712,19 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 3
-      actorFace: 8
+      actorFace: 6
       sentence: "\u5E97\u9577\u4F60\u5728\u9017\u6211\u55CE\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 2
-      actorFace: 0
+      actorFace: 8
       sentence: "\u54C8\u54C8\u54C8\u4E0D\u8981\u751F\u6C23\u561B\uFF0C\u7531\u9999\u751F\u6C23\u8D77\u4F86\u4E5F\u9019\u9EBC\u53EF\u611B\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 0
-      actorFace: 0
+      actorFace: 3
       sentence: "(\u634F\u4F4F\u4E86\u7531\u9999\u9F13\u8D77\u7684\u96D9\u9830) "
       stayLocation: 0
       switchCGDisplay: 0
@@ -736,13 +736,13 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 2
-      actorFace: 0
+      actorFace: 3
       sentence: "\u54EA\u6709\uFF0C\u6211\u53EA\u6709\u5C0D\u7531\u9999\u624D\u9019\u6A23\u5594\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 1
-      actorFace: 1
+      actorFace: 0
       sentence: "\u5C31\u9019\u6A23\u4E00\u908A\u9017\u7531\u9999\u4E00\u908A\u9592\u804A\u4E86\u4E00\u9663\u5B50\uFF0C\u4E0D\u904E\u8AC7\u5230\u611F\u60C5\u90E8\u5206\u6642\u7531\u9999\u4E0D\u81EA\u7136\u7684\u8FF4\u907F\u4E86\u8A71\u984C\uFF0C\u611F\u89BA\u7531\u9999\u4F3C\u4E4E\u6709\u4EC0\u9EBC\u60F3\u96B1\u85CF\u7684\u4E8B\u3002 "
       stayLocation: 0
       switchCGDisplay: 0
@@ -753,7 +753,7 @@ MonoBehaviour:
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
-      actorFace: 0
+      actorFace: 9
       sentence: "\u771F\u60F3\u4E0D\u5230\u7531\u9999\u7ADF\u7136\u662F\u9019\u9EBC\u52E4\u52DE\u7684\u4EBA\u8036"
       stayLocation: 0
       switchCGDisplay: 0
@@ -842,7 +842,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 3
-      actorFace: 1
+      actorFace: 2
       sentence: "\u807D\u8D77\u4F86\u6211\u90FD\u8981\u8B8A\u80D6\u4E86\uFF0C\u6CC1\u4E14\u8981\u5E36\u6211\u51FA\u9580\u7684\u8A71\u5148\u6253\u8D0F\u9019\u500B\u6C99\u767C\u518D\u8AAA\u5427!\u597D\u7D2F\u963F...\u5B8C\u5168\u4E0D\u60F3\u51FA\u9580\u5462...."
       stayLocation: 0
       switchCGDisplay: 0
