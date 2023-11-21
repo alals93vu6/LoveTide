@@ -35,27 +35,27 @@ public class ClickObj : MonoBehaviour
         switch (FDSlv)
         {
             case 0:
-                setFDS += 0;
+                setFDS += 2;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 1:
-                setFDS += 0;
+                setFDS += 3;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 2:
-                setFDS += 0;
+                setFDS += 5;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 3:
-                setFDS += 0;
+                setFDS += 5;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 4:
-                setFDS += 0;
+                setFDS += 7;
                 setSLT += 0;
                 setLST += 0;
                 break;
@@ -67,27 +67,27 @@ public class ClickObj : MonoBehaviour
         switch (FDSlv)
         {
             case 0:
-                setFDS += 0;
+                setFDS += 2;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 1:
-                setFDS += 0;
+                setFDS += 3;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 2:
-                setFDS += 0;
+                setFDS += 5;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 3:
-                setFDS += 0;
+                setFDS += 5;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 4:
-                setFDS += 0;
+                setFDS += 7;
                 setSLT += 0;
                 setLST += 0;
                 break;
@@ -99,29 +99,29 @@ public class ClickObj : MonoBehaviour
         switch (FDSlv)
         {
             case 0:
-                setFDS += 0;
+                setFDS += 3;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 1:
-                setFDS += 0;
+                setFDS += 5;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 2:
-                setFDS += 0;
+                setFDS += 5;
                 setSLT += 0;
-                setLST += 0;
+                setLST += 1;
                 break;
             case 3:
-                setFDS += 0;
+                setFDS += 7;
                 setSLT += 0;
-                setLST += 0;
+                setLST += 2;
                 break;
             case 4:
-                setFDS += 0;
+                setFDS += 8;
                 setSLT += 0;
-                setLST += 0;
+                setLST += 2;
                 break;
         }
     }
@@ -131,29 +131,29 @@ public class ClickObj : MonoBehaviour
         switch (FDSlv)
         {
             case 0:
-                setFDS += 0;
+                setFDS += -5;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 1:
-                setFDS += 0;
+                setFDS += -2;
                 setSLT += 0;
                 setLST += 0;
                 break;
             case 2:
                 setFDS += 0;
                 setSLT += 0;
-                setLST += 0;
+                setLST += 1;
                 break;
             case 3:
-                setFDS += 0;
+                setFDS += 1;
                 setSLT += 0;
-                setLST += 0;
+                setLST += 3;
                 break;
             case 4:
-                setFDS += 0;
+                setFDS += 3;
                 setSLT += 0;
-                setLST += 0;
+                setLST += 5;
                 break;
         }
     }

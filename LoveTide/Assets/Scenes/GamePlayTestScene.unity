@@ -369,7 +369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &256865566
 RectTransform:
   m_ObjectHideFlags: 0
@@ -446,9 +446,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: -2
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &275978297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -525,9 +526,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 2
-  setFDS: 1
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &280319613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -604,9 +606,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: -2
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &313280222
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -935,6 +938,7 @@ MonoBehaviour:
   setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &348653679
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1287,9 +1291,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: -2
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &453034663
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1674,7 +1679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &663425485
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1910,6 +1915,7 @@ MonoBehaviour:
   setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &705303440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2142,9 +2148,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: -1
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &731962884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2323,6 +2330,7 @@ MonoBehaviour:
   setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &817888989
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2452,9 +2460,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 2
-  setFDS: 1
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &920955422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2534,6 +2543,7 @@ MonoBehaviour:
   setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &926579797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2610,9 +2620,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: -1
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1006129985
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2689,9 +2700,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 3
-  setFDS: 2
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1025737133
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2768,9 +2780,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 2
-  setFDS: 1
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1051626301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3155,7 +3168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1192848795
 Transform:
   m_ObjectHideFlags: 0
@@ -3548,9 +3561,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: -2
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1245441657
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3665,9 +3679,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 3
-  setFDS: 2
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1314992738
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3874,9 +3889,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 2
-  setFDS: 1
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1381862167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4034,6 +4050,7 @@ MonoBehaviour:
   setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1460085728
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4490,6 +4507,7 @@ MonoBehaviour:
   setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1543245117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4696,9 +4714,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: 3
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1620545720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5717,9 +5736,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: -2
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1937811727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5796,9 +5816,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventNumber: 4
-  setFDS: -2
+  setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &1969308264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5854,7 +5875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a06672aeea530504b8e9a47ed15bda30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberCtrl: {fileID: 766579686}
+  numberCtrl: {fileID: 865394008}
   vacation: 0
 --- !u!4 &1980644439
 Transform:
@@ -6205,6 +6226,7 @@ MonoBehaviour:
   setFDS: 0
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &2063124169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6284,6 +6306,7 @@ MonoBehaviour:
   setFDS: 1
   setSLT: 0
   setLST: 0
+  FDSlv: 0
 --- !u!61 &2075634856
 BoxCollider2D:
   m_ObjectHideFlags: 0

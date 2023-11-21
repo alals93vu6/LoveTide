@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Task = System.Threading.Tasks.Task;
 
 public class GameManagerTest : MonoBehaviour
 {
@@ -30,15 +32,14 @@ public class GameManagerTest : MonoBehaviour
         numberCtrl.OnStart();
         textBox.OnStart_TextBox(dialog);
         actorManager.OnStart(dialog);
-        SetClickObject(0);
-        CheckActions();
+        
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
-        //Debug.Log("fuck my life");
-    }
+     void Start()
+     {
+         OnStart();
+     }
 
     private void Update()
     {
@@ -54,6 +55,13 @@ public class GameManagerTest : MonoBehaviour
             Debug.Log("ResetData");
             SceneManager.LoadScene(0);
         }
+    }
+
+    public async void OnStart()
+    {
+        await Task.Delay(80);
+        SetClickObject(0);
+        CheckActions();
     }
 
     public void TimePassCheck()
