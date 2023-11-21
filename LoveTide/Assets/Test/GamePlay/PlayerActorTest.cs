@@ -36,6 +36,7 @@ public class PlayerActorTest : MonoBehaviour
             case 9: Interactive_OnBack(); break;
             case 10: OnClickTextBox(); break;
             case 11: Interactive_TwoPersonOuting(); break;
+            //12 對話
         }
     }
 

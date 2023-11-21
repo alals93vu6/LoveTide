@@ -25,15 +25,18 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public bool isAlone;
 
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         numberCtrl.OnStart();
         textBox.OnStart_TextBox(dialog);
         actorManager.OnStart(dialog);
         SetClickObject(0);
         CheckActions();
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
         //Debug.Log("fuck my life");
     }
 

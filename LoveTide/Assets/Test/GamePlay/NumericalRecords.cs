@@ -26,6 +26,28 @@ public class NumericalRecords : MonoBehaviour
     public void OnStart()
     {
         GameDataLoad(PlayerPrefs.GetInt("GameDataNumber").ToString());
+        
+        if (friendship <= 100)
+        {
+            PlayerPrefs.SetInt("FDS_LV",0);
+        }
+        else if(friendship >101 && friendship <= 200)
+        {
+            PlayerPrefs.SetInt("FDS_LV",1);
+        }
+        else if(friendship >201 && friendship <= 300)
+        {
+            PlayerPrefs.SetInt("FDS_LV",2);
+        }
+        else if(friendship >301 && friendship <= 400)
+        {
+            PlayerPrefs.SetInt("FDS_LV",3);
+        }
+        else if(friendship >401 && friendship <= 500)
+        {
+            PlayerPrefs.SetInt("FDS_LV",4);
+        }
+        
     }
 
     public void GameDataLoad(string dataNumber)
