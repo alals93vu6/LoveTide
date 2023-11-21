@@ -191,7 +191,14 @@ public class GameManagerTest : MonoBehaviour
 
     public void CancelOuting()
     {
-        SetInteractiveObject(true);
+        if (FindObjectOfType<PlayerActorTest>().isAlon)
+        {
+            SetInteractiveObject(false);
+        }
+        else
+        {
+            SetInteractiveObject(true);
+        }
         interactiveButton[1].SetActive(false);
         background.ChickBackground(ChangeBackGroundNumber(0));
         SetClickObject(0);

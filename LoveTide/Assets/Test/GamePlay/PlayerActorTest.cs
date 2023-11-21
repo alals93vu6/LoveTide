@@ -9,7 +9,7 @@ public class PlayerActorTest : MonoBehaviour
     [SerializeField]public GameManagerTest gameManager;
     [SerializeField] public DialogDataDetected diaDetected;
 
-    [SerializeField] private bool isAlon;
+    [SerializeField] public bool isAlon;
     // Start is called before the first frame update
     void Start()
     {
@@ -191,54 +191,55 @@ public class PlayerActorTest : MonoBehaviour
     {
         if (isAlon)
         {
-            gameManager.numberCtrl.party++;
+            //gameManager.numberCtrl.party++;
+            Debug.Log("銀趴");
         }
         else
         {
-            gameManager.numberCtrl.SetNumerica(5,0,0);
-        }
+            Debug.Log("海灘");
+            //gameManager.numberCtrl.SetNumerica(5,0,0);
+        }/*
         gameManager.numberCtrl.GameDataSave();
         SceneManager.LoadScene("DramaScene");
-        Debug.Log("Beach");
+        Debug.Log("Beach");*/
     }
     
     public void GotoParks()
     {
         if (isAlon)
         {
-            
+            Debug.Log("支線+1");
         }
         else
         {
-            
+            Debug.Log("Parks");
         }
-        Debug.Log("Parks");
+        
     }
     
     public void GotoHills()
     {
         if (isAlon)
         {
-            
+            Debug.Log("支線+1");
         }
         else
         {
-            
+            Debug.Log("Hills");
         }
-        Debug.Log("Hills");
+        
     }
     
     public void GotoStreets()
     {
         if (isAlon)
         {
-            
+            Debug.Log("支線+1");
         }
         else
         {
-            
+            Debug.Log("Streets");
         }
-        Debug.Log("Streets");
     }
 
     public void OnClickTextBox()

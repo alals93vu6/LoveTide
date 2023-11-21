@@ -24,50 +24,49 @@ public class GamePlayingManagerDrama : MonoBehaviour
     {
         switch (PlayerPrefs.GetInt("DramaNumber"))
         {
-            case 1:MainMissionDetected(); break;
-            case 2:ExtramaritalAffairEventDetected(); break;
-            case 3:PartyEventDetected(); break;
-            case 4:OutingEvent_Beach(); break;
-            case 5:OutingEvent_Hills(); break;
-            case 6:OutingEvent_Parks(); break;
-            case 7:OutingEvent_Restaurant(); break;
+            case 1:textBoxManager.diaLog = diaData[MainMissionDetected(0)]; break;
+            case 2:textBoxManager.diaLog = diaData[ExtramaritalAffairEventDetected(0)]; break;
+            case 3:textBoxManager.diaLog = diaData[PartyEventDetected(0)]; break;
+            case 4:textBoxManager.diaLog = diaData[OutingEvent_Beach(0)]; break;
+            case 5:textBoxManager.diaLog = diaData[OutingEvent_Hills(0)]; break;
+            case 6:textBoxManager.diaLog = diaData[OutingEvent_Parks(0)]; break;
+            case 7:textBoxManager.diaLog = diaData[OutingEvent_Restaurant(0)]; break;
         }
-        textBoxManager.diaLog = diaData[0];
     }
 
-    private void MainMissionDetected()
+    private int MainMissionDetected(int detectedNumber)
     {
-        
+        return detectedNumber;
     }
 
-    private void ExtramaritalAffairEventDetected()
+    private int ExtramaritalAffairEventDetected(int detectedNumber)
     {
-        
+        return detectedNumber;
     }
 
-    private void PartyEventDetected()
+    private int PartyEventDetected(int detectedNumber)
     {
-        
+        return detectedNumber;
     }
 
-    private void OutingEvent_Beach()
+    private int OutingEvent_Beach(int detectedNumber)
     {
-        
+        return detectedNumber;
     }
     
-    private void OutingEvent_Hills()
+    private int OutingEvent_Hills(int detectedNumber)
     {
-        
+        return detectedNumber;
     }
     
-    private void OutingEvent_Parks()
+    private int OutingEvent_Parks(int detectedNumber)
     {
-        
+        return detectedNumber;
     }
     
-    private void OutingEvent_Restaurant()
+    private int OutingEvent_Restaurant(int detectedNumber)
     {
-        
+        return detectedNumber;
     }
 
     //01為主線 02外遇 03淫趴 04海灘 05山丘 06公園 07吃飯
