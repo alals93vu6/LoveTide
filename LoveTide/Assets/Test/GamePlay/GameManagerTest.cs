@@ -14,12 +14,13 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public TimeManagerTest timer;
     [SerializeField] public TextBoxTestPlaying textBox;
     [SerializeField] public ActorManagerTest actorManager;
-    [SerializeField] private DialogData dialog;
+    
 
     [Header("物件")] 
     [SerializeField] public GameObject[] sceneObject;
     [SerializeField] public GameObject[] interactiveButton;
     [SerializeField] public ActorLocationCtrl actorCtrl;
+    [SerializeField] private DialogData[] dialog;
 
     [Header("狀態")] 
     [SerializeField] public bool isTalk;
@@ -30,8 +31,8 @@ public class GameManagerTest : MonoBehaviour
     private void Awake()
     {
         numberCtrl.OnStart();
-        textBox.OnStart_TextBox(dialog);
-        actorManager.OnStart(dialog);
+        textBox.OnStart_TextBox(dialog[PlayerPrefs.GetInt("FDS_LV")]);
+        actorManager.OnStart(dialog[PlayerPrefs.GetInt("FDS_LV")]);
         
     }
 
@@ -159,7 +160,7 @@ public class GameManagerTest : MonoBehaviour
             CheckActions();
         }
 
-        if (dialog.plotOptionsList[textBox.listSerial].notActor)
+        if (dialog[PlayerPrefs.GetInt("FDS_LV")].plotOptionsList[textBox.listSerial].notActor)
         {
             SetInteractiveObject(false);
         }

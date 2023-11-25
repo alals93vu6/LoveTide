@@ -1447,7 +1447,6 @@ MonoBehaviour:
   timer: {fileID: 1980644438}
   textBox: {fileID: 1643799231}
   actorManager: {fileID: 1937069864}
-  dialog: {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   sceneObject:
   - {fileID: 692707716}
   - {fileID: 256865565}
@@ -1460,6 +1459,12 @@ MonoBehaviour:
   - {fileID: 1711451707}
   - {fileID: 1721942762}
   actorCtrl: {fileID: 576478771}
+  dialog:
+  - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
+  - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
+  - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
+  - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
+  - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   isTalk: 0
   timePass: 0
   isAlone: 0

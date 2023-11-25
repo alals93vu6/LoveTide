@@ -16,7 +16,7 @@ public class NumericalRecords : MonoBehaviour
     [SerializeField] public int party;//趴踢
     [SerializeField] public int alonOuting;//出去玩
     [SerializeField] public int mainMission;//主線
-    
+
     [ContextMenu("AAA")]
     private void ASASA()
     {
@@ -26,30 +26,10 @@ public class NumericalRecords : MonoBehaviour
     public void OnStart()
     {
         GameDataLoad(PlayerPrefs.GetInt("GameDataNumber").ToString());
-        
-        if (friendship <= 100)
-        {
-            PlayerPrefs.SetInt("FDS_LV",0);
-        }
-        else if(friendship >101 && friendship <= 200)
-        {
-            PlayerPrefs.SetInt("FDS_LV",1);
-        }
-        else if(friendship >201 && friendship <= 300)
-        {
-            PlayerPrefs.SetInt("FDS_LV",2);
-        }
-        else if(friendship >301 && friendship <= 400)
-        {
-            PlayerPrefs.SetInt("FDS_LV",3);
-        }
-        else if(friendship >401 && friendship <= 500)
-        {
-            PlayerPrefs.SetInt("FDS_LV",4);
-        }
+        FDS_Detected();
         
     }
-
+    
     public void GameDataLoad(string dataNumber)
     {
         aDay = PlayerPrefs.GetInt("aDayData" + dataNumber);
@@ -67,6 +47,30 @@ public class NumericalRecords : MonoBehaviour
         if (aTimer == 0)
         {
             aTimer = 1;
+        }
+    }
+
+    public void FDS_Detected()
+    {
+        if (friendship <= 200)
+        {
+            PlayerPrefs.SetInt("FDS_LV",0);//290  
+        }
+        else if(friendship >201 && friendship <= 500)//+150 =150
+        {
+            PlayerPrefs.SetInt("FDS_LV",1);//560
+        }
+        else if(friendship >501 && friendship <= 750)//+150 +200 = 350
+        {
+            PlayerPrefs.SetInt("FDS_LV",2);//900 = 560 + 140 + 200
+        }
+        else if(friendship >751 && friendship <= 1900)//350 +200 = 550
+        {
+            PlayerPrefs.SetInt("FDS_LV",3);//X = 900 + 950 +  ~ 315(210 ~ 420)
+        }
+        else if(friendship >1901)//  (550 +200 +200 +200) 1150 +350  = 1500
+        {
+            PlayerPrefs.SetInt("FDS_LV",4);
         }
     }
 
