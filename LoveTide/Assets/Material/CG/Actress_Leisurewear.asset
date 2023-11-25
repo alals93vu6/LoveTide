@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb7acada6a8860418e62cb0c3f18c64, type: 3}
+  m_Name: Actress_Leisurewear
+  m_EditorClassIdentifier: 
+  ActorStandingDrawing:
+  - {fileID: 21300000, guid: 7cfafc1d45b4c7a49a7286b4bb6e870b, type: 3}
+  - {fileID: 21300000, guid: c94e91f83f724084f80504c34e3cc0e5, type: 3}
+  - {fileID: 21300000, guid: 160085686326aa4468d000c85fea49e2, type: 3}
+  - {fileID: 21300000, guid: 34d6a777f41670940af5c035c5f99c49, type: 3}
+  - {fileID: 21300000, guid: 5c47eb3f34a5d9841a649bfc2a14c3d7, type: 3}
+  - {fileID: 21300000, guid: 4e0e34ccd6eacc045ae625c897d08327, type: 3}
+  - {fileID: 21300000, guid: a993e0229f1e7b34ebeb18c3baa2ca76, type: 3}
+  - {fileID: 21300000, guid: 8e3d2264fb6c923448c325d7a1fc9cd3, type: 3}
+  - {fileID: 21300000, guid: e262b06435b58b44dab62dc07eb01c47, type: 3}

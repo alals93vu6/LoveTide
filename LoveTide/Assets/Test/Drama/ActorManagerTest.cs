@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,12 +15,21 @@ public class ActorManagerTest : MonoBehaviour
     public void OnStart(DialogData diadata)
     {
         dialog = diadata;
+        var startApparel = 0;
+        if (FindObjectOfType<TimeManagerTest>().vacation){startApparel = 1;}else{startApparel = 0;}
+        ChangeFace(startApparel,0);
+        TheActor[0].gameObject.SetActive(false);
     }
-    
+
+    private void Start()
+    {
+        
+    }
+
     public void ActorCtrl()
-    {   
-        //Debug.Log("changeFace"); 
+    {
         ChickActor();
+        Debug.Log(idleActor);
         if (dialog.plotOptionsList[FindObjectOfType<TextBoxTestPlaying>().listSerial].dialogDataDetails[FindObjectOfType<TextBoxTestPlaying>().textNumber].actorFace != Face.nothiog)
         {
             ChangeFace(idleActor,ChickFace(0));
@@ -56,18 +67,33 @@ public class ActorManagerTest : MonoBehaviour
 
     private void ChickActor()
     {
-        
-        switch (dialog.plotOptionsList[FindObjectOfType<TextBoxTestPlaying>().listSerial].dialogDataDetails[FindObjectOfType<TextBoxTestPlaying>().textNumber].speaker)
+        if (FindObjectOfType<TimeManagerTest>().vacation)
         {
-            case Speaker.Player : idleActor = 1; break;
-            case Speaker.GirlFriend : idleActor = 1; break;
-            case Speaker.BoyFriend : idleActor = 2; break;
+            switch (dialog.plotOptionsList[FindObjectOfType<TextBoxTestPlaying>().listSerial].dialogDataDetails[FindObjectOfType<TextBoxTestPlaying>().textNumber].speaker)
+            {
+                case Speaker.Player : idleActor = 1; break;
+                case Speaker.GirlFriend : idleActor = 1; break;
+                case Speaker.Chorus : idleActor = 1; break;
+            }
+        }
+        else
+        {
+            switch (dialog.plotOptionsList[FindObjectOfType<TextBoxTestPlaying>().listSerial].dialogDataDetails[FindObjectOfType<TextBoxTestPlaying>().textNumber].speaker)
+            {
+                case Speaker.Player : idleActor = 0; break;
+                case Speaker.GirlFriend : idleActor = 0; break;
+                case Speaker.Chorus : idleActor = 0; break;
+            }
+        }
+
+        
+    }
+    
+    /* case Speaker.BoyFriend : idleActor = 2; break;
             case Speaker.Steve : idleActor = 3; break;
             case Speaker.PoliceA : idleActor = 4; break;
             case Speaker.PoliceB : idleActor = 5; break;
             case Speaker.PassersbyA : idleActor = 6; break;
             case Speaker.PassersbyB : idleActor = 7; break;
-            case Speaker.Chorus : idleActor = 1; break;
-        }
-    }
+            */
 }

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb7acada6a8860418e62cb0c3f18c64, type: 3}
+  m_Name: Actress_Nude
+  m_EditorClassIdentifier: 
+  ActorStandingDrawing:
+  - {fileID: 21300000, guid: edfb2176f89d65a46be62d791309b8a7, type: 3}
+  - {fileID: 21300000, guid: 49723763c215ead48884e31303cbf130, type: 3}
+  - {fileID: 21300000, guid: d0ff5608ce03f1b47a0bd3f0c4b73c52, type: 3}
+  - {fileID: 21300000, guid: 332b0fbcbf505f049836a9ced80179bc, type: 3}
+  - {fileID: 21300000, guid: 0a3aa13f61520394ca74c80427d0ef6c, type: 3}
+  - {fileID: 21300000, guid: 513c60e1fc4ec3b43893923b8ef4922c, type: 3}
+  - {fileID: 21300000, guid: 4c33b4e22fb769f4188e6f9896498f17, type: 3}
+  - {fileID: 21300000, guid: 8057716f19eaec14dbae228ed7e96d17, type: 3}
+  - {fileID: 21300000, guid: 75356bed93d2f7b4eb5bffddc39dc914, type: 3}

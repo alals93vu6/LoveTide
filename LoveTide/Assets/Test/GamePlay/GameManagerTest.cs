@@ -33,7 +33,7 @@ public class GameManagerTest : MonoBehaviour
         numberCtrl.OnStart();
         textBox.OnStart_TextBox(dialog[PlayerPrefs.GetInt("FDS_LV")]);
         actorManager.OnStart(dialog[PlayerPrefs.GetInt("FDS_LV")]);
-        
+        CheckActions();
     }
 
     // Start is called before the first frame update
@@ -144,22 +144,6 @@ public class GameManagerTest : MonoBehaviour
 
     public void OnTalkEvent(int talkID)
     {
-        textBox.listSerial = talkID;
-        textBox.OnDisplayText();
-        SetClickObject(6);
-        if (numberCtrl.aTimer == 7 && !timer.vacation)
-        {
-            //Debug.Log("OffWork");
-        }
-        else if (numberCtrl.aTimer == 10 && timer.vacation)
-        {
-            //Debug.Log("TimeToSleep");
-        }
-        else
-        {
-            CheckActions();
-        }
-
         if (dialog[PlayerPrefs.GetInt("FDS_LV")].plotOptionsList[textBox.listSerial].notActor)
         {
             SetInteractiveObject(false);
@@ -169,7 +153,17 @@ public class GameManagerTest : MonoBehaviour
             actorCtrl.gameObject.SetActive(true);
             interactiveButton[0].SetActive(false);
         }
+        textBox.listSerial = talkID;
+        textBox.OnDisplayText();
+        SetClickObject(6);
+        if (numberCtrl.aTimer == 7 && !timer.vacation) { }
+        else if (numberCtrl.aTimer == 10 && timer.vacation) { }
+        else
+        {
+            CheckActions();
+        }
         actorCtrl.StayTarget = 0;
+        actorManager.ActorCtrl();
     }
     
     public void TalkDownEvent()
@@ -181,7 +175,7 @@ public class GameManagerTest : MonoBehaviour
         }
         textBox.stopLoop = false;
         actorCtrl.StayTarget = 1;
-        actorManager.ChangeFace(1,0);
+        actorManager.ActorCtrl();
         TimePassCheck();
         if (isTalk)
         {

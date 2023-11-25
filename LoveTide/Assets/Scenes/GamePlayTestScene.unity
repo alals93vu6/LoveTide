@@ -1565,7 +1565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 239141739976fd54798b58a6d8e7971b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: edfb2176f89d65a46be62d791309b8a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5674,7 +5674,7 @@ MonoBehaviour:
   - {fileID: 576478769}
   ActorImage:
   - {fileID: 11400000, guid: d24fdb8d27468ac4693011151feb5f3e, type: 2}
-  - {fileID: 11400000, guid: d24fdb8d27468ac4693011151feb5f3e, type: 2}
+  - {fileID: 11400000, guid: 991fd67832d64d040b6216fcb5c7177d, type: 2}
   dialog: {fileID: 0}
   idleActor: 0
 --- !u!4 &1937069865
