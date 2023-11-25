@@ -144,15 +144,7 @@ public class GameManagerTest : MonoBehaviour
 
     public void OnTalkEvent(int talkID)
     {
-        if (dialog[PlayerPrefs.GetInt("FDS_LV")].plotOptionsList[textBox.listSerial].notActor)
-        {
-            SetInteractiveObject(false);
-        }
-        else
-        {
-            actorCtrl.gameObject.SetActive(true);
-            interactiveButton[0].SetActive(false);
-        }
+        
         textBox.listSerial = talkID;
         textBox.OnDisplayText();
         SetClickObject(6);
@@ -163,7 +155,17 @@ public class GameManagerTest : MonoBehaviour
             CheckActions();
         }
         actorCtrl.StayTarget = 0;
-        actorManager.ActorCtrl();
+        
+        if (dialog[PlayerPrefs.GetInt("FDS_LV")].plotOptionsList[textBox.listSerial].notActor)
+        {
+            SetInteractiveObject(false);
+        }
+        else
+        {
+            actorCtrl.gameObject.SetActive(true);
+            interactiveButton[0].SetActive(false);
+            actorManager.ActorCtrl();
+        }
     }
     
     public void TalkDownEvent()
@@ -175,7 +177,9 @@ public class GameManagerTest : MonoBehaviour
         }
         textBox.stopLoop = false;
         actorCtrl.StayTarget = 1;
-        actorManager.ActorCtrl();
+        var apparel = 0;
+        if (FindObjectOfType<TimeManagerTest>().vacation){apparel = 1;}else{apparel = 0;}
+        actorManager.ChangeFace(apparel,0);
         TimePassCheck();
         if (isTalk)
         {

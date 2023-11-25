@@ -29,7 +29,6 @@ public class ActorManagerTest : MonoBehaviour
     public void ActorCtrl()
     {
         ChickActor();
-        Debug.Log(idleActor);
         if (dialog.plotOptionsList[FindObjectOfType<TextBoxTestPlaying>().listSerial].dialogDataDetails[FindObjectOfType<TextBoxTestPlaying>().textNumber].actorFace != Face.nothiog)
         {
             ChangeFace(idleActor,ChickFace(0));
@@ -38,6 +37,7 @@ public class ActorManagerTest : MonoBehaviour
     
     public void ChangeFace(int targetActor,int targetFace)
     {
+        //Debug.Log("ChangeFace");
         TheActor[targetActor].sprite = ActorImage[targetActor].ActorStandingDrawing[targetFace];
     }
 
@@ -69,6 +69,7 @@ public class ActorManagerTest : MonoBehaviour
     {
         if (FindObjectOfType<TimeManagerTest>().vacation)
         {
+            Debug.Log("便服");
             switch (dialog.plotOptionsList[FindObjectOfType<TextBoxTestPlaying>().listSerial].dialogDataDetails[FindObjectOfType<TextBoxTestPlaying>().textNumber].speaker)
             {
                 case Speaker.Player : idleActor = 1; break;
@@ -78,6 +79,7 @@ public class ActorManagerTest : MonoBehaviour
         }
         else
         {
+            Debug.Log("制服");
             switch (dialog.plotOptionsList[FindObjectOfType<TextBoxTestPlaying>().listSerial].dialogDataDetails[FindObjectOfType<TextBoxTestPlaying>().textNumber].speaker)
             {
                 case Speaker.Player : idleActor = 0; break;

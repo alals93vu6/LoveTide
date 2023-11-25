@@ -93,7 +93,7 @@ public class TextBoxTestPlaying : MonoBehaviour
         ChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
         DisplayTextBox(true);
-        actorCtrl.ActorCtrl();
+        //actorCtrl.ActorCtrl();
         
     }
 
