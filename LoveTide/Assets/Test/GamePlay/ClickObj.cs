@@ -17,7 +17,6 @@ public class ClickObj : MonoBehaviour
         FDSlv = PlayerPrefs.GetInt("FDS_LV");
         switch (eventNumber)
         {
-            case 12 : TalkNumberCtrl(); break;
             case 2 : OperateNumberCtrl(); break;
             case 3 : OlirtTalkNumberCtrl(); break;
             case 4 : MolestNumberCtrl(); break;
@@ -30,38 +29,6 @@ public class ClickObj : MonoBehaviour
         FindObjectOfType<PlayerActorTest>().OnClickActor(eventNumber,setFDS,setSLT,setLST);
     }
 
-    private void TalkNumberCtrl()
-    {
-        switch (FDSlv)
-        {
-            case 0:
-                setFDS += 2;
-                setSLT += 0;
-                setLST += 0;
-                break;
-            case 1:
-                setFDS += 2;
-                setSLT += 0;
-                setLST += 0;
-                break;
-            case 2:
-                setFDS += 2;
-                setSLT += 0;
-                setLST += 0;
-                break;
-            case 3:
-                setFDS += 3;
-                setSLT += 0;
-                setLST += 0;
-                break;
-            case 4:
-                setFDS += 3;
-                setSLT += 0;
-                setLST += 0;
-                break;
-        }
-    }
-    
     private void OperateNumberCtrl()
     {
         switch (FDSlv)

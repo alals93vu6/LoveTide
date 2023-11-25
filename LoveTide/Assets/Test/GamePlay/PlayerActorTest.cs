@@ -36,7 +36,6 @@ public class PlayerActorTest : MonoBehaviour
             case 9: Interactive_OnBack(); break;
             case 10: OnClickTextBox(); break;
             case 11: Interactive_TwoPersonOuting(); break;
-            //12 對話
         }
     }
 
@@ -57,7 +56,7 @@ public class PlayerActorTest : MonoBehaviour
     {
         gameManager.timePass = true;
         int talkid = 0;
-        if (gameManager.numberCtrl.aTimer <= 6)
+        if (!gameManager.timer.vacation)
         {
             talkid = Random.Range(4,7);
         }
@@ -148,10 +147,25 @@ public class PlayerActorTest : MonoBehaviour
         {
             talkid = Random.Range(8, 11);
         }
-        //Debug.Log(talkid);
+        switch (PlayerPrefs.GetInt("FDS_LV"))
+        {
+            case 0:
+                gameManager.numberCtrl.SetNumerica(2,0,0);
+                break;
+            case 1:
+                gameManager.numberCtrl.SetNumerica(2,0,0);
+                break;
+            case 2:
+                gameManager.numberCtrl.SetNumerica(2,0,0);
+                break;
+            case 3:
+                gameManager.numberCtrl.SetNumerica(3,0,0);
+                break;
+            case 4:
+                gameManager.numberCtrl.SetNumerica(3,0,0);
+                break;
+        }
         gameManager.OnTalkEvent(talkid);
-        gameManager.numberCtrl.SetNumerica(1,0,0);
-        
     }
     
     public void Interactive_Sleep(int fds,int slt, int lst)
