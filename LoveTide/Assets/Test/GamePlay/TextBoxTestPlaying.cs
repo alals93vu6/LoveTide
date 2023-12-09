@@ -139,8 +139,8 @@ public class TextBoxTestPlaying : MonoBehaviour
             case Speaker.Steve: nameText.text = "史帝夫"; break;
             case Speaker.PoliceA: nameText.text = "警察A"; break;
             case Speaker.PoliceB: nameText.text = "警察B"; break;
-            case Speaker.PassersbyA: nameText.text = "路人A"; break;
-            case Speaker.PassersbyB: nameText.text = "路人B"; break;
+            case Speaker.PassersbyA: nameText.text = "路人"; break;
+            case Speaker.PassersbyB: nameText.text = "客人"; break;
         }
     }
 }

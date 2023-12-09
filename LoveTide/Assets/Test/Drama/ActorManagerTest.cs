@@ -60,6 +60,7 @@ public class ActorManagerTest : MonoBehaviour
             case Face.anxious: faceNumber = 6; break;
             case Face.sad: faceNumber = 7; break; 
             case Face.superise: faceNumber = 8; break;
+            case Face.alaise: faceNumber = 9; break;
         }
         //Debug.Log("Face"+faceNumber);
         return faceNumber;

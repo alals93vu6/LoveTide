@@ -1112,7 +1112,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u589E\u52A0\u5916\u51FA\u9078\u5716UI\uFF0C\u9078\u64C7\u5B8C\u5F8C\u8F49\u81F3\u5287\u60C5\u64A5\u653E\u5668"
+  m_Text: "\u5230ACTORMANAGER\n\u6539\u8B8A\u6293\u53D6\u7684\u6587\u672C\u7DE8\u865F"
 --- !u!222 &398364884
 CanvasRenderer:
   m_ObjectHideFlags: 0
