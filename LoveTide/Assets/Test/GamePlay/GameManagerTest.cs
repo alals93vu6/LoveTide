@@ -76,10 +76,10 @@ public class GameManagerTest : MonoBehaviour
                 SetInteractiveObject(false);
                 switch (numberCtrl.aTimer)
                 {
-                    case 10 :OnTalkEvent(47); break;
-                    case 11 :OnTalkEvent(47); break;
-                    case 12 :OnTalkEvent(45); break;
-                    case 13 :OnTalkEvent(46); break;
+                    case 10 :OnTalkEvent(64); break;
+                    case 11 :OnTalkEvent(64); break;
+                    case 12 :OnTalkEvent(62); break;
+                    case 13 :OnTalkEvent(63); break;
                 }
                 timer.vacation = false;
                 isAlone = false;

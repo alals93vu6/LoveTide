@@ -43,7 +43,7 @@ public class PlayerActorTest : MonoBehaviour
     {
         if (gameManager.numberCtrl.aTimer == 8)
         {
-            gameManager.OnTalkEvent(53);
+            gameManager.OnTalkEvent(68);
         }
         else
         {
@@ -58,15 +58,15 @@ public class PlayerActorTest : MonoBehaviour
         int talkid = 0;
         if (!gameManager.timer.vacation)
         {
-            talkid = Random.Range(4,7);
+            talkid = Random.Range(1,6);
         }
         else if(gameManager.numberCtrl.aTimer == 8)
         {
-            talkid = 50;
+            talkid = 68;
         }
         else
         {
-            talkid = Random.Range(11,14);
+            talkid = Random.Range(28,33);
         }
 
         gameManager.OnTalkEvent(talkid);
@@ -79,11 +79,11 @@ public class PlayerActorTest : MonoBehaviour
         int talkid = 0;
         if (gameManager.timer.vacation == false)
         {
-            talkid = Random.Range(14,17);
+            talkid = Random.Range(6,11);
         }
         else
         {
-            talkid = Random.Range(17,20);
+            talkid = Random.Range(33,37);
         }
         gameManager.OnTalkEvent(talkid);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
@@ -92,7 +92,7 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Molest(int fds,int slt, int lst)
     {
         gameManager.timePass = true;
-        gameManager.OnTalkEvent(55);
+        gameManager.OnTalkEvent(11);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
@@ -104,11 +104,11 @@ public class PlayerActorTest : MonoBehaviour
         int talkid = 0;
         if (gameManager.numberCtrl.aTimer != 8)
         {
-            talkid = 54;
+            talkid = 65;
         }
         else
         {
-            talkid = 51;
+            talkid = 66;
         }
         gameManager.OnTalkEvent(talkid);
     }
@@ -141,11 +141,11 @@ public class PlayerActorTest : MonoBehaviour
         int talkid;
         if (!gameManager.timer.vacation)
         {
-            talkid = Random.Range(1, 4);
+            talkid = Random.Range(1, 6);
         }
         else
         {
-            talkid = Random.Range(8, 11);
+            talkid = Random.Range(28, 33);
         }
         switch (PlayerPrefs.GetInt("FDS_LV"))
         {

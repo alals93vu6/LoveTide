@@ -195,7 +195,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 3
-      actorFace: 0
+      actorFace: 2
       sentence: "\u563F\u563F\uFF5E\u4E00\u8D77\u597D\u597D\u52AA\u529B\u5427\uFF01"
       stayLocation: 0
       switchCGDisplay: 0
@@ -248,7 +248,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
     - speaker: 3
-      actorFace: 0
+      actorFace: 2
       sentence: "\u54C8\u54C8\uFF0C\u600E\u9EBC\u53EF\u80FD\uFF01\u770B\u4F86\u6211\u5011\u4E00\u6A23\u90FD\u662F\u591C\u8C93\u5B50\u5462\uFF5E "
       stayLocation: 0
       switchCGDisplay: 0
