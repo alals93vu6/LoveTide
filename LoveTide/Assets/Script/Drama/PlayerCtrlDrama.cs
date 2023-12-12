@@ -18,6 +18,8 @@ public class PlayerCtrlDrama : MonoBehaviour
     [SerializeField] private GameObject texBoxObj;
 
     [Header("數值")] [SerializeField] private int talkOrder;
+    [SerializeField] private bool isSkip;
+    [SerializeField] private float skipInterval;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,28 @@ public class PlayerCtrlDrama : MonoBehaviour
     void Update()
     {
         PlayerClick();
+        
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            isSkip = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            isSkip = false;
+            skipInterval = 0f;
+        }
+
+        if (isSkip)
+        {
+            skipInterval += Time.deltaTime;
+        }
+
+        if (skipInterval >= 0.07f)
+        {
+            PlayerSkip();
+            skipInterval = 0f;
+        }
     }
 
     private void OnStart()
@@ -66,6 +90,21 @@ public class PlayerCtrlDrama : MonoBehaviour
             {
                 SetTextBox(true);
             }
+        }
+    }
+
+    private void PlayerSkip()
+    {
+        if (texBox.isover)
+        {
+            texBox.DownText();
+        }
+        else
+        {
+            texBox.NextText();
+            talkOrder = texBox.textNumber;
+            actorCtrl.ActorCtrl(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].stayLocation);
+            CGDisplay.DisplayCGChick(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGDisplay,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGImage);
         }
     }
 
