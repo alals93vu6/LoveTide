@@ -10,6 +10,8 @@ public class PlayerActorTest : MonoBehaviour
     [SerializeField] public DialogDataDetected diaDetected;
 
     [SerializeField] public bool isAlon;
+    [SerializeField] private bool isSkip;
+    [SerializeField] private float skipInterval;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,27 @@ public class PlayerActorTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            isSkip = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            isSkip = false;
+            skipInterval = 0f;
+        }
+
+        if (isSkip)
+        {
+            skipInterval += Time.deltaTime;
+        }
+
+        if (skipInterval >= 0.07f)
+        {
+            OnClickTextBox();
+            skipInterval = 0f;
+        }
     }
 
     public void OnClickActor(int eventNumber,int fds,int slt, int lst)
@@ -28,7 +50,6 @@ public class PlayerActorTest : MonoBehaviour
             case 1: Interactive_Speak(fds,slt,lst); break;//開化
             case 2: Interactive_Operate(fds,slt,lst); break;//幫忙工作
             case 3: Interactive_FlirtTalk(fds,slt,lst); break;//情話
-            case 4: Interactive_Molest(fds,slt,lst); break;//肢體調情
             case 5: Interactive_Peeking(fds,slt,lst); break;//偷聽、進房間
             case 6: Interactive_Outing(); break;
             case 7: Interactive_Sex(); break;
@@ -36,6 +57,9 @@ public class PlayerActorTest : MonoBehaviour
             case 9: Interactive_OnBack(); break;
             case 10: OnClickTextBox(); break;
             case 11: Interactive_TwoPersonOuting(); break;
+            case 12: Interactive_MolestA(fds,slt,lst); break;//奶ㄗ
+            case 13: Interactive_MolestB(fds,slt,lst); break;//屁股
+            case 14: Interactive_MolestC(fds,slt,lst); break;//該逼
         }
     }
 
@@ -58,15 +82,15 @@ public class PlayerActorTest : MonoBehaviour
         int talkid = 0;
         if (!gameManager.timer.vacation)
         {
-            talkid = Random.Range(1,6);
+            talkid = Random.Range(23,28);
         }
         else if(gameManager.numberCtrl.aTimer == 8)
         {
-            talkid = 68;
+            talkid = 67;
         }
         else
         {
-            talkid = Random.Range(28,33);
+            talkid = Random.Range(50,55);
         }
 
         gameManager.OnTalkEvent(talkid);
@@ -89,10 +113,51 @@ public class PlayerActorTest : MonoBehaviour
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     
-    public void Interactive_Molest(int fds,int slt, int lst)
+    public void Interactive_MolestA(int fds,int slt, int lst)
     {
         gameManager.timePass = true;
-        gameManager.OnTalkEvent(11);
+        int talkid = 0;
+        if (gameManager.timer.vacation == false)
+        {
+            talkid = Random.Range(11,14);
+        }
+        else
+        {
+            talkid = Random.Range(38,41);
+        }
+        gameManager.OnTalkEvent(talkid);
+        gameManager.numberCtrl.SetNumerica(fds,slt,lst);
+    }
+    
+    public void Interactive_MolestB(int fds,int slt, int lst)
+    {
+        gameManager.timePass = true;
+        int talkid = 0;
+        if (gameManager.timer.vacation == false)
+        {
+            talkid = Random.Range(14,17);
+        }
+        else
+        {
+            talkid = Random.Range(44,47);
+        }
+        gameManager.OnTalkEvent(talkid);
+        gameManager.numberCtrl.SetNumerica(fds,slt,lst);
+    }
+    
+    public void Interactive_MolestC(int fds,int slt, int lst)
+    {
+        gameManager.timePass = true;
+        int talkid = 0;
+        if (gameManager.timer.vacation == false)
+        {
+            talkid = Random.Range(17,20);
+        }
+        else
+        {
+            talkid = Random.Range(41,44);
+        }
+        gameManager.OnTalkEvent(talkid);
         gameManager.numberCtrl.SetNumerica(fds,slt,lst);
     }
     

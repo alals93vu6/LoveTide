@@ -96,7 +96,7 @@ public class GameManagerTest : MonoBehaviour
             {
                 isTalk = false;
                 SetInteractiveObject(false);
-                OnTalkEvent(43);
+                OnTalkEvent(61);
                 timer.vacation = true;
                 //Debug.Log("A");
             }
@@ -104,7 +104,7 @@ public class GameManagerTest : MonoBehaviour
             {
                 isTalk = false;
                 SetInteractiveObject(false);
-                OnTalkEvent(52);
+                OnTalkEvent(68);
                 isAlone = true;
             }
             else

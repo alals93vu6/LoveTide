@@ -286,6 +286,8 @@ MonoBehaviour:
   gameManager: {fileID: 494522876}
   diaDetected: {fileID: 0}
   isAlon: 0
+  isSkip: 0
+  skipInterval: 0
 --- !u!1 &179762987
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 4
+  eventNumber: 14
   setFDS: 0
   setSLT: 0
   setLST: 0
@@ -605,7 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 4
+  eventNumber: 14
   setFDS: 0
   setSLT: 0
   setLST: 0
@@ -1290,7 +1292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 4
+  eventNumber: 14
   setFDS: 0
   setSLT: 0
   setLST: 0
@@ -2152,7 +2154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 4
+  eventNumber: 12
   setFDS: 0
   setSLT: 0
   setLST: 0
@@ -2624,7 +2626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 4
+  eventNumber: 12
   setFDS: 0
   setSLT: 0
   setLST: 0
@@ -3565,7 +3567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 4
+  eventNumber: 13
   setFDS: 0
   setSLT: 0
   setLST: 0
@@ -5740,7 +5742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 4
+  eventNumber: 12
   setFDS: 0
   setSLT: 0
   setLST: 0
@@ -5820,7 +5822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8360363ecc2049800c7a12b078201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventNumber: 4
+  eventNumber: 13
   setFDS: 0
   setSLT: 0
   setLST: 0
@@ -5881,7 +5883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberCtrl: {fileID: 865394008}
-  vacation: 1
+  vacation: 0
 --- !u!4 &1980644439
 Transform:
   m_ObjectHideFlags: 0
