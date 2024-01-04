@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms;
@@ -274,59 +275,81 @@ public class PlayerActorTest : MonoBehaviour
         Debug.Log("Travel");
     }
 
-    public void GotoBeach()
+    public async void GotoBeach()
     {
         if (isAlon)
         {
-            //gameManager.numberCtrl.party++;
-            Debug.Log("銀趴");
+            gameManager.numberCtrl.party++;
+            PlayerPrefs.SetInt("DramaNumber", 2);
         }
         else
         {
-            Debug.Log("海灘");
-            //gameManager.numberCtrl.SetNumerica(5,0,0);
-        }/*
+            gameManager.numberCtrl.SetNumerica(5,0,0);
+            PlayerPrefs.SetInt("DramaNumber", 4);
+        }
+        gameManager.numberCtrl.GameDataSave();
+        await Task.Delay(1500);
+        /*
         gameManager.numberCtrl.GameDataSave();
         SceneManager.LoadScene("DramaScene");
-        Debug.Log("Beach");*/
+        */
     }
     
-    public void GotoParks()
+    public async void GotoParks()
     {
+        
         if (isAlon)
         {
             Debug.Log("支線+1");
+            gameManager.numberCtrl.alonOuting++;
+            PlayerPrefs.SetInt("DramaNumber", 2);
         }
         else
         {
+            gameManager.numberCtrl.SetNumerica(5,0,0);
             Debug.Log("Parks");
+            PlayerPrefs.SetInt("DramaNumber", 6);
         }
-        
+        gameManager.numberCtrl.GameDataSave();
+        await Task.Delay(1500);
     }
     
-    public void GotoHills()
+    public async void GotoHills()
     {
+        
         if (isAlon)
         {
             Debug.Log("支線+1");
+            gameManager.numberCtrl.alonOuting++;
+            PlayerPrefs.SetInt("DramaNumber", 2);
         }
         else
         {
+            gameManager.numberCtrl.SetNumerica(5,0,0);
             Debug.Log("Hills");
+            PlayerPrefs.SetInt("DramaNumber", 5);
         }
-        
+        gameManager.numberCtrl.GameDataSave();
+        await Task.Delay(1500);
     }
     
-    public void GotoStreets()
+    public async void GotoStreets()
     {
+        
         if (isAlon)
         {
             Debug.Log("支線+1");
+            gameManager.numberCtrl.alonOuting++;
+            PlayerPrefs.SetInt("DramaNumber", 2);
         }
         else
         {
+            gameManager.numberCtrl.SetNumerica(5,0,0);
             Debug.Log("Streets");
+            PlayerPrefs.SetInt("DramaNumber", 7);
         }
+        gameManager.numberCtrl.GameDataSave();
+        await Task.Delay(1500);
     }
 
     public void OnClickTextBox()

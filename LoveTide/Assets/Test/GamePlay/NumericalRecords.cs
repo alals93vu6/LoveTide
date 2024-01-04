@@ -38,7 +38,10 @@ public class NumericalRecords : MonoBehaviour
         friendship = PlayerPrefs.GetInt("friendshipData" + dataNumber);
         slutty = PlayerPrefs.GetInt("sluttyData" + dataNumber);
         lust = PlayerPrefs.GetInt("lustData" + dataNumber);
-
+        party = PlayerPrefs.GetInt("partyEvent" + dataNumber);
+        alonOuting = PlayerPrefs.GetInt("outingEvent" + dataNumber);
+        mainMission = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
+        
         if (aWeek == 0)
         {
             aWeek = 1;
@@ -83,7 +86,11 @@ public class NumericalRecords : MonoBehaviour
         PlayerPrefs.SetInt("friendshipData" + dataNumber,friendship);
         PlayerPrefs.SetInt("sluttyData" + dataNumber,slutty);
         PlayerPrefs.SetInt("lustData" + dataNumber,lust);
+        PlayerPrefs.SetInt("partyEvent" + dataNumber,party);
+        PlayerPrefs.SetInt("outingEvent" + dataNumber,alonOuting);
+        PlayerPrefs.SetInt("mainMissionEvent" + dataNumber,mainMission);
     }
+    
     
     public void GameDataReset()
     {
@@ -94,6 +101,9 @@ public class NumericalRecords : MonoBehaviour
         PlayerPrefs.SetInt("friendshipData" + dataNumber,0);
         PlayerPrefs.SetInt("sluttyData" + dataNumber,0);
         PlayerPrefs.SetInt("lustData" + dataNumber,0);
+        PlayerPrefs.SetInt("partyEvent" + dataNumber,0);
+        PlayerPrefs.SetInt("outingEvent" + dataNumber,0);
+        PlayerPrefs.SetInt("mainMissionEvent" + dataNumber,0);
     }
 
 

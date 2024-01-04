@@ -26,8 +26,7 @@ public class GamePlayingManagerDrama : MonoBehaviour
         {
             case 1:textBoxManager.diaLog = diaData[MainMissionDetected(0)]; break;
             case 2:textBoxManager.diaLog = diaData[ExtramaritalAffairEventDetected(0)]; break;
-            case 3:textBoxManager.diaLog = diaData[PartyEventDetected(0)]; break;
-            case 4:textBoxManager.diaLog = diaData[OutingEvent_Beach(0)]; break;
+            case 3:textBoxManager.diaLog = diaData[PartyEventDetected(0)]; break; case 4:textBoxManager.diaLog = diaData[OutingEvent_Beach(0)]; break;
             case 5:textBoxManager.diaLog = diaData[OutingEvent_Hills(0)]; break;
             case 6:textBoxManager.diaLog = diaData[OutingEvent_Parks(0)]; break;
             case 7:textBoxManager.diaLog = diaData[OutingEvent_Restaurant(0)]; break;
