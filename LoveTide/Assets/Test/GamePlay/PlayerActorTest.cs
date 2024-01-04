@@ -11,6 +11,7 @@ public class PlayerActorTest : MonoBehaviour
 
     [SerializeField] public bool isAlon;
     [SerializeField] private bool isSkip;
+    [SerializeField] private bool isOuting;
     [SerializeField] private float skipInterval;
     // Start is called before the first frame update
     void Start()
@@ -36,10 +37,13 @@ public class PlayerActorTest : MonoBehaviour
             skipInterval += Time.deltaTime;
         }
 
-        if (skipInterval >= 0.07f)
+        if (!isOuting)
         {
-            OnClickTextBox();
-            skipInterval = 0f;
+            if (skipInterval >= 0.07f)
+            {
+                OnClickTextBox();
+                skipInterval = 0f;
+            }
         }
     }
 
@@ -181,17 +185,20 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Outing()
     {
         isAlon = true;
+        isOuting = true;
         gameManager.ReadyOuting();
     }
     
     public void Interactive_TwoPersonOuting()
     {
         isAlon = false;
+        isOuting = true;
         gameManager.ReadyOuting();
     }
 
     public void CancelOuting()
     {
+        isOuting = false;
         gameManager.CancelOuting();
     }
 
