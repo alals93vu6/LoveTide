@@ -70,8 +70,10 @@ public class PlayerActorTest : MonoBehaviour
         }
     }
 
-    public void Interactive_Speak(int fds,int slt, int lst)
+    public async void Interactive_Speak(int fds,int slt, int lst)
     {
+        gameUICtrl.darkCtrl.OnChangeScenes();
+        await Task.Delay(500);
         if (gameManager.numberCtrl.aTimer == 8)
         {
             gameManager.OnTalkEvent(68);
@@ -269,8 +271,10 @@ public class PlayerActorTest : MonoBehaviour
         //gameManager.DayPassedEvent(fds,slt,lst);
     }
 
-    public void Interactive_OnBack()
+    public async void Interactive_OnBack()
     {
+        gameUICtrl.darkCtrl.OnChangeScenes();
+        await Task.Delay(500);
         gameManager.isTalk = false;
         gameManager.actorCtrl.gameObject.SetActive(false);
         gameManager.SetClickObject(0);
