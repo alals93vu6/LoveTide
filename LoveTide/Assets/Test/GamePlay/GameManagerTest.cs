@@ -14,7 +14,6 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public TimeManagerTest timer;
     [SerializeField] public TextBoxTestPlaying textBox;
     [SerializeField] public ActorManagerTest actorManager;
-    
 
     [Header("物件")] 
     [SerializeField] public GameObject[] sceneObject;
