@@ -56,7 +56,6 @@ public class PlayerCtrlDrama : MonoBehaviour
 
     private void OnStart()
     {
-        diaLog = Resources.Load<DialogData>(scenarioChose.dataFile);
         texBox.OnStart_TextBox(diaLog);
         actorCtrl.OnStart(diaLog,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].stayLocation);
         CGDisplay.OnStart(diaLog);

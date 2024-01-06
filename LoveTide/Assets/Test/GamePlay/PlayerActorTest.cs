@@ -13,6 +13,7 @@ public class PlayerActorTest : MonoBehaviour
     [SerializeField] public bool isAlon;
     [SerializeField] private bool isSkip;
     [SerializeField] private bool isOuting;
+    [SerializeField] private bool readyToOuting;
     [SerializeField] private float skipInterval;
     // Start is called before the first frame update
     void Start()
@@ -277,79 +278,92 @@ public class PlayerActorTest : MonoBehaviour
 
     public async void GotoBeach()
     {
-        if (isAlon)
+        if (!readyToOuting)
         {
-            gameManager.numberCtrl.party++;
-            PlayerPrefs.SetInt("DramaNumber", 2);
+            if (isAlon)
+            {
+                gameManager.numberCtrl.party++;
+                PlayerPrefs.SetInt("DramaNumber", 2);
+            }
+            else
+            {
+                gameManager.numberCtrl.SetNumerica(5,0,0);
+                PlayerPrefs.SetInt("DramaNumber", 4);
+            }
+            readyToOuting = true;
+            gameManager.numberCtrl.GameDataSave();
+            await Task.Delay(1500);
+            SceneManager.LoadScene("DramaScene");
         }
-        else
-        {
-            gameManager.numberCtrl.SetNumerica(5,0,0);
-            PlayerPrefs.SetInt("DramaNumber", 4);
-        }
-        gameManager.numberCtrl.GameDataSave();
-        await Task.Delay(1500);
-        /*
-        gameManager.numberCtrl.GameDataSave();
-        SceneManager.LoadScene("DramaScene");
-        */
     }
     
     public async void GotoParks()
     {
-        
-        if (isAlon)
+        if (!readyToOuting)
         {
-            Debug.Log("支線+1");
-            gameManager.numberCtrl.alonOuting++;
-            PlayerPrefs.SetInt("DramaNumber", 2);
+            if (isAlon)
+            {
+                //Debug.Log("支線+1");
+                gameManager.numberCtrl.alonOuting++;
+                PlayerPrefs.SetInt("DramaNumber", 2);
+            }
+            else
+            {
+                gameManager.numberCtrl.SetNumerica(5,0,0);
+                //Debug.Log("Parks");
+                PlayerPrefs.SetInt("DramaNumber", 6);
+            }
+            readyToOuting = true;
+            gameManager.numberCtrl.GameDataSave();
+            await Task.Delay(1500);
+            SceneManager.LoadScene("DramaScene");
         }
-        else
-        {
-            gameManager.numberCtrl.SetNumerica(5,0,0);
-            Debug.Log("Parks");
-            PlayerPrefs.SetInt("DramaNumber", 6);
-        }
-        gameManager.numberCtrl.GameDataSave();
-        await Task.Delay(1500);
     }
     
     public async void GotoHills()
     {
-        
-        if (isAlon)
+        if (!readyToOuting)
         {
-            Debug.Log("支線+1");
-            gameManager.numberCtrl.alonOuting++;
-            PlayerPrefs.SetInt("DramaNumber", 2);
+            if (isAlon)
+            {
+                //Debug.Log("支線+1");
+                gameManager.numberCtrl.alonOuting++;
+                PlayerPrefs.SetInt("DramaNumber", 2);
+            }
+            else
+            {
+                gameManager.numberCtrl.SetNumerica(5,0,0);
+                //Debug.Log("Hills");
+                PlayerPrefs.SetInt("DramaNumber", 5);
+            }
+            readyToOuting = true;
+            gameManager.numberCtrl.GameDataSave();
+            await Task.Delay(1500);
+            SceneManager.LoadScene("DramaScene");
         }
-        else
-        {
-            gameManager.numberCtrl.SetNumerica(5,0,0);
-            Debug.Log("Hills");
-            PlayerPrefs.SetInt("DramaNumber", 5);
-        }
-        gameManager.numberCtrl.GameDataSave();
-        await Task.Delay(1500);
     }
     
     public async void GotoStreets()
     {
-        
-        if (isAlon)
+        if (!readyToOuting)
         {
-            Debug.Log("支線+1");
-            gameManager.numberCtrl.alonOuting++;
-            PlayerPrefs.SetInt("DramaNumber", 2);
+            if (isAlon)
+            {
+                //Debug.Log("支線+1");
+                gameManager.numberCtrl.alonOuting++;
+                PlayerPrefs.SetInt("DramaNumber", 2);
+            }
+            else
+            {
+                gameManager.numberCtrl.SetNumerica(5,0,0);
+                //Debug.Log("Streets");
+                PlayerPrefs.SetInt("DramaNumber", 7);
+            }
+            readyToOuting = true;
+            gameManager.numberCtrl.GameDataSave();
+            await Task.Delay(1500);
+            SceneManager.LoadScene("DramaScene"); 
         }
-        else
-        {
-            gameManager.numberCtrl.SetNumerica(5,0,0);
-            Debug.Log("Streets");
-            PlayerPrefs.SetInt("DramaNumber", 7);
-        }
-        gameManager.numberCtrl.GameDataSave();
-        await Task.Delay(1500);
     }
 
     public void OnClickTextBox()
