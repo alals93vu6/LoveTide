@@ -37,6 +37,8 @@ public class GamePlayingManagerDrama : MonoBehaviour
             case 6:playerCtrlManager.diaLog = diaData[6]; break;
             case 7:playerCtrlManager.diaLog = diaData[7]; break;
         }
+
+        Debug.Log(PlayerPrefs.GetInt("DramaNumber"));
     }
     
 }

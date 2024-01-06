@@ -283,7 +283,7 @@ public class PlayerActorTest : MonoBehaviour
             if (isAlon)
             {
                 gameManager.numberCtrl.party++;
-                PlayerPrefs.SetInt("DramaNumber", 2);
+                PlayerPrefs.SetInt("DramaNumber", 3);
             }
             else
             {
