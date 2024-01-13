@@ -6,7 +6,7 @@ using UnityEngine;
 public class GamePlayingManagerDrama : MonoBehaviour
 {
     [SerializeField] public DialogData[] diaData;
-    [SerializeField] private NumericalRecords numberCtrl;
+    [SerializeField] public EventDetectedManager eventDetected;
     [SerializeField] private PlayerCtrlDrama playerCtrlManager;
     // Start is called before the first frame update
     private void Awake()
@@ -15,7 +15,7 @@ public class GamePlayingManagerDrama : MonoBehaviour
     }
     void Start()
     {
-        numberCtrl.OnStart();
+        eventDetected.numberCtrl.OnStart();
         DialogDetected();
     }
 

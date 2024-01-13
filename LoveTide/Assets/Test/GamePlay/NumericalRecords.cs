@@ -5,9 +5,9 @@ using UnityEngine;
 public class NumericalRecords : MonoBehaviour
 {
     [Header("玩家數值")]
-    [SerializeField] public int aDay;
-    [SerializeField] public int aTimer;
-    [SerializeField] public int aWeek;
+    [SerializeField] public int aDay;//天數
+    [SerializeField] public int aTimer;//時段
+    [SerializeField] public int aWeek;//星期幾
     [SerializeField] public int friendship;//好感度
     [SerializeField] public int slutty;//淫亂度
     [SerializeField] public int lust;//慾望值
@@ -16,7 +16,16 @@ public class NumericalRecords : MonoBehaviour
     [SerializeField] public int party;//趴踢
     [SerializeField] public int alonOuting;//出去玩
     [SerializeField] public int mainMission;//主線
+    [SerializeField] public int tavern;//酒館
+    [SerializeField] public int dormitories;//宿舍
+    [SerializeField] public int beach;//山丘
+    [SerializeField] public int hills;//山丘
+    [SerializeField] public int park;//公園
+    [SerializeField] public int shoppingStreet;//商店街
 
+    [Header("背包")] 
+    [SerializeField] public int getPropsLevel;
+    //1.奇怪的藥劑 2.貓貓童貞殺手內衣 3.便攜式跳蛋 4.誘惑比基尼 5.假裝自己是一隻大狗狗 6.奇怪的藥劑_改良版
     [ContextMenu("AAA")]
     private void ASASA()
     {
@@ -30,7 +39,7 @@ public class NumericalRecords : MonoBehaviour
         
     }
     
-    public void GameDataLoad(string dataNumber)
+    private void GameDataLoad(string dataNumber)
     {
         aDay = PlayerPrefs.GetInt("aDayData" + dataNumber);
         aTimer = PlayerPrefs.GetInt("aTimerData" + dataNumber);
@@ -41,7 +50,13 @@ public class NumericalRecords : MonoBehaviour
         party = PlayerPrefs.GetInt("partyEvent" + dataNumber);
         alonOuting = PlayerPrefs.GetInt("outingEvent" + dataNumber);
         mainMission = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
-        
+        tavern = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
+        dormitories = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
+        beach = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
+        hills = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
+        shoppingStreet = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
+        park = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
+        getPropsLevel = PlayerPrefs.GetInt("PropsLevelData" + dataNumber);
         if (aWeek == 0)
         {
             aWeek = 1;
@@ -53,7 +68,7 @@ public class NumericalRecords : MonoBehaviour
         }
     }
 
-    public void FDS_Detected()
+    private void FDS_Detected()
     {
         if (friendship <= 200)
         {
@@ -94,16 +109,12 @@ public class NumericalRecords : MonoBehaviour
     
     public void GameDataReset()
     {
+        PlayerPrefs.DeleteAll();
         string dataNumber = PlayerPrefs.GetInt("GameDataNumber").ToString();
         PlayerPrefs.SetInt("aDayData" + dataNumber,1);
         PlayerPrefs.SetInt("aTimerData" + dataNumber,1);
         PlayerPrefs.SetInt("aWeekData" + dataNumber,1);
-        PlayerPrefs.SetInt("friendshipData" + dataNumber,0);
-        PlayerPrefs.SetInt("sluttyData" + dataNumber,0);
-        PlayerPrefs.SetInt("lustData" + dataNumber,0);
-        PlayerPrefs.SetInt("partyEvent" + dataNumber,0);
-        PlayerPrefs.SetInt("outingEvent" + dataNumber,0);
-        PlayerPrefs.SetInt("mainMissionEvent" + dataNumber,0);
+        
     }
 
 
