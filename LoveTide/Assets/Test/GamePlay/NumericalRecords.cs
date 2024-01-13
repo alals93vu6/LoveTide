@@ -18,7 +18,7 @@ public class NumericalRecords : MonoBehaviour
     [SerializeField] public int mainMission;//主線
     [SerializeField] public int tavern;//酒館
     [SerializeField] public int dormitories;//宿舍
-    [SerializeField] public int beach;//山丘
+    [SerializeField] public int beach;//海灘
     [SerializeField] public int hills;//山丘
     [SerializeField] public int park;//公園
     [SerializeField] public int shoppingStreet;//商店街

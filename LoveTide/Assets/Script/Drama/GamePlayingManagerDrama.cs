@@ -15,6 +15,7 @@ public class GamePlayingManagerDrama : MonoBehaviour
     void Start()
     {
         DialogDetected();
+        playerCtrlManager.OnStart();
     }
 
     // Update is called once per frame

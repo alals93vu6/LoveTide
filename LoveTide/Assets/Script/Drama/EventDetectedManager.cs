@@ -10,47 +10,128 @@ public class EventDetectedManager : MonoBehaviour
     {
         switch (PlayerPrefs.GetInt("DramaNumber"))
         {
-            case 1: Debug.Log("A"); break;
-            case 2: Debug.Log("B"); break;
-            case 3: Debug.Log("C"); break;
-            case 4: Debug.Log("D"); break;
-            case 5: Debug.Log("E"); break;
-            case 6: Debug.Log("F"); break;
-            case 7: Debug.Log("G"); break;
+            case 1: MainMissionEventDetected(); break;
+            case 2: PartyEventDetected(); break;
+            case 3: AlonOutingEventDetected(); break;
+            case 4: BeachEventDetected(); break;
+            case 5: HillsEventDetected(); break;
+            case 6: ParkEventDetected(); break;
+            case 7: ShoppingStreetEventDetected(); break;
+            case 8: TavernEventDetected(); break;
+            case 9: DormitoriesEventDetected(); break;
         }
     }
 
     private void MainMissionEventDetected()
     {
-        switch (numberCtrl.mainMission)
-        {
-            case 0: Debug.Log("A"); break;
-            case 1: Debug.Log("B"); break;
-            case 2: Debug.Log("C"); break;
-            case 3: Debug.Log("D"); break;
-            case 4: Debug.Log("E"); break;
-            case 5: Debug.Log("F"); break;
-            case 6: Debug.Log("G"); break;
-        }
+        targetDialogNumber = numberCtrl.mainMission;
     }
 
     private void PartyEventDetected()
     {
         if (numberCtrl.party >= 4)
         {
-            
+            targetDialogNumber = 4;
         }
         else
         {
-            switch (numberCtrl.party)
-            {
-                case 0: Debug.Log("A"); break;
-                case 1: Debug.Log("B"); break;
-                case 2: Debug.Log("C"); break;
-            }
+            targetDialogNumber = numberCtrl.mainMission;
         }
     }
-
-
-
+    
+    private void AlonOutingEventDetected()
+    {
+        if (numberCtrl.alonOuting >= 5)
+        {
+            targetDialogNumber = 5;
+        }
+        else
+        {
+            targetDialogNumber = numberCtrl.mainMission;
+        }
+    }
+    
+    private void BeachEventDetected()
+    {
+        int eventNumber = 0;
+        if (numberCtrl.getPropsLevel >= 4 && numberCtrl.beach == 0)
+        {
+            eventNumber = 1;
+        }
+        if (numberCtrl.getPropsLevel >= 6 && numberCtrl.beach == 1)
+        {
+            eventNumber = 2;
+        }
+        switch (eventNumber)
+        {
+            case 0 : targetDialogNumber = Random.Range(2, 5); break;
+            case 1 : targetDialogNumber = 0; break;
+            case 2 : targetDialogNumber = 1; break;
+        }
+    }
+    private void HillsEventDetected()
+    {
+        int eventNumber = 0;
+        if (numberCtrl.getPropsLevel >= 1 && numberCtrl.hills == 0)
+        {
+            eventNumber = 1;
+        }
+        if (numberCtrl.getPropsLevel >= 6 && numberCtrl.hills == 1)
+        {
+            eventNumber = 2;
+        }
+        switch (eventNumber)
+        {
+            case 0 : targetDialogNumber = Random.Range(2, 5); break;
+            case 1 : targetDialogNumber = 0; break;
+            case 2 : targetDialogNumber = 1; break;
+        }
+    }
+    private void ParkEventDetected()
+    {
+        int eventNumber = 0;
+        if (numberCtrl.lust >= 35 && numberCtrl.park == 0)
+        {
+            eventNumber = 1;
+        }
+        if (numberCtrl.getPropsLevel >= 5 && numberCtrl.lust >= 35 && numberCtrl.park == 1)
+        {
+            eventNumber = 2;
+        }
+        switch (eventNumber)
+        {
+            case 0 : targetDialogNumber = Random.Range(2, 5); break;
+            case 1 : targetDialogNumber = 0; break;
+            case 2 : targetDialogNumber = 1; break;
+        }
+    }
+    
+    private void ShoppingStreetEventDetected()
+    {
+        int eventNumber = 0;
+        if (numberCtrl.lust >= 40 && numberCtrl.shoppingStreet == 0)
+        {
+            eventNumber = 1;
+        }
+        if (numberCtrl.lust >= 40 && numberCtrl.shoppingStreet == 1)
+        {
+            eventNumber = 2;
+        }
+        switch (eventNumber)
+        {
+            case 0 : targetDialogNumber = Random.Range(2, 5); break;
+            case 1 : targetDialogNumber = 0; break;
+            case 2 : targetDialogNumber = 1; break;
+        }
+    }
+    
+    private void TavernEventDetected()
+    {
+        targetDialogNumber = numberCtrl.mainMission;
+    }
+    
+    private void DormitoriesEventDetected()
+    {
+        targetDialogNumber = numberCtrl.mainMission;
+    }
 }
