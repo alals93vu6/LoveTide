@@ -11,6 +11,7 @@ public class TextBoxDrama : MonoBehaviour
     [SerializeField] public float letterSpeed = 0.02f;
     [SerializeField] public int textNumber = 0;
     [SerializeField] public string[] getTextDate;
+    [SerializeField] public int targetNumber;
     
     [Header("物件")]
     [SerializeField] public DialogData diaLog;
@@ -41,11 +42,11 @@ public class TextBoxDrama : MonoBehaviour
     
     private void TextDataLoad()
     {
-        var arraySize = diaLog.plotOptionsList[0].dialogDataDetails.Count;
+        var arraySize = diaLog.plotOptionsList[targetNumber].dialogDataDetails.Count;
         //Debug.Log(arraySize);
-        for (int i = 0; i < diaLog.plotOptionsList[0].dialogDataDetails.Count; i++)
+        for (int i = 0; i < diaLog.plotOptionsList[targetNumber].dialogDataDetails.Count; i++)
         {
-            getTextDate[i] = diaLog.plotOptionsList[0].dialogDataDetails[i].sentence;
+            getTextDate[i] = diaLog.plotOptionsList[targetNumber].dialogDataDetails[i].sentence;
         }
     }
     
@@ -81,7 +82,7 @@ public class TextBoxDrama : MonoBehaviour
     
     public void NextText()
     {
-        if (textNumber < diaLog.plotOptionsList[0].dialogDataDetails.Count - 1)
+        if (textNumber < diaLog.plotOptionsList[targetNumber].dialogDataDetails.Count - 1)
         {
             stopLoop = false;
             textNumber++;
@@ -98,11 +99,11 @@ public class TextBoxDrama : MonoBehaviour
     
     private void ChickName()
     {
-       switch (diaLog.plotOptionsList[0].dialogDataDetails[textNumber].speaker)
+       switch (diaLog.plotOptionsList[targetNumber].dialogDataDetails[textNumber].speaker)
         {
             case Speaker.Chorus: nameText.text = ""; break;
             case Speaker.Player: nameText.text = "玩家"; break;
-            case Speaker.GirlFriend: nameText.text = "織那久菜子"; break;
+            case Speaker.GirlFriend: nameText.text = "由香"; break;
             case Speaker.BoyFriend: nameText.text = "苦主"; break;
             case Speaker.Steve: nameText.text = "史帝夫"; break;
             case Speaker.PoliceA: nameText.text = "警察A"; break;

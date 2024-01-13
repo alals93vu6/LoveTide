@@ -269,6 +269,7 @@ MonoBehaviour:
   - 
   - 
   - 
+  targetNumber: 0
   diaLog: {fileID: 0}
   isover: 1
   stopLoop: 0
@@ -302,6 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberCtrl: {fileID: 7336718754932573271}
+  targetDialogNumber: 0
 --- !u!4 &61206120
 Transform:
   m_ObjectHideFlags: 0
@@ -1166,7 +1168,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8df9d9e0860689b4186d4a1f440634f2, type: 2}
   - {fileID: 11400000, guid: 0aa406a844c59c743b530245785baab4, type: 2}
   - {fileID: 11400000, guid: c15ee6adf5b54f24d9865d0ec213dec0, type: 2}
-  eventDetected: {fileID: 61206119}
   playerCtrlManager: {fileID: 1779472677}
 --- !u!1 &1270346669
 GameObject:
@@ -1746,6 +1747,7 @@ MonoBehaviour:
   texBox: {fileID: 16926061}
   actorCtrl: {fileID: 890082853}
   CGDisplay: {fileID: 596501527}
+  eventDetected: {fileID: 61206119}
   diaLog: {fileID: 0}
   scenarioChose: {fileID: 2138488084}
   texBoxObj: {fileID: 1645102487}
@@ -2032,6 +2034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberCtrl: {fileID: 7336718754932573271}
+  setPropsLevel: 0
 --- !u!4 &1933128453
 Transform:
   m_ObjectHideFlags: 0
@@ -2271,9 +2274,10 @@ MonoBehaviour:
   party: 0
   alonOuting: 0
   mainMission: 0
-  propsA: 0
-  propsB: 0
-  propsC: 0
-  propsD: 0
-  propsE: 0
-  propsF: 0
+  tavern: 0
+  dormitories: 0
+  beach: 0
+  hills: 0
+  park: 0
+  shoppingStreet: 0
+  getPropsLevel: 0

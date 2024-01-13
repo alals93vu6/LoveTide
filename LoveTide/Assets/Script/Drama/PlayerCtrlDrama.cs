@@ -10,6 +10,7 @@ public class PlayerCtrlDrama : MonoBehaviour
     [SerializeField] private TextBoxDrama texBox;
     [SerializeField] private ActorManagerDrama actorCtrl;
     [SerializeField] private CGDisplay CGDisplay;
+    [SerializeField] public EventDetectedManager eventDetected;
     
     [Header("物件B")]
     [SerializeField] public DialogData diaLog;
@@ -56,6 +57,8 @@ public class PlayerCtrlDrama : MonoBehaviour
 
     private void OnStart()
     {
+        eventDetected.numberCtrl.OnStart();
+        texBox.targetNumber = eventDetected.targetDialogNumber;
         texBox.OnStart_TextBox(diaLog);
         actorCtrl.OnStart(diaLog,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].stayLocation);
         CGDisplay.OnStart(diaLog);

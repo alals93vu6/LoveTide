@@ -36,7 +36,6 @@ public class NumericalRecords : MonoBehaviour
     {
         GameDataLoad(PlayerPrefs.GetInt("GameDataNumber").ToString());
         FDS_Detected();
-        
     }
     
     private void GameDataLoad(string dataNumber)
@@ -50,12 +49,12 @@ public class NumericalRecords : MonoBehaviour
         party = PlayerPrefs.GetInt("partyEvent" + dataNumber);
         alonOuting = PlayerPrefs.GetInt("outingEvent" + dataNumber);
         mainMission = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
-        tavern = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
-        dormitories = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
-        beach = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
-        hills = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
-        shoppingStreet = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
-        park = PlayerPrefs.GetInt("mainMissionEvent" + dataNumber);
+        tavern = PlayerPrefs.GetInt("tavernData" + dataNumber);
+        dormitories = PlayerPrefs.GetInt("dormitoriesData" + dataNumber);
+        beach = PlayerPrefs.GetInt("beachData" + dataNumber);
+        hills = PlayerPrefs.GetInt("hillsData" + dataNumber);
+        shoppingStreet = PlayerPrefs.GetInt("shoppingStreetData" + dataNumber);
+        park = PlayerPrefs.GetInt("parkData" + dataNumber);
         getPropsLevel = PlayerPrefs.GetInt("PropsLevelData" + dataNumber);
         if (aWeek == 0)
         {
@@ -104,17 +103,25 @@ public class NumericalRecords : MonoBehaviour
         PlayerPrefs.SetInt("partyEvent" + dataNumber,party);
         PlayerPrefs.SetInt("outingEvent" + dataNumber,alonOuting);
         PlayerPrefs.SetInt("mainMissionEvent" + dataNumber,mainMission);
+        PlayerPrefs.SetInt("tavernData" + dataNumber,tavern);
+        PlayerPrefs.SetInt("dormitoriesData" + dataNumber,dormitories);
+        PlayerPrefs.SetInt("beachData" + dataNumber,beach);
+        PlayerPrefs.SetInt("hillsData" + dataNumber,hills);
+        PlayerPrefs.SetInt("shoppingStreetData" + dataNumber,shoppingStreet);
+        PlayerPrefs.SetInt("parkData" + dataNumber,park);
+        PlayerPrefs.SetInt("PropsLevelData" + dataNumber,getPropsLevel);
     }
     
     
     public void GameDataReset()
     {
+        int gameLevelSave = PlayerPrefs.GetInt("GameDataNumber");
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("GameDataNumber",gameLevelSave);
         string dataNumber = PlayerPrefs.GetInt("GameDataNumber").ToString();
         PlayerPrefs.SetInt("aDayData" + dataNumber,1);
         PlayerPrefs.SetInt("aTimerData" + dataNumber,1);
         PlayerPrefs.SetInt("aWeekData" + dataNumber,1);
-        
     }
 
 
