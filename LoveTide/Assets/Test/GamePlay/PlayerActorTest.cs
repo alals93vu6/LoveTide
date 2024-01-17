@@ -71,14 +71,15 @@ public class PlayerActorTest : MonoBehaviour
 
     public async void Interactive_Speak(int fds,int slt, int lst)
     {
-        gameManager.gameUICtrl.darkCtrl.OnChangeScenes();
-        await Task.Delay(500);
+        
         if (gameManager.numberCtrl.aTimer == 8)
         {
             gameManager.OnTalkEvent(68);
         }
         else
         {
+            gameManager.gameUICtrl.darkCtrl.OnChangeScenes();
+            await Task.Delay(500);
             gameManager.isTalk = true;
             gameManager.OnTalkEvent(0);
         }

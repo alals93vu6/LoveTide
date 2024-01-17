@@ -328,7 +328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 494522876}
-  gameUICtrl: {fileID: 47724787}
   diaDetected: {fileID: 0}
   isAlon: 0
   isSkip: 0
@@ -1615,6 +1614,7 @@ MonoBehaviour:
   - {fileID: 1711451707}
   - {fileID: 1721942762}
   actorCtrl: {fileID: 576478771}
+  gameUICtrl: {fileID: 47724787}
   dialog:
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}

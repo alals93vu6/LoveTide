@@ -65,7 +65,7 @@ public class GameManagerTest : MonoBehaviour
         CheckActions();
     }
 
-    public void TimePassCheck()
+    public async void TimePassCheck()
     {
         if (numberCtrl.aTimer >= 10)
         {
@@ -103,6 +103,8 @@ public class GameManagerTest : MonoBehaviour
             else if (numberCtrl.aTimer == 8 && !isAlone)
             {
                 isTalk = false;
+                gameUICtrl.darkCtrl.OnChangeScenes();
+                await Task.Delay(500);
                 SetInteractiveObject(false);
                 OnTalkEvent(68);
                 isAlone = true;
