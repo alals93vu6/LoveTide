@@ -19,6 +19,7 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public GameObject[] sceneObject;
     [SerializeField] public GameObject[] interactiveButton;
     [SerializeField] public ActorLocationCtrl actorCtrl;
+    [SerializeField] public GameUICtrlmanager gameUICtrl;
     [SerializeField] private DialogData[] dialog;
 
     [Header("狀態")] 
@@ -70,7 +71,7 @@ public class GameManagerTest : MonoBehaviour
         {
             if (timer.vacation)
             {
-                Debug.Log("C");
+                //Debug.Log("C");
                 isTalk = false;
                 SetInteractiveObject(false);
                 switch (numberCtrl.aTimer)
@@ -85,7 +86,7 @@ public class GameManagerTest : MonoBehaviour
             }
             else
             {
-                Debug.Log("D");
+                //Debug.Log("D");
                 DayPassedEvent(0,0,0);
             }
         }
@@ -116,13 +117,25 @@ public class GameManagerTest : MonoBehaviour
         
     }
 
-    public void DayPassedEvent(int fds,int slt, int lst)
+    public async void DayPassedEvent(int fds,int slt, int lst)
     {
         numberCtrl.SetNumerica(fds,slt,lst);
         timer.DetectedDayPassed();
+        gameUICtrl.darkCtrl.OnChangeScenes();
+        await Task.Delay(500);
         SetClickObject(0);
         CheckActions();
         numberCtrl.GameDataSave();
+        switch (numberCtrl.aWeek)
+        {
+            case 1: OnTalkEvent(58); break;
+            case 2: OnTalkEvent(59); break;
+            case 3: OnTalkEvent(60); break;
+            case 4: OnTalkEvent(60); break;
+            case 5: OnTalkEvent(55); break;
+            case 6: OnTalkEvent(56); break;
+            case 7: OnTalkEvent(57); break;
+        }
         //OnTalkEvent(45);
         //inTextBox = false;
     }

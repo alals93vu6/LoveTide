@@ -8,7 +8,6 @@ using UnityEngine.SocialPlatforms;
 public class PlayerActorTest : MonoBehaviour
 {
     [SerializeField] public GameManagerTest gameManager;
-    [SerializeField] private GameUICtrlmanager gameUICtrl; 
     [SerializeField] public DialogDataDetected diaDetected;
 
     [SerializeField] public bool isAlon;
@@ -72,7 +71,7 @@ public class PlayerActorTest : MonoBehaviour
 
     public async void Interactive_Speak(int fds,int slt, int lst)
     {
-        gameUICtrl.darkCtrl.OnChangeScenes();
+        gameManager.gameUICtrl.darkCtrl.OnChangeScenes();
         await Task.Delay(500);
         if (gameManager.numberCtrl.aTimer == 8)
         {
@@ -189,7 +188,7 @@ public class PlayerActorTest : MonoBehaviour
     
     public async void Interactive_Outing()
     {
-        gameUICtrl.darkCtrl.OnChangeScenes();
+        gameManager.gameUICtrl.darkCtrl.OnChangeScenes();
         await Task.Delay(500);
         isAlon = true;
         isOuting = true;
@@ -198,7 +197,7 @@ public class PlayerActorTest : MonoBehaviour
     
     public async void Interactive_TwoPersonOuting()
     {
-        gameUICtrl.darkCtrl.OnChangeScenes();
+        gameManager.gameUICtrl.darkCtrl.OnChangeScenes();
         await Task.Delay(500);
         isAlon = false;
         isOuting = true;
@@ -207,7 +206,7 @@ public class PlayerActorTest : MonoBehaviour
 
     public async void CancelOuting()
     {
-        gameUICtrl.darkCtrl.OnChangeScenes();
+        gameManager.gameUICtrl.darkCtrl.OnChangeScenes();
         await Task.Delay(500);
         isOuting = false;
         gameManager.CancelOuting();
@@ -273,7 +272,7 @@ public class PlayerActorTest : MonoBehaviour
 
     public async void Interactive_OnBack()
     {
-        gameUICtrl.darkCtrl.OnChangeScenes();
+        gameManager.gameUICtrl.darkCtrl.OnChangeScenes();
         await Task.Delay(500);
         gameManager.isTalk = false;
         gameManager.actorCtrl.gameObject.SetActive(false);
@@ -303,7 +302,7 @@ public class PlayerActorTest : MonoBehaviour
             }
             readyToOuting = true;
             gameManager.numberCtrl.GameDataSave();
-            gameUICtrl.darkCtrl.OnExitGamePlayScenes();
+            gameManager.gameUICtrl.darkCtrl.OnExitGamePlayScenes();
             await Task.Delay(1500);
             SceneManager.LoadScene("DramaScene");
         }
@@ -327,7 +326,7 @@ public class PlayerActorTest : MonoBehaviour
             }
             readyToOuting = true;
             gameManager.numberCtrl.GameDataSave();
-            gameUICtrl.darkCtrl.OnExitGamePlayScenes();
+            gameManager.gameUICtrl.darkCtrl.OnExitGamePlayScenes();
             await Task.Delay(1500);
             SceneManager.LoadScene("DramaScene");
         }
@@ -351,7 +350,7 @@ public class PlayerActorTest : MonoBehaviour
             }
             readyToOuting = true;
             gameManager.numberCtrl.GameDataSave();
-            gameUICtrl.darkCtrl.OnExitGamePlayScenes();
+            gameManager.gameUICtrl.darkCtrl.OnExitGamePlayScenes();
             await Task.Delay(1500);
             SceneManager.LoadScene("DramaScene");
         }
@@ -375,7 +374,7 @@ public class PlayerActorTest : MonoBehaviour
             }
             readyToOuting = true;
             gameManager.numberCtrl.GameDataSave();
-            gameUICtrl.darkCtrl.OnExitGamePlayScenes();
+            gameManager.gameUICtrl.darkCtrl.OnExitGamePlayScenes();
             await Task.Delay(1500);
             SceneManager.LoadScene("DramaScene"); 
         }

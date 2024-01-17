@@ -1268,7 +1268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u63DB\u5230\u5287\u60C5\u6A21\u5F0F\u6642\u5075\u6E2C\u4E8B\u4EF6"
+  m_Text: "\u6BCF\u65E5\u958B\u59CB\u6642\u7684\u73A9\u5BB6\u81EA\u767D"
 --- !u!222 &398364884
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2360,6 +2360,13 @@ MonoBehaviour:
   party: 0
   alonOuting: 0
   mainMission: 0
+  tavern: 0
+  dormitories: 0
+  beach: 0
+  hills: 0
+  park: 0
+  shoppingStreet: 0
+  getPropsLevel: 0
 --- !u!1 &800051292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,6 +2578,13 @@ MonoBehaviour:
   party: 0
   alonOuting: 0
   mainMission: 0
+  tavern: 0
+  dormitories: 0
+  beach: 0
+  hills: 0
+  park: 0
+  shoppingStreet: 0
+  getPropsLevel: 0
 --- !u!1 &920955419
 GameObject:
   m_ObjectHideFlags: 0
