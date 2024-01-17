@@ -71,7 +71,6 @@ public class GameManagerTest : MonoBehaviour
         {
             if (timer.vacation)
             {
-                //Debug.Log("C");
                 isTalk = false;
                 SetInteractiveObject(false);
                 switch (numberCtrl.aTimer)
@@ -86,7 +85,6 @@ public class GameManagerTest : MonoBehaviour
             }
             else
             {
-                //Debug.Log("D");
                 DayPassedEvent(0,0,0);
             }
         }
@@ -98,7 +96,6 @@ public class GameManagerTest : MonoBehaviour
                 SetInteractiveObject(false);
                 OnTalkEvent(61);
                 timer.vacation = true;
-                //Debug.Log("A");
             }
             else if (numberCtrl.aTimer == 8 && !isAlone)
             {
@@ -113,10 +110,8 @@ public class GameManagerTest : MonoBehaviour
             {
                 SetClickObject(0);
                 CheckActions();
-                //Debug.Log("B");
             }
         }
-        
     }
 
     public async void DayPassedEvent(int fds,int slt, int lst)
@@ -138,8 +133,6 @@ public class GameManagerTest : MonoBehaviour
             case 6: OnTalkEvent(56); break;
             case 7: OnTalkEvent(57); break;
         }
-        //OnTalkEvent(45);
-        //inTextBox = false;
     }
 
     public void ClickTextBoxEvent()
@@ -147,12 +140,10 @@ public class GameManagerTest : MonoBehaviour
         if (textBox.isover)
         {
             textBox.DownText();
-            //Debug.Log("VAR");
         }
         else
         {
             textBox.NextText();
-            //Debug.Log("VARB");
         }
     }
 
