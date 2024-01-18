@@ -149,7 +149,7 @@ public class GameManagerTest : MonoBehaviour
 
     public void OnTalkEvent(int talkID)
     {
-        
+        gameUICtrl.informationButton.isOpen = false;
         textBox.listSerial = talkID;
         textBox.OnDisplayText();
         SetClickObject(6);

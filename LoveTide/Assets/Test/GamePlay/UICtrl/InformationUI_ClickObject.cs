@@ -5,24 +5,35 @@ using UnityEngine.UI;
 
 public class InformationUI_ClickObject : MonoBehaviour
 {
-    [SerializeField] public bool isOpen;
-    private RectTransform objectTransform;
+    [SerializeField] public bool isOpen = false;
     // Start is called before the first frame update
     void Start()
     {
-        objectTransform = GetComponent<RectTransform>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isOpen)
+        if (!isOpen)
         {
-            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-550,200,0),0.05f);
+            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-550,195,0),0.05f);
         }
         else
         {
-            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-260,200,0),0.05f);
+            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-260,195,0),0.05f);
+        }
+    }
+
+    public void OnSwitchButton()
+    {
+        if (isOpen)
+        {
+            isOpen = false;
+        }
+        else
+        {
+            isOpen = true;
         }
     }
 }

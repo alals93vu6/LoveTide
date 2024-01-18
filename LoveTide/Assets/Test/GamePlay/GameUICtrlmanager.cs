@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameUICtrlmanager : MonoBehaviour
 {
     [SerializeField] public DirtyTrickCtrl darkCtrl;
+    [SerializeField] public InformationUI_ClickObject informationButton;
     // Start is called before the first frame update
     void Start()
     {
