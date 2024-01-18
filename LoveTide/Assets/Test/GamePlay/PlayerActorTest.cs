@@ -191,6 +191,7 @@ public class PlayerActorTest : MonoBehaviour
     {
         gameManager.gameUICtrl.darkCtrl.OnChangeScenes();
         await Task.Delay(500);
+        gameManager.gameUICtrl.informationButtonObject.SetActive(false);
         isAlon = true;
         isOuting = true;
         gameManager.ReadyOuting();

@@ -149,10 +149,10 @@ public class GameManagerTest : MonoBehaviour
 
     public void OnTalkEvent(int talkID)
     {
-        gameUICtrl.informationButton.isOpen = false;
         textBox.listSerial = talkID;
         textBox.OnDisplayText();
         SetClickObject(6);
+        gameUICtrl.informationButtonObject.SetActive(false);
         if (numberCtrl.aTimer == 7 && !timer.vacation) { }
         else if (numberCtrl.aTimer == 10 && timer.vacation) { }
         else
@@ -231,6 +231,7 @@ public class GameManagerTest : MonoBehaviour
         {
             sceneObject[i].SetActive(false);
         }
+        //gameUICtrl.informationButtonObject.SetActive(false);
 
         if (displayObject == 0)
         {
@@ -314,7 +315,7 @@ public class GameManagerTest : MonoBehaviour
                 }
             }
         }
-        
+
         return BackNumber;
     }
 
@@ -372,6 +373,13 @@ public class GameManagerTest : MonoBehaviour
                 }
             }
         }
+        gameUICtrl.informationButtonObject.SetActive(false);
+        
+        if (objectNumber == 1 || objectNumber == 3)
+        {
+            gameUICtrl.informationButtonObject.SetActive(true);
+        }
+        
         //Debug.Log(objectNumber);
         return objectNumber;
     }
