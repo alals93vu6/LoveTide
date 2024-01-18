@@ -17,11 +17,11 @@ public class InformationUI_ClickObject : MonoBehaviour
     {
         if (!isOpen)
         {
-            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-550,195,0),0.05f);
+            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-550,195,0),0.02f);
         }
         else
         {
-            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-260,195,0),0.05f);
+            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-260,195,0),0.02f);
         }
     }
 
