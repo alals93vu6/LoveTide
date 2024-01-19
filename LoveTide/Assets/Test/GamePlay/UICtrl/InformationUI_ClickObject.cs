@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,18 +14,19 @@ public class InformationUI_ClickObject : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+
+    private void FixedUpdate()
     {
         if (!isOpen)
         {
-            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-550,195,0),0.02f);
+            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-550,195,0),0.08f);
         }
         else
         {
-            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-260,195,0),0.02f);
+            transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(-260,195,0),0.08f);
         }
     }
-
+    
     public void OnSwitchButton()
     {
         if (isOpen)

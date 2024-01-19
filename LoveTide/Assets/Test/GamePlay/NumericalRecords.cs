@@ -11,6 +11,7 @@ public class NumericalRecords : MonoBehaviour
     [SerializeField] public int friendship;//好感度
     [SerializeField] public int slutty;//淫亂度
     [SerializeField] public int lust;//慾望值
+    [SerializeField] public int fdstest;
 
     [Header("事件經歷")] 
     [SerializeField] public int party;//趴踢

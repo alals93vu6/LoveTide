@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Task = System.Threading.Tasks.Task;
@@ -32,6 +31,7 @@ public class GameManagerTest : MonoBehaviour
     {
         numberCtrl.OnStart();
         textBox.OnStart_TextBox(dialog[PlayerPrefs.GetInt("FDS_LV")]);
+        textBox.numericalData = numberCtrl;
         actorManager.OnStart(dialog[PlayerPrefs.GetInt("FDS_LV")]);
         CheckActions();
     }
@@ -158,7 +158,7 @@ public class GameManagerTest : MonoBehaviour
         else
         {
             CheckActions();
-        }
+        } 
         actorCtrl.StayTarget = 0;
         
         if (dialog[PlayerPrefs.GetInt("FDS_LV")].plotOptionsList[textBox.listSerial].notActor)
@@ -252,6 +252,18 @@ public class GameManagerTest : MonoBehaviour
     {
         background.ChickBackground(ChangeBackGroundNumber(0));
         //Debug.Log("ChangeBackground");
+    }
+
+    public void CheckupsButton()
+    {
+        numberCtrl.GameDataSave();
+        OnTalkEvent(70);
+    }
+    
+    public void SaveGameDataButton()
+    {
+        numberCtrl.GameDataSave();
+        OnTalkEvent(69);
     }
 
     private int ChangeBackGroundNumber(int BackNumber)

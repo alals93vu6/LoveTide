@@ -1996,3 +1996,31 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+  - talkID: "\u5DF2\u5B58\u6A94"
+    notActor: 1
+    displayCG: []
+    disPlayOrder: 0
+    dialogDataDetails:
+    - speaker: 1
+      actorFace: 0
+      sentence: "\u6A94\u6848\u5DF2\u5132\u5B58"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+  - talkID: "\u8EAB\u9AD4\u72C0\u614B"
+    notActor: 1
+    displayCG: []
+    disPlayOrder: 0
+    dialogDataDetails:
+    - speaker: 1
+      actorFace: 0
+      sentence: "\u7576\u524D\u8EAB\u9AD4\u72C0\u6CC1"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+    - speaker: 1
+      actorFace: 0
+      sentence: "\u7D50\u8A9E"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0

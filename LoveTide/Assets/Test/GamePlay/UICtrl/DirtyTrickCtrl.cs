@@ -12,7 +12,7 @@ public class DirtyTrickCtrl : MonoBehaviour
         dirtyTrickObject.gameObject.SetActive(true);
     }
 
-    public async void OnChangeScenes()
+    public void OnChangeScenes()
     {
         dirtyTrickObject.gameObject.SetActive(true);
         dirtyTrickObject.gameObject.GetComponent<Animator>().Play("ChangeScenes");

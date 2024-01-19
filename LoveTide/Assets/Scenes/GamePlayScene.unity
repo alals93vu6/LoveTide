@@ -1378,7 +1378,7 @@ GameObject:
   - component: {fileID: 377056514}
   - component: {fileID: 377056513}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Checkups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1446,7 +1446,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 377056514}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 494522876}
+        m_MethodName: CheckupsButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &377056514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,11 +1844,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 3b50ff22726f8aa44a5d61e86736df86, type: 3}
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2007,11 +2018,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 3b50ff22726f8aa44a5d61e86736df86, type: 3}
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2899,7 +2910,7 @@ GameObject:
   - component: {fileID: 739813737}
   - component: {fileID: 739813736}
   m_Layer: 5
-  m_Name: Text
+  m_Name: "\u8A2D\u5B9A"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2956,7 +2967,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u8A2D\u5B9A"
 --- !u!222 &739813737
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2983,6 +2994,7 @@ MonoBehaviour:
   friendship: 0
   slutty: 0
   lust: 0
+  fdstest: 0
   party: 0
   alonOuting: 0
   mainMission: 0
@@ -3123,6 +3135,7 @@ MonoBehaviour:
   friendship: 0
   slutty: 0
   lust: 0
+  fdstest: 1
   party: 0
   alonOuting: 0
   mainMission: 0
@@ -4266,7 +4279,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\u6587\u5B57\u6E2C\u8A66\u6587\u5B57\u6E2C\u8A66\u6587\u5B57\u6E2C\u8A66\u6587\u5B57\u6E2C\u8A66\u6587\u5B57\u6E2C\u8A66"
 --- !u!222 &1233494793
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4513,7 +4526,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u6559\u5B78"
 --- !u!222 &1293864265
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4713,11 +4726,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 3b50ff22726f8aa44a5d61e86736df86, type: 3}
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -4934,7 +4947,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u5B58\u6A94"
 --- !u!222 &1375279851
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5455,7 +5468,7 @@ GameObject:
   - component: {fileID: 1470775085}
   - component: {fileID: 1470775084}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: SaveDeta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5523,7 +5536,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1470775085}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 494522876}
+        m_MethodName: SaveGameDataButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1470775085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5597,8 +5621,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -362.3, y: 197.2}
-  m_SizeDelta: {x: 87.45036, y: 71.4569}
+  m_AnchoredPosition: {x: -360.6, y: 193.79}
+  m_SizeDelta: {x: 84.041214, y: 70.60464}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1471697727
 MonoBehaviour:
@@ -6217,7 +6241,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u83DC\u55AE"
 --- !u!222 &1626768561
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6352,6 +6376,7 @@ MonoBehaviour:
   diaLog: {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   talkObject: {fileID: 1294787932}
   diaLogDetected: {fileID: 0}
+  numericalData: {fileID: 0}
   actorCtrl: {fileID: 1937069864}
   isover: 1
   stopLoop: 0
@@ -6383,7 +6408,7 @@ GameObject:
   - component: {fileID: 1646473962}
   - component: {fileID: 1646473961}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Teaching
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6547,12 +6572,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 3b50ff22726f8aa44a5d61e86736df86, type: 3}
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 3
+    m_MaxSize: 56
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -7087,7 +7112,7 @@ GameObject:
   - component: {fileID: 1833140365}
   - component: {fileID: 1833140364}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Seting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8225,7 +8250,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u8EAB\u9AD4\n\u72C0\u6CC1"
 --- !u!222 &2125958225
 CanvasRenderer:
   m_ObjectHideFlags: 0
