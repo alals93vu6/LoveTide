@@ -64,6 +64,8 @@ public class ActorManagerDrama : MonoBehaviour
             case Face.angry: faceNumber = 5; break;
             case Face.anxious: faceNumber = 6; break;
             case Face.sad: faceNumber = 7; break;
+            case Face.superise: faceNumber = 8; break;
+            case Face.alaise: faceNumber = 9; break;
         }
         //Debug.Log("Face"+faceNumber);
         return faceNumber;
@@ -73,7 +75,7 @@ public class ActorManagerDrama : MonoBehaviour
     {
         switch (dialog.plotOptionsList[0].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].speaker)
         {
-            case Speaker.Player : idleActor = 0; break;
+            case Speaker.Player : idleActor = 1; break;
             case Speaker.GirlFriend : idleActor = 1; break;
             case Speaker.BoyFriend : idleActor = 2; break;
             case Speaker.Steve : idleActor = 3; break;
@@ -81,6 +83,7 @@ public class ActorManagerDrama : MonoBehaviour
             case Speaker.PoliceB : idleActor = 5; break;
             case Speaker.PassersbyA : idleActor = 6; break;
             case Speaker.PassersbyB : idleActor = 7; break;
+            case Speaker.TavernBoss : idleActor = 7; break;
             
         }
     }

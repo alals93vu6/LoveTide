@@ -2086,7 +2086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: -94}
+  m_AnchoredPosition: {x: -826, y: -94}
   m_SizeDelta: {x: 474.8098, y: 673.60095}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1970021511
@@ -2144,7 +2144,7 @@ MonoBehaviour:
   - {fileID: 2092613980}
   - {fileID: 1582514117}
   - {fileID: 861823135}
-  StayTarget: 1
+  StayTarget: 4
 --- !u!1 &2092613980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,6 +2273,7 @@ MonoBehaviour:
   friendship: 0
   slutty: 0
   lust: 0
+  fdstest: 0
   party: 0
   alonOuting: 0
   mainMission: 0

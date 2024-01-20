@@ -14,7 +14,8 @@ public class GamePlayingManagerDrama : MonoBehaviour
     }
     void Start()
     {
-        DialogDetected();
+        //DialogDetected();
+        playerCtrlManager.diaLog = diaData[1];
         playerCtrlManager.OnStart();
     }
 

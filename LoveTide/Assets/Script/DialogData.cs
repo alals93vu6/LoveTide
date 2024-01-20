@@ -15,6 +15,7 @@ public enum Speaker
     PoliceB,
     PassersbyA,
     PassersbyB,
+    TavernBoss,
     
 }
 

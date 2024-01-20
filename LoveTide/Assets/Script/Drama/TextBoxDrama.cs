@@ -110,6 +110,7 @@ public class TextBoxDrama : MonoBehaviour
             case Speaker.PoliceB: nameText.text = "警察B"; break;
             case Speaker.PassersbyA: nameText.text = "路人A"; break;
             case Speaker.PassersbyB: nameText.text = "路人B"; break;
+            case Speaker.TavernBoss: nameText.text = "老闆"; break;
         }
     }
 }
