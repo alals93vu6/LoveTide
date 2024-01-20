@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,10 +16,12 @@ public class TextBoxDrama : MonoBehaviour
     
     [Header("物件")]
     [SerializeField] public DialogData diaLog;
+    [SerializeField] private DirtyTrickCtrl dirtyTrick;
 
     [Header("狀態")]
     [SerializeField] public bool isover = true;
     [SerializeField] public bool stopLoop;
+    [SerializeField] public bool isWait;
     
     // Start is called before the first frame update
     void Start()
@@ -80,14 +83,33 @@ public class TextBoxDrama : MonoBehaviour
         }
     }
     
-    public void NextText()
+    public async void NextText()
     {
         if (textNumber < diaLog.plotOptionsList[targetNumber].dialogDataDetails.Count - 1)
         {
-            stopLoop = false;
-            textNumber++;
-            ChickName();
-            StartCoroutine(DisplayTextWithTypingEffect(false));
+            if (!diaLog.plotOptionsList[targetNumber].dialogDataDetails[textNumber].needTransition)
+            {
+                stopLoop = false;
+                textNumber++;
+                ChickName();
+                StartCoroutine(DisplayTextWithTypingEffect(false));
+            }
+            else
+            {
+                dirtyTrick.OnChangeScenes();
+                stopLoop = false;
+                textNumber++;
+                isWait = true;
+                await Task.Delay(500);
+                isWait = false;
+                ChickName();
+                StartCoroutine(DisplayTextWithTypingEffect(false));
+            }
+            
+        }
+        else
+        {
+            TalkOver();
         }
     }
     
@@ -96,7 +118,12 @@ public class TextBoxDrama : MonoBehaviour
         stopLoop = true;
         StartCoroutine(DisplayTextWithTypingEffect(true));
     }
-    
+
+    public void TalkOver()
+    {
+        dirtyTrick.OnExitGamePlayScenes();
+    }
+
     private void ChickName()
     {
        switch (diaLog.plotOptionsList[targetNumber].dialogDataDetails[textNumber].speaker)

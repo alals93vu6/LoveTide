@@ -66,7 +66,7 @@ public class PlayerCtrlDrama : MonoBehaviour
 
     private void PlayerClick()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !texBox.isWait)
         {
             SetTextBox(true);
             if (texBox.isover)
@@ -82,7 +82,7 @@ public class PlayerCtrlDrama : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !texBox.isWait)
         {
             if (texBoxObj.activeSelf)
             {

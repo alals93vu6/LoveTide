@@ -24,438 +24,511 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u4E0D\u7BA1\u554F\u6211\u5E7E\u6B21\uFF0C\u80AF\u5B9A\u90FD\u662F\u90A3\u4E9B\u7A7F\u8457\u6BD4\u57FA\u5C3C\u7684\u59B9\u59B9\u5011\uFF0C\u770B\u5B8C\u6574\u5929\u5FC3\u60C5\u90FD\u662F\u597D\u7684\uFF0C\u6BD4\u90A3\u4E9B\u5927\u81EA\u7136\u7684\u529B\u91CF\u9084\u8981\u53B2\u5BB3\u591A\u4E86!!"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u7136\u800C\uFF0C\u5728\u9019\u9EBC\u6B61\u6A02\u7684\u5047\u65E5\u6642\u6211\u5C45\u7136\u5728\u9019\u88E1\u4E0A\u73ED\uFF01\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u770B\u8457\u4E00\u5927\u7BB1\u4E00\u5927\u7BB1\u7684\u8CA8\u7269\u88AB\u653E\u5728\u5009\u5EAB\u88E1\u9762\uFF0C\u597D\u4E0D\u5BB9\u6613\u7D42\u65BC\u628A\u525B\u5378\u4E0B\u4F86\u7684\u8CA8\u7269\u5168\u90E8\u6574\u7406\u5B8C\u4E86\uFF0C\u8EB2\u5728\u5009\u5EAB\u89D2\u843D\u800D\u5EE2\u53EF\u4EE5\u8AAA\u662F\u6211\u9019\u53EF\u60B2\u4EBA\u751F\u7684\u5C11\u6578\u5C0F\u78BA\u5E78\u4E86\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u2026\u2026\u55E1\u55E1\u55E1\u2026\u2026\u55E1\u55E1\u55E1\u2026\u2026 "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u770B\u8457\u9707\u52D5\u7684\u624B\u6A5F\uFF0C\u8001\u95C6\u5728\u9019\u500B\u6642\u5019\u6253\u4F86\u591A\u534A\u6C92\u6709\u4EC0\u9EBC\u597D\u4E8B\uFF0C\u7121\u7591\u5C0D\u6211\u9019\u500B\u5C0F\u793E\u755C\u9020\u6210\u4E86\u5927\u91CF\u7684\u60C5\u7DD2\u50B7\u5BB3\uFF0C\u5728\u9003\u907F\u4E86\u73FE\u5BE6\u4E94\u79D2\u5F8C\u9084\u662F\u6C7A\u5B9A\u628A\u96FB\u8A71\u7D66\u63A5\u4E86\u8D77\u4F86\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u5582\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 10
       actorFace: 0
       sentence: "\u963F\u65A4\u4F60\u73FE\u5728\u6709\u7A7A\u55CE?\u53EF\u4EE5\u4F86\u4E00\u4E0B\u6AC3\u53F0\u55CE\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u5C0F\u660E\u53C8\u641E\u4E8B\u4E86\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 10
       actorFace: 0
       sentence: "\u4E0D\u662F\u5566\uFF5E\u4ED6\u6700\u8FD1\u5F88\u5B89\u4EFD\uFF0C\u662F\u53E6\u5916\u4E00\u4EF6\u4E8B\u60C5\uFF0C\u6211\u731C\u4F60\u4F86\u4E86\u4E4B\u5F8C\u80AF\u5B9A\u4E0D\u6703\u5F8C\u6094\u7684\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u771F\u7684\u55CE\uFF1F\u4E0D\u6703\u53C8\u662F\u8981\u6211\u64E6\u4E00\u4E9B\u5947\u602A\u7684\u5C41\u80A1\u4E86\u5427\uFF01\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 10
       actorFace: 0
       sentence: "\u4E0D\u6703\u5566\uFF0C\u6709\u597D\u5EB7\u7684\u53D4\u53D4\u7576\u7136\u5831\u597D\u5EB7\u7D66\u4F60\u554A\uFF01\u6211\u54EA\u6B21\u5BB3\u904E\u4F60\u4E86\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u597D\u597D\uFF5E\u7B49\u6211\u9019\u908A\u5F04\u5B8C\u5C31\u6703\u904E\u53BB\u4E86\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 1
       actorFace: 0
       sentence: "\u639B\u65B7\u96FB\u8A71\u5F8C\u518D\u9003\u907F\u4E86\u4E00\u6703\u5152\u73FE\u5BE6\uFF0C\u6211\u4FBF\u52D5\u8EAB\u96E2\u958B\u4E86\u5009\u5EAB\u8D70\u5230\u524D\u53F0\uFF0C\u5929\u66C9\u5F97\u53C8\u6709\u4EC0\u9EBC\u9CE5\u4E8B\u8001\u95C6\u60F3\u7529\u934B\u7D66\u6211\u8655\u7406\u4E86\u2026\u2026\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 1
     - speaker: 1
       actorFace: 0
       sentence: "\u2026\u2026"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: "(\u771F\u6C92\u60F3\u5230\u9019\u88E1\u5C31\u8DDF\u96FB\u5F71\u88E1\u6F14\u7684\u4E00\u6A23\u71B1\u5230\u4E0D\u884C\u554A\u2026\u2026)"
       stayLocation: 1
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "(\u96D6\u7136\u5F88\u4E0D\u9069\u61C9\uFF0C\u4F46\u5E78\u597D\u6709\u670B\u53CB\u5E6B\u5FD9\u624D\u53EF\u4EE5\u9019\u9EBC\u5FEB\u627E\u5230\u5DE5\u4F5C) "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 7
       sentence: "(\u5982\u679C\u5728\u9019\u7A2E\u5929\u6C23\u6211\u9084\u8981\u7576\u904A\u6C11\u7684\u8A71\u80AF\u5B9A\u65E9\u5C31\u88AB\u66EC\u6210\u4EBA\u4E7E\u4E86\u5427)"
       stayLocation: 3
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 10
       actorFace: 0
       sentence: "\u90A3\u9EBC\u76EE\u524D\u6709\u4EC0\u9EBC\u554F\u984C\u55CE\uFF1F"
       stayLocation: 2
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "\u554A\u2026\uFF01\u6C92\u6709\u6C92\u6709\uFF5E\u5F88\u611F\u8B1D\u60A8\u9858\u610F\u7D66\u6211\u4E00\u500B\u6A5F\u6703\u5462\uFF5E "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 10
       actorFace: 0
       sentence: "\u5728\u9019\u88E1\u5DE5\u4F5C\u5927\u5BB6\u90FD\u5F88\u53CB\u5584\uFF0C\u6211\u76F8\u4FE1\u4F60\u4E00\u5B9A\u53EF\u4EE5\u8DDF\u5E97\u9577\u8655\u7684\u4F86\uFF0C\u4ED6\u53EF\u662F\u500B\u5F88\u64C5\u9577\u548C\u5225\u4EBA\u6253\u597D\u95DC\u4FC2\u7684\u5B69\u5B50\u5462\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 1
       sentence: "\u9019\u6A23\u554A\uFF0C\u90A3\u9EBC\u6211\u53EF\u5C31\u653E\u5FC3\u4E86\uFF5E"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 8
       sentence: "\uFF08\u55DA\u2026\u4E0D\u904E\u4F86\u5230\u4E00\u500B\u964C\u751F\u7684\u74B0\u5883\uFF0C\u8EAB\u908A\u9084\u6C92\u6709\u534A\u500B\u8A8D\u8B58\u7684\u4EBA\uFF0C\u5E0C\u671B\u9019\u500B\u5E97\u9577\u771F\u7684\u8DDF\u4ED6\u8AAA\u7684\u4E00\u6A23\u662F\u500B\u597D\u76F8\u8655\u7684\u4EBA\uFF09 "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 10
       actorFace: 0
       sentence: "\u554A\uFF01\u4ED6\u4F86\u4E86\uFF0C\u8DDF\u4F60\u4ECB\u7D39\u4E00\u4E0B\u9019\u662F\u6211\u5011\u7684\u5E97\u9577\uFF0C\u57FA\u672C\u4E0A\u9019\u9593\u5E97\u7684\u5927\u5C0F\u4E8B\u90FD\u4ED6\u5728\u7BA1\u7406\u7684\uFF0C\u6709\u4EC0\u9EBC\u554F\u984C\u7684\u8A71\u901A\u901A\u627E\u4ED6\u5C31\u5C0D\u4E86\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 1
       sentence: "\u963F\u2026\u539F\u4F86\u662F\u6709\u65B0\u9032\u7684\u59B9\u5B50\u554A\uFF0C\u4F60\u597D\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "\u5E97\u9577\u4F60\u597D\u554A\uFF01\u6211\u662F\u4F86\u6253\u5DE5\u63DB\u5BBF\u7684\uFF0C\u8ACB\u591A\u591A\u95DC\u7167\uFF5E"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 3
       sentence: "\uFF08\u54C7\u2026\u5E97\u9577\u9084\u6EFF\u5E25\u7684\u561B\u2026\uFF09"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 9
       sentence: "\uFF08\u55EF\u4E0D\u5C0D\u4E0D\u5C0D\uFF01\u6211\u600E\u9EBC\u80FD\u9019\u9EBC\u60F3\u5462\uFF01\uFF09 "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 10
       actorFace: 1
       sentence: "\u563F\u563F\uFF0C\u9019\u53EF\u662F\u6211\u4E4B\u524D\u6B20\u4E0B\u7684\u4E00\u500B\u4EBA\u60C5\uFF0C\u4F60\u53EF\u8981\u597D\u597D\u7167\u9867\u5979\u554A\uFF0C\u77E5\u9053\u4E86\u55CE\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 1
       sentence: "\u7576\u7136\uFF0C\u9019\u6211\u8001\u719F\u4E86\uFF0C\u90A3\u9EBC\u5C31\u8DDF\u8457\u6211\u5427\uFF0C\u5E36\u59B3\u770B\u4E00\u4E0B\u9019\u88E1\u7684\u5927\u6982\u74B0\u5883\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 1
     - speaker: 1
       actorFace: 0
       sentence: "\u2026\u2026"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u5C31\u9019\u6A23\u88AB\u8001\u95C6\u53EB\u53BB\u5E36\u65B0\u4EBA\u4E86\uFF0C\u4ED4\u7D30\u770B\u770B\u5176\u5BE6\u8EAB\u6750\u6EFF\u4E0D\u932F\u7684\u561B\uFF0C\u81C9\u4E5F\u662F\u6211\u7684\u83DC\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u563F\u563F\u563F\uFF0C\u9019\u6A23\u5C31\u4E0D\u7528\u6BCF\u5929\u90FD\u8981\u9760\u904B\u6C23\u8CED\u6703\u4E0D\u6703\u6709\u597D\u770B\u7684\u59B9\u5B50\u4F86\u5E97\u88E1\uFF0C\u53EF\u4EE5\u5927\u98FD\u773C\u798F\u4E86\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 10
       actorFace: 0
       sentence: "\u963F\u65A4\u963F\uFF01\u90A3\u9EBC\u5C31\u4EA4\u7D66\u4F60\u56C9\uFF5E\u6211\u8981\u4F86\u53BB\u5FD9\u5566\u3002"
       stayLocation: 4
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u597D\u5594\uFF0C\u63A5\u4E0B\u4F86\u5C31\u4EA4\u7D66\u6211\u5427\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\uFF08\u5ABD\u7684\uFF0C\u6253\u5C0F\u92FC\u73E0\u5C31\u6253\u5C0F\u92FC\u73E0\uFF0C\u5728\u90A3\u908A\u88DD\u5FD9\uFF09 "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 1
       actorFace: 0
       sentence: "\u770B\u8457\u8001\u95C6\u96E2\u958B\u5E97\u9580\u53E3\u5F8C\uFF0C\u807D\u8457\u4ED6\u767C\u51FA\u8F5F\u9686\u9686\u7684\"\u5C71\u8C6C\"\u53EB\u8072\u5F8C\u63DA\u9577\u800C\u53BB\u4E86"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 9
       sentence: "\u8A71\u8AAA\u8001\u95C6\u771F\u662F\u52E4\u5109\u5462\u2026\u6A5F\u8ECA\u90FD\u9A0E\u6210\u9019\u6A23\u5B50\u4E86\u7ADF\u7136\u4E0D\u63DB\u4E00\u53F0\u5462\u3002"
       stayLocation: 1
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u4ED6\u4E0D\u662F\u52E4\u5109\uFF0C\u53EA\u662F\u9322\u90FD\u8B8A\u6210\u4E86\u4ED6\u4EBA\u751F\u6703\u5FEB\u6A02\u7684\u95DC\u9375\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "\u55EF\uFF1F\u9019\u6A23\u6211\u4E5F\u633A\u597D\u5947\u7684\u5462\uFF5E\u80FD\u5206\u4EAB\u7D66\u6211\u55CE\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 1
       sentence: "\u6211\u770B\u4F60\u9084\u662F\u4E0D\u8981\u5B78\u597D\u4E86\uFF0C\u6211\u53EF\u4E0D\u60F3\u770B\u8457\u53C8\u4E00\u500B\u4EBA\u8E0F\u4E0A\u4E86\u90A3\u500B\u8001\u982D\u7684\u5F8C\u5875\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u8A71\u8AAA\u600E\u9EBC\u7A31\u547C\u5462\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "\u6211\u662F\u798F\u539F\u7531\u9999\uFF0C\u76F4\u63A5\u53EB\u6211\u7531\u9999\u5C31\u53EF\u4EE5\u56C9\uFF5E"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 1
       actorFace: 0
       sentence: "\u5594\uFF01\u539F\u4F86\u662F\u6AFB\u82B1\u59B9\u554A\uFF01"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 1
       sentence: "\u54C8\u54C8\u6211\u662F\u6DF7\u8840\u5152\uFF0C\u6709\u4E00\u534A\u7684\u65E5\u672C\u8840\u7D71\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u5E97\u88E1\u7684\u4EBA\u58EB\u90FD\u76F4\u63A5\u53EB\u6211\u963F\u65A4\u5566\uFF0C\u770B\u59B3\u4E5F\u8981\u4E0D\u8981\u9019\u6A23\u53EB\u5C31\u597D\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 9
       sentence: "\u54A6\u2026\u9019\u6A23\u4E0D\u6703\u592A\u4E0D\u5C0A\u91CD\u55CE\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "\u6211\u9084\u662F\u53EB\u4F60\u5E97\u9577\u5C31\u597D\u4E86\u5427\uFF0C\u5E97\u9577\uFF5E"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 1
       actorFace: 0
       sentence: "\u7531\u9999\u751C\u751C\u7684\u671D\u8457\u6211\u53EB\u5E97\u9577\uFF0C\u771F\u723D\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 1
     - speaker: 0
       actorFace: 0
       sentence: "\u2026\u2026"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u6211\u5E36\u8457\u7531\u9999\u6643\u4E86\u4E00\u4E0B\u6211\u5011\u9019\u9593\u9910\u9152\u9928\u7684\u5927\u90E8\u5206\u5340\u57DF\uFF0C\u5927\u6982\u8B1B\u89E3\u4E86\u4E00\u4E0B\u5E97\u88E1\u7684SOP\u4EE5\u53CA\u4E00\u4E9B\u6CE8\u610F\u4E8B\u9805\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u5E78\u597D\u7531\u9999\u4E4B\u524D\u597D\u50CF\u4E5F\u6709\u505A\u904E\u985E\u4F3C\u7684\u5DE5\u4F5C\uFF0C\u6240\u4EE5\u5979\u4E0A\u624B\u901F\u5EA6\u975E\u5E38\u7684\u5FEB\u901F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u8B1B\u8457\u8B1B\u8457\u4E00\u5929\u4E5F\u5FEB\u904E\u53BB\u4E86\uFF0C\u6211\u770B\u7531\u9999\u4E5F\u719F\u6089\u7684\u5DEE\u4E0D\u591A\u4E86\uFF0C\u65BC\u662F\u6211\u5E36\u8457\u5979\u56DE\u53BB\u4E86\u54E1\u5DE5\u5BBF\u820D\u3002 "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 1
     - speaker: 0
       actorFace: 0
       sentence: "\u2026\u2026 "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 9
       sentence: "\u5594\uFF5E\u9019\u88E1\u9084\u883B\u5BEC\u655E\u7684\u5462"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u9019\u88E1\u662F\u4F60\u7684\u623F\u9593\u5594\uFF0C\u96E3\u602A\u60F3\u8AAA\u600E\u9EBC\u4E4B\u524D\u88AB\u8001\u982D\u53EB\u53BB\u6253\u6383\u9019\u9593\u5FEB\u8981\u8B8A\u6210\u5009\u5EAB\u7684\u623F\u9593\u54E9\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "\u539F\u4F86\u662F\u5E97\u9577\u70BA\u6211\u6253\u6383\u7684\u554A\uFF0C\u8B1D\u8B1D\u5E97\u9577\u2764\uFE0F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u4E0D\u5BA2\u6C23\u5466\uFF0C\u80FD\u70BA\u53EF\u611B\u7684\u7531\u9999\u670D\u52D9\u8B93\u6211\u5F88\u958B\u5FC3\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 1
       sentence: "\u4E0D\u904E\u5EFA\u8B70\u4F60\u4E0D\u8981\u628A\u592A\u591A\u7684\u6771\u897F\u5E36\u9032\u4F86\u5594\uFF0C\u6211\u770B\u904E\u597D\u591A\u4EBA\u53EA\u5E36\u4E00\u500B\u884C\u674E\u9032\u4F86\uFF0C\u7D50\u679C\u96E2\u958B\u7684\u6642\u5019\u8981\u53EB\u4E0A\u642C\u5BB6\u516C\u53F8\u624D\u80FD\u5920\u628A\u623F\u9593\u6E05\u7A7A\u5462\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: "\u9019\u4E0D\u662F\u4EE3\u8868\u9019\u88E1\u5F85\u7684\u633A\u8212\u670D\u7684\u55CE\uFF5E "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "\u563F\u563F\uFF0C\u771F\u671F\u5F85\u4E4B\u5F8C\u7684\u6D77\u5CF6\u751F\u6D3B\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u90A3\u9EBC\u5C31\u597D\u597D\u4F11\u606F\u5427\uFF0C\u660E\u5929\u65E9\u4E0A9\u9EDE\u6574\u5C31\u8981\u4F86\u9152\u9928\u5831\u5230\u4E86\u5594\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 9
       sentence: "9\u9EDE\uFF01\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u600E\u9EBC\u4E86\u55CE\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "\u592A\u68D2\u4E86\u5427\uFF01\u4E4B\u524D\u5F85\u7684\u5730\u65B9\u6BCF\u59297\u9EDE\u5C31\u8981\u5230\u4E86\u8036\uFF01\u6BCF\u5929\u65E9\u8D77\u7684\u751F\u6D3B\u7C21\u76F4\u662F\u5730\u7344\u3002 "
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u771F\u7684\uFF0C\u6211\u61C2"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 1
       sentence: "\u5C24\u5176\u6BCF\u6B21\u5728\u5916\u9762\u73A9\u55E8\u73A9\u5230\u4E00\u534A\u6642\u60F3\u5230\u660E\u5929\u8981\u65E9\u8D77\u90FD\u5F88\u6383\u8208\u5462"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u4E0D\u904E\u9019\u4E5F\u662F\u591A\u8667\u9019\u88E1\u7684\u7279\u6027\u5566\uFF5E\u7562\u7ADF\u662F\u89C0\u5149\u5730\u5340\uFF0C\u5728\u65E9\u4E0A10\u9EDE\u904E\u5F8C\u624D\u6703\u958B\u59CB\u6709\u4EBA\u6D41\u51FA\u73FE\uFF0C\u4E0D\u7136\u65E9\u4E0A\u90FD\u662F\u4E00\u4E9B\u6473\u7684\u8981\u6B7B\u53EA\u9EDE\u4E00\u676F\u98F2\u6599\u5750\u4E00\u6574\u5929\u7684\u8001\u4EBA\u5BB6\u624D\u6703\u51FA\u73FE\u5462\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: "\u54C8\u54C8\uFF5E\u592A\u904E\u5206\u4E86\u5427\u5E97\u9577"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 2
       actorFace: 0
       sentence: "\u597D\u5566\uFF0C\u597D\u597D\u4F11\u606F\u5427\uFF0C\u53EF\u4E0D\u8981\u592A\u8208\u596E\u7D50\u679C\u71AC\u591C\u5594\uFF0C\u665A\u5B89"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 2
       sentence: "\u597D\uFF5E\u5E97\u9577\u665A\u5B89\u56C9\uFF01"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 1
       actorFace: 0
       sentence: "\u770B\u8457\u7531\u9999\u628A\u884C\u674E\u7BB1\u62D6\u9032\u623F\u9593\u5F8C\u6211\u4E5F\u56DE\u5230\u4E86\u81EA\u5DF1\u7684\u623F\u9593\uFF0C\u770B\u4F86\u6700\u8FD1\u7684\u751F\u6D3B\u6703\u51FA\u73FE\u4E00\u4E9B\u5C0F\u8F49\u8B8A\u4E86"
       stayLocation: 4
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: "\u5C24\u5176\u6211\u7684\u65B0\u540C\u4E8B\u7D42\u65BC\u662F\u500B\u53EF\u611B\u7684\u59B9\u5B50\uFF0C\u563F\u563F\u2026"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u521D\u6B21\u653E\u5047(\u4E8B\u4EF61)"
     notActor: 0
     displayCG: []
@@ -467,30 +540,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u591C\u904A(\u4E8B\u4EF62)"
     notActor: 0
     displayCG: []
@@ -502,30 +580,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u7B2C\u4E00\u6B21\u5435\u67B6(\u4E8B\u4EF63)"
     notActor: 0
     displayCG: []
@@ -537,30 +620,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u96FB\u611BGank(\u4E8B\u4EF64)"
     notActor: 0
     displayCG: []
@@ -572,30 +660,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u745F\u745F\u51FA\u904A(\u4E8B\u4EF65)"
     notActor: 0
     displayCG: []
@@ -607,30 +700,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u4E0A\u73ED\u6ED1\u6C34(\u4E8B\u4EF66)"
     notActor: 0
     displayCG: []
@@ -642,30 +740,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u7B2C\u4E8C\u6B21\u5435\u67B6(\u4E8B\u4EF67)"
     notActor: 0
     displayCG: []
@@ -677,30 +780,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u5FC3\u4E8B\u591C\u904A(\u4E8B\u4EF68)"
     notActor: 0
     displayCG: []
@@ -712,30 +820,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u6B63\u8996\u81EA\u5DF1\u7684\u5167\u5FC3(\u4E8B\u4EF69)"
     notActor: 0
     displayCG: []
@@ -747,30 +860,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u82E6\u4E3B\u63A2\u73ED\u7A81\u8972(\u4E8B\u4EF610)"
     notActor: 0
     displayCG: []
@@ -782,30 +900,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u7D50\u5C40A_\u725B\u53C8\u8D0F"
     notActor: 0
     displayCG: []
@@ -817,30 +940,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u7D50\u5C40B_\u5CF6\u4E0A\u7684\u4E8B\u5C31\u7559\u5728\u5CF6\u4E0A\u5C31\u597D"
     notActor: 0
     displayCG: []
@@ -852,30 +980,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u7D50\u5C40C_\u91D1\u6BDB\u78A7\u6C60"
     notActor: 0
     displayCG: []
@@ -887,30 +1020,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u7D50\u5C40E_A"
     notActor: 0
     displayCG: []
@@ -922,30 +1060,35 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
   - talkID: "\u7D50\u5C40E_B"
     notActor: 0
     displayCG: []
@@ -957,27 +1100,32 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 4
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 0
       actorFace: 0
       sentence: AAAAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0
     - speaker: 3
       actorFace: 0
       sentence: AAAAAAAAAAA
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
+      needTransition: 0

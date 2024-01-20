@@ -51,6 +51,7 @@ public class DialogDataDetail
     public int stayLocation;
     public bool switchCGDisplay;
     public bool switchCGImage;
+    public bool needTransition;
 }
 
 
