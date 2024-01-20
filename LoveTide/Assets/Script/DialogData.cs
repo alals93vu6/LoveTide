@@ -38,6 +38,7 @@ public class PlotOptions
     public string talkID;
     public bool notActor;
     public Sprite[] displayCG;
+    public Sprite[] displayBackground;
     public int disPlayOrder;
     public List<DialogDataDetail> dialogDataDetails;
 }

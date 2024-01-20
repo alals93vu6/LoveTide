@@ -16,6 +16,13 @@ MonoBehaviour:
   - talkID: "\u521D\u898B(\u958B\u59CB\u904A\u6232)"
     notActor: 0
     displayCG: []
+    displayBackground:
+    - {fileID: 21300000, guid: 05f2b8ef3f6bab54887123b93e0b5a54, type: 3}
+    - {fileID: 21300000, guid: 6f0a6ff1ea0b98a4ba24481d05d2a8a6, type: 3}
+    - {fileID: 21300000, guid: 43843af7be698f3418d871f50f4c7a33, type: 3}
+    - {fileID: 21300000, guid: 43843af7be698f3418d871f50f4c7a33, type: 3}
+    - {fileID: 21300000, guid: 43843af7be698f3418d871f50f4c7a33, type: 3}
+    - {fileID: 21300000, guid: cef2f30909109524480dc81a74d44dde, type: 3}
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 1
@@ -31,7 +38,7 @@ MonoBehaviour:
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
-      needTransition: 0
+      needTransition: 1
     - speaker: 0
       actorFace: 0
       sentence: "\u7136\u800C\uFF0C\u5728\u9019\u9EBC\u6B61\u6A02\u7684\u5047\u65E5\u6642\u6211\u5C45\u7136\u5728\u9019\u88E1\u4E0A\u73ED\uFF01\uFF1F"
@@ -532,6 +539,7 @@ MonoBehaviour:
   - talkID: "\u521D\u6B21\u653E\u5047(\u4E8B\u4EF61)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -572,6 +580,7 @@ MonoBehaviour:
   - talkID: "\u591C\u904A(\u4E8B\u4EF62)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -612,6 +621,7 @@ MonoBehaviour:
   - talkID: "\u7B2C\u4E00\u6B21\u5435\u67B6(\u4E8B\u4EF63)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -652,6 +662,7 @@ MonoBehaviour:
   - talkID: "\u96FB\u611BGank(\u4E8B\u4EF64)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -692,6 +703,7 @@ MonoBehaviour:
   - talkID: "\u745F\u745F\u51FA\u904A(\u4E8B\u4EF65)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -732,6 +744,7 @@ MonoBehaviour:
   - talkID: "\u4E0A\u73ED\u6ED1\u6C34(\u4E8B\u4EF66)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -772,6 +785,7 @@ MonoBehaviour:
   - talkID: "\u7B2C\u4E8C\u6B21\u5435\u67B6(\u4E8B\u4EF67)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -812,6 +826,7 @@ MonoBehaviour:
   - talkID: "\u5FC3\u4E8B\u591C\u904A(\u4E8B\u4EF68)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -852,6 +867,7 @@ MonoBehaviour:
   - talkID: "\u6B63\u8996\u81EA\u5DF1\u7684\u5167\u5FC3(\u4E8B\u4EF69)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -892,6 +908,7 @@ MonoBehaviour:
   - talkID: "\u82E6\u4E3B\u63A2\u73ED\u7A81\u8972(\u4E8B\u4EF610)"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -932,6 +949,7 @@ MonoBehaviour:
   - talkID: "\u7D50\u5C40A_\u725B\u53C8\u8D0F"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -972,6 +990,7 @@ MonoBehaviour:
   - talkID: "\u7D50\u5C40B_\u5CF6\u4E0A\u7684\u4E8B\u5C31\u7559\u5728\u5CF6\u4E0A\u5C31\u597D"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -1012,6 +1031,7 @@ MonoBehaviour:
   - talkID: "\u7D50\u5C40C_\u91D1\u6BDB\u78A7\u6C60"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -1052,6 +1072,7 @@ MonoBehaviour:
   - talkID: "\u7D50\u5C40E_A"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2
@@ -1092,6 +1113,7 @@ MonoBehaviour:
   - talkID: "\u7D50\u5C40E_B"
     notActor: 0
     displayCG: []
+    displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 2

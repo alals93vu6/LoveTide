@@ -1,18 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CGDisplay : MonoBehaviour
 {
     [SerializeField] public GameObject CGimg;
+    [SerializeField] public GameObject backGroundImg;
     [SerializeField] private int CGOrder;
+    [SerializeField] private int backGroundOrder;
     [SerializeField] private DialogData dialog;
     
     // Start is called before the first frame update
-    void Start()
+    async void Start()
     {
-        
+        await Task.Delay(100);
+        DisplayBackGroundChick(0);
     }
 
     // Update is called once per frame
@@ -55,5 +59,11 @@ public class CGDisplay : MonoBehaviour
             CGimg.GetComponent<Image>().sprite = dialog.plotOptionsList[0].displayCG[CGOrder];
         }
         
+    }
+    
+    public void DisplayBackGroundChick(int setOrder)
+    {
+        backGroundOrder += setOrder;
+        backGroundImg.GetComponent<Image>().sprite = dialog.plotOptionsList[0].displayBackground[backGroundOrder];
     }
 }

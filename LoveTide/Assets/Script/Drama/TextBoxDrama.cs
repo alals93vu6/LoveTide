@@ -96,14 +96,17 @@ public class TextBoxDrama : MonoBehaviour
             }
             else
             {
+                var CGManager = FindObjectOfType<CGDisplay>();
                 dirtyTrick.OnChangeScenes();
                 stopLoop = false;
                 textNumber++;
                 isWait = true;
                 await Task.Delay(500);
-                isWait = false;
+                CGManager.DisplayBackGroundChick(1);
                 ChickName();
                 StartCoroutine(DisplayTextWithTypingEffect(false));
+                await Task.Delay(200);
+                isWait = false;
             }
             
         }
