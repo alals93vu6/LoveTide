@@ -120,6 +120,7 @@ public class TextBoxDrama : MonoBehaviour
     {
         stopLoop = true;
         StartCoroutine(DisplayTextWithTypingEffect(true));
+        FindObjectOfType<GamePlayingManagerDrama>().OnTalkDown();
     }
 
     public void TalkOver()

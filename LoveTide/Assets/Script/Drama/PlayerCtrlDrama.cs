@@ -18,13 +18,14 @@ public class PlayerCtrlDrama : MonoBehaviour
 
     [SerializeField] private GameObject texBoxObj;
 
-    [Header("數值")] [SerializeField] private int talkOrder;
+    [Header("數值")] 
+    [SerializeField] private int talkOrder;
     [SerializeField] private bool isSkip;
     [SerializeField] private float skipInterval;
     // Start is called before the first frame update
     void Start()
     {
-        
+        texBox.targetNumber = eventDetected.PlayDramaDetected(0);
     }
 
     // Update is called once per frame

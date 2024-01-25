@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GamePlayingManagerDrama : MonoBehaviour
 {
@@ -40,5 +42,12 @@ public class GamePlayingManagerDrama : MonoBehaviour
 
         Debug.Log(PlayerPrefs.GetInt("DramaNumber"));
     }
-    
+
+    public async void OnTalkDown()
+    {
+        
+        await Task.Delay(1500);
+        SceneManager.LoadScene("Scenes/GamePlayScene");
+    }
+
 }
