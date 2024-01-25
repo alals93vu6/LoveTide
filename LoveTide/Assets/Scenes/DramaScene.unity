@@ -1303,6 +1303,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c15ee6adf5b54f24d9865d0ec213dec0, type: 2}
   - {fileID: 11400000, guid: c15ee6adf5b54f24d9865d0ec213dec0, type: 2}
   playerCtrlManager: {fileID: 1779472677}
+  settleCtrl: {fileID: 1353796998}
 --- !u!1 &1270346669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,7 +1441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030c3756a898fcc48af3386ad08e1561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberCtrl: {fileID: 0}
+  numberCtrl: {fileID: 7336718754932573271}
   targetNumber: 0
 --- !u!224 &1367675288 stripped
 RectTransform:
@@ -2094,7 +2095,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u984D\u5916\u4E8B\u4EF6\u597D\u611F\u5EA6\u8A2D\u5B9A"
+  m_Text: "\u597D\u611F\u5EA6\u7D50\u7B97\u6709\u7570\u5E38"
 --- !u!222 &1791638755
 CanvasRenderer:
   m_ObjectHideFlags: 0

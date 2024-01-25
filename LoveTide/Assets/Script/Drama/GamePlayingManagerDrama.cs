@@ -9,6 +9,7 @@ public class GamePlayingManagerDrama : MonoBehaviour
 {
     [SerializeField] public DialogData[] diaData;
     [SerializeField] private PlayerCtrlDrama playerCtrlManager;
+    [SerializeField] private SettleManager settleCtrl;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -45,9 +46,10 @@ public class GamePlayingManagerDrama : MonoBehaviour
 
     public async void OnTalkDown()
     {
+        settleCtrl.OnSettleDetected();
         
-        await Task.Delay(1500);
-        SceneManager.LoadScene("Scenes/GamePlayScene");
+        await Task.Delay(3000);
+        //SceneManager.LoadScene("Scenes/GamePlayScene");
     }
 
 }

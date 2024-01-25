@@ -20,6 +20,7 @@ public class DirtyTrickCtrl : MonoBehaviour
 
     public void OnExitGamePlayScenes()
     {
+        Debug.Log("TalkDownA");
         dirtyTrickObject.gameObject.SetActive(true);
         dirtyTrickObject.gameObject.GetComponent<Animator>().Play("OnExit");
     }

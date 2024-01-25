@@ -153,11 +153,11 @@ public class EventDetectedManager : MonoBehaviour
         {
             eventNumber = 4;
         }
-        if (numberCtrl.lust >= 40 && numberCtrl.shoppingStreet == 0)
+        if (numberCtrl.lust >= 40 && numberCtrl.shoppingStreet == 0 && numberCtrl.aTimer >= 7)
         {
             eventNumber = 1;
         }
-        if (numberCtrl.lust >= 40 && numberCtrl.shoppingStreet == 1)
+        if (numberCtrl.lust >= 40 && numberCtrl.shoppingStreet == 1 && numberCtrl.aTimer >= 7)
         {
             eventNumber = 2;
         }

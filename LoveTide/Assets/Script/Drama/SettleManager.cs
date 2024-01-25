@@ -22,6 +22,8 @@ public class SettleManager : MonoBehaviour
             case 8: TavernSettleDetected(); break;
             case 9: DormitoriesSettleDetected(); break;
         }
+        numberCtrl.GameDataSave();
+        Debug.Log("TalkDown");
     }
 
     private void SetGameDataNumerical(bool isDayPass,int setPassDay, int setTime,int setFDS)
@@ -82,55 +84,75 @@ public class SettleManager : MonoBehaviour
 
     private void BeachSettleDetected()
     {
-        if (targetNumber <= 2)
+        if (targetNumber <= 1)
         {
-            SetGameDataNumerical(false,0,3,0);
+            SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
         }
         else if(targetNumber >= 5)
         {
-            
+            SetGameDataNumerical(true, 1, -10, 8);
         }
         else
         {
-            
+            SetGameDataNumerical(false, 0, 3, 8);
         }
     }
 
     private void HillsSettleDetected()
     {
-        
+        if (targetNumber <= 1)
+        {
+            SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
+        }
+        else if(targetNumber >= 5)
+        {
+            SetGameDataNumerical(true, 1, -10, 8);
+        }
+        else
+        {
+            SetGameDataNumerical(false, 0, 3, 8);
+        }
     }
 
     private void ParkSettleDetected()
     {
-        
+        if (targetNumber <= 1)
+        {
+            SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
+        }
+        else if(targetNumber >= 5)
+        {
+            SetGameDataNumerical(true, 1, -10, 8);
+        }
+        else
+        {
+            SetGameDataNumerical(false, 0, 3, 8);
+        }
     }
 
     private void ShoppingStreetSettleDetected()
     {
-        
+        if (targetNumber <= 1)
+        {
+            SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
+        }
+        else if(targetNumber >= 5)
+        {
+            SetGameDataNumerical(true, 1, -10, 8);
+        }
+        else
+        {
+            SetGameDataNumerical(false, 0, 3, 8);
+        }
     }
 
     private void TavernSettleDetected()
     {
-        
+        SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
     }
 
     private void DormitoriesSettleDetected()
     {
-        
+        SetGameDataNumerical(true, 1, -10, 150); numberCtrl.slutty += 100;
     }
 }
-
-/*
-    case 0:  break;
-    case 1:  break;
-    case 2:  break;
-    case 3:  break;
-    case 4:  break;
-    case 5:  break;
-    case 6:  break;
-    case 7:  break;
-    case 8:  break;
-    case 9:  break;
-    */
