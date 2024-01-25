@@ -57,12 +57,12 @@ public class NumericalRecords : MonoBehaviour
         shoppingStreet = PlayerPrefs.GetInt("shoppingStreetData" + dataNumber);
         park = PlayerPrefs.GetInt("parkData" + dataNumber);
         getPropsLevel = PlayerPrefs.GetInt("PropsLevelData" + dataNumber);
-        if (aWeek == 0)
+        if (aWeek == 0 || aWeek == 8)
         {
             aWeek = 1;
         }
         
-        if (aTimer == 0)
+        if (aTimer <= 0)
         {
             aTimer = 1;
         }

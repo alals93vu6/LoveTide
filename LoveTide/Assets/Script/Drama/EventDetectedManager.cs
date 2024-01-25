@@ -71,17 +71,16 @@ public class EventDetectedManager : MonoBehaviour
         {
             eventNumber = 4;
         }
-        if (numberCtrl.getPropsLevel >= 4 && numberCtrl.beach == 0)
+        if (numberCtrl.getPropsLevel >= 4 && numberCtrl.beach == 0 && numberCtrl.aTimer <= 4)
         {
             eventNumber = 1;
         }
-        if (numberCtrl.getPropsLevel >= 6 && numberCtrl.beach == 1)
+        if (numberCtrl.getPropsLevel >= 6 && numberCtrl.beach == 1 && numberCtrl.aTimer <= 4)
         {
             eventNumber = 2;
         }
         switch (eventNumber)
         {
-            
             case 1 : targetDialogNumber = 0; break;
             case 2 : targetDialogNumber = 1; break;
             case 3 : targetDialogNumber = Random.Range(2, 5); break;
@@ -99,11 +98,11 @@ public class EventDetectedManager : MonoBehaviour
         {
             eventNumber = 4;
         }
-        if (numberCtrl.getPropsLevel >= 1 && numberCtrl.hills == 0)
+        if (numberCtrl.getPropsLevel >= 1 && numberCtrl.hills == 0 && numberCtrl.aTimer <= 4 )
         {
             eventNumber = 1;
         }
-        if (numberCtrl.getPropsLevel >= 6 && numberCtrl.hills == 1)
+        if (numberCtrl.getPropsLevel >= 6 && numberCtrl.hills == 1 && numberCtrl.aTimer >= 7)
         {
             eventNumber = 2;
         }
@@ -126,11 +125,11 @@ public class EventDetectedManager : MonoBehaviour
         {
             eventNumber = 4;
         }
-        if (numberCtrl.lust >= 35 && numberCtrl.park == 0)
+        if (numberCtrl.lust >= 35 && numberCtrl.park == 0 && numberCtrl.aTimer <= 6)
         {
             eventNumber = 1;
         }
-        if (numberCtrl.getPropsLevel >= 5 && numberCtrl.lust >= 35 && numberCtrl.park == 1)
+        if (numberCtrl.getPropsLevel >= 5 && numberCtrl.lust >= 35 && numberCtrl.park == 1 && numberCtrl.aTimer >= 7)
         {
             eventNumber = 2;
         }
