@@ -13,7 +13,7 @@ public class TextBoxDrama : MonoBehaviour
     [SerializeField] public int textNumber = 0;
     [SerializeField] public string[] getTextDate;
     [SerializeField] public int targetNumber;
-    
+
     [Header("物件")]
     [SerializeField] public DialogData diaLog;
     [SerializeField] private DirtyTrickCtrl dirtyTrick;

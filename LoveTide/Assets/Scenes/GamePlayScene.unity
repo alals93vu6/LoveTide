@@ -2887,6 +2887,7 @@ MonoBehaviour:
   friendship: 0
   slutty: 0
   lust: 0
+  playerName: 
   fdstest: 0
   party: 0
   alonOuting: 0
@@ -3028,6 +3029,7 @@ MonoBehaviour:
   friendship: 0
   slutty: 0
   lust: 0
+  playerName: 
   fdstest: 1
   party: 0
   alonOuting: 0
@@ -6237,7 +6239,7 @@ MonoBehaviour:
   diaLog: {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   talkObject: {fileID: 1294787932}
   diaLogDetected: {fileID: 0}
-  numericalData: {fileID: 0}
+  numericalData: {fileID: 865394008}
   actorCtrl: {fileID: 1937069864}
   isover: 1
   stopLoop: 0
@@ -6642,10 +6644,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 16
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -6653,7 +6655,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\u73A9\u5BB6\u540D\u7A31"
 --- !u!222 &1714791538
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7437,7 +7439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberCtrl: {fileID: 865394008}
-  vacation: 0
+  vacation: 1
 --- !u!4 &1980644439
 Transform:
   m_ObjectHideFlags: 0

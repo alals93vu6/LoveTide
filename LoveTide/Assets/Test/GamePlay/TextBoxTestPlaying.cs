@@ -52,7 +52,7 @@ public class TextBoxTestPlaying : MonoBehaviour
         //Debug.Log(arraySize);
         for (int i = 0; i < diaLog.plotOptionsList[ID].dialogDataDetails.Count; i++)
         {
-            getTextDate[i] = diaLog.plotOptionsList[ID].dialogDataDetails[i].sentence;
+            getTextDate[i] = diaLog.plotOptionsList[ID].dialogDataDetails[i].sentence.Replace("playername",numericalData.playerName);
         }
         //Debug.Log("Onload");
     }
@@ -143,7 +143,7 @@ public class TextBoxTestPlaying : MonoBehaviour
        switch (diaLog.plotOptionsList[listSerial].dialogDataDetails[textNumber].speaker)
         {
             case Speaker.Chorus: nameText.text = " "; break;
-            case Speaker.Player: nameText.text = "玩家"; break;
+            case Speaker.Player: nameText.text = PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString());; break;
             case Speaker.GirlFriend: nameText.text = "由香"; break;
             case Speaker.BoyFriend: nameText.text = "苦主"; break;
             case Speaker.Steve: nameText.text = "史帝夫"; break;

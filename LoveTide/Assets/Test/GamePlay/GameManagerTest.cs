@@ -29,9 +29,9 @@ public class GameManagerTest : MonoBehaviour
 
     private void Awake()
     {
+        //Debug.Log(PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()));
         numberCtrl.OnStart();
         textBox.OnStart_TextBox(dialog[PlayerPrefs.GetInt("FDS_LV")]);
-        textBox.numericalData = numberCtrl;
         actorManager.OnStart(dialog[PlayerPrefs.GetInt("FDS_LV")]);
         CheckActions();
     }
