@@ -13,7 +13,7 @@ public class GamePlayingManagerDrama : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        PlayerPrefs.SetInt("DramaNumber",0);
+        PlayerPrefs.SetInt("DramaNumber",1);
     }
     void Start()
     {

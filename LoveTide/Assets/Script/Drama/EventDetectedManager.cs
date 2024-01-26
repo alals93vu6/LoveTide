@@ -11,8 +11,8 @@ public class EventDetectedManager : MonoBehaviour
         switch (PlayerPrefs.GetInt("DramaNumber"))
         {
             case 1: MainMissionEventDetected(); break;
-            case 2: PartyEventDetected(); break;
-            case 3: AlonOutingEventDetected(); break;
+            case 3: PartyEventDetected(); break;
+            case 2: AlonOutingEventDetected(); break;
             case 4: BeachEventDetected(); break;
             case 5: HillsEventDetected(); break;
             case 6: ParkEventDetected(); break;
@@ -20,9 +20,6 @@ public class EventDetectedManager : MonoBehaviour
             case 8: TavernEventDetected(); break;
             case 9: DormitoriesEventDetected(); break;
         }
-
-        Debug.Log(PlayerPrefs.GetInt("DramaNumber"));
-        Debug.Log(targetDialogNumber);
         returnNumber = targetDialogNumber;
         return returnNumber;
     }

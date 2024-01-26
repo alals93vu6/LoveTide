@@ -12,15 +12,15 @@ public class SettleManager : MonoBehaviour
         targetNumber = FindObjectOfType<EventDetectedManager>().targetDialogNumber;
         switch (PlayerPrefs.GetInt("DramaNumber"))
         {
-            case 0: MainMissionSettleDetected(); break;
-            case 1: PartySettleDetected(); break;
+            case 1: MainMissionSettleDetected(); break;
+            case 3: PartySettleDetected(); break;
             case 2: AlonOutingSettleDetected(); break;
-            case 3: BeachSettleDetected(); break;
-            case 4: HillsSettleDetected(); break;
-            case 5: ParkSettleDetected(); break;
-            case 6: ShoppingStreetSettleDetected(); break;
-            case 7: TavernSettleDetected(); break;
-            case 8: DormitoriesSettleDetected(); break;
+            case 4: BeachSettleDetected(); break;
+            case 5: HillsSettleDetected(); break;
+            case 6: ParkSettleDetected(); break;
+            case 7: ShoppingStreetSettleDetected(); break;
+            case 8: TavernSettleDetected(); break;
+            case 9: DormitoriesSettleDetected(); break;
         }
         numberCtrl.GameDataSave();
         //Debug.Log("TalkDown");

@@ -275,6 +275,7 @@ MonoBehaviour:
   isover: 1
   stopLoop: 0
   isWait: 0
+  isEnd: 0
 --- !u!1 &61206118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,7 +1443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberCtrl: {fileID: 7336718754932573271}
-  targetNumber: 0
+  targetNumber: 4
 --- !u!224 &1367675288 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
@@ -2095,7 +2096,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u597D\u611F\u5EA6\u7D50\u7B97\u6709\u7570\u5E38"
+  m_Text: '-'
 --- !u!222 &1791638755
 CanvasRenderer:
   m_ObjectHideFlags: 0
