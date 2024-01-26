@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec18ed9385c32c84a91ef01d25abe5c0, type: 3}
+  m_Name: DialogDataTest
+  m_EditorClassIdentifier: 
+  plotOptionsList:
+  - talkID: PlayerNameTest
+    notActor: 0
+    displayCG: []
+    displayBackground:
+    - {fileID: 21300000, guid: 8183f6dea981e644f94a0f90ebc8ec7b, type: 3}
+    disPlayOrder: 0
+    dialogDataDetails:
+    - speaker: 1
+      actorFace: 0
+      sentence: playername XXXXXXXXXXXXXX
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 3
+      actorFace: 0
+      sentence: playername AAAAAAAAAAA
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 2
+      actorFace: 0
+      sentence: BBBBBBBB
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 3
+      actorFace: 0
+      sentence: CCCCCCCCCCC
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 3
+      actorFace: 0
+      sentence: DDDDDDDDDDDplayernameEEEEEEEEEE
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0

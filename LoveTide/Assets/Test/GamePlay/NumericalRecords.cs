@@ -11,6 +11,7 @@ public class NumericalRecords : MonoBehaviour
     [SerializeField] public int friendship;//好感度
     [SerializeField] public int slutty;//淫亂度
     [SerializeField] public int lust;//慾望值
+    [SerializeField] public string playerName;
     [SerializeField] public int fdstest;
 
     [Header("事件經歷")] 
@@ -57,6 +58,7 @@ public class NumericalRecords : MonoBehaviour
         shoppingStreet = PlayerPrefs.GetInt("shoppingStreetData" + dataNumber);
         park = PlayerPrefs.GetInt("parkData" + dataNumber);
         getPropsLevel = PlayerPrefs.GetInt("PropsLevelData" + dataNumber);
+        playerName = PlayerPrefs.GetString("playerNameData" + dataNumber);
         if (aWeek == 0 || aWeek == 8)
         {
             aWeek = 1;

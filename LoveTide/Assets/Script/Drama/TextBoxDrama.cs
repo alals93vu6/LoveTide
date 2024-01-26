@@ -47,10 +47,11 @@ public class TextBoxDrama : MonoBehaviour
     private void TextDataLoad()
     {
         var arraySize = diaLog.plotOptionsList[targetNumber].dialogDataDetails.Count;
+        var playerNameData = FindObjectOfType<NumericalRecords>().playerName;
         //Debug.Log(arraySize);
         for (int i = 0; i < diaLog.plotOptionsList[targetNumber].dialogDataDetails.Count; i++)
         {
-            getTextDate[i] = diaLog.plotOptionsList[targetNumber].dialogDataDetails[i].sentence;
+            getTextDate[i] = diaLog.plotOptionsList[targetNumber].dialogDataDetails[i].sentence.Replace("playername",playerNameData);
         }
     }
     
@@ -135,7 +136,7 @@ public class TextBoxDrama : MonoBehaviour
        switch (diaLog.plotOptionsList[targetNumber].dialogDataDetails[textNumber].speaker)
         {
             case Speaker.Chorus: nameText.text = ""; break;
-            case Speaker.Player: nameText.text = "玩家"; break;
+            case Speaker.Player: nameText.text = PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()); break;
             case Speaker.GirlFriend: nameText.text = "由香"; break;
             case Speaker.BoyFriend: nameText.text = "苦主"; break;
             case Speaker.Steve: nameText.text = "史帝夫"; break;

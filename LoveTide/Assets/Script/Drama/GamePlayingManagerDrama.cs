@@ -13,12 +13,12 @@ public class GamePlayingManagerDrama : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        PlayerPrefs.SetInt("DramaNumber",1);
+        //PlayerPrefs.SetInt("DramaNumber",10);
     }
     void Start()
     {
-        //DialogDetected();
-        playerCtrlManager.diaLog = diaData[1];
+        DialogDetected();
+        //playerCtrlManager.diaLog = diaData[1];
         playerCtrlManager.OnStart();
     }
 
@@ -39,6 +39,9 @@ public class GamePlayingManagerDrama : MonoBehaviour
             case 5:playerCtrlManager.diaLog = diaData[5]; break;
             case 6:playerCtrlManager.diaLog = diaData[6]; break;
             case 7:playerCtrlManager.diaLog = diaData[7]; break;
+            case 8:playerCtrlManager.diaLog = diaData[8]; break;
+            case 9:playerCtrlManager.diaLog = diaData[9]; break;
+            case 10:playerCtrlManager.diaLog = diaData[10]; break;
         }
 
         Debug.Log(PlayerPrefs.GetInt("DramaNumber"));
