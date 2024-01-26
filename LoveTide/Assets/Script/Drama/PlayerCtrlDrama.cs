@@ -33,18 +33,18 @@ public class PlayerCtrlDrama : MonoBehaviour
     {
         PlayerClick();
         
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !texBox.isEnd)
         {
             isSkip = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        if (Input.GetKeyUp(KeyCode.LeftControl) && !texBox.isEnd)
         {
             isSkip = false;
             skipInterval = 0f;
         }
 
-        if (isSkip)
+        if (isSkip  && !texBox.isEnd)
         {
             skipInterval += Time.deltaTime;
         }

@@ -13,7 +13,7 @@ public class GamePlayingManagerDrama : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        
+        PlayerPrefs.SetInt("DramaNumber",0);
     }
     void Start()
     {
@@ -47,9 +47,8 @@ public class GamePlayingManagerDrama : MonoBehaviour
     public async void OnTalkDown()
     {
         settleCtrl.OnSettleDetected();
-        
-        await Task.Delay(3000);
-        //SceneManager.LoadScene("Scenes/GamePlayScene");
+        await Task.Delay(2000);
+        SceneManager.LoadScene("Scenes/GamePlayScene");
     }
 
 }

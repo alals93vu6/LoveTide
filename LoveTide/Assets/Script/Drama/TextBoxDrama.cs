@@ -22,6 +22,7 @@ public class TextBoxDrama : MonoBehaviour
     [SerializeField] public bool isover = true;
     [SerializeField] public bool stopLoop;
     [SerializeField] public bool isWait;
+    [SerializeField] public bool isEnd;
     
     // Start is called before the first frame update
     void Start()
@@ -124,6 +125,7 @@ public class TextBoxDrama : MonoBehaviour
 
     public void TalkOver()
     {
+        isEnd = true;
         dirtyTrick.OnExitGamePlayScenes();
         FindObjectOfType<GamePlayingManagerDrama>().OnTalkDown();
     }

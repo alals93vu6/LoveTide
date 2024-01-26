@@ -20,6 +20,9 @@ public class EventDetectedManager : MonoBehaviour
             case 8: TavernEventDetected(); break;
             case 9: DormitoriesEventDetected(); break;
         }
+
+        Debug.Log(PlayerPrefs.GetInt("DramaNumber"));
+        Debug.Log(targetDialogNumber);
         returnNumber = targetDialogNumber;
         return returnNumber;
     }

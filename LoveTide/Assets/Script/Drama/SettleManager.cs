@@ -12,18 +12,18 @@ public class SettleManager : MonoBehaviour
         targetNumber = FindObjectOfType<EventDetectedManager>().targetDialogNumber;
         switch (PlayerPrefs.GetInt("DramaNumber"))
         {
-            case 1: MainMissionSettleDetected(); break;
-            case 2: PartySettleDetected(); break;
-            case 3: AlonOutingSettleDetected(); break;
-            case 4: BeachSettleDetected(); break;
-            case 5: HillsSettleDetected(); break;
-            case 6: ParkSettleDetected(); break;
-            case 7: ShoppingStreetSettleDetected(); break;
-            case 8: TavernSettleDetected(); break;
-            case 9: DormitoriesSettleDetected(); break;
+            case 0: MainMissionSettleDetected(); break;
+            case 1: PartySettleDetected(); break;
+            case 2: AlonOutingSettleDetected(); break;
+            case 3: BeachSettleDetected(); break;
+            case 4: HillsSettleDetected(); break;
+            case 5: ParkSettleDetected(); break;
+            case 6: ShoppingStreetSettleDetected(); break;
+            case 7: TavernSettleDetected(); break;
+            case 8: DormitoriesSettleDetected(); break;
         }
         numberCtrl.GameDataSave();
-        Debug.Log("TalkDown");
+        //Debug.Log("TalkDown");
     }
 
     private void SetGameDataNumerical(bool isDayPass,int setPassDay, int setTime,int setFDS)
@@ -46,7 +46,7 @@ public class SettleManager : MonoBehaviour
     {
         switch (targetNumber)
         {
-            case 0: SetGameDataNumerical(true,7,1,0); break;
+            case 0: SetGameDataNumerical(true,7,1,22); break;
             case 1: SetGameDataNumerical(true,1,-10,150); break;
             case 2: SetGameDataNumerical(true,2,-10,200); break;
             case 3: SetGameDataNumerical(true,1,-10,200); numberCtrl.slutty += 50;  break;
