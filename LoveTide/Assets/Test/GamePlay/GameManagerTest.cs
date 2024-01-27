@@ -93,10 +93,21 @@ public class GameManagerTest : MonoBehaviour
         {
             if (numberCtrl.aTimer == 7 && !timer.vacation)
             {
-                isTalk = false;
-                SetInteractiveObject(false);
-                OnTalkEvent(61);
-                timer.vacation = true;
+                GameEventDetected();
+                if (getEvent)
+                {
+                    gameUICtrl.darkCtrl.OnChangeScenes();
+                    numberCtrl.GameDataSave();
+                    await Task.Delay(500);
+                    SceneManager.LoadScene("DramaScene");
+                }
+                else
+                {
+                    isTalk = false;
+                    SetInteractiveObject(false);
+                    OnTalkEvent(61);
+                    timer.vacation = true;
+                }
             }
             else if (numberCtrl.aTimer == 8 && !isAlone)
             {
@@ -122,7 +133,6 @@ public class GameManagerTest : MonoBehaviour
         if (getEvent)
         {
             numberCtrl.SetNumerica(fds,slt,lst);
-            
             gameUICtrl.darkCtrl.OnChangeScenes();
             numberCtrl.GameDataSave();
             await Task.Delay(500);
@@ -280,10 +290,13 @@ public class GameManagerTest : MonoBehaviour
                 getEvent = true;
                 break;
             case 15 :
-                PlayerPrefs.SetInt("DramaNumber",1);
-                getEvent = true;
+                if (numberCtrl.aTimer >= 6)
+                {
+                    PlayerPrefs.SetInt("DramaNumber",1);
+                    getEvent = true;
+                }
                 break;
-            case 25 :
+            case 24 :
                 if (numberCtrl.aTimer >= 6)
                 {
                     PlayerPrefs.SetInt("DramaNumber",1);
