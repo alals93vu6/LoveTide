@@ -46,15 +46,24 @@ public class SettleManager : MonoBehaviour
     {
         switch (targetNumber)
         {
-            case 0: SetGameDataNumerical(true,7,1,22); break;
-            case 1: SetGameDataNumerical(true,1,-10,150); break;
-            case 2: SetGameDataNumerical(true,2,-10,200); break;
-            case 3: SetGameDataNumerical(true,1,-10,200); numberCtrl.slutty += 50;  break;
-            case 4: SetGameDataNumerical(false,0,7,200); numberCtrl.slutty += 50; break;
-            case 5: SetGameDataNumerical(false,0,4,200); numberCtrl.slutty += 50; break;
-            case 6: SetGameDataNumerical(true,2,-10,350); numberCtrl.slutty += 100; break;
-            case 7: SetGameDataNumerical(true,1,-10,300); break;
-            case 8: SetGameDataNumerical(true,1,-10,400); numberCtrl.slutty += 150; break;
+            case 0: SetGameDataNumerical(true,7,1,22);
+                numberCtrl.mainMission++; break;
+            case 1: SetGameDataNumerical(true,1,-10,150);
+                numberCtrl.mainMission++;break;
+            case 2: SetGameDataNumerical(true,2,-10,200);
+                numberCtrl.mainMission++;break;
+            case 3: SetGameDataNumerical(true,1,-10,200);
+                numberCtrl.mainMission++; numberCtrl.slutty += 50;  break;
+            case 4: SetGameDataNumerical(false,0,7,200);
+                numberCtrl.mainMission++; numberCtrl.slutty += 50; break;
+            case 5: SetGameDataNumerical(false,0,4,200);
+                numberCtrl.mainMission++; numberCtrl.slutty += 50; break;
+            case 6: SetGameDataNumerical(true,2,-10,350);
+                numberCtrl.mainMission++; numberCtrl.slutty += 100; break;
+            case 7: SetGameDataNumerical(true,1,-10,300);
+                numberCtrl.mainMission++;break;
+            case 8: SetGameDataNumerical(true,1,-10,400);
+                numberCtrl.mainMission++; numberCtrl.slutty += 150; break;
         }
     }
 
@@ -79,6 +88,7 @@ public class SettleManager : MonoBehaviour
         else
         {
             SetGameDataNumerical(true,1,-10,0);
+            numberCtrl.alonOuting++;
         }
     }
 
@@ -87,6 +97,7 @@ public class SettleManager : MonoBehaviour
         if (targetNumber <= 1)
         {
             SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
+            numberCtrl.beach++;
         }
         else if(targetNumber >= 5)
         {
@@ -95,6 +106,7 @@ public class SettleManager : MonoBehaviour
         else
         {
             SetGameDataNumerical(false, 0, 3, 8);
+            numberCtrl.party++;
         }
     }
 
@@ -103,6 +115,7 @@ public class SettleManager : MonoBehaviour
         if (targetNumber <= 1)
         {
             SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
+            numberCtrl.hills++;
         }
         else if(targetNumber >= 5)
         {
@@ -119,6 +132,7 @@ public class SettleManager : MonoBehaviour
         if (targetNumber <= 1)
         {
             SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
+            numberCtrl.park++;
         }
         else if(targetNumber >= 5)
         {
@@ -135,6 +149,7 @@ public class SettleManager : MonoBehaviour
         if (targetNumber <= 1)
         {
             SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
+            numberCtrl.shoppingStreet++;
         }
         else if(targetNumber >= 5)
         {
@@ -149,10 +164,12 @@ public class SettleManager : MonoBehaviour
     private void TavernSettleDetected()
     {
         SetGameDataNumerical(false, 0, 3, 150); numberCtrl.slutty += 100;
+        numberCtrl.tavern++;
     }
 
     private void DormitoriesSettleDetected()
     {
         SetGameDataNumerical(true, 1, -10, 150); numberCtrl.slutty += 100;
+        numberCtrl.dormitories++;
     }
 }
