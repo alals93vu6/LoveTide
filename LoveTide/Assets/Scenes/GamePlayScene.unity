@@ -2002,6 +2002,7 @@ MonoBehaviour:
   isTalk: 0
   timePass: 0
   isAlone: 0
+  getEvent: 0
 --- !u!1 &575946128
 GameObject:
   m_ObjectHideFlags: 0
@@ -7439,7 +7440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberCtrl: {fileID: 865394008}
-  vacation: 1
+  vacation: 0
 --- !u!4 &1980644439
 Transform:
   m_ObjectHideFlags: 0

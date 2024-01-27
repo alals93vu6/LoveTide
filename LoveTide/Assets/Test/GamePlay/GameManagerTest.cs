@@ -25,6 +25,7 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public bool isTalk;
     [SerializeField] public bool timePass;
     [SerializeField] public bool isAlone;
+    [SerializeField] private bool getEvent;
 
 
     private void Awake()
@@ -116,22 +117,35 @@ public class GameManagerTest : MonoBehaviour
 
     public async void DayPassedEvent(int fds,int slt, int lst)
     {
-        numberCtrl.SetNumerica(fds,slt,lst);
         timer.DetectedDayPassed();
-        gameUICtrl.darkCtrl.OnChangeScenes();
-        await Task.Delay(500);
-        SetClickObject(0);
-        CheckActions();
-        numberCtrl.GameDataSave();
-        switch (numberCtrl.aWeek)
+        GameEventDetected();
+        if (getEvent)
         {
-            case 1: OnTalkEvent(58); break;
-            case 2: OnTalkEvent(59); break;
-            case 3: OnTalkEvent(60); break;
-            case 4: OnTalkEvent(60); break;
-            case 5: OnTalkEvent(55); break;
-            case 6: OnTalkEvent(56); break;
-            case 7: OnTalkEvent(57); break;
+            numberCtrl.SetNumerica(fds,slt,lst);
+            
+            gameUICtrl.darkCtrl.OnChangeScenes();
+            numberCtrl.GameDataSave();
+            await Task.Delay(500);
+            SceneManager.LoadScene("DramaScene");
+        }
+        else
+        {
+            numberCtrl.SetNumerica(fds,slt,lst);
+            gameUICtrl.darkCtrl.OnChangeScenes();
+            await Task.Delay(500);
+            SetClickObject(0);
+            CheckActions();
+            numberCtrl.GameDataSave();
+            switch (numberCtrl.aWeek)
+            {
+                case 1: OnTalkEvent(58); break;
+                case 2: OnTalkEvent(59); break;
+                case 3: OnTalkEvent(60); break;
+                case 4: OnTalkEvent(60); break;
+                case 5: OnTalkEvent(55); break;
+                case 6: OnTalkEvent(56); break;
+                case 7: OnTalkEvent(57); break;
+            }
         }
     }
 
@@ -252,6 +266,65 @@ public class GameManagerTest : MonoBehaviour
     {
         background.ChickBackground(ChangeBackGroundNumber(0));
         //Debug.Log("ChangeBackground");
+    }
+    private void GameEventDetected()
+    {
+        switch (numberCtrl.aDay)
+        {
+            case 4 :
+                PlayerPrefs.SetInt("DramaNumber",1);
+                getEvent = true;
+                break;
+            case 6 :
+                PlayerPrefs.SetInt("DramaNumber",1);
+                getEvent = true;
+                break;
+            case 15 :
+                PlayerPrefs.SetInt("DramaNumber",1);
+                getEvent = true;
+                break;
+            case 25 :
+                if (numberCtrl.aTimer >= 6)
+                {
+                    PlayerPrefs.SetInt("DramaNumber",1);
+                    getEvent = true;
+                }
+                break;
+            case 32 :
+                if (numberCtrl.aTimer <= 3)
+                {
+                    PlayerPrefs.SetInt("DramaNumber",1);
+                    getEvent = true;
+                    
+                }
+                break;
+            case 35 :
+                PlayerPrefs.SetInt("DramaNumber",1);
+                getEvent = true;
+                break;
+            case 45 :
+                PlayerPrefs.SetInt("DramaNumber",1);
+                getEvent = true;
+                break;
+            case 47 :
+                if (numberCtrl.aTimer >= 6)
+                {
+                    PlayerPrefs.SetInt("DramaNumber",1);
+                    getEvent = true;
+                }
+                break;
+            case 49 :
+                if (numberCtrl.aTimer >= 6)
+                {
+                    PlayerPrefs.SetInt("DramaNumber",1);
+                    getEvent = true;
+                }
+                break;
+            case 51 :
+                PlayerPrefs.SetInt("DramaNumber",1);
+                getEvent = true;
+                break;
+        }
     }
 
     public void CheckupsButton()

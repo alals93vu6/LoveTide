@@ -25,7 +25,7 @@ public class PlayerCtrlDrama : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        texBox.targetNumber = eventDetected.PlayDramaDetected(0);
+        //texBox.targetNumber = eventDetected.PlayDramaDetected(0);
     }
 
     // Update is called once per frame
@@ -59,10 +59,11 @@ public class PlayerCtrlDrama : MonoBehaviour
     public void OnStart()
     {
         eventDetected.numberCtrl.OnStart();
-        texBox.targetNumber = eventDetected.targetDialogNumber;
+        texBox.targetNumber = eventDetected.PlayDramaDetected(0);
         texBox.OnStart_TextBox(diaLog);
-        actorCtrl.OnStart(diaLog,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].stayLocation);
+        actorCtrl.OnStart(diaLog,diaLog.plotOptionsList[eventDetected.targetDialogNumber].dialogDataDetails[talkOrder].stayLocation);
         CGDisplay.OnStart(diaLog);
+        Debug.Log(texBox.textNumber);
     }
 
     private void PlayerClick()
