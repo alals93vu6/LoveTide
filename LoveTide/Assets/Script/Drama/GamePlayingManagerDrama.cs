@@ -28,7 +28,7 @@ public class GamePlayingManagerDrama : MonoBehaviour
         
     }
 
-    private void DialogDetected()//01為主線 02外遇 03淫趴 04海灘 05山丘 06公園 07吃飯
+    private void DialogDetected()//01為主線 02外遇 03淫趴 04海灘 05山丘 06公園 07商店街 08上班 09宿舍
     {
         switch (PlayerPrefs.GetInt("DramaNumber"))
         {
