@@ -1,0 +1,174 @@
+
+swordsmen.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+armor
+  rotate: 270
+  xy: 474, 78
+  size: 101, 147
+  orig: 106, 171
+  offset: 0, 22
+  index: -1
+armor_01
+  rotate: false
+  xy: 374, 13
+  size: 46, 75
+  orig: 46, 80
+  offset: 0, 4
+  index: -1
+badge
+  rotate: false
+  xy: 2, 46
+  size: 58, 54
+  orig: 58, 54
+  offset: 0, 0
+  index: -1
+body
+  rotate: 180
+  xy: 476, 556
+  size: 263, 340
+  orig: 279, 340
+  offset: 5, 0
+  index: -1
+cloak
+  rotate: 180
+  xy: 70, 17
+  size: 187, 102
+  orig: 187, 102
+  offset: 0, 0
+  index: -1
+cloth
+  rotate: true
+  xy: 285, 357
+  size: 150, 218
+  orig: 151, 218
+  offset: 1, 0
+  index: -1
+head
+  rotate: 180
+  xy: 2, 90
+  size: 122, 139
+  orig: 122, 139
+  offset: 0, 0
+  index: -1
+left arm
+  rotate: 180
+  xy: 2, 372
+  size: 175, 226
+  orig: 183, 228
+  offset: 7, 0
+  index: -1
+left foot
+  rotate: 180
+  xy: 618, 894
+  size: 114, 195
+  orig: 114, 195
+  offset: 0, 0
+  index: -1
+left forearm
+  rotate: false
+  xy: 152, 230
+  size: 226, 134
+  orig: 226, 185
+  offset: 0, 0
+  index: -1
+left hand
+  rotate: 270
+  xy: 658, 3
+  size: 109, 91
+  orig: 109, 92
+  offset: 0, 1
+  index: -1
+left leg
+  rotate: true
+  xy: 101, 155
+  size: 117, 204
+  orig: 119, 204
+  offset: 2, 0
+  index: -1
+neck
+  rotate: true
+  xy: 613, 139
+  size: 138, 132
+  orig: 138, 132
+  offset: 0, 0
+  index: -1
+right arm
+  rotate: 270
+  xy: 587, 335
+  size: 179, 154
+  orig: 179, 154
+  offset: 0, 0
+  index: -1
+right foot
+  rotate: true
+  xy: 478, 4
+  size: 124, 182
+  orig: 124, 182
+  offset: 0, 0
+  index: -1
+right forearm
+  rotate: 180
+  xy: 242, 49
+  size: 130, 120
+  orig: 130, 120
+  offset: 0, 0
+  index: -1
+right hand
+  rotate: false
+  xy: 374, 56
+  size: 101, 97
+  orig: 101, 97
+  offset: 0, 0
+  index: -1
+right leg
+  rotate: true
+  xy: 336, 155
+  size: 97, 192
+  orig: 97, 192
+  offset: 0, 0
+  index: -1
+scabbard
+  rotate: false
+  xy: 20, 228
+  size: 268, 255
+  orig: 268, 255
+  offset: 0, 0
+  index: -1
+scarf
+  rotate: 180
+  xy: 378, 223
+  size: 277, 149
+  orig: 277, 150
+  offset: 0, 0
+  index: -1
+scarf_01
+  rotate: true
+  xy: 2, 556
+  size: 397, 531
+  orig: 406, 532
+  offset: 8, 0
+  index: -1
+sword
+  rotate: 270
+  xy: 137, 478
+  size: 127, 500
+  orig: 134, 500
+  offset: 7, 0
+  index: -1
+wristbands
+  rotate: false
+  xy: 711, 87
+  size: 34, 66
+  orig: 35, 67
+  offset: 1, 0
+  index: -1
+图层 1
+  rotate: false
+  xy: 2, 953
+  size: 660, 972
+  orig: 660, 972
+  offset: 0, 0
+  index: -1
