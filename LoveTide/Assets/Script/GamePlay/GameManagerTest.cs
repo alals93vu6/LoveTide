@@ -311,7 +311,7 @@ public class GameManagerTest : MonoBehaviour
                     
                 }
                 break;
-            case 35 :
+            case 38 :
                 PlayerPrefs.SetInt("DramaNumber",1);
                 getEvent = true;
                 break;
