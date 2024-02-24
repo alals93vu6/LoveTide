@@ -10,9 +10,21 @@ public class GetDataTest : MonoBehaviour
     [SerializeField] public int TestNumber;
     [SerializeField] private string TestName;
     [SerializeField] private int asNumber;
+    [SerializeField] public int textNumber;
+    [SerializeField] private AudioSource testAudio;
     
     void Start()
     {
+        
+        if (textNumber == 1)
+        {
+            testAudio.clip = FindObjectOfType<AudioClipEnumGenerator>().GetAudioClip(AudioClipEnum.button01a);
+        }
+        else
+        {
+            testAudio.clip = FindObjectOfType<AudioClipEnumGenerator>().GetAudioClip(AudioClipEnum.button03a);
+        }
+        testAudio.Play();
         PlayerPrefs.SetInt("TestObjA",1);
         PlayerPrefs.SetInt("TestObjB",3);
         PlayerPrefs.SetInt("TestObjC",5);
