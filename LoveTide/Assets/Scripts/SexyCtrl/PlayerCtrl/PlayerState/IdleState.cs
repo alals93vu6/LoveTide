@@ -11,7 +11,7 @@ public class IdleState : IState
 
     public void OnStayState(object action)
     {
-        throw new System.NotImplementedException();
+        
     }
 
     public void OnExitState(object action)
