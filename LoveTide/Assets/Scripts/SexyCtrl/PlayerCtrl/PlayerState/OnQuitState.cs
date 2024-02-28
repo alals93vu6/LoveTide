@@ -4,19 +4,37 @@ using UnityEngine;
 
 public class OnQuitState : IState
 {
+    private float quitTime;
     public void OnEnterState(object action)
-    
     {
-        throw new System.NotImplementedException();
+        var player = (PlayerActor_Sexy)action;
+        player.UICtrl.SetButtonDisplay(3);
+        if (player.isHand)
+        {
+            player.animatorCtrl.rightChestsCtrl.testText.text = "P右手:正在拔出";
+            player.animatorCtrl.bodyCtrl.testText.text = "G身體:手被拔出"+ "\n" + "GG:待機" ;
+        }
+        else
+        {
+            player.animatorCtrl.bodyCtrl.testText.text = "G身體:被拔出"+ "\n" + "GG:拔出中" ;
+        }
+        quitTime = 0;
     }
 
     public void OnStayState(object action)
     {
-        throw new System.NotImplementedException();
+        var player = (PlayerActor_Sexy)action;
+        quitTime += Time.deltaTime;
+        if (quitTime >= 1.5f)
+        {
+            player.ChangeState(new IdleState());
+        }
     }
 
     public void OnExitState(object action)
     {
-        throw new System.NotImplementedException();
+        var player = (PlayerActor_Sexy)action;
+        player.isHand = false;
+        player.isEnter = false;
     }
 }

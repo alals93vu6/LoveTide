@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerActor_Button : MonoBehaviour
 {
+    [SerializeField] private PlayerActor_Sexy player;
+    
     public void StopAllMotion()
     {
         Debug.Log("StopAllMotion");
@@ -67,10 +69,13 @@ public class PlayerActor_Button : MonoBehaviour
     public void OnStartEnter(bool isHand)
     {
         Debug.Log("OnStartEnter");
+        if (isHand) {player.isHand = true;}
+        player.ChangeState(new OnStartEnterState());
     }
             
-    public void OnStartQuit(bool isHand)
+    public void OnStartQuit()
     {
         Debug.Log("OnStartQuit");
+        player.ChangeState(new OnQuitState());
     }
 }

@@ -6,16 +6,18 @@ public class IdleState : IState
 {
     public void OnEnterState(object action)
     {
-        throw new System.NotImplementedException();
+        var player = (PlayerActor_Sexy)action;
+        player.StopAllActor();
+        player.UICtrl.SetButtonDisplay(0);
     }
 
     public void OnStayState(object action)
     {
-        
+        var player = (PlayerActor_Sexy)action;
     }
 
     public void OnExitState(object action)
     {
-        throw new System.NotImplementedException();
+        var player = (PlayerActor_Sexy)action;
     }
 }

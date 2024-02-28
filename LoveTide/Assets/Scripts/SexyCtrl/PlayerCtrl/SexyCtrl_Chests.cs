@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SexyCtrl_Chests : MonoBehaviour
 {
-    [SerializeField] private Text testText;
+    [SerializeField] public Text testText;
     // Start is called before the first frame update
     void Start()
     {

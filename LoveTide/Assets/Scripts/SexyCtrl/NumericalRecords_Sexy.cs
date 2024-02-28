@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NumericalRecords_Sexy : MonoBehaviour
 {
+    [SerializeField] public float playerDelight;
+    [SerializeField] public float girlDelight;
+    [SerializeField] public float sensitivity;
     // Start is called before the first frame update
     void Start()
     {
