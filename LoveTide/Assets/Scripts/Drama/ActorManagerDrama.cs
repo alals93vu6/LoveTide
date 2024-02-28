@@ -9,6 +9,7 @@ public class ActorManagerDrama : MonoBehaviour
     [SerializeField]public ActorScObj[] actorImage;
     [SerializeField]private DialogData dialog;
     [SerializeField] private int idleActor = 0;
+    [SerializeField] private int targetDialog;
     
     
     //todo dia判斷是否改變動作，
@@ -21,9 +22,10 @@ public class ActorManagerDrama : MonoBehaviour
         Debug.Log(textNumber);
     }
 
-    public void OnStart(DialogData diadata,int actorLocation)
+    public void OnStart(DialogData diadata,int actorLocation,int targetNumber)
     {
         dialog = diadata;
+        targetDialog = targetNumber;
         ActorCtrl(actorLocation);
     }
     
@@ -34,7 +36,7 @@ public class ActorManagerDrama : MonoBehaviour
         {
             MoveActorLocation(idleActor,theActorLocation);
         }
-        if (dialog.plotOptionsList[0].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace != Face.nothiog)
+        if (dialog.plotOptionsList[targetDialog].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace != Face.nothiog)
         {
             ChangeActorFace(idleActor,ChickFace(0));
         }
@@ -43,8 +45,7 @@ public class ActorManagerDrama : MonoBehaviour
     // Start is called before the first frame update
     public void ChangeActorFace(int targetActor,int targetFace)
     {
-        theActor[targetActor].sprite = actorImage[targetActor].ActorStandingDrawing[targetFace];
-        
+        theActor[targetActor].sprite = actorImage[ChickImage(0)].ActorStandingDrawing[targetFace];
     }
 
     public void MoveActorLocation(int targetActor,int targetLocation)
@@ -54,7 +55,7 @@ public class ActorManagerDrama : MonoBehaviour
     
     private int ChickFace(int faceNumber)
     {
-        switch (dialog.plotOptionsList[0].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace)
+        switch (dialog.plotOptionsList[targetDialog].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace)
         {
             case Face.normal: faceNumber = 0; break;
             case Face.haapy: faceNumber = 1; break;
@@ -70,13 +71,38 @@ public class ActorManagerDrama : MonoBehaviour
         //Debug.Log("Face"+faceNumber);
         return faceNumber;
     }
+    
+    private int ChickImage(int imageNumber)
+    {
+        switch (dialog.plotOptionsList[targetDialog].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].speaker)
+        {
+            case Speaker.Player : imageNumber = 1; break;
+            case Speaker.GirlFriend : imageNumber = 1; break;
+            case Speaker.GirlFriendDormitory : imageNumber = 8; break;
+            case Speaker.GirlFriendFormal : imageNumber = 9; break;
+            case Speaker.GirlFriendNude : imageNumber = 10; break;
+            case Speaker.BoyFriend : imageNumber = 2; break;
+            case Speaker.Steve : imageNumber = 3; break;
+            case Speaker.PoliceA : imageNumber = 4; break;
+            case Speaker.PoliceB : imageNumber = 5; break;
+            case Speaker.PassersbyA : imageNumber = 6; break;
+            case Speaker.PassersbyB : imageNumber = 7; break;
+            case Speaker.TavernBoss : imageNumber = 7; break;
+        }
+        //Debug.Log("Face"+faceNumber);
+        return imageNumber;
+    }
 
     private void ChickActor()
     {
-        switch (dialog.plotOptionsList[0].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].speaker)
+        switch (dialog.plotOptionsList[targetDialog].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].speaker)
         {
             case Speaker.Player : idleActor = 1; break;
+            case Speaker.Chorus : idleActor = 1; break;
             case Speaker.GirlFriend : idleActor = 1; break;
+            case Speaker.GirlFriendDormitory : idleActor = 1; break;
+            case Speaker.GirlFriendFormal : idleActor = 1; break;
+            case Speaker.GirlFriendNude : idleActor = 1; break;
             case Speaker.BoyFriend : idleActor = 2; break;
             case Speaker.Steve : idleActor = 3; break;
             case Speaker.PoliceA : idleActor = 4; break;
@@ -84,7 +110,6 @@ public class ActorManagerDrama : MonoBehaviour
             case Speaker.PassersbyA : idleActor = 6; break;
             case Speaker.PassersbyB : idleActor = 7; break;
             case Speaker.TavernBoss : idleActor = 7; break;
-            
         }
     }
 }

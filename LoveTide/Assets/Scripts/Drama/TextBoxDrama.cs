@@ -138,6 +138,9 @@ public class TextBoxDrama : MonoBehaviour
             case Speaker.Chorus: nameText.text = ""; break;
             case Speaker.Player: nameText.text = PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()); break;
             case Speaker.GirlFriend: nameText.text = "由香"; break;
+            case Speaker.GirlFriendDormitory: nameText.text = "由香"; break;
+            case Speaker.GirlFriendFormal: nameText.text = "由香"; break;
+            case Speaker.GirlFriendNude: nameText.text = "由香"; break;
             case Speaker.BoyFriend: nameText.text = "苦主"; break;
             case Speaker.Steve: nameText.text = "史帝夫"; break;
             case Speaker.PoliceA: nameText.text = "警察A"; break;

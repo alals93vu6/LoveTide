@@ -11,6 +11,7 @@ public class CGDisplay : MonoBehaviour
     [SerializeField] private int CGOrder;
     [SerializeField] private int backGroundOrder;
     [SerializeField] private DialogData dialog;
+    [SerializeField] private int targetDialog;
     
     // Start is called before the first frame update
     async void Start()
@@ -24,13 +25,15 @@ public class CGDisplay : MonoBehaviour
     {
         
     }
-
-    public void OnStart(DialogData diadata)
+    
+    public void OnStart(DialogData diadata , int targetNumber)
     {
         dialog = diadata;
         CGimg.SetActive(false);
         CGOrder = 0;
-        DisplayCGChick(dialog.plotOptionsList[0].dialogDataDetails[0].switchCGDisplay,dialog.plotOptionsList[0].dialogDataDetails[0].switchCGImage);
+        targetDialog = targetNumber;
+        DisplayCGChick(dialog.plotOptionsList[targetDialog].dialogDataDetails[0].switchCGDisplay,
+            dialog.plotOptionsList[targetDialog].dialogDataDetails[0].switchCGImage);
     }
 
     public void DisplayCGChick(bool ShowCG,bool SwitchCG)
@@ -49,14 +52,14 @@ public class CGDisplay : MonoBehaviour
                 CGimg.SetActive(true);
             }
         }
-        if (SwitchCG && CGOrder < dialog.plotOptionsList[0].displayCG.Length -1)
+        if (SwitchCG && CGOrder < dialog.plotOptionsList[targetDialog].displayCG.Length -1)
         {
             CGOrder++;
         }
         
         if (CGimg.activeSelf)
         {
-            CGimg.GetComponent<Image>().sprite = dialog.plotOptionsList[0].displayCG[CGOrder];
+            CGimg.GetComponent<Image>().sprite = dialog.plotOptionsList[targetDialog].displayCG[CGOrder];
         }
         
     }
@@ -64,6 +67,6 @@ public class CGDisplay : MonoBehaviour
     public void DisplayBackGroundChick(int setOrder)
     {
         backGroundOrder += setOrder;
-        backGroundImg.GetComponent<Image>().sprite = dialog.plotOptionsList[0].displayBackground[backGroundOrder];
+        backGroundImg.GetComponent<Image>().sprite = dialog.plotOptionsList[targetDialog].displayBackground[backGroundOrder];
     }
 }

@@ -61,8 +61,9 @@ public class PlayerCtrlDrama : MonoBehaviour
         eventDetected.numberCtrl.OnStart();
         texBox.targetNumber = eventDetected.PlayDramaDetected(0);
         texBox.OnStart_TextBox(diaLog);
-        actorCtrl.OnStart(diaLog,diaLog.plotOptionsList[eventDetected.targetDialogNumber].dialogDataDetails[talkOrder].stayLocation);
-        CGDisplay.OnStart(diaLog);
+        actorCtrl.OnStart(diaLog,diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].
+            dialogDataDetails[talkOrder].stayLocation,eventDetected.PlayDramaDetected(0));
+        CGDisplay.OnStart(diaLog,eventDetected.PlayDramaDetected(0));
         Debug.Log(texBox.textNumber);
     }
 
@@ -79,8 +80,9 @@ public class PlayerCtrlDrama : MonoBehaviour
             {
                 texBox.NextText();
                 talkOrder = texBox.textNumber;
-                actorCtrl.ActorCtrl(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].stayLocation);
-                CGDisplay.DisplayCGChick(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGDisplay,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGImage);
+                actorCtrl.ActorCtrl(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].stayLocation);
+                CGDisplay.DisplayCGChick(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGDisplay,
+                    diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGImage);
             }
         }
 
@@ -107,8 +109,8 @@ public class PlayerCtrlDrama : MonoBehaviour
         {
             texBox.NextText();
             talkOrder = texBox.textNumber;
-            actorCtrl.ActorCtrl(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].stayLocation);
-            CGDisplay.DisplayCGChick(diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGDisplay,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGImage);
+            actorCtrl.ActorCtrl(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].stayLocation);
+            CGDisplay.DisplayCGChick(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGDisplay,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGImage);
         }
     }
 
