@@ -48,11 +48,11 @@ public class TextBoxDrama : MonoBehaviour
     {
         var arraySize = diaLog.plotOptionsList[targetNumber].dialogDataDetails.Count;
         var playerNameData = FindObjectOfType<NumericalRecords>().playerName;
-        //Debug.Log(arraySize);
-        for (int i = 0; i < diaLog.plotOptionsList[targetNumber].dialogDataDetails.Count; i++)
-        {
-            getTextDate[i] = diaLog.plotOptionsList[targetNumber].dialogDataDetails[i].sentence.Replace("playername",playerNameData);
+        for (int i = 0; i < diaLog.plotOptionsList[targetNumber].dialogDataDetails.Count; i++) 
+        { 
+            getTextDate[i] = diaLog.plotOptionsList[targetNumber].dialogDataDetails[i].sentence.Replace("pName",playerNameData);
         }
+        //Debug.Log(arraySize);
     }
     
     private IEnumerator DisplayTextWithTypingEffect(bool OnWork)

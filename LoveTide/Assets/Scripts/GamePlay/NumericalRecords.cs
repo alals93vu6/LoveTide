@@ -37,6 +37,7 @@ public class NumericalRecords : MonoBehaviour
     public void OnStart()
     {
         GameDataLoad(PlayerPrefs.GetInt("GameDataNumber").ToString());
+        //GameDataLoad("20");
         FDS_Detected();
     }
     

@@ -76,7 +76,7 @@ MonoBehaviour:
       needTransition: 0
     - speaker: 10
       actorFace: 0
-      sentence: "\u963F\u65A4\u4F60\u73FE\u5728\u6709\u7A7A\u55CE?\u53EF\u4EE5\u4F86\u4E00\u4E0B\u6AC3\u53F0\u55CE\uFF1F"
+      sentence: "\u54C8\u56C9?\u4F60\u73FE\u5728\u6709\u7A7A\u55CE?\u53EF\u4EE5\u4F86\u4E00\u4E0B\u6AC3\u53F0\u55CE\uFF1F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
       needTransition: 0
     - speaker: 10
       actorFace: 0
-      sentence: "\u963F\u65A4\u963F\uFF01\u90A3\u9EBC\u5C31\u4EA4\u7D66\u4F60\u56C9\uFF5E\u6211\u8981\u4F86\u53BB\u5FD9\u5566\u3002"
+      sentence: "\u8F9B\u82E6\u5566\uFF01\u90A3\u9EBC\u5C31\u4EA4\u7D66\u4F60\u56C9\uFF5E\u6211\u8981\u4F86\u53BB\u5FD9\u5566\u3002"
       stayLocation: 4
       switchCGDisplay: 0
       switchCGImage: 0
@@ -342,21 +342,21 @@ MonoBehaviour:
       needTransition: 0
     - speaker: 2
       actorFace: 0
-      sentence: "\u5E97\u88E1\u7684\u4EBA\u58EB\u90FD\u76F4\u63A5\u53EB\u6211\u963F\u65A4\u5566\uFF0C\u770B\u59B3\u4E5F\u8981\u4E0D\u8981\u9019\u6A23\u53EB\u5C31\u597D\u3002"
-      stayLocation: 0
-      switchCGDisplay: 0
-      switchCGImage: 0
-      needTransition: 0
-    - speaker: 3
-      actorFace: 9
-      sentence: "\u54A6\u2026\u9019\u6A23\u4E0D\u6703\u592A\u4E0D\u5C0A\u91CD\u55CE\uFF1F"
+      sentence: "\u5E97\u88E1\u7684\u4EBA\u662F\u90FD\u76F4\u63A5\u53EB\u6211pNamel\u5566\uFF0C\u770B\u59B3\u4E5F\u8981\u4E0D\u8981\u9019\u6A23\u53EB\u5C31\u597D\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
       needTransition: 0
     - speaker: 3
       actorFace: 2
-      sentence: "\u6211\u9084\u662F\u53EB\u4F60\u5E97\u9577\u5C31\u597D\u4E86\u5427\uFF0C\u5E97\u9577\uFF5E"
+      sentence: "\u90A3\u9EBC\u6211\u4E5F\u5C31\u9019\u6A23\u8DDF\u8457\u7A31\u547C\u56C9~"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 3
+      actorFace: 1
+      sentence: "\u4E0D\u904E\u5E73\u5E38\u5728\u5E97\u88E1\u7684\u6642\u5019\u6211\u9084\u662F\u53EB\u4F60\u7684\u8077\u7A31\u5427\uFF0C\u5E97\u9577\uFF5E"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
       needTransition: 0
     - speaker: 3
       actorFace: 2
-      sentence: "\u539F\u4F86\u662F\u5E97\u9577\u70BA\u6211\u6253\u6383\u7684\u554A\uFF0C\u8B1D\u8B1D\u5E97\u9577\u2764\uFE0F"
+      sentence: "\u539F\u4F86\u662FpName\u70BA\u6211\u6253\u6383\u7684\u554A\uFF0C\u8B1D\u8B1D\u4F60\u2764\uFE0F"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
       needTransition: 0
     - speaker: 3
       actorFace: 0
-      sentence: "\u54C8\u54C8\uFF5E\u592A\u904E\u5206\u4E86\u5427\u5E97\u9577"
+      sentence: "\u54C8\u54C8\uFF5E\u592A\u904E\u5206\u4E86\u5427pName"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
@@ -517,7 +517,7 @@ MonoBehaviour:
       needTransition: 0
     - speaker: 3
       actorFace: 2
-      sentence: "\u597D\uFF5E\u5E97\u9577\u665A\u5B89\u56C9\uFF01"
+      sentence: "\u597D\uFF5EpName\u665A\u5B89\u56C9\uFF01"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
@@ -542,23 +542,23 @@ MonoBehaviour:
     displayBackground: []
     disPlayOrder: 0
     dialogDataDetails:
-    - speaker: 2
+    - speaker: 1
       actorFace: 0
-      sentence: "\u521D\u6B21\u653E\u5047"
+      sentence: "\u7D93\u904E\u4E86\u4E09\u5929\u7684\u77ED\u66AB\u9069\u61C9\u5F8C\uFF0C\u7D42\u65BC\u4F86\u5230\u4E86\u7531\u9999\u7684\u7B2C\u4E00\u500B\u5047\u671F\uFF0C\u4E0D\u904E\u65E5\u5B50\u975E\u5E38\u7684\u8A6D\u7570\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
       needTransition: 0
     - speaker: 0
       actorFace: 0
-      sentence: 
+      sentence: "\u7ADF\u7136\u6703\u6709\u653E\u79AE\u62DC\u4E09\u8DDF\u56DB\u7684\u5047\u671F\uFF0C\u7136\u5F8C\u79AE\u62DC\u516D\u8DDF\u65E5\u8981\u4E0A\u73ED\u7684\u8A6D\u7570\u5730\u65B9\uFF01"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
       needTransition: 0
-    - speaker: 4
+    - speaker: 0
       actorFace: 0
-      sentence: AAAAAAAAAAA
+      sentence: "\u6211\u672C\u4F86\u60F3\u7E7C\u7E8C\u8AAA\u9EDE\u4EC0\u9EBC\u7684\uFF0C\u4F46\u8001\u95C6\u7D66\u7684\u771F\u7684\u592A\u591A\u4E86\uFF0C\u65BC\u662F\u5C31\u9019\u6A23\u5468\u800C\u5FA9\u59CB\u7684\u7E7C\u7E8C\u904E\u8457\u73FE\u5728\u7684\u795E\u5947\u5047\u65E5\u751F\u6D3B\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
@@ -570,9 +570,149 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
       needTransition: 0
-    - speaker: 3
+    - speaker: 0
       actorFace: 0
-      sentence: AAAAAAAAAAA
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
@@ -611,9 +751,1199 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
       needTransition: 0
-    - speaker: 3
+    - speaker: 0
       actorFace: 0
-      sentence: AAAAAAAAAAA
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: 
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
