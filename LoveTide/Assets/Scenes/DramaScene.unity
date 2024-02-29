@@ -1564,13 +1564,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d2fc04b10bf3f39408d051a3103b1e09, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2637,7 +2637,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u628A\u591C\u904A\u5269\u4E0B\u7684\u6587\u672C\u5168\u90E8\u653E\u5B8C"
+  m_Text: "CG\u653E\u51FA\u4F86\u5F8C\u5E7E\u79D2\u624D\u6703\u8DF3\u51FA\u5C0D\u8A71\u6846"
 --- !u!222 &1791638755
 CanvasRenderer:
   m_ObjectHideFlags: 0

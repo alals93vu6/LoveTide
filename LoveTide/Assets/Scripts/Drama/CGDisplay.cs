@@ -61,7 +61,7 @@ public class CGDisplay : MonoBehaviour
         {
             CGimg.GetComponent<Image>().sprite = dialog.plotOptionsList[targetDialog].displayCG[CGOrder];
         }
-        Debug.Log(dialog.plotOptionsList[targetDialog].displayCG[CGOrder].name);
+        //Debug.Log(dialog.plotOptionsList[targetDialog].displayCG[CGOrder].name);
         
     }
     
