@@ -10,6 +10,7 @@ public class ActorManagerDrama : MonoBehaviour
     [SerializeField]private DialogData dialog;
     [SerializeField] private int idleActor = 0;
     [SerializeField] private int targetDialog;
+    [SerializeField] private int oldActor;
     
     
     //todo dia判斷是否改變動作，
@@ -36,6 +37,8 @@ public class ActorManagerDrama : MonoBehaviour
         {
             MoveActorLocation(idleActor,theActorLocation);
         }
+        
+        /*問題*/
         if (dialog.plotOptionsList[targetDialog].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].actorFace != Face.nothiog)
         {
             ChangeActorFace(idleActor,ChickFace(0));
@@ -45,6 +48,7 @@ public class ActorManagerDrama : MonoBehaviour
     // Start is called before the first frame update
     public void ChangeActorFace(int targetActor,int targetFace)
     {
+        //Debug.Log(targetFace);
         theActor[targetActor].sprite = actorImage[ChickImage(0)].ActorStandingDrawing[targetFace];
     }
 
@@ -76,20 +80,32 @@ public class ActorManagerDrama : MonoBehaviour
     {
         switch (dialog.plotOptionsList[targetDialog].dialogDataDetails[FindObjectOfType<TextBoxDrama>().textNumber].speaker)
         {
-            case Speaker.Player : imageNumber = 1; break;
-            case Speaker.GirlFriend : imageNumber = 1; break;
-            case Speaker.GirlFriendDormitory : imageNumber = 8; break;
-            case Speaker.GirlFriendFormal : imageNumber = 9; break;
-            case Speaker.GirlFriendNude : imageNumber = 10; break;
-            case Speaker.BoyFriend : imageNumber = 2; break;
-            case Speaker.Steve : imageNumber = 3; break;
-            case Speaker.PoliceA : imageNumber = 4; break;
-            case Speaker.PoliceB : imageNumber = 5; break;
-            case Speaker.PassersbyA : imageNumber = 6; break;
-            case Speaker.PassersbyB : imageNumber = 7; break;
-            case Speaker.TavernBoss : imageNumber = 7; break;
+            case Speaker.Ibid : imageNumber = oldActor; break;
+            case Speaker.Player : imageNumber = oldActor; break;
+            case Speaker.GirlFriend : imageNumber = 1;
+                oldActor = imageNumber; break;
+            case Speaker.GirlFriendDormitory : imageNumber = 8;
+                oldActor = imageNumber; break; break;
+            case Speaker.GirlFriendFormal : imageNumber = 9;
+                oldActor = imageNumber; break; break;
+            case Speaker.GirlFriendNude : imageNumber = 10;
+                oldActor = imageNumber; break; break;
+            case Speaker.BoyFriend : imageNumber = 2;
+                oldActor = imageNumber; break; break;
+            case Speaker.Steve : imageNumber = 3;
+                oldActor = imageNumber; break; break;
+            case Speaker.PoliceA : imageNumber = 4;
+                oldActor = imageNumber; break; break;
+            case Speaker.PoliceB : imageNumber = 5;
+                oldActor = imageNumber; break; break;
+            case Speaker.PassersbyA : imageNumber = 6;
+                oldActor = imageNumber; break; break;
+            case Speaker.PassersbyB : imageNumber = 7;
+                oldActor = imageNumber; break; break;
+            case Speaker.TavernBoss : imageNumber = 7;
+                oldActor = imageNumber; break; break;
         }
-        //Debug.Log("Face"+faceNumber);
+        //Debug.Log("Face"+imageNumber);
         return imageNumber;
     }
 
