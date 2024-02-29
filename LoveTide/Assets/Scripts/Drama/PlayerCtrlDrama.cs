@@ -110,7 +110,8 @@ public class PlayerCtrlDrama : MonoBehaviour
             texBox.NextText();
             talkOrder = texBox.textNumber;
             actorCtrl.ActorCtrl(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].stayLocation);
-            CGDisplay.DisplayCGChick(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGDisplay,diaLog.plotOptionsList[0].dialogDataDetails[talkOrder].switchCGImage);
+            CGDisplay.DisplayCGChick(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGDisplay,
+                diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGImage);
         }
     }
 
