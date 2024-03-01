@@ -82,6 +82,7 @@ public class ActorManagerDrama : MonoBehaviour
         {
             case Speaker.Ibid : imageNumber = oldActor; break;
             case Speaker.Player : imageNumber = oldActor; break;
+            case Speaker.Chorus : imageNumber = oldActor; break;
             case Speaker.GirlFriend : imageNumber = 1;
                 oldActor = imageNumber; break;
             case Speaker.GirlFriendDormitory : imageNumber = 8;

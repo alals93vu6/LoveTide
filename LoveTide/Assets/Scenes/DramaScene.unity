@@ -896,12 +896,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23853133603e7b34eb39566641c4a10d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CGimg: {fileID: 951131107}
+  CGimg: {fileID: 951131109}
   backGroundImg: {fileID: 1552733875}
   CGOrder: 0
   backGroundOrder: 0
   dialog: {fileID: 0}
   targetDialog: 0
+  CGalpha: 0
+  isDisplayCG: 0
 --- !u!1 &784337202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1165,7 @@ MonoBehaviour:
   dialog: {fileID: 0}
   idleActor: 0
   targetDialog: 0
+  oldActor: 0
 --- !u!1 &904847937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,7 +2284,6 @@ MonoBehaviour:
   scenarioChose: {fileID: 2138488084}
   texBoxObj: {fileID: 1645102487}
   talkOrder: 0
-  isSkip: 0
   skipInterval: 0
 --- !u!1 &1791638752
 GameObject:
@@ -2411,7 +2413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

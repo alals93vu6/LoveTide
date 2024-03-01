@@ -1132,7 +1132,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
       needTransition: 0
-    - speaker: 2
+    - speaker: 5
       actorFace: 2
       sentence: "pName\uFF5E\uFF5E\u5FEB\u4E00\u9EDE\u554A\uFF5E\uFF5E"
       stayLocation: 0
@@ -1259,7 +1259,7 @@ MonoBehaviour:
       switchCGImage: 0
       needTransition: 0
     - speaker: 2
-      actorFace: 1
+      actorFace: 0
       sentence: "\u4E0D\u5BA2\u6C23\uFF0C\u770B\u8D77\u4F86\u59B3\u5FC3\u60C5\u597D\u591A\u4E86\uFF0C\u6211\u53EF\u8981\u958B\u59CB\u4E8B\u5F8C\u6AA2\u8A0E\u4E86\u5594"
       stayLocation: 0
       switchCGDisplay: 1
@@ -1272,7 +1272,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
       needTransition: 0
-    - speaker: 0
+    - speaker: 5
       actorFace: 8
       sentence: "\u55EF\u2026\u597D\u5427\uFF01\u6211\u5DF2\u7D93\u6E96\u5099\u597D\u4E86\uFF01"
       stayLocation: 0

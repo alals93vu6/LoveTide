@@ -20,7 +20,6 @@ public class PlayerCtrlDrama : MonoBehaviour
 
     [Header("數值")] 
     [SerializeField] private int talkOrder;
-    [SerializeField] private bool isSkip;
     [SerializeField] private float skipInterval;
     // Start is called before the first frame update
     void Start()
@@ -33,20 +32,14 @@ public class PlayerCtrlDrama : MonoBehaviour
     {
         PlayerClick();
         
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !texBox.isEnd)
+        if (Input.GetKey(KeyCode.LeftControl) && !texBox.isEnd)
         {
-            isSkip = true;
+            skipInterval += Time.deltaTime;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftControl) && !texBox.isEnd)
         {
-            isSkip = false;
             skipInterval = 0f;
-        }
-
-        if (isSkip  && !texBox.isEnd)
-        {
-            skipInterval += Time.deltaTime;
         }
 
         if (skipInterval >= 0.07f)
@@ -69,7 +62,7 @@ public class PlayerCtrlDrama : MonoBehaviour
 
     private void PlayerClick()
     {
-        if (Input.GetMouseButtonDown(0) && !texBox.isWait)
+        if (Input.GetMouseButtonDown(0) && !texBox.isWait && !texBox.isEnd)
         {
             SetTextBox(true);
             if (texBox.isover)
@@ -88,30 +81,52 @@ public class PlayerCtrlDrama : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && !texBox.isWait)
         {
-            if (texBoxObj.activeSelf)
-            {
-                SetTextBox(false);
-            }
-            else
-            {
-                SetTextBox(true);
-            }
+            DisplayTextBox(0);
         }
+    }
+    
+    
+
+    public void DisplayTextBox(int ctrlNumber)
+    {
+        switch (ctrlNumber)
+        {
+            case 0: 
+                if (texBoxObj.activeSelf)
+                {
+                    SetTextBox(false);
+                }
+                else
+                {
+                    SetTextBox(true);
+                }
+                break;
+            case 1: SetTextBox(false); break;
+            case 2: SetTextBox(true); break;
+        }
+        
     }
 
     private void PlayerSkip()
     {
-        if (texBox.isover)
+        if (!texBox.isEnd)
         {
-            texBox.DownText();
-        }
-        else
-        {
-            texBox.NextText();
-            talkOrder = texBox.textNumber;
-            actorCtrl.ActorCtrl(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].stayLocation);
-            CGDisplay.DisplayCGChick(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGDisplay,
-                diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGImage);
+            if (!texBox.isWait)
+            {
+                SetTextBox(true);
+                if (texBox.isover)
+                {
+                    texBox.DownText();
+                }
+                else
+                {
+                    texBox.NextText();
+                    talkOrder = texBox.textNumber;
+                    actorCtrl.ActorCtrl(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].stayLocation);
+                    CGDisplay.DisplayCGChick(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGDisplay,
+                        diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGImage);
+                } 
+            }  
         }
     }
 
