@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: ActorB
   m_EditorClassIdentifier: 
   ActorStandingDrawing:
-  - {fileID: 21300000, guid: b64c157d6ef67094cb30d4b199e64f1e, type: 3}
-  - {fileID: 21300000, guid: ed6ed349c94e6184e9712a2846a6bd3f, type: 3}
-  - {fileID: 21300000, guid: 39dc5a697788a374eae1fb2d103601bc, type: 3}
-  - {fileID: 21300000, guid: 561013e10514622458723c93c88b9e8c, type: 3}
-  - {fileID: 21300000, guid: 39dc5a697788a374eae1fb2d103601bc, type: 3}
-  - {fileID: 21300000, guid: ed6ed349c94e6184e9712a2846a6bd3f, type: 3}
-  - {fileID: 21300000, guid: b64c157d6ef67094cb30d4b199e64f1e, type: 3}
+  - {fileID: 21300000, guid: 4b400ebbc12936442a648aefaa87e017, type: 3}
+  - {fileID: 21300000, guid: 4b400ebbc12936442a648aefaa87e017, type: 3}
+  - {fileID: 21300000, guid: 4b400ebbc12936442a648aefaa87e017, type: 3}
+  - {fileID: 21300000, guid: 4b400ebbc12936442a648aefaa87e017, type: 3}
+  - {fileID: 21300000, guid: 4b400ebbc12936442a648aefaa87e017, type: 3}
+  - {fileID: 21300000, guid: 4b400ebbc12936442a648aefaa87e017, type: 3}
+  - {fileID: 21300000, guid: 4b400ebbc12936442a648aefaa87e017, type: 3}
