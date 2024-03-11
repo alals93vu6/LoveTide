@@ -11,8 +11,8 @@ public class PlayerActor_Sexy : MonoBehaviour
     [SerializeField] public bool isEnter;
     [SerializeField] public bool isHand;
     [SerializeField] public float motionSpeed;
-    [SerializeField] private IState CurrenState = new IdleState();
     [SerializeField] private int actionState;
+    private IState CurrenState = new IdleState();
 
     [Header("物件")] 
     [SerializeField] public PlayerAnimatorManager animatorCtrl;
@@ -40,13 +40,59 @@ public class PlayerActor_Sexy : MonoBehaviour
 
     public void StopAllActor()
     {
-        animatorCtrl.girlHandCtrl.testText.text = "G手部:待機";
-        animatorCtrl.headCtrl.testText.text = "G表情:待機";
-        animatorCtrl.leftChestsCtrl.testText.text = "G左胸:待機";
-        animatorCtrl.rightChestsCtrl.testText.text = "G右胸:待機";
-        animatorCtrl.leftHandCtrl.testText.text = "P左手:待機";
-        animatorCtrl.rightHandCtrl.testText.text = "P右手:待機";
-        animatorCtrl.bodyCtrl.testText.text = "G身體:待機"+ "\n" + "GG:待機";
+        var actorDetected = 0;
+        if (!isEnter && !isHand)
+        {
+            actorDetected = 1;
+        }
+        else if (isEnter && isHand)
+        {
+            actorDetected = 2; 
+        }
+        else if (isEnter && !isHand)
+        {
+            actorDetected = 3;
+        }
+
+        speedCtrl[nowSlider].value = 0;
+        switch (actorDetected)
+        {
+            case 1: StopActorNomal();
+                Debug.Log("Nomal"); break;
+            case 2: StopActorHandJob();
+                Debug.Log("handJob");break;
+            case 3: StopActorSexy();
+                Debug.Log("sexy");break;
+        }
+        
+    }
+    private void StopActorNomal()
+    {
+        animatorCtrl.girlHandCtrl.ChangeState(new IdleState_GirlHand());
+        animatorCtrl.headCtrl.onKiss = false;
+        animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+        animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+        animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+    }
+    
+    private void StopActorHandJob()
+    {
+        animatorCtrl.girlHandCtrl.ChangeState(new IdleState_GirlHand());
+        animatorCtrl.headCtrl.onKiss = false;
+        animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+        animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+    }
+    
+    private void StopActorSexy()
+    {
+        animatorCtrl.girlHandCtrl.ChangeState(new IdleState_GirlHand());
+        animatorCtrl.headCtrl.onKiss = false;
+        animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+        animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+        animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
     }
 
     public void SpeedDetected(int targetSlider)

@@ -12,12 +12,12 @@ public class OnStartEnterState : IState
         player.UICtrl.SetButtonDisplay(3);
         if (player.isHand)
         {
-            player.animatorCtrl.rightChestsCtrl.testText.text = "P右手:正在插入";
-            player.animatorCtrl.bodyCtrl.testText.text = "G身體:被督進去"+ "\n" + "GG:待機" ;
+            player.animatorCtrl.rightHandCtrl.ChangeState(new ReadyHandJobState_Hand());
+            player.animatorCtrl.bodyCtrl.ChangeState(new OnEnterState_Body());
         }
         else
         {
-            player.animatorCtrl.bodyCtrl.testText.text = "G身體:被督進去"+ "\n" + "GG:正在督進去" ;
+            player.animatorCtrl.bodyCtrl.ChangeState(new OnEnterState_Body());
         }
         passTime = 0;
     }
@@ -30,7 +30,7 @@ public class OnStartEnterState : IState
         {
             if (player.isHand)
             {
-                player.ChangeState(new IdleState_HandJob());
+                player.ChangeState(new HandJobState());
             }
             else
             {

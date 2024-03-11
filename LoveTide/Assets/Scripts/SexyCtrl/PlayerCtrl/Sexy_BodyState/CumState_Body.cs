@@ -6,16 +6,19 @@ public class CumState_Body : IState
 {
     public void OnEnterState(object action)
     {
-        throw new System.NotImplementedException();
+        var body = (SexyCtrl_Body)action;
+        
     }
 
     public void OnStayState(object action)
     {
-        throw new System.NotImplementedException();
+        var body = (SexyCtrl_Body)action;
+
     }
 
     public void OnExitState(object action)
     {
-        throw new System.NotImplementedException();
+        var body = (SexyCtrl_Body)action;
+
     }
 }

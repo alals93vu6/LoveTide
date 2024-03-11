@@ -6,16 +6,26 @@ public class OnQuitState_Body : IState
 {
     public void OnEnterState(object action)
     {
-        throw new System.NotImplementedException();
+        var body = (SexyCtrl_Body)action;
+        if (GameObject.FindObjectOfType<PlayerActor_Sexy>().isHand)
+        {
+            body.testText.text = "G身體:手被拔出"+ "\n" + "GG:待機" ;
+        }
+        else
+        {
+            body.testText.text = "G身體:被拔出" + "\n" + "GG:拔出中" ;
+        }
     }
 
     public void OnStayState(object action)
     {
-        throw new System.NotImplementedException();
+        var body = (SexyCtrl_Body)action;
+
     }
 
     public void OnExitState(object action)
     {
-        throw new System.NotImplementedException();
+        var body = (SexyCtrl_Body)action;
+
     }
 }

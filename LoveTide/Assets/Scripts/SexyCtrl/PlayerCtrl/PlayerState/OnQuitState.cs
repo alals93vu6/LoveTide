@@ -11,13 +11,13 @@ public class OnQuitState : IState
         player.UICtrl.SetButtonDisplay(3);
         if (player.isHand)
         {
-            player.animatorCtrl.rightChestsCtrl.testText.text = "P右手:正在拔出";
-            player.animatorCtrl.bodyCtrl.testText.text = "G身體:手被拔出"+ "\n" + "GG:待機" ;
+            player.animatorCtrl.rightHandCtrl.ChangeState(new QuitHandJobState_Hand());
+            player.animatorCtrl.bodyCtrl.ChangeState(new OnQuitState_Body());
             player.speedCtrl[1].value = 0;
         }
         else
         {
-            player.animatorCtrl.bodyCtrl.testText.text = "G身體:被拔出" + "\n" + "GG:拔出中";
+            player.animatorCtrl.bodyCtrl.ChangeState(new OnQuitState_Body());
             player.speedCtrl[2].value = 0;
         }
         quitTime = 0;

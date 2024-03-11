@@ -2,17 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThrustingState_Body : MonoBehaviour
+public class ThrustingState_Body : IState
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OnEnterState(object action)
     {
+        var body = (SexyCtrl_Body)action;
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnStayState(object action)
     {
-        
+        var body = (SexyCtrl_Body)action;
+
+    }
+
+    public void OnExitState(object action)
+    {
+        var body = (SexyCtrl_Body)action;
+
     }
 }

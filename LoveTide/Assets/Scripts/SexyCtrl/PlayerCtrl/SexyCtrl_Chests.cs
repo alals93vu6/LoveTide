@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class SexyCtrl_Chests : MonoBehaviour
 {
     [SerializeField] public Text testText;
-    [SerializeField] public bool isLeft;
     [SerializeField] private IState CurrenState = new IdleState_Chests();
     // Start is called before the first frame update
     void Start()

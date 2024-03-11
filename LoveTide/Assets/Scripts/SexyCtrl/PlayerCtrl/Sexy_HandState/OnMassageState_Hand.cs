@@ -6,16 +6,16 @@ public class OnMassageState_Hand : IState
 {
     public void OnEnterState(object action)
     {
-        throw new System.NotImplementedException();
+        var hand = (SexyCtrl_Hand)action;
     }
 
     public void OnStayState(object action)
     {
-        throw new System.NotImplementedException();
+        var hand = (SexyCtrl_Hand)action;
     }
 
     public void OnExitState(object action)
     {
-        throw new System.NotImplementedException();
+        var hand = (SexyCtrl_Hand)action;
     }
 }
