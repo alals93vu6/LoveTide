@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Sexyctrl_GirlHand : MonoBehaviour
 {
     [SerializeField] public Text testText;
+    [SerializeField] private IState CurrenState = new IdleState_GirlHand();
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,13 @@ public class Sexyctrl_GirlHand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        CurrenState.OnStayState(this);
+    }
+    
+    public void ChangeState(IState nextState)
+    {
+        CurrenState.OnExitState(this);
+        nextState.OnEnterState(this);
+        CurrenState = nextState;
     }
 }

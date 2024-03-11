@@ -487,8 +487,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 163634894}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 3
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2183,6 +2183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testText: {fileID: 0}
+  onKiss: 0
 --- !u!1 &494612323
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +2406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testText: {fileID: 0}
+  isLeft: 1
 --- !u!1 &549985550
 GameObject:
   m_ObjectHideFlags: 0
@@ -3368,10 +3370,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnter: 0
   isHand: 0
+  motionSpeed: 0
   actionState: 0
   animatorCtrl: {fileID: 1124817610}
   UICtrl: {fileID: 1739108139}
   audioCtrl: {fileID: 0}
+  speedCtrl:
+  - {fileID: 77745601}
+  - {fileID: 1008860194}
+  - {fileID: 662236849}
+  nowSlider: 0
 --- !u!4 &631780746
 Transform:
   m_ObjectHideFlags: 0
@@ -3756,8 +3764,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1863281888}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 3
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3932,6 +3940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testText: {fileID: 0}
+  isLeft: 0
 --- !u!1 &693408328
 GameObject:
   m_ObjectHideFlags: 0
@@ -6478,8 +6487,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 355256187}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 3
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7540,6 +7549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testText: {fileID: 0}
+  isLeft: 0
 --- !u!1 &1158365594
 GameObject:
   m_ObjectHideFlags: 0
@@ -10506,6 +10516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testText: {fileID: 0}
+  isLeft: 1
 --- !u!1 &1780364654
 GameObject:
   m_ObjectHideFlags: 0

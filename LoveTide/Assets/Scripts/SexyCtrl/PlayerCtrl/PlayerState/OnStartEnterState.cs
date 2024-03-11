@@ -34,7 +34,7 @@ public class OnStartEnterState : IState
             }
             else
             {
-                player.ChangeState(new IdleState_Sexy());
+                player.ChangeState(new ThrustingState());
             }
         }
     }
@@ -42,5 +42,13 @@ public class OnStartEnterState : IState
     public void OnExitState(object action)
     {
         var player = (PlayerActor_Sexy)action;
+        if (player.isHand)
+        {
+            player.nowSlider = 1;
+        }
+        else
+        {
+            player.nowSlider = 2;
+        }
     }
 }

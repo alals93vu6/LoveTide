@@ -8,12 +8,19 @@ public class PlayerActor_Button : MonoBehaviour
     
     public void StopAllMotion()
     {
-        Debug.Log("StopAllMotion");
+        player.StopAllActor();
     }
     
     public void OnKiss()
-    { 
-        Debug.Log("OnKiss");
+    {
+        if (player.animatorCtrl.headCtrl.onKiss)
+        {
+            player.animatorCtrl.headCtrl.onKiss = false;
+        }
+        else
+        {
+            player.animatorCtrl.headCtrl.onKiss = true;
+        }
     }
     
     public void OnLick(bool isRight)
@@ -68,14 +75,16 @@ public class PlayerActor_Button : MonoBehaviour
     
     public void OnStartEnter(bool isHand)
     {
-        Debug.Log("OnStartEnter");
+        //Debug.Log("OnStartEnter");
+        player.StopAllActor();
         if (isHand) {player.isHand = true;}
         player.ChangeState(new OnStartEnterState());
     }
             
     public void OnStartQuit()
     {
-        Debug.Log("OnStartQuit");
+        //Debug.Log("OnStartQuit");
+        player.StopAllActor();
         player.ChangeState(new OnQuitState());
     }
 }
