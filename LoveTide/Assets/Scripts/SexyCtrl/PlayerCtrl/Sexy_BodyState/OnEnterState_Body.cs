@@ -20,15 +20,7 @@ public class OnEnterState_Body : IState
     public void OnStayState(object action)
     {
         var body = (SexyCtrl_Body)action;
-        var player = GameObject.FindObjectOfType<PlayerActor_Sexy>();
-        if (player.isHand)
-        {
-            body.ChangeState(new HandJobState_Body());
-        }
-        else
-        {
-            body.ChangeState(new ThrustingState_Body());
-        }
+        
     }
 
     public void OnExitState(object action)

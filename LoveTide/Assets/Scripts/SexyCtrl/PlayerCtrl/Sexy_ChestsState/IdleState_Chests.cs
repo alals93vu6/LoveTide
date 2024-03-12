@@ -12,7 +12,7 @@ public class IdleState_Chests : IState
 
     public void OnStayState(object action)
     {
-        var chests = (SexyCtrl_Chests)action;        
+        var chests = (SexyCtrl_Chests)action;
     }
 
     public void OnExitState(object action)

@@ -21,6 +21,14 @@ public class PlayerActor_Button : MonoBehaviour
         {
             player.animatorCtrl.headCtrl.onKiss = true;
         }
+        if (player.animatorCtrl.rightChestsCtrl.haveMouth)
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        }
+        if (player.animatorCtrl.leftChestsCtrl.haveMouth)
+        {
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+        }
     }
     
     public void OnLick(bool isRight)
@@ -28,12 +36,34 @@ public class PlayerActor_Button : MonoBehaviour
         if (isRight)
         {
             player.animatorCtrl.rightChestsCtrl.ChangeState(new OnlickState_Chests());
-            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+            if (!player.isHand)
+            {
+                player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+            }
+
+            if (player.animatorCtrl.leftChestsCtrl.haveMouth)
+            {
+                
+                player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+            }
+            if (player.animatorCtrl.headCtrl.onKiss)
+            {
+                player.animatorCtrl.headCtrl.onKiss = false;
+            }
         }
         else
         {
             player.animatorCtrl.leftChestsCtrl.ChangeState(new OnlickState_Chests());
             player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+            
+            if (player.animatorCtrl.rightChestsCtrl.haveMouth)
+            {
+                player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+            }
+            if (player.animatorCtrl.headCtrl.onKiss)
+            {
+                player.animatorCtrl.headCtrl.onKiss = false;
+            }
         }
     }
             
@@ -56,12 +86,33 @@ public class PlayerActor_Button : MonoBehaviour
         if (isRight)
         {
             player.animatorCtrl.rightChestsCtrl.ChangeState(new OnSuckState_Chests());
-            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+            if (!player.isHand)
+            {
+                player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+            }
+            
+            if (player.animatorCtrl.leftChestsCtrl.haveMouth)
+            {
+                player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+            }
+            if (player.animatorCtrl.headCtrl.onKiss)
+            {
+                player.animatorCtrl.headCtrl.onKiss = false;
+            }
         }
         else
         {
             player.animatorCtrl.leftChestsCtrl.ChangeState(new OnSuckState_Chests());
             player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+            
+            if (player.animatorCtrl.rightChestsCtrl.haveMouth)
+            {
+                player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+            }
+            if (player.animatorCtrl.headCtrl.onKiss)
+            {
+                player.animatorCtrl.headCtrl.onKiss = false;
+            }
         }
     }
             
@@ -103,8 +154,8 @@ public class PlayerActor_Button : MonoBehaviour
     {
         player.animatorCtrl.rightChestsCtrl.ChangeState(new OnGraspState_Chests());
         player.animatorCtrl.leftChestsCtrl.ChangeState(new OnGraspState_Chests());
-        player.animatorCtrl.leftHandCtrl.ChangeState(new GradHandState_Hand());
-        player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
+        player.animatorCtrl.leftHandCtrl.ChangeState(new OnGraspState_Hand());
+        player.animatorCtrl.rightHandCtrl.ChangeState(new OnGraspState_Hand());
     }
             
     public void OnPinch_TwoSide()
@@ -117,8 +168,8 @@ public class PlayerActor_Button : MonoBehaviour
             
     public void OnInterlockingFingers()
     {
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
         player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
         player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
         player.animatorCtrl.girlHandCtrl.ChangeState(new OnHoldHandState_GirlHand());
@@ -126,8 +177,8 @@ public class PlayerActor_Button : MonoBehaviour
             
     public void OnGrabTheHands()
     {
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
         player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
         player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
         player.animatorCtrl.girlHandCtrl.ChangeState(new OnGraspState_GirlHand());

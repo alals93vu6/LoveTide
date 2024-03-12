@@ -6,16 +6,24 @@ public class OnGraspState_GirlHand : IState
 {
     public void OnEnterState(object action)
     {
-        throw new System.NotImplementedException();
+        var girlHand = (Sexyctrl_GirlHand)action;
+        girlHand.testText.text = "G手部:被抓住";
     }
 
     public void OnStayState(object action)
     {
-        throw new System.NotImplementedException();
+        var girlHand = (Sexyctrl_GirlHand)action;
+        switch (girlHand.nowSpeed)
+        {
+            case 0: girlHand.testText.text = "G手部:被抓住" ; break;
+            case 1: girlHand.testText.text = "G手部:被抓住_慢" ; break;
+            case 2: girlHand.testText.text = "G手部:被抓住_中" ; break;
+            case 3: girlHand.testText.text = "G手部:被抓住_快" ; break;
+        }
     }
 
     public void OnExitState(object action)
     {
-        throw new System.NotImplementedException();
+        var girlHand = (Sexyctrl_GirlHand)action;
     }
 }

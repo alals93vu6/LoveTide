@@ -8,6 +8,7 @@ public class HandJobState : IState
     {
         var player = (PlayerActor_Sexy)action;
         player.animatorCtrl.rightHandCtrl.ChangeState(new HandJobState_Hand());
+        player.animatorCtrl.bodyCtrl.ChangeState(new HandJobState_Body());
         player.UICtrl.SetButtonDisplay(1);
     }
 
