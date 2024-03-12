@@ -7,6 +7,7 @@ public class Sexyctrl_GirlHand : MonoBehaviour
 {
     [SerializeField] public Text testText;
     [SerializeField] private IState CurrenState = new IdleState_GirlHand();
+    [SerializeField] public float nowSpeed;
     // Start is called before the first frame update
     void Start()
     {

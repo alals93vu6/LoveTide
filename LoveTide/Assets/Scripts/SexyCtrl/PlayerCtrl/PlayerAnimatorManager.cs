@@ -22,4 +22,10 @@ public class PlayerAnimatorManager : MonoBehaviour
     {
         
     }
+
+    public void SetAnimatorMotionSpeed(float motionSpeed)
+    {
+        headCtrl.nowSpeed = bodyCtrl.nowSpeed = leftChestsCtrl.nowSpeed = rightChestsCtrl.nowSpeed 
+            = leftChestsCtrl.nowSpeed = rightHandCtrl.nowSpeed = leftHandCtrl.nowSpeed = girlHandCtrl.nowSpeed = motionSpeed;
+    }
 }

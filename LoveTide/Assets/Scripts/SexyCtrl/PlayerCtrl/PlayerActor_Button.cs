@@ -24,53 +24,113 @@ public class PlayerActor_Button : MonoBehaviour
     }
     
     public void OnLick(bool isRight)
-    { 
-        Debug.Log("OnLick");
+    {
+        if (isRight)
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnlickState_Chests());
+            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+        }
+        else
+        {
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnlickState_Chests());
+            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+        }
     }
             
     public void OnGrasp(bool isRight)
     {
-        Debug.Log("OnGrasp");
+        if (isRight)
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnGraspState_Chests());
+            player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
+        }
+        else
+        {
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnGraspState_Chests());
+            player.animatorCtrl.leftHandCtrl.ChangeState(new OnGraspState_Hand());
+        }
     }
             
     public void OnSuck(bool isRight)
     {
-        Debug.Log("OnSuck");
+        if (isRight)
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnSuckState_Chests());
+            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+        }
+        else
+        {
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnSuckState_Chests());
+            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+        }
     }
             
     public void OnPinch(bool isRight)
     {
-        Debug.Log("OnPinch");
+        if (isRight)
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnPinchState_Chests());
+            player.animatorCtrl.rightHandCtrl.ChangeState(new OnPinchState_Hand());
+        }
+        else
+        {
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnPinchState_Chests());
+            player.animatorCtrl.leftHandCtrl.ChangeState(new OnPinchState_Hand());
+        }
     }
     
     public void StopHandMotion(bool isRight)
     {
-        Debug.Log("StopHandMotion");
+        if (isRight)
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+        }
+        else
+        {
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+        }
     }
     
     public void OnMassage() 
     {
-        Debug.Log("OnMassage");
+        player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+        player.animatorCtrl.leftHandCtrl.ChangeState(new OnMassageState_Hand());
     }
     
     public void OnGrasp_TwoSide()
     {
-        Debug.Log("OnGrasp_TwoSide");
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnGraspState_Chests());
+        player.animatorCtrl.leftChestsCtrl.ChangeState(new OnGraspState_Chests());
+        player.animatorCtrl.leftHandCtrl.ChangeState(new GradHandState_Hand());
+        player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
     }
             
     public void OnPinch_TwoSide()
     {
-        Debug.Log("OnPinch_TwoSide");
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnPinchState_Chests());
+        player.animatorCtrl.rightHandCtrl.ChangeState(new OnPinchState_Hand());
+        player.animatorCtrl.leftChestsCtrl.ChangeState(new OnPinchState_Chests());
+        player.animatorCtrl.leftHandCtrl.ChangeState(new OnPinchState_Hand());
     }
             
     public void OnInterlockingFingers()
     {
-        Debug.Log("OnInterlockingFingers");
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+        player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+        player.animatorCtrl.girlHandCtrl.ChangeState(new OnHoldHandState_GirlHand());
     }
             
     public void OnGrabTheHands()
     {
-        Debug.Log("OnGrabTheHands");
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+        player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
+        player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
+        player.animatorCtrl.girlHandCtrl.ChangeState(new OnGraspState_GirlHand());
     }
     
     public void OnStartEnter(bool isHand)

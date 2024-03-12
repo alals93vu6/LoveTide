@@ -6,16 +6,16 @@ public class CumState_Girl : IState
 {
     public void OnEnterState(object action)
     {
-        throw new System.NotImplementedException();
+        var player = (PlayerActor_Sexy)action;
     }
 
     public void OnStayState(object action)
     {
-        throw new System.NotImplementedException();
+        var player = (PlayerActor_Sexy)action;
     }
 
     public void OnExitState(object action)
     {
-        throw new System.NotImplementedException();
+        var player = (PlayerActor_Sexy)action;
     }
 }

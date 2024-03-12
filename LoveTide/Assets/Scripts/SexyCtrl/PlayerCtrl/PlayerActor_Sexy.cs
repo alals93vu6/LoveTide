@@ -57,12 +57,9 @@ public class PlayerActor_Sexy : MonoBehaviour
         speedCtrl[nowSlider].value = 0;
         switch (actorDetected)
         {
-            case 1: StopActorNomal();
-                Debug.Log("Nomal"); break;
-            case 2: StopActorHandJob();
-                Debug.Log("handJob");break;
-            case 3: StopActorSexy();
-                Debug.Log("sexy");break;
+            case 1: StopActorNomal(); break;
+            case 2: StopActorHandJob(); ;break;
+            case 3: StopActorSexy(); ;break;
         }
         
     }
@@ -95,11 +92,13 @@ public class PlayerActor_Sexy : MonoBehaviour
         animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
     }
 
-    public void SpeedDetected(int targetSlider)
+    private void SpeedDetected(int targetSlider)
     {
-        if (!Input.GetMouseButton(0))
+        if (Input.GetMouseButtonUp(0))
         {
             motionSpeed = speedCtrl[targetSlider].value;
+            animatorCtrl.SetAnimatorMotionSpeed(motionSpeed);
+            //Debug.Log("SpeedDetected");
         }
     }
 

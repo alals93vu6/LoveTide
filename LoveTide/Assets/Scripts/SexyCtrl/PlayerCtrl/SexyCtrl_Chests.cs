@@ -7,6 +7,7 @@ public class SexyCtrl_Chests : MonoBehaviour
 {
     [SerializeField] public Text testText;
     [SerializeField] private IState CurrenState = new IdleState_Chests();
+    [SerializeField] public float nowSpeed;
     // Start is called before the first frame update
     void Start()
     {

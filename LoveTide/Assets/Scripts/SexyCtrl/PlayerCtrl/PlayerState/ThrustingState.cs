@@ -7,7 +7,7 @@ public class ThrustingState : IState
     public void OnEnterState(object action)
     {
         var player = (PlayerActor_Sexy)action;
-        player.animatorCtrl.bodyCtrl.testText.text = "G身體:被插入"+ "\n" + "GG:插入待機中" ;
+        player.animatorCtrl.bodyCtrl.ChangeState(new ThrustingState_Body());
         player.UICtrl.SetButtonDisplay(2);
     }
 

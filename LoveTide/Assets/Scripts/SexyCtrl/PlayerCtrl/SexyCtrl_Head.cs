@@ -8,6 +8,7 @@ public class SexyCtrl_Head : MonoBehaviour
     [SerializeField] public Text testText;
     [SerializeField] private IState CurrenState = new IdleState_Face();
     [SerializeField] public bool onKiss;
+    [SerializeField] public float nowSpeed;
     // Start is called before the first frame update
     void Start()
     {
