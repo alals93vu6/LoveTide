@@ -7,20 +7,17 @@ public class IdleState_Body : IState
     public void OnEnterState(object action)
     {
         var body = (SexyCtrl_Body)action;
-        body.testText.text = "G身體:待機"+ "\n" + "GG:待機" ;
+        body.stateAnimator[0] = "G身體:待機"+ "\n" + "GG:待機";
+        body.stateAnimator[1] = "G身體:待機"+ "\n" + "GG:緩慢挑動";
+        body.stateAnimator[2] = "G身體:待機"+ "\n" + "GG:摩擦中";
+        body.stateAnimator[3] = "G身體:待機"+ "\n" + "GG:高速摩擦";
+        body.SwitchAnimator();
     }
 
     public void OnStayState(object action)
     {
         var body = (SexyCtrl_Body)action;
-        switch (body.nowSpeed)
-        {
-            case 0: body.testText.text = "G身體:待機"+ "\n" + "GG:待機" ; break;
-            case 1: body.testText.text = "G身體:待機"+ "\n" + "GG:緩慢挑動" ; break;
-            case 2: body.testText.text = "G身體:待機"+ "\n" + "GG:摩擦中" ; break;
-            case 3: body.testText.text = "G身體:待機"+ "\n" + "GG:高速摩擦" ; break;
-        }
-
+        
     }
 
     public void OnExitState(object action)

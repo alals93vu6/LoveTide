@@ -9,12 +9,13 @@ public class OnEnterState_Body : IState
         var body = (SexyCtrl_Body)action;
         if (GameObject.FindObjectOfType<PlayerActor_Sexy>().isHand)
         {
-            body.testText.text = "G身體:被督進去"+ "\n" + "GG:待機" ;
+            body.stateAnimator[0] = "G身體:被督進去"+ "\n" + "GG:待機" ;
         }
         else
         {
-            body.testText.text = "G身體:被督進去"+ "\n" + "GG:正在督進去" ;
+            body.stateAnimator[0] = "G身體:被督進去"+ "\n" + "GG:正在督進去" ;
         }
+        body.SwitchAnimator();
     }
 
     public void OnStayState(object action)
