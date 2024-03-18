@@ -169,18 +169,18 @@ public class PlayerActor_Button : MonoBehaviour
     public void OnInterlockingFingers()
     {
         player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
+        player.animatorCtrl.leftChestsCtrl.ChangeState(new OnClampedState_Chests());
         player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
-        player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+        player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
         player.animatorCtrl.girlHandCtrl.ChangeState(new OnHoldHandState_GirlHand());
     }
             
     public void OnGrabTheHands()
     {
         player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
+        player.animatorCtrl.leftChestsCtrl.ChangeState(new OnClampedState_Chests());
         player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
-        player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
+        player.animatorCtrl.leftHandCtrl.ChangeState(new GradHandState_Hand());
         player.animatorCtrl.girlHandCtrl.ChangeState(new OnGraspState_GirlHand());
     }
     
