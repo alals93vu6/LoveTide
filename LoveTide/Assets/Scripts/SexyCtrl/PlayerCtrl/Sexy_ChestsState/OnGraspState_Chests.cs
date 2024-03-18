@@ -7,19 +7,16 @@ public class OnGraspState_Chests : IState
     public void OnEnterState(object action)
     {
         var chests = (SexyCtrl_Chests)action;
-        chests.testText.text = "被抓著";
+        chests.stateAnimator[0] = "被抓著";
+        chests.stateAnimator[1] = "被抓著_慢";
+        chests.stateAnimator[2] = "被抓著_中";
+        chests.stateAnimator[3] = "被抓著_快";
+        chests.SwitchAnimator();
     }
 
     public void OnStayState(object action)
     {
         var chests = (SexyCtrl_Chests)action;
-        switch (chests.nowSpeed)
-        {
-            case 0: chests.testText.text = "被抓著" ; break;
-            case 1: chests.testText.text = "被抓著_慢" ; break;
-            case 2: chests.testText.text = "被抓著_中" ; break;
-            case 3: chests.testText.text = "被抓著_快" ; break;
-        }
     }
 
     public void OnExitState(object action)

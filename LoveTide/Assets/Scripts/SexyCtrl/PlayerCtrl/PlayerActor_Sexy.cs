@@ -19,19 +19,7 @@ public class PlayerActor_Sexy : MonoBehaviour
     [SerializeField] public SexyUIManager UICtrl;
     [SerializeField] public PlayerAudioManager audioCtrl;
     [SerializeField] public Slider[] speedCtrl; public int nowSlider;
-
-    // Start is called before the first frame update
-    private void Awake()
-    {
-        
-    }
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         CurrenState.OnStayState(this);
@@ -61,7 +49,7 @@ public class PlayerActor_Sexy : MonoBehaviour
             case 2: StopActorHandJob(); ;break;
             case 3: StopActorSexy(); ;break;
         }
-        
+        animatorCtrl.headCtrl.SwitchAnimator();
     }
     private void StopActorNomal()
     {

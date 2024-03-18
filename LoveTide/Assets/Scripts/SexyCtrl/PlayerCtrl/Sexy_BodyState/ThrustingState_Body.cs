@@ -17,6 +17,7 @@ public class ThrustingState_Body : IState
     public void OnStayState(object action)
     {
         var body = (SexyCtrl_Body)action;
+        
     }
 
     public void OnExitState(object action)

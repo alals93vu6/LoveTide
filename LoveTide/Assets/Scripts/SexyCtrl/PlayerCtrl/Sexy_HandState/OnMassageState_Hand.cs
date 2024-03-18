@@ -7,19 +7,16 @@ public class OnMassageState_Hand : IState
     public void OnEnterState(object action)
     {
         var hand = (SexyCtrl_Hand)action;
-        hand.testText.text = "按摩中";
+        hand.stateAnimator[0] = "按摩中";
+        hand.stateAnimator[1] = "按摩中_慢";
+        hand.stateAnimator[2] = "按摩中_中";
+        hand.stateAnimator[3] = "按摩中_快";
+        hand.SwitchAnimator();
     }
 
     public void OnStayState(object action)
     {
         var hand = (SexyCtrl_Hand)action;
-        switch (hand.nowSpeed)
-        {
-            case 0: hand.testText.text = "按摩中" ; break;
-            case 1: hand.testText.text = "按摩中_慢" ; break;
-            case 2: hand.testText.text = "按摩中_中" ; break;
-            case 3: hand.testText.text = "按摩中_快" ; break;
-        }
     }
 
     public void OnExitState(object action)

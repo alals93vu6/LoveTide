@@ -7,19 +7,16 @@ public class OnGraspState_Hand : IState
     public void OnEnterState(object action)
     {
         var hand = (SexyCtrl_Hand)action;
-        hand.testText.text = "抓著胸部";
+        hand.stateAnimator[0] = "抓著胸部";
+        hand.stateAnimator[1] = "抓著胸部_慢";
+        hand.stateAnimator[2] = "抓著胸部_中";
+        hand.stateAnimator[3] = "抓著胸部_快";
+        hand.SwitchAnimator();
     }
 
     public void OnStayState(object action)
     {
         var hand = (SexyCtrl_Hand)action;
-        switch (hand.nowSpeed)
-        {
-            case 0: hand.testText.text = "抓著胸部" ; break;
-            case 1: hand.testText.text = "抓著胸部_慢" ; break;
-            case 2: hand.testText.text = "抓著胸部_中" ; break;
-            case 3: hand.testText.text = "抓著胸部_快" ; break;
-        }
     }
 
     public void OnExitState(object action)

@@ -7,7 +7,11 @@ public class IdleState_Hand : IState
     public void OnEnterState(object action)
     {
         var hand = (SexyCtrl_Hand)action;
-        hand.testText.text = "待機";
+        hand.stateAnimator[0] = "待機";
+        hand.stateAnimator[1] = "待機";
+        hand.stateAnimator[2] = "待機";
+        hand.stateAnimator[3] = "待機";
+        hand.SwitchAnimator();
     }
 
     public void OnStayState(object action)

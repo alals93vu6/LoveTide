@@ -23,6 +23,6 @@ public class IdleState_Body : IState
     public void OnExitState(object action)
     {
         var body = (SexyCtrl_Body)action;
-
+        
     }
 }

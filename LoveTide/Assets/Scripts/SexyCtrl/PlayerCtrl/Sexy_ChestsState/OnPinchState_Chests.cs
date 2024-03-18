@@ -7,19 +7,16 @@ public class OnPinchState_Chests : IState
     public void OnEnterState(object action)
     {
         var chests = (SexyCtrl_Chests)action;
-        chests.testText.text = "被玩弄";
+        chests.stateAnimator[0] = "被玩弄";
+        chests.stateAnimator[1] = "被玩弄_慢";
+        chests.stateAnimator[2] = "被玩弄_中";
+        chests.stateAnimator[3] = "被玩弄_快";
+        chests.SwitchAnimator();
     }
 
     public void OnStayState(object action)
     {
         var chests = (SexyCtrl_Chests)action;
-        switch (chests.nowSpeed)
-        {
-            case 0: chests.testText.text = "被玩弄" ; break;
-            case 1: chests.testText.text = "被玩弄_慢" ; break;
-            case 2: chests.testText.text = "被玩弄_中" ; break;
-            case 3: chests.testText.text = "被玩弄_快" ; break;
-        }
     }
 
     public void OnExitState(object action)

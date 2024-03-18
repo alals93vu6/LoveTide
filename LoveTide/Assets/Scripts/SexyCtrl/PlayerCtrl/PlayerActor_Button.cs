@@ -21,14 +21,18 @@ public class PlayerActor_Button : MonoBehaviour
         {
             player.animatorCtrl.headCtrl.onKiss = true;
         }
+        
         if (player.animatorCtrl.rightChestsCtrl.haveMouth)
         {
             player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
         }
+        
         if (player.animatorCtrl.leftChestsCtrl.haveMouth)
         {
             player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
         }
+        
+        player.animatorCtrl.headCtrl.SwitchAnimator();
     }
     
     public void OnLick(bool isRight)
@@ -65,6 +69,7 @@ public class PlayerActor_Button : MonoBehaviour
                 player.animatorCtrl.headCtrl.onKiss = false;
             }
         }
+        player.animatorCtrl.headCtrl.SwitchAnimator();
     }
             
     public void OnGrasp(bool isRight)
@@ -114,6 +119,7 @@ public class PlayerActor_Button : MonoBehaviour
                 player.animatorCtrl.headCtrl.onKiss = false;
             }
         }
+        player.animatorCtrl.headCtrl.SwitchAnimator();
     }
             
     public void OnPinch(bool isRight)
