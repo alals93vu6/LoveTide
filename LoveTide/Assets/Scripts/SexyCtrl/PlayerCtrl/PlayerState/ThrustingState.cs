@@ -9,6 +9,8 @@ public class ThrustingState : IState
         var player = (PlayerActor_Sexy)action;
         player.animatorCtrl.bodyCtrl.ChangeState(new ThrustingState_Body());
         player.UICtrl.SetButtonDisplay(2);
+        player.UICtrl.SetButtonLimitation(3,true);
+        player.UICtrl.SetSliderLimitation(true);
     }
 
     public void OnStayState(object action)
@@ -20,6 +22,7 @@ public class ThrustingState : IState
     public void OnExitState(object action)
     {
         var player = (PlayerActor_Sexy)action;
-        
+        player.UICtrl.SetButtonLimitation(3,false);
+        player.UICtrl.SetSliderLimitation(false);
     }
 }

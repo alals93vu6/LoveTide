@@ -8,7 +8,6 @@ public class OnQuitState : IState
     public void OnEnterState(object action)
     {
         var player = (PlayerActor_Sexy)action;
-        player.UICtrl.SetButtonDisplay(3);
         if (player.isHand)
         {
             player.animatorCtrl.rightHandCtrl.ChangeState(new QuitHandJobState_Hand());

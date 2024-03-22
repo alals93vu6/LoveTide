@@ -10,6 +10,8 @@ public class HandJobState : IState
         player.animatorCtrl.rightHandCtrl.ChangeState(new HandJobState_Hand());
         player.animatorCtrl.bodyCtrl.ChangeState(new HandJobState_Body());
         player.UICtrl.SetButtonDisplay(1);
+        player.UICtrl.SetButtonLimitation(2,true);
+        player.UICtrl.SetSliderLimitation(true);
     }
 
     public void OnStayState(object action)
@@ -20,5 +22,7 @@ public class HandJobState : IState
     public void OnExitState(object action)
     {
         var player = (PlayerActor_Sexy)action;
+        player.UICtrl.SetButtonLimitation(2,false);
+        player.UICtrl.SetSliderLimitation(false);
     }
 }

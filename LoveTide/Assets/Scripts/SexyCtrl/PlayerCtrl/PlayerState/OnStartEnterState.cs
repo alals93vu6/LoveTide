@@ -9,7 +9,7 @@ public class OnStartEnterState : IState
     {
         var player = (PlayerActor_Sexy)action;
         player.isEnter = true;
-        player.UICtrl.SetButtonDisplay(3);
+        //player.UICtrl.SetButtonLimitation(3,true);
         if (player.isHand)
         {
             player.animatorCtrl.rightHandCtrl.ChangeState(new ReadyHandJobState_Hand());

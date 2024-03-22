@@ -5664,7 +5664,7 @@ GameObject:
   - component: {fileID: 889830698}
   - component: {fileID: 889830697}
   m_Layer: 5
-  m_Name: Grasp_R
+  m_Name: Grasp_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10164,7 +10164,7 @@ GameObject:
   - component: {fileID: 1679727390}
   - component: {fileID: 1679727389}
   m_Layer: 5
-  m_Name: Grasp_R
+  m_Name: Grasp_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10471,6 +10471,58 @@ MonoBehaviour:
   - {fileID: 1009340530}
   - {fileID: 767714012}
   - {fileID: 2027173870}
+  idleButtons:
+  - {fileID: 1053122150}
+  - {fileID: 306388825}
+  - {fileID: 133897729}
+  - {fileID: 1679727389}
+  - {fileID: 605092208}
+  - {fileID: 1762041310}
+  - {fileID: 632902012}
+  - {fileID: 618639477}
+  - {fileID: 593856508}
+  - {fileID: 2036339529}
+  - {fileID: 941673732}
+  - {fileID: 1216929297}
+  - {fileID: 900042185}
+  - {fileID: 1919603792}
+  - {fileID: 396105734}
+  - {fileID: 777053422}
+  - {fileID: 596471730}
+  handHobButtons:
+  - {fileID: 805851306}
+  - {fileID: 281983246}
+  - {fileID: 1361049519}
+  - {fileID: 1870523866}
+  - {fileID: 1419691660}
+  - {fileID: 2143670947}
+  - {fileID: 772336851}
+  - {fileID: 721119344}
+  - {fileID: 1079226658}
+  - {fileID: 1240704249}
+  sexyButtons:
+  - {fileID: 1084789267}
+  - {fileID: 1289412681}
+  - {fileID: 549985552}
+  - {fileID: 889830697}
+  - {fileID: 1287394098}
+  - {fileID: 1396668896}
+  - {fileID: 494612325}
+  - {fileID: 1780364656}
+  - {fileID: 1614062014}
+  - {fileID: 2045512360}
+  - {fileID: 561100715}
+  - {fileID: 974739880}
+  - {fileID: 1440302444}
+  - {fileID: 1071983099}
+  - {fileID: 1239397987}
+  - {fileID: 2117633182}
+  - {fileID: 700115179}
+  - {fileID: 795515196}
+  motionCtrlSlider:
+  - {fileID: 77745601}
+  - {fileID: 1008860194}
+  - {fileID: 662236849}
 --- !u!224 &1739108140
 RectTransform:
   m_ObjectHideFlags: 0
