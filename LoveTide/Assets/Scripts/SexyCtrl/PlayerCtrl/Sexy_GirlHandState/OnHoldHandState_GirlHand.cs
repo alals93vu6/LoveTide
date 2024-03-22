@@ -12,6 +12,7 @@ public class OnHoldHandState_GirlHand : IState
         girlHand.stateAnimator[2] = "G手部:十指緊扣_中";
         girlHand.stateAnimator[3] = "G手部:十指緊扣_快";
         girlHand.SwitchAnimator();
+        girlHand.OnLimitation(false);
     }
 
     public void OnStayState(object action)
@@ -22,5 +23,6 @@ public class OnHoldHandState_GirlHand : IState
     public void OnExitState(object action)
     {
         var girlHand = (Sexyctrl_GirlHand)action;
+        girlHand.OnLimitation(true);
     }
 }

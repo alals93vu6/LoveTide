@@ -59,6 +59,7 @@ public class PlayerActor_Sexy : MonoBehaviour
         animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
         animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
         animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+        animatorCtrl.bodyCtrl.ChangeState(new IdleState_Body());
     }
     
     private void StopActorHandJob()
@@ -68,6 +69,7 @@ public class PlayerActor_Sexy : MonoBehaviour
         animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
         animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
         animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+        animatorCtrl.bodyCtrl.ChangeState(new IdleState_Body());
     }
     
     private void StopActorSexy()
@@ -78,6 +80,7 @@ public class PlayerActor_Sexy : MonoBehaviour
         animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
         animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
         animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+        animatorCtrl.bodyCtrl.ChangeState(new IdleState_Body());
     }
 
     private void SpeedDetected(int targetSlider)

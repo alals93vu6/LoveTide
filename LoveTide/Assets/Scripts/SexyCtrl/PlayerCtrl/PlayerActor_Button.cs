@@ -174,20 +174,42 @@ public class PlayerActor_Button : MonoBehaviour
             
     public void OnInterlockingFingers()
     {
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
-        player.animatorCtrl.leftChestsCtrl.ChangeState(new OnClampedState_Chests());
-        player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
-        player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
-        player.animatorCtrl.girlHandCtrl.ChangeState(new OnHoldHandState_GirlHand());
+        if (player.animatorCtrl.girlHandCtrl.CurrenState is OnHoldHandState_GirlHand)
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+            player.animatorCtrl.girlHandCtrl.ChangeState(new IdleState_GirlHand());
+        }
+        else
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnClampedState_Chests());
+            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+            player.animatorCtrl.girlHandCtrl.ChangeState(new OnHoldHandState_GirlHand());   
+        }
     }
             
     public void OnGrabTheHands()
     {
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
-        player.animatorCtrl.leftChestsCtrl.ChangeState(new OnClampedState_Chests());
-        player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
-        player.animatorCtrl.leftHandCtrl.ChangeState(new GradHandState_Hand());
-        player.animatorCtrl.girlHandCtrl.ChangeState(new OnGraspState_GirlHand());
+        if (player.animatorCtrl.girlHandCtrl.CurrenState is OnGraspState_GirlHand)
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
+            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
+            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
+            player.animatorCtrl.girlHandCtrl.ChangeState(new IdleState_GirlHand());
+        }
+        else
+        {
+            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
+            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnClampedState_Chests());
+            player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
+            player.animatorCtrl.leftHandCtrl.ChangeState(new GradHandState_Hand());
+            player.animatorCtrl.girlHandCtrl.ChangeState(new OnGraspState_GirlHand());  
+        }
     }
     
     public void OnStartEnter(bool isHand)

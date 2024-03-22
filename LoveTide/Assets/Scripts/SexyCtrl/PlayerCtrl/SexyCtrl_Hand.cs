@@ -44,6 +44,8 @@ public class SexyCtrl_Hand : MonoBehaviour
             case 3: testText.text = stateAnimator[3] ; break;
         }
     }
+    
+
     public void ChangeState(IState nextState)
     {
         CurrenState.OnExitState(this);

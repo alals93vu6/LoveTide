@@ -45,7 +45,19 @@ public class SexyCtrl_Chests : MonoBehaviour
             case 3: testText.text = stateAnimator[3] ; break;
         }
     }
-    
+
+    public void ClampedDetected()
+    {
+        if (CurrenState is OnClampedState_Chests)
+        {
+            ChangeState(new IdleState_Chests());
+        }
+        else
+        {
+            ChangeState(new OnClampedState_Chests());
+        }
+    }
+
     public void ChangeState(IState nextState)
     {
         CurrenState.OnExitState(this);

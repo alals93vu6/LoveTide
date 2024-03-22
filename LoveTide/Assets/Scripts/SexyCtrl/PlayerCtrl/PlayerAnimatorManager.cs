@@ -22,6 +22,9 @@ public class PlayerAnimatorManager : MonoBehaviour
     {
         
     }
+    
+    
+    
 
     public void SetAnimatorMotionSpeed(float motionSpeed)
     {
