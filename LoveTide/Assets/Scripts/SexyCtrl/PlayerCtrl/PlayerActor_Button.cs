@@ -13,203 +13,57 @@ public class PlayerActor_Button : MonoBehaviour
     
     public void OnKiss()
     {
-        if (player.animatorCtrl.headCtrl.onKiss)
-        {
-            player.animatorCtrl.headCtrl.onKiss = false;
-        }
-        else
-        {
-            player.animatorCtrl.headCtrl.onKiss = true;
-        }
-        
-        if (player.animatorCtrl.rightChestsCtrl.haveMouth)
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
-        }
-        
-        if (player.animatorCtrl.leftChestsCtrl.haveMouth)
-        {
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
-        }
-        
-        player.animatorCtrl.headCtrl.SwitchAnimator();
+        player.animatorCtrl.OnKiss_ANCtrl();
     }
     
     public void OnLick(bool isRight)
     {
-        if (isRight)
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnlickState_Chests());
-            if (!player.isHand)
-            {
-                player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
-            }
-
-            if (player.animatorCtrl.leftChestsCtrl.haveMouth)
-            {
-                
-                player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
-            }
-            if (player.animatorCtrl.headCtrl.onKiss)
-            {
-                player.animatorCtrl.headCtrl.onKiss = false;
-            }
-        }
-        else
-        {
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnlickState_Chests());
-            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
-            
-            if (player.animatorCtrl.rightChestsCtrl.haveMouth)
-            {
-                player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
-            }
-            if (player.animatorCtrl.headCtrl.onKiss)
-            {
-                player.animatorCtrl.headCtrl.onKiss = false;
-            }
-        }
-        player.animatorCtrl.headCtrl.SwitchAnimator();
+        player.animatorCtrl.OnLick_ANCtrl(isRight);
     }
             
     public void OnGrasp(bool isRight)
     {
-        if (isRight)
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnGraspState_Chests());
-            player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
-        }
-        else
-        {
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnGraspState_Chests());
-            player.animatorCtrl.leftHandCtrl.ChangeState(new OnGraspState_Hand());
-        }
+        player.animatorCtrl.OnGrasp_ANCtrl(isRight);
     }
             
     public void OnSuck(bool isRight)
     {
-        if (isRight)
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnSuckState_Chests());
-            if (!player.isHand)
-            {
-                player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
-            }
-            
-            if (player.animatorCtrl.leftChestsCtrl.haveMouth)
-            {
-                player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
-            }
-            if (player.animatorCtrl.headCtrl.onKiss)
-            {
-                player.animatorCtrl.headCtrl.onKiss = false;
-            }
-        }
-        else
-        {
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnSuckState_Chests());
-            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
-            
-            if (player.animatorCtrl.rightChestsCtrl.haveMouth)
-            {
-                player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
-            }
-            if (player.animatorCtrl.headCtrl.onKiss)
-            {
-                player.animatorCtrl.headCtrl.onKiss = false;
-            }
-        }
-        player.animatorCtrl.headCtrl.SwitchAnimator();
+        player.animatorCtrl.OnSuck_ANCtrl(isRight);
     }
             
     public void OnPinch(bool isRight)
     {
-        if (isRight)
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnPinchState_Chests());
-            player.animatorCtrl.rightHandCtrl.ChangeState(new OnPinchState_Hand());
-        }
-        else
-        {
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnPinchState_Chests());
-            player.animatorCtrl.leftHandCtrl.ChangeState(new OnPinchState_Hand());
-        }
+        player.animatorCtrl.OnPinch_ANCtrl(isRight);
     }
     
     public void StopHandMotion(bool isRight)
     {
-        if (isRight)
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
-            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
-        }
-        else
-        {
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
-            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
-        }
+        player.animatorCtrl.OnStopHandMotion_ANCtrl(isRight);
     }
     
     public void OnMassage() 
     {
-        player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
-        player.animatorCtrl.leftHandCtrl.ChangeState(new OnMassageState_Hand());
+        player.animatorCtrl.OnMassage_ANCtrl();
     }
     
     public void OnGrasp_TwoSide()
     {
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnGraspState_Chests());
-        player.animatorCtrl.leftChestsCtrl.ChangeState(new OnGraspState_Chests());
-        player.animatorCtrl.leftHandCtrl.ChangeState(new OnGraspState_Hand());
-        player.animatorCtrl.rightHandCtrl.ChangeState(new OnGraspState_Hand());
+        player.animatorCtrl.OnGrasp_TwoSide_ANCtrl();
     }
             
     public void OnPinch_TwoSide()
     {
-        player.animatorCtrl.rightChestsCtrl.ChangeState(new OnPinchState_Chests());
-        player.animatorCtrl.rightHandCtrl.ChangeState(new OnPinchState_Hand());
-        player.animatorCtrl.leftChestsCtrl.ChangeState(new OnPinchState_Chests());
-        player.animatorCtrl.leftHandCtrl.ChangeState(new OnPinchState_Hand());
+        player.animatorCtrl.OnPinch_TwoSide_ANCtrl();
     }
             
     public void OnInterlockingFingers()
     {
-        if (player.animatorCtrl.girlHandCtrl.CurrenState is OnHoldHandState_GirlHand)
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
-            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
-            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
-            player.animatorCtrl.girlHandCtrl.ChangeState(new IdleState_GirlHand());
-        }
-        else
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnClampedState_Chests());
-            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
-            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
-            player.animatorCtrl.girlHandCtrl.ChangeState(new OnHoldHandState_GirlHand());   
-        }
+        player.animatorCtrl.OnInterlockingFingers_ANCtrl();
     }
             
     public void OnGrabTheHands()
     {
-        if (player.animatorCtrl.girlHandCtrl.CurrenState is OnGraspState_GirlHand)
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new IdleState_Chests());
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new IdleState_Chests());
-            player.animatorCtrl.rightHandCtrl.ChangeState(new IdleState_Hand());
-            player.animatorCtrl.leftHandCtrl.ChangeState(new IdleState_Hand());
-            player.animatorCtrl.girlHandCtrl.ChangeState(new IdleState_GirlHand());
-        }
-        else
-        {
-            player.animatorCtrl.rightChestsCtrl.ChangeState(new OnClampedState_Chests());
-            player.animatorCtrl.leftChestsCtrl.ChangeState(new OnClampedState_Chests());
-            player.animatorCtrl.rightHandCtrl.ChangeState(new GradHandState_Hand());
-            player.animatorCtrl.leftHandCtrl.ChangeState(new GradHandState_Hand());
-            player.animatorCtrl.girlHandCtrl.ChangeState(new OnGraspState_GirlHand());  
-        }
+        player.animatorCtrl.OnGrabTheHands_ANCtrl();
     }
     
     public void OnStartEnter(bool isHand)

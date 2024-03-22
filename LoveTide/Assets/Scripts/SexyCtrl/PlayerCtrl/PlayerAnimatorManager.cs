@@ -22,9 +22,206 @@ public class PlayerAnimatorManager : MonoBehaviour
     {
         
     }
+
+    public void OnKiss_ANCtrl()
+    {
+        if (headCtrl.onKiss)
+        {
+            headCtrl.onKiss = false;
+        }
+        else
+        {
+           headCtrl.onKiss = true;
+        }
+        
+        if (rightChestsCtrl.haveMouth)
+        {
+            rightChestsCtrl.ChangeState(new IdleState_Chests());
+        }
+        
+        if (leftChestsCtrl.haveMouth)
+        {
+            leftChestsCtrl.ChangeState(new IdleState_Chests());
+        }
+        headCtrl.SwitchAnimator();
+    }
+
+    public void OnLick_ANCtrl(bool isRight)
+    {
+        if (isRight)
+        {
+            rightChestsCtrl.ChangeState(new OnlickState_Chests());
+            if (!FindObjectOfType<PlayerActor_Sexy>().isHand)
+            {
+                rightHandCtrl.ChangeState(new IdleState_Hand());
+            }
+
+            if (leftChestsCtrl.haveMouth)
+            {
+                
+                leftChestsCtrl.ChangeState(new IdleState_Chests());
+            }
+            if (headCtrl.onKiss)
+            {
+                headCtrl.onKiss = false;
+            }
+        }
+        else
+        {
+            leftChestsCtrl.ChangeState(new OnlickState_Chests());
+            leftHandCtrl.ChangeState(new IdleState_Hand());
+            
+            if (rightChestsCtrl.haveMouth)
+            {
+                rightChestsCtrl.ChangeState(new IdleState_Chests());
+            }
+            if (headCtrl.onKiss)
+            {
+                headCtrl.onKiss = false;
+            }
+        }
+        headCtrl.SwitchAnimator();
+    }
+
+    public void OnGrasp_ANCtrl(bool isRight)
+    {
+        if (isRight)
+        {
+            rightChestsCtrl.ChangeState(new OnGraspState_Chests());
+            rightHandCtrl.ChangeState(new GradHandState_Hand());
+        }
+        else
+        {
+            leftChestsCtrl.ChangeState(new OnGraspState_Chests());
+            leftHandCtrl.ChangeState(new OnGraspState_Hand());
+        }
+    }
+
+    public void OnSuck_ANCtrl(bool isRight)
+    {
+        if (isRight)
+        {
+            rightChestsCtrl.ChangeState(new OnSuckState_Chests());
+            if (!FindObjectOfType<PlayerActor_Sexy>().isHand)
+            {
+                rightHandCtrl.ChangeState(new IdleState_Hand());
+            }
+            
+            if (leftChestsCtrl.haveMouth)
+            {
+                leftChestsCtrl.ChangeState(new IdleState_Chests());
+            }
+            if (headCtrl.onKiss)
+            {
+                headCtrl.onKiss = false;
+            }
+        }
+        else
+        {
+            leftChestsCtrl.ChangeState(new OnSuckState_Chests());
+            leftHandCtrl.ChangeState(new IdleState_Hand());
+            
+            if (rightChestsCtrl.haveMouth)
+            {
+                rightChestsCtrl.ChangeState(new IdleState_Chests());
+            }
+            if (headCtrl.onKiss)
+            {
+                headCtrl.onKiss = false;
+            }
+        }
+        headCtrl.SwitchAnimator();
+    }
+
+    public void OnPinch_ANCtrl(bool isRight)
+    {
+        if (isRight)
+        {
+            rightChestsCtrl.ChangeState(new OnPinchState_Chests());
+            rightHandCtrl.ChangeState(new OnPinchState_Hand());
+        }
+        else
+        {
+            leftChestsCtrl.ChangeState(new OnPinchState_Chests());
+            leftHandCtrl.ChangeState(new OnPinchState_Hand());
+        }
+    }
+
+    public void OnStopHandMotion_ANCtrl(bool isRight)
+    {
+        if (isRight)
+        {
+            rightChestsCtrl.ChangeState(new IdleState_Chests());
+            rightHandCtrl.ChangeState(new IdleState_Hand());
+        }
+        else
+        {
+            leftChestsCtrl.ChangeState(new IdleState_Chests());
+            leftHandCtrl.ChangeState(new IdleState_Hand());
+        }
+    }
     
+    public void OnMassage_ANCtrl() 
+    {
+        leftChestsCtrl.ChangeState(new IdleState_Chests());
+        leftHandCtrl.ChangeState(new OnMassageState_Hand());
+    }
     
-    
+    public void OnGrasp_TwoSide_ANCtrl()
+    {
+        rightChestsCtrl.ChangeState(new OnGraspState_Chests());
+        leftChestsCtrl.ChangeState(new OnGraspState_Chests());
+        leftHandCtrl.ChangeState(new OnGraspState_Hand());
+        rightHandCtrl.ChangeState(new OnGraspState_Hand());
+    }
+            
+    public void OnPinch_TwoSide_ANCtrl()
+    {
+        rightChestsCtrl.ChangeState(new OnPinchState_Chests());
+        rightHandCtrl.ChangeState(new OnPinchState_Hand());
+        leftChestsCtrl.ChangeState(new OnPinchState_Chests());
+        leftHandCtrl.ChangeState(new OnPinchState_Hand());
+    }
+            
+    public void OnInterlockingFingers_ANCtrl()
+    {
+        if (girlHandCtrl.CurrenState is OnHoldHandState_GirlHand)
+        {
+            rightChestsCtrl.ChangeState(new IdleState_Chests());
+            leftChestsCtrl.ChangeState(new IdleState_Chests());
+            rightHandCtrl.ChangeState(new IdleState_Hand());
+            leftHandCtrl.ChangeState(new IdleState_Hand());
+            girlHandCtrl.ChangeState(new IdleState_GirlHand());
+        }
+        else
+        {
+            rightChestsCtrl.ChangeState(new OnClampedState_Chests());
+            leftChestsCtrl.ChangeState(new OnClampedState_Chests());
+            rightHandCtrl.ChangeState(new IdleState_Hand());
+            leftHandCtrl.ChangeState(new IdleState_Hand());
+            girlHandCtrl.ChangeState(new OnHoldHandState_GirlHand());   
+        }
+    }
+            
+    public void OnGrabTheHands_ANCtrl()
+    {
+        if (girlHandCtrl.CurrenState is OnGraspState_GirlHand)
+        {
+            rightChestsCtrl.ChangeState(new IdleState_Chests());
+            leftChestsCtrl.ChangeState(new IdleState_Chests());
+            rightHandCtrl.ChangeState(new IdleState_Hand());
+            leftHandCtrl.ChangeState(new IdleState_Hand());
+            girlHandCtrl.ChangeState(new IdleState_GirlHand());
+        }
+        else
+        {
+            rightChestsCtrl.ChangeState(new OnClampedState_Chests());
+            leftChestsCtrl.ChangeState(new OnClampedState_Chests());
+            rightHandCtrl.ChangeState(new GradHandState_Hand());
+            leftHandCtrl.ChangeState(new GradHandState_Hand());
+            girlHandCtrl.ChangeState(new OnGraspState_GirlHand());  
+        }
+    }
 
     public void SetAnimatorMotionSpeed(float motionSpeed)
     {
