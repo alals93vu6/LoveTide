@@ -581,6 +581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 107631235}
   - component: {fileID: 107631234}
+  - component: {fileID: 107631236}
   m_Layer: 0
   m_Name: NumericalRecords_Sexy
   m_TagString: Untagged
@@ -601,12 +602,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDelight: 0
+  isMotionPlayer: 0
   girlDelight: 0
-  sensitivity: 0
+  orgasmNumber: 0
+  isMotionGirl: 0
   playerStamina: 0
-  playerSensitivity: 0
   girlStamina: 0
-  girlSensitivity: 0
+  playerActor: {fileID: 631780745}
+  sexyUICtrl: {fileID: 1739108139}
+  numericalManager: {fileID: 107631236}
 --- !u!4 &107631235
 Transform:
   m_ObjectHideFlags: 0
@@ -621,6 +625,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &107631236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107631233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd25bf68beb3e94b8ce309fdb5a0650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aDay: 0
+  aTimer: 0
+  aWeek: 0
+  friendship: 0
+  slutty: 0
+  lust: 0
+  playerName: 
+  fdstest: 0
+  party: 0
+  alonOuting: 0
+  mainMission: 0
+  tavern: 0
+  dormitories: 0
+  beach: 0
+  hills: 0
+  park: 0
+  shoppingStreet: 0
+  getPropsLevel: 0
 --- !u!1 &133897727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,7 +1203,7 @@ GameObject:
   - component: {fileID: 261637588}
   - component: {fileID: 261637587}
   m_Layer: 5
-  m_Name: Image
+  m_Name: GirlStamina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1186,12 +1220,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1739108140}
-  m_RootOrder: 2
+  m_Father: {fileID: 1623709997}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156.1, y: 190.2}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
   m_SizeDelta: {x: 465.9121, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &261637587
@@ -1213,11 +1247,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: d2fc04b10bf3f39408d051a3103b1e09, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -1833,6 +1867,80 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345678059}
+  m_CullTransparentMesh: 0
+--- !u!1 &349025753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 349025754}
+  - component: {fileID: 349025756}
+  - component: {fileID: 349025755}
+  m_Layer: 5
+  m_Name: GirlDelight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &349025754
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349025753}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.975, y: 0.8156141, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1623709997}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
+  m_SizeDelta: {x: 465.9121, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &349025755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349025753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 812f042d505aca34da1beece01366388, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &349025756
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349025753}
   m_CullTransparentMesh: 0
 --- !u!1 &353256049
 GameObject:
@@ -6209,7 +6317,7 @@ GameObject:
   - component: {fileID: 948535747}
   - component: {fileID: 948535746}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: PlayerStamina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6226,12 +6334,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -0.06338419, y: 2.0375, z: 1}
   m_Children: []
-  m_Father: {fileID: 1739108140}
-  m_RootOrder: 3
+  m_Father: {fileID: 1454500606}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 63.8, y: -156.5}
+  m_AnchoredPosition: {x: 219.90002, y: -346.7}
   m_SizeDelta: {x: 465.9121, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948535746
@@ -6253,11 +6361,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: d2fc04b10bf3f39408d051a3103b1e09, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -9531,6 +9639,80 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1409838977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409838978}
+  - component: {fileID: 1409838980}
+  - component: {fileID: 1409838979}
+  m_Layer: 5
+  m_Name: PlayerDelight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1409838978
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409838977}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -0.03961385, y: 1.8592187, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1454500606}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 219.90002, y: -346.7}
+  m_SizeDelta: {x: 465.9121, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1409838979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409838977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7e6f4c73aeaf9bb40afa2646fb169e81, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1409838980
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409838977}
+  m_CullTransparentMesh: 0
 --- !u!1 &1419691658
 GameObject:
   m_ObjectHideFlags: 0
@@ -9869,6 +10051,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452631986}
   m_CullTransparentMesh: 0
+--- !u!1 &1454500605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454500606}
+  m_Layer: 5
+  m_Name: PlayerStatusUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1454500606
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454500605}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 948535745}
+  - {fileID: 1409838978}
+  m_Father: {fileID: 1739108140}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -156.10002, y: 190.2}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1495766357
 GameObject:
   m_ObjectHideFlags: 0
@@ -10073,6 +10292,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614062012}
   m_CullTransparentMesh: 0
+--- !u!1 &1623709996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623709997}
+  m_Layer: 5
+  m_Name: GirlStatusUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1623709997
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623709996}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 261637586}
+  - {fileID: 349025754}
+  m_Father: {fileID: 1739108140}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -156.10002, y: 190.2}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1648784635
 GameObject:
   m_ObjectHideFlags: 0
@@ -10523,6 +10779,12 @@ MonoBehaviour:
   - {fileID: 77745601}
   - {fileID: 1008860194}
   - {fileID: 662236849}
+  playerStatus:
+  - {fileID: 948535746}
+  - {fileID: 1409838979}
+  girlStatus:
+  - {fileID: 261637587}
+  - {fileID: 349025755}
 --- !u!224 &1739108140
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10536,8 +10798,8 @@ RectTransform:
   m_Children:
   - {fileID: 971272406}
   - {fileID: 1158365595}
-  - {fileID: 261637586}
-  - {fileID: 948535745}
+  - {fileID: 1623709997}
+  - {fileID: 1454500606}
   - {fileID: 1743982787}
   m_Father: {fileID: 2086871738}
   m_RootOrder: 0
@@ -10616,7 +10878,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u624B\u88AB\u6293\u4F4F\u6642\u5176\u4ED6\u90E8\u4F4D\u505A\u52D5\u4F5C\u6703\u4E0D\u5354\u8ABF\n(\u9700\u8ABF\u6574)"
+  m_Text: "\u6BCF\u79D2\u8A08\u7B97\u6578\u503C"
 --- !u!222 &1743982789
 CanvasRenderer:
   m_ObjectHideFlags: 0

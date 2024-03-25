@@ -10,6 +10,8 @@ public class SexyUIManager : MonoBehaviour
     [SerializeField] public Button[] handHobButtons;
     [SerializeField] public Button[] sexyButtons;
     [SerializeField] public Slider[] motionCtrlSlider;
+    [SerializeField] public Image[] playerStatus;
+    [SerializeField] public Image[] girlStatus;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,18 @@ public class SexyUIManager : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    public void PlayerStatusUIDisplay(float showStaminaNumber,float showDelightNumber)
+    {
+        playerStatus[0].fillAmount = Mathf.Lerp(playerStatus[0].fillAmount, showStaminaNumber, 0.02f);
+        playerStatus[1].fillAmount = Mathf.Lerp(playerStatus[1].fillAmount, showDelightNumber, 0.01f);
+    }
+    
+    public void GirlStatusUIDisplay(float showStaminaNumber,float showDelightNumber)
+    {
+        girlStatus[0].fillAmount = Mathf.Lerp(girlStatus[0].fillAmount, showStaminaNumber, 0.02f);
+        girlStatus[1].fillAmount = Mathf.Lerp(girlStatus[1].fillAmount, showDelightNumber, 0.01f);
     }
 
     public void SetSliderLimitation(bool isOpen)
