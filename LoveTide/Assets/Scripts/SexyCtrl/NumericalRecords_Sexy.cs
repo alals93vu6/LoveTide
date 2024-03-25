@@ -16,6 +16,7 @@ public class NumericalRecords_Sexy : MonoBehaviour
     [Header("浮動數值")] 
     [SerializeField] public float playerStamina;//體力
     [SerializeField] public float girlStamina;//體力
+    [SerializeField] public int otherStimulation;
 
     [Header("物件")] 
     [SerializeField] private PlayerActor_Sexy playerActor;
@@ -26,7 +27,7 @@ public class NumericalRecords_Sexy : MonoBehaviour
     {
         
     }
-
+    
     void Start() 
     {
         playerStamina = GetStamina(true, 0);
@@ -100,8 +101,8 @@ public class NumericalRecords_Sexy : MonoBehaviour
 
     private float GetGirlSensitivity(float getNumber)
     {
-        getNumber = ((1f + (numericalManager.slutty * 0.003f)) + (numericalManager.lust * 0.01f)) * (1 + orgasmNumber * 0.1f) ;
-
+        getNumber = (((1f + (numericalManager.slutty * 0.003f)) + (numericalManager.lust * 0.01f)) * (1 + orgasmNumber * 0.1f))
+                    * (1 + (otherStimulation * 0.1f)) ;
         return getNumber;
     }
 

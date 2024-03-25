@@ -12,6 +12,7 @@ public class HandJobState : IState
         player.UICtrl.SetButtonDisplay(1);
         player.UICtrl.SetButtonLimitation(2,true);
         player.UICtrl.SetSliderLimitation(true);
+        
     }
 
     public void OnStayState(object action)

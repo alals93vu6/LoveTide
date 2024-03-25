@@ -21,7 +21,7 @@ public class GamePlayManager_Sexy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        numericalCtrl.otherStimulation = playerCtrl.animatorCtrl.stimulationTotal;
     }
     
     

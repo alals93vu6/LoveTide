@@ -11,6 +11,7 @@ public class PlayerAnimatorManager : MonoBehaviour
     [SerializeField] public SexyCtrl_Hand leftHandCtrl;
     [SerializeField] public SexyCtrl_Hand rightHandCtrl;
     [SerializeField] public Sexyctrl_GirlHand girlHandCtrl;
+    [SerializeField] public int stimulationTotal;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,18 @@ public class PlayerAnimatorManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        StimulationDetected();
+    }
+
+    public void StimulationDetected()
+    {
+        int sA ,sB ,sC ,sD;
+        if (headCtrl.stimulation) { sA = 1; }else { sA = 0; } 
+        if (leftChestsCtrl.stimulation) { sB = 1; }else { sB = 0; } 
+        if (rightChestsCtrl.stimulation) { sC = 1; }else { sC = 0; } 
+        if (bodyCtrl.stimulation) { sD = 1; }else { sD = 0; }
+
+        stimulationTotal = sA + sB + sC + sD;
     }
 
     public void OnKiss_ANCtrl()

@@ -9,6 +9,7 @@ public class SexyCtrl_Chests : MonoBehaviour
     [SerializeField] private IState CurrenState = new IdleState_Chests();
     [SerializeField] public string[] stateAnimator;
     [SerializeField] public float nowSpeed;
+    [SerializeField] public bool stimulation;
     public float oldSpeed;
     private bool isDetected;
     [SerializeField] public bool haveMouth;

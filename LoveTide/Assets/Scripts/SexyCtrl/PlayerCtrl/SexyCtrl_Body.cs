@@ -9,6 +9,7 @@ public class SexyCtrl_Body : MonoBehaviour
     [SerializeField] private IState CurrenState = new IdleState_Body();
     [SerializeField] public string[] stateAnimator;
     [SerializeField] public float nowSpeed;
+    [SerializeField] public bool stimulation;
      public float oldSpeed;
      private bool isDetected;
     // Start is called before the first frame update
