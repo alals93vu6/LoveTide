@@ -12,6 +12,7 @@ public class IdleState_Body : IState
         body.stateAnimator[2] = "G身體:待機"+ "\n" + "GG:摩擦中";
         body.stateAnimator[3] = "G身體:待機"+ "\n" + "GG:高速摩擦";
         body.SwitchAnimator();
+        body.stimulation = false;
     }
 
     public void OnStayState(object action)

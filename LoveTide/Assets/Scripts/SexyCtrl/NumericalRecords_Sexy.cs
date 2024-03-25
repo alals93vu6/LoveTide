@@ -8,10 +8,9 @@ public class NumericalRecords_Sexy : MonoBehaviour
 {
     [Header("基底數值")]
     [SerializeField] public float playerDelight;//快感
-    [SerializeField] public bool isMotionPlayer;
     [SerializeField] public float girlDelight;//快感
     [SerializeField] public int orgasmNumber;
-    [SerializeField] public bool isMotionGirl;
+    
 
     [Header("浮動數值")] 
     [SerializeField] public float playerStamina;//體力
@@ -45,30 +44,48 @@ public class NumericalRecords_Sexy : MonoBehaviour
     
     public void DelightDetected_Player()
     {
-        if (playerActor.motionSpeed != 0)
+        if (!(playerActor.CurrenState is HandJobState))
         {
-            playerDelight += 1 * SpeedDetected_PlayerMotion(0);
+            if (playerActor.motionSpeed != 0)
+            {
+                playerDelight += 1 * SpeedDetected_PlayerMotion(0);
+            }
+            else if(playerDelight > 0.5f)
+            {
+                playerDelight -= 0.5f;
+            }
         }
         else
         {
             if (playerDelight > 0.5f)
             {
-                playerDelight -= 0.5f;
+                playerDelight -= 0.15f;
             }
         }
     }
     
     public void DelightDetected_Girl()
     {
-        if (isMotionGirl)
+        if (playerActor.motionSpeed != 0)
         {
             girlDelight += (0.25f * SpeedDetected_GirlMotion(0)) * GetGirlSensitivity(0);
         }
         else
         {
-            if (playerDelight > 0.5f)
+            if (otherStimulation != 0)
             {
-                playerDelight -= 0.5f;
+                girlDelight += 0.1f * GetGirlSensitivity(0);
+            }
+            else if (girlDelight > 0.5f)
+            {
+                if (playerActor.CurrenState is IdleState)
+                {
+                    girlDelight -= 0.25f;
+                }
+                else
+                {
+                    girlDelight -= 0.1f;
+                }
             }
         }
     }
@@ -103,6 +120,16 @@ public class NumericalRecords_Sexy : MonoBehaviour
     {
         getNumber = (((1f + (numericalManager.slutty * 0.003f)) + (numericalManager.lust * 0.01f)) * (1 + orgasmNumber * 0.1f))
                     * (1 + (otherStimulation * 0.1f)) ;
+
+        if (girlDelight >= 80)
+        {
+            getNumber = getNumber * 1.5f;
+        }
+        else if (girlDelight >= 60)
+        {
+            getNumber = getNumber * 1.2f;
+        }
+
         return getNumber;
     }
 

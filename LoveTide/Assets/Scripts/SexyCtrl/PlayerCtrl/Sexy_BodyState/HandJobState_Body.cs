@@ -12,6 +12,7 @@ public class HandJobState_Body : IState
         body.stateAnimator[2] = "G身體:被手插入_中"+ "\n" + "GG:待機";
         body.stateAnimator[3] = "G身體:被手插入_快"+ "\n" + "GG:待機";
         body.SwitchAnimator();
+        body.stimulation = true;
     }
 
     public void OnStayState(object action)

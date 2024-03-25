@@ -10,7 +10,6 @@ public class SexyCtrl_Head : MonoBehaviour
     [SerializeField] public bool onKiss;
     [SerializeField] public string[] stateAnimator;
     [SerializeField] public float nowSpeed;
-    [SerializeField] public bool stimulation;
     public float oldSpeed;
     private bool isDetected;
     // Start is called before the first frame update

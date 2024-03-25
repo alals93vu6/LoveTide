@@ -12,6 +12,7 @@ public class ThrustingState_Body : IState
         body.stateAnimator[2] = "G身體:被插入"+ "\n" + "GG:插插中";
         body.stateAnimator[3] = "G身體:被插入"+ "\n" + "GG:快速抽插中";
         body.SwitchAnimator();
+        body.stimulation = true;
     }
 
     public void OnStayState(object action)

@@ -12,6 +12,7 @@ public class OnGraspState_Chests : IState
         chests.stateAnimator[2] = "被抓著_中";
         chests.stateAnimator[3] = "被抓著_快";
         chests.SwitchAnimator();
+        chests.stimulation = true;
     }
 
     public void OnStayState(object action)

@@ -13,6 +13,7 @@ public class OnSuckState_Chests : IState
         chests.stateAnimator[3] = "被吸吮_快";
         chests.SwitchAnimator();
         chests.haveMouth = true;
+        chests.stimulation = true;
     }
 
     public void OnStayState(object action)

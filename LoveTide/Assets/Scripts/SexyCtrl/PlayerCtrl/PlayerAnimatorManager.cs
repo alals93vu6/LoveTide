@@ -27,10 +27,10 @@ public class PlayerAnimatorManager : MonoBehaviour
     public void StimulationDetected()
     {
         int sA ,sB ,sC ,sD;
-        if (headCtrl.stimulation) { sA = 1; }else { sA = 0; } 
+        if (headCtrl.onKiss) { sA = 1; }else { sA = 0; } 
         if (leftChestsCtrl.stimulation) { sB = 1; }else { sB = 0; } 
         if (rightChestsCtrl.stimulation) { sC = 1; }else { sC = 0; } 
-        if (bodyCtrl.stimulation) { sD = 1; }else { sD = 0; }
+        if (bodyCtrl.nowSpeed != 0) { sD = 1; }else { sD = 0; }
 
         stimulationTotal = sA + sB + sC + sD;
     }

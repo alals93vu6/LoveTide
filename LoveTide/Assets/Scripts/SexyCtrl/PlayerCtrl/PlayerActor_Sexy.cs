@@ -12,7 +12,7 @@ public class PlayerActor_Sexy : MonoBehaviour
     [SerializeField] public bool isHand;
     [SerializeField] public float motionSpeed;
     [SerializeField] private int actionState;
-    private IState CurrenState = new IdleState();
+    public IState CurrenState = new IdleState();
 
     [Header("物件")] 
     [SerializeField] public PlayerAnimatorManager animatorCtrl;

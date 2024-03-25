@@ -12,6 +12,7 @@ public class OnClampedState_Chests : IState
         chests.stateAnimator[2] = "被夾住_中";
         chests.stateAnimator[3] = "被夾住_快";
         chests.SwitchAnimator();
+        chests.stimulation = false;
     }
 
     public void OnStayState(object action)

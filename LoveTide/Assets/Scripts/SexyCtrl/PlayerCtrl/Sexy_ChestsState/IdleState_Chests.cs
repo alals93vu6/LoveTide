@@ -12,6 +12,7 @@ public class IdleState_Chests : IState
         chests.stateAnimator[2] = "待機_中";
         chests.stateAnimator[3] = "待機_慢";
         chests.SwitchAnimator();
+        chests.stimulation = false;
     }
 
     public void OnStayState(object action)

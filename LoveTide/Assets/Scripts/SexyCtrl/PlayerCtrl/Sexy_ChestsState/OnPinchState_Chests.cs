@@ -12,6 +12,7 @@ public class OnPinchState_Chests : IState
         chests.stateAnimator[2] = "被玩弄_中";
         chests.stateAnimator[3] = "被玩弄_快";
         chests.SwitchAnimator();
+        chests.stimulation = true;
     }
 
     public void OnStayState(object action)

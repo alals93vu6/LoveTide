@@ -13,6 +13,7 @@ public class OnlickState_Chests : IState
         chests.stateAnimator[3] = "被舔_快";
         chests.SwitchAnimator();
         chests.haveMouth = true;
+        chests.stimulation = true;
     }
 
     public void OnStayState(object action)
