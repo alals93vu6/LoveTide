@@ -602,12 +602,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDelight: 0
-  isMotionPlayer: 0
   girlDelight: 0
   orgasmNumber: 0
-  isMotionGirl: 0
   playerStamina: 0
   girlStamina: 0
+  otherStimulation: 0
   playerActor: {fileID: 631780745}
   sexyUICtrl: {fileID: 1739108139}
   numericalManager: {fileID: 107631236}
@@ -4176,6 +4175,7 @@ MonoBehaviour:
   - 
   - 
   nowSpeed: 0
+  stimulation: 0
   oldSpeed: 0
   haveMouth: 0
 --- !u!1 &693408328
@@ -7694,6 +7694,7 @@ MonoBehaviour:
   leftHandCtrl: {fileID: 495500927}
   rightHandCtrl: {fileID: 1156741009}
   girlHandCtrl: {fileID: 305929718}
+  stimulationTotal: 0
 --- !u!1 &1156741005
 GameObject:
   m_ObjectHideFlags: 0
@@ -10878,7 +10879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6BCF\u79D2\u8A08\u7B97\u6578\u503C"
+  m_Text: "UI\u548C\u52D5\u756B\u7FFB\u65B0\n\u9AD8\u6F6E\u4E8B\u4EF6\n\u8A2D\u5B9A\u5B9A\u6642\u5075\u6E2C\u5207\u63DB\u52D5\u756B(\u4E0D\u80FD\u7528\u5373\u6642\u66F4\u65B0)"
 --- !u!222 &1743982789
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10985,6 +10986,7 @@ MonoBehaviour:
   - 
   - 
   nowSpeed: 0
+  stimulation: 0
   oldSpeed: 0
 --- !u!1 &1762041308
 GameObject:
@@ -11215,6 +11217,7 @@ MonoBehaviour:
   - 
   - 
   nowSpeed: 0
+  stimulation: 0
   oldSpeed: 0
   haveMouth: 0
 --- !u!1 &1764866192

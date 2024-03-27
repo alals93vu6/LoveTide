@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SexyCtrl.unity
+    guid: 750e042151544c04ea880aaf45003c16
+  - enabled: 1
     path: Assets/Scenes/GamePlayScene.unity
     guid: 16512faaf73d06d42a2779f2ae505f31
   - enabled: 1

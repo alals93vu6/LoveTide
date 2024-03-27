@@ -18,11 +18,11 @@ public class GetDataTest : MonoBehaviour
         
         if (textNumber == 1)
         {
-            testAudio.clip = FindObjectOfType<AudioClipEnumGenerator>().GetAudioClip(AudioClipEnum.button01a);
+            //testAudio.clip = FindObjectOfType<AudioClipEnumGenerator>().GetAudioClip(AudioClipEnum.button01a);
         }
         else
         {
-            testAudio.clip = FindObjectOfType<AudioClipEnumGenerator>().GetAudioClip(AudioClipEnum.button03a);
+            //testAudio.clip = FindObjectOfType<AudioClipEnumGenerator>().GetAudioClip(AudioClipEnum.button03a);
         }
         testAudio.Play();
         PlayerPrefs.SetInt("TestObjA",1);
