@@ -90,6 +90,24 @@ public class NumericalRecords_Sexy : MonoBehaviour
         }
     }
 
+    public void OrgasmNumberSet(int eventNumber)
+    {
+        switch (eventNumber)
+        {
+            case 1:
+                playerDelight = 0f;
+                girlDelight = 60f;
+                break;
+            case 2: 
+                playerDelight = 0f;
+                break;
+            case 3: 
+                girlDelight = 75f;
+                break;
+        }
+        Debug.Log("Cum!!");
+    }
+
     private float SpeedDetected_PlayerMotion(float getNumber)
     {
         switch (playerActor.motionSpeed)

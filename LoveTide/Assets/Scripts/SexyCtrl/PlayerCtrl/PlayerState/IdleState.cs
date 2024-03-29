@@ -12,11 +12,13 @@ public class IdleState : IState
         player.UICtrl.SetButtonLimitation(1,true);
         player.UICtrl.SetSliderLimitation(true);
         player.nowSlider = 0;
+        player.motionSpeed = 0;
     }
 
     public void OnStayState(object action)
     {
         var player = (PlayerActor_Sexy)action;
+        player.OrgasmDetected();
     }
 
     public void OnExitState(object action)

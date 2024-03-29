@@ -18,6 +18,7 @@ public class HandJobState : IState
     public void OnStayState(object action)
     {
         var player = (PlayerActor_Sexy)action;
+        player.OrgasmDetected();
     }
 
     public void OnExitState(object action)

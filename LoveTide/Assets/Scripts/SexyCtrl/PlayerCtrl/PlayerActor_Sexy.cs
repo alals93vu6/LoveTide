@@ -18,6 +18,7 @@ public class PlayerActor_Sexy : MonoBehaviour
     [SerializeField] public PlayerAnimatorManager animatorCtrl;
     [SerializeField] public SexyUIManager UICtrl;
     [SerializeField] public PlayerAudioManager audioCtrl;
+    [SerializeField] public NumericalRecords_Sexy numericalCtrl;
     [SerializeField] public Slider[] speedCtrl; public int nowSlider;
     
     void Update()
@@ -90,6 +91,14 @@ public class PlayerActor_Sexy : MonoBehaviour
             motionSpeed = speedCtrl[targetSlider].value;
             animatorCtrl.SetAnimatorMotionSpeed(motionSpeed);
             //Debug.Log("SpeedDetected");
+        }
+    }
+
+    public void OrgasmDetected()
+    {
+        if (numericalCtrl.playerDelight >= 100 || numericalCtrl.girlDelight >= 100)
+        {
+            ChangeState(new ReadyCumState());
         }
     }
 
