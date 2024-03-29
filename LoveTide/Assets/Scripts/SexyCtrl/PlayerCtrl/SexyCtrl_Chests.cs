@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SexyCtrl_Chests : MonoBehaviour
 {
     [SerializeField] public Text testText;
-    [SerializeField] private IState CurrenState = new IdleState_Chests();
+    [SerializeField] public IState CurrenState = new IdleState_Chests();
     [SerializeField] public string[] stateAnimator;
     [SerializeField] public float nowSpeed;
     [SerializeField] public bool stimulation;

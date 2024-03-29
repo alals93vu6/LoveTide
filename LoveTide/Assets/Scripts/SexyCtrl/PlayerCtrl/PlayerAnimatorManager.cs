@@ -62,34 +62,47 @@ public class PlayerAnimatorManager : MonoBehaviour
     {
         if (isRight)
         {
-            rightChestsCtrl.ChangeState(new OnlickState_Chests());
-            if (!FindObjectOfType<PlayerActor_Sexy>().isHand)
+            if (rightChestsCtrl.CurrenState is OnlickState_Chests)
             {
-                rightHandCtrl.ChangeState(new IdleState_Hand());
+                rightChestsCtrl.ChangeState(new IdleState_Chests());
             }
+            else
+            {
+                rightChestsCtrl.ChangeState(new OnlickState_Chests());
+                if (!FindObjectOfType<PlayerActor_Sexy>().isHand)
+                {
+                    rightHandCtrl.ChangeState(new IdleState_Hand());
+                }
 
-            if (leftChestsCtrl.haveMouth)
-            {
-                
-                leftChestsCtrl.ChangeState(new IdleState_Chests());
-            }
-            if (headCtrl.onKiss)
-            {
-                headCtrl.onKiss = false;
+                if (leftChestsCtrl.haveMouth)
+                {
+                    leftChestsCtrl.ChangeState(new IdleState_Chests());
+                }
+                if (headCtrl.onKiss)
+                {
+                    headCtrl.onKiss = false;
+                }
             }
         }
         else
         {
-            leftChestsCtrl.ChangeState(new OnlickState_Chests());
-            leftHandCtrl.ChangeState(new IdleState_Hand());
-            
-            if (rightChestsCtrl.haveMouth)
+            if (leftChestsCtrl.CurrenState is OnlickState_Chests)
             {
-                rightChestsCtrl.ChangeState(new IdleState_Chests());
+                leftChestsCtrl.ChangeState(new IdleState_Chests());
             }
-            if (headCtrl.onKiss)
+            else
             {
-                headCtrl.onKiss = false;
+                leftChestsCtrl.ChangeState(new OnlickState_Chests());
+                leftHandCtrl.ChangeState(new IdleState_Hand());
+            
+                if (rightChestsCtrl.haveMouth)
+                {
+                    rightChestsCtrl.ChangeState(new IdleState_Chests());
+                }
+                if (headCtrl.onKiss)
+                {
+                    headCtrl.onKiss = false;
+                }
             }
         }
         headCtrl.SwitchAnimator();
@@ -99,13 +112,29 @@ public class PlayerAnimatorManager : MonoBehaviour
     {
         if (isRight)
         {
-            rightChestsCtrl.ChangeState(new OnGraspState_Chests());
-            rightHandCtrl.ChangeState(new GradHandState_Hand());
+            if (rightChestsCtrl.CurrenState is OnGraspState_Chests)
+            {
+                rightChestsCtrl.ChangeState(new IdleState_Chests());
+                rightHandCtrl.ChangeState(new IdleState_Hand());
+            }
+            else
+            {
+                rightChestsCtrl.ChangeState(new OnGraspState_Chests());
+                rightHandCtrl.ChangeState(new GradHandState_Hand());
+            }
         }
         else
         {
-            leftChestsCtrl.ChangeState(new OnGraspState_Chests());
-            leftHandCtrl.ChangeState(new OnGraspState_Hand());
+            if (leftChestsCtrl.CurrenState is OnGraspState_Chests)
+            {
+                leftChestsCtrl.ChangeState(new IdleState_Chests());
+                leftHandCtrl.ChangeState(new IdleState_Hand());
+            }
+            else
+            {
+                leftChestsCtrl.ChangeState(new OnGraspState_Chests());
+                leftHandCtrl.ChangeState(new GradHandState_Hand());
+            }
         }
     }
 
@@ -113,33 +142,47 @@ public class PlayerAnimatorManager : MonoBehaviour
     {
         if (isRight)
         {
-            rightChestsCtrl.ChangeState(new OnSuckState_Chests());
-            if (!FindObjectOfType<PlayerActor_Sexy>().isHand)
+            if (rightChestsCtrl.CurrenState is OnSuckState_Chests)
             {
-                rightHandCtrl.ChangeState(new IdleState_Hand());
+                rightChestsCtrl.ChangeState(new IdleState_Chests());
             }
+            else
+            {
+                rightChestsCtrl.ChangeState(new OnSuckState_Chests());
+                if (!FindObjectOfType<PlayerActor_Sexy>().isHand)
+                {
+                    rightHandCtrl.ChangeState(new IdleState_Hand());
+                }
             
-            if (leftChestsCtrl.haveMouth)
-            {
-                leftChestsCtrl.ChangeState(new IdleState_Chests());
-            }
-            if (headCtrl.onKiss)
-            {
-                headCtrl.onKiss = false;
+                if (leftChestsCtrl.haveMouth)
+                {
+                    leftChestsCtrl.ChangeState(new IdleState_Chests());
+                }
+                if (headCtrl.onKiss)
+                {
+                    headCtrl.onKiss = false;
+                }    
             }
         }
         else
         {
-            leftChestsCtrl.ChangeState(new OnSuckState_Chests());
-            leftHandCtrl.ChangeState(new IdleState_Hand());
-            
-            if (rightChestsCtrl.haveMouth)
+            if (leftChestsCtrl.CurrenState is OnSuckState_Chests)
             {
-                rightChestsCtrl.ChangeState(new IdleState_Chests());
+                leftChestsCtrl.ChangeState(new IdleState_Chests());
             }
-            if (headCtrl.onKiss)
+            else
             {
-                headCtrl.onKiss = false;
+                leftChestsCtrl.ChangeState(new OnSuckState_Chests());
+                leftHandCtrl.ChangeState(new IdleState_Hand());
+            
+                if (rightChestsCtrl.haveMouth)
+                {
+                    rightChestsCtrl.ChangeState(new IdleState_Chests());
+                }
+                if (headCtrl.onKiss)
+                {
+                    headCtrl.onKiss = false;
+                }   
             }
         }
         headCtrl.SwitchAnimator();
@@ -149,13 +192,29 @@ public class PlayerAnimatorManager : MonoBehaviour
     {
         if (isRight)
         {
-            rightChestsCtrl.ChangeState(new OnPinchState_Chests());
-            rightHandCtrl.ChangeState(new OnPinchState_Hand());
+            if (rightChestsCtrl.CurrenState is OnPinchState_Chests)
+            {
+                rightChestsCtrl.ChangeState(new IdleState_Chests());
+                rightHandCtrl.ChangeState(new IdleState_Hand());
+            }
+            else
+            {
+                rightChestsCtrl.ChangeState(new OnPinchState_Chests());
+                rightHandCtrl.ChangeState(new OnPinchState_Hand());
+            }
         }
         else
         {
-            leftChestsCtrl.ChangeState(new OnPinchState_Chests());
-            leftHandCtrl.ChangeState(new OnPinchState_Hand());
+            if (leftChestsCtrl.CurrenState is OnPinchState_Chests)
+            {
+                leftChestsCtrl.ChangeState(new IdleState_Chests());
+                leftHandCtrl.ChangeState(new IdleState_Hand());
+            }
+            else
+            {
+                leftChestsCtrl.ChangeState(new OnPinchState_Chests());
+                leftHandCtrl.ChangeState(new OnPinchState_Hand());
+            }
         }
     }
 
@@ -175,8 +234,16 @@ public class PlayerAnimatorManager : MonoBehaviour
     
     public void OnMassage_ANCtrl() 
     {
-        leftChestsCtrl.ChangeState(new IdleState_Chests());
-        leftHandCtrl.ChangeState(new OnMassageState_Hand());
+        if (leftHandCtrl.CurrenState is OnMassageState_Hand)
+        {
+            leftChestsCtrl.ChangeState(new IdleState_Chests());
+            leftHandCtrl.ChangeState(new IdleState_Hand());
+        }
+        else
+        {
+            leftChestsCtrl.ChangeState(new IdleState_Chests());
+            leftHandCtrl.ChangeState(new OnMassageState_Hand());
+        }
     }
     
     public void OnGrasp_TwoSide_ANCtrl()
