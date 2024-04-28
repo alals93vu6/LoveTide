@@ -82,3 +82,5 @@ LoveTide/Library/StateCache/
 *.bin
 
 LoveTide/Library/
+
+*.md

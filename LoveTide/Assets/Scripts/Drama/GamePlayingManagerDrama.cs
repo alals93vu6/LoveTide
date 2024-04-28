@@ -13,9 +13,11 @@ public class GamePlayingManagerDrama : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+        //PlayerPrefs.SetInt("DramaNumber",1);
+        AAAAA();
         DialogDetected();
         playerCtrlManager.OnStart();
-        //PlayerPrefs.SetInt("DramaNumber",10);
+        
     }
     void Start()
     {
@@ -53,4 +55,10 @@ public class GamePlayingManagerDrama : MonoBehaviour
         SceneManager.LoadScene("Scenes/GamePlayScene");
     }
 
+    public void AAAAA()
+    {
+        PlayerPrefs.SetInt("DramaNumber",1);
+        PlayerPrefs.SetInt("mainMissionEvent0",2);
+        PlayerPrefs.SetString("playerNameData0" , "阿金");
+    }
 }

@@ -22,10 +22,7 @@ public class NumericalRecords_Sexy : MonoBehaviour
     [SerializeField] private SexyUIManager sexyUICtrl;
     [SerializeField] public NumericalRecords numericalManager;
     // Start is called before the first frame update
-    private async void Awake()
-    {
-        
-    }
+    
     
     void Start() 
     {

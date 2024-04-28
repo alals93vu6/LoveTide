@@ -133,10 +133,10 @@ public class TextBoxDrama : MonoBehaviour
 
     private void ChickName()
     {
-       switch (diaLog.plotOptionsList[targetNumber].dialogDataDetails[textNumber].speaker)
+        switch (diaLog.plotOptionsList[targetNumber].dialogDataDetails[textNumber].speaker)
         {
             case Speaker.Chorus: nameText.text = ""; break;
-            case Speaker.Player: nameText.text = PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()); break;
+            case Speaker.Player: nameText.text = FindObjectOfType<NumericalRecords>().playerName; break;
             case Speaker.GirlFriend: nameText.text = "由香"; break;
             case Speaker.GirlFriendDormitory: nameText.text = "由香"; break;
             case Speaker.GirlFriendFormal: nameText.text = "由香"; break;

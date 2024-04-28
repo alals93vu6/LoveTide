@@ -3525,6 +3525,7 @@ MonoBehaviour:
   animatorCtrl: {fileID: 1124817610}
   UICtrl: {fileID: 1739108139}
   audioCtrl: {fileID: 0}
+  numericalCtrl: {fileID: 107631234}
   speedCtrl:
   - {fileID: 77745601}
   - {fileID: 1008860194}
