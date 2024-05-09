@@ -58,7 +58,7 @@ public class GamePlayingManagerDrama : MonoBehaviour
     public void AAAAA()
     {
         PlayerPrefs.SetInt("DramaNumber",1);
-        PlayerPrefs.SetInt("mainMissionEvent0",2);
+        PlayerPrefs.SetInt("mainMissionEvent0",0);
         PlayerPrefs.SetString("playerNameData0" , "阿金");
     }
 }

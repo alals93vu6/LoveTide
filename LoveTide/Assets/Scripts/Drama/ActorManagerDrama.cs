@@ -106,7 +106,7 @@ public class ActorManagerDrama : MonoBehaviour
             case Speaker.TavernBoss : imageNumber = 7;
                 oldActor = imageNumber; break;
         }
-        //Debug.Log("Face"+imageNumber);
+        Debug.Log("Face"+imageNumber);
         return imageNumber;
     }
 
