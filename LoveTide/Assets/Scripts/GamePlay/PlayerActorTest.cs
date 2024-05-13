@@ -9,7 +9,7 @@ public class PlayerActorTest : MonoBehaviour
 {
     [SerializeField] public GameManagerTest gameManager;
     [SerializeField] public DialogDataDetected diaDetected;
-
+    
     [SerializeField] public bool isAlon;
     [SerializeField] private bool isSkip;
     [SerializeField] private bool isOuting;
@@ -53,7 +53,7 @@ public class PlayerActorTest : MonoBehaviour
     {
         switch (eventNumber)
         {
-            case 1: Interactive_Speak(fds,slt,lst); break;//開化
+            case 1: Interactive_Speak(fds,slt,lst); break;//開話
             case 2: Interactive_Operate(fds,slt,lst); break;//幫忙工作
             case 3: Interactive_FlirtTalk(fds,slt,lst); break;//情話
             case 5: Interactive_Peeking(fds,slt,lst); break;//偷聽、進房間
