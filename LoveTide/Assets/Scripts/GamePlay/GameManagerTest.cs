@@ -26,6 +26,8 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public bool timePass;
     [SerializeField] public bool isAlone;
     [SerializeField] private bool getEvent;
+    
+    
 
 
     private void Awake()

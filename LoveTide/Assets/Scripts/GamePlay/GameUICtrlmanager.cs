@@ -1,26 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
-using Task = System.Threading.Tasks.Task;
 
 public class GameUICtrlmanager : MonoBehaviour
 {
     [SerializeField] public DirtyTrickCtrl darkCtrl;
     [SerializeField] public InformationUI_ClickObject informationButton;
     [SerializeField] public GameManagerTest gameManager;
+    [SerializeField] public NumericalRecords_PlayerStting playerSetNumerical;
 
     [SerializeField] public GameObject informationButtonObject;
     [SerializeField] public GameObject settingsSystemObject;
+    [SerializeField] public GameObject[] settingsSlider;
     // Start is called before the first frame update
-    void Start()
+    async void Start()
     {
-        
+        await Task.Delay(1000);
+        DisplaySettings(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        DisplaySettings(false);
+        
     }
 
     public void DisplaySettings(bool isOpen)
@@ -32,9 +35,33 @@ public class GameUICtrlmanager : MonoBehaviour
         }
         else
         {
-            gameManager.SetClickObject(7);
+            FirstSetCheck();
             settingsSystemObject.SetActive(true);
         }
-        
+    }
+    
+    private void FirstSetCheck()
+    {
+        if (PlayerPrefs.GetInt("firstSetting") == 0)
+        {
+            PlayerPrefs.SetInt("bgmSet",5);
+            PlayerPrefs.SetInt("soundSet",5);
+            PlayerPrefs.SetInt("voicesSet",5);
+            PlayerPrefs.SetInt("firstSetting",1);
+            OnOpenSetPage();
+        }
+        else
+        {
+            OnOpenSetPage();
+        }
+    }
+
+    private void OnOpenSetPage()
+    {
+        gameManager.SetClickObject(7);
+        for (int i = 0; i < settingsSlider.Length; i++)
+        {
+            settingsSlider[i].GetComponent<SliderValuDisplay>().OnOpen();
+        }
     }
 }

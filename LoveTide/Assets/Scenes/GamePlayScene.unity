@@ -588,8 +588,13 @@ MonoBehaviour:
   darkCtrl: {fileID: 1598588245}
   informationButton: {fileID: 337801736}
   gameManager: {fileID: 494522876}
+  playerSetNumerical: {fileID: 1561271431}
   informationButtonObject: {fileID: 955549442}
   settingsSystemObject: {fileID: 207011843}
+  settingsSlider:
+  - {fileID: 504473359}
+  - {fileID: 1670022915}
+  - {fileID: 225550335}
 --- !u!4 &47724788
 Transform:
   m_ObjectHideFlags: 0
@@ -1472,9 +1477,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 225550336}
+  - component: {fileID: 225550338}
   - component: {fileID: 225550337}
   m_Layer: 5
-  m_Name: DubbingSettings
+  m_Name: VoicesSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1554,6 +1560,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &225550338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225550335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ccb317674574e4a923b4bbd7363220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: {fileID: 1126995291}
+  sliderNumber: 3
+  recordsPlayerSetting: {fileID: 1561271431}
 --- !u!1 &237266316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,7 +2688,7 @@ Transform:
   - {fileID: 1192848795}
   - {fileID: 1700323123}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &416893124
 GameObject:
@@ -3330,6 +3351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 504473360}
+  - component: {fileID: 504473362}
   - component: {fileID: 504473361}
   m_Layer: 5
   m_Name: MusicSettings
@@ -3412,6 +3434,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &504473362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504473359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ccb317674574e4a923b4bbd7363220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: {fileID: 536622635}
+  sliderNumber: 1
+  recordsPlayerSetting: {fileID: 1561271431}
 --- !u!1 &508548131
 GameObject:
   m_ObjectHideFlags: 0
@@ -10512,6 +10549,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554568578}
   m_CullTransparentMesh: 0
+--- !u!1 &1561271429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1561271430}
+  - component: {fileID: 1561271431}
+  m_Layer: 5
+  m_Name: NumericalRecords_PlayerSeeting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1561271430
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561271429}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.1275, y: 1.1275, z: 1.1275}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 399.99997, y: 224.83368}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1561271431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561271429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665afe03b2aab1c4fa644f938ec51df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmLoudness: 0
+  soundLoudness: 0
+  voicesLoudness: 0
 --- !u!1 &1565688680
 GameObject:
   m_ObjectHideFlags: 0
@@ -11055,7 +11143,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1646473959
 GameObject:
@@ -11333,6 +11421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1670022916}
+  - component: {fileID: 1670022918}
   - component: {fileID: 1670022917}
   m_Layer: 5
   m_Name: SoundSettings
@@ -11415,6 +11504,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1670022918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670022915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ccb317674574e4a923b4bbd7363220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: {fileID: 1910167408}
+  sliderNumber: 2
+  recordsPlayerSetting: {fileID: 1561271431}
 --- !u!1 &1700105881
 GameObject:
   m_ObjectHideFlags: 0
@@ -12789,7 +12893,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1937811724
 GameObject:
