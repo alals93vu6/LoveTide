@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameUICtrlmanager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GameUICtrlmanager : MonoBehaviour
     [SerializeField] public GameObject informationButtonObject;
     [SerializeField] public GameObject settingsSystemObject;
     [SerializeField] public GameObject[] settingsSlider;
+    [SerializeField] public Dropdown[] setDropdowns;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,5 +64,7 @@ public class GameUICtrlmanager : MonoBehaviour
         {
             settingsSlider[i].GetComponent<SliderValuDisplay>().OnOpen();
         }
+        setDropdowns[0].GetComponent<SwitchGameWindows>().OnOpen();
+        setDropdowns[1].GetComponent<LanguageSet>().OnOpen();
     }
 }

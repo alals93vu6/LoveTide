@@ -595,6 +595,9 @@ MonoBehaviour:
   - {fileID: 504473359}
   - {fileID: 1670022915}
   - {fileID: 225550335}
+  setDropdowns:
+  - {fileID: 530684818}
+  - {fileID: 606582802}
 --- !u!4 &47724788
 Transform:
   m_ObjectHideFlags: 0
@@ -3564,7 +3567,7 @@ RectTransform:
   - {fileID: 1565688681}
   - {fileID: 1021826372}
   m_Father: {fileID: 860670607}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3688,6 +3691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectedDropdown: {fileID: 530684818}
+  fullWindows: 0
 --- !u!1 &536622632
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4202,7 @@ GameObject:
   - component: {fileID: 606582804}
   - component: {fileID: 606582803}
   - component: {fileID: 606582802}
+  - component: {fileID: 606582805}
   m_Layer: 5
   m_Name: LanguageSettings
   m_TagString: Untagged
@@ -4222,7 +4227,7 @@ RectTransform:
   - {fileID: 31781021}
   - {fileID: 1531783185}
   m_Father: {fileID: 860670607}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4277,13 +4282,13 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: "\u7E41\u9AD4\u4E2D\u6587"
-      m_Image: {fileID: 0}
-    - m_Text: "\u7B80\u4F53\u4E2D\u6587"
+    - m_Text: English
       m_Image: {fileID: 0}
     - m_Text: "\u65E5\u672C\u8A9E"
       m_Image: {fileID: 0}
-    - m_Text: English
+    - m_Text: "\u7E41\u9AD4\u4E2D\u6587"
+      m_Image: {fileID: 0}
+    - m_Text: "\u7B80\u4F53\u4E2D\u6587"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4326,6 +4331,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606582800}
   m_CullTransparentMesh: 0
+--- !u!114 &606582805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606582800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab1508ff0202124c9b5dced213a4218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  languageSet: {fileID: 606582802}
 --- !u!1 &611955969
 GameObject:
   m_ObjectHideFlags: 0
@@ -5793,8 +5811,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 606582801}
   - {fileID: 530684817}
+  - {fileID: 606582801}
   - {fileID: 504473360}
   - {fileID: 1670022916}
   - {fileID: 225550336}
