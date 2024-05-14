@@ -14,10 +14,9 @@ public class GameUICtrlmanager : MonoBehaviour
     [SerializeField] public GameObject settingsSystemObject;
     [SerializeField] public GameObject[] settingsSlider;
     // Start is called before the first frame update
-    async void Start()
+    void Start()
     {
-        await Task.Delay(1000);
-        DisplaySettings(false);
+        
     }
 
     // Update is called once per frame

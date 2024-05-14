@@ -26,7 +26,7 @@ public class SliderValuDisplay : MonoBehaviour
 
     private void DisplaySetNumber()
     {
-        displayText.text = "x" + (this.GetComponent<Slider>().value / 5);
+        displayText.text = "" + this.GetComponent<Slider>().value;
     }
 
     private void ChangeSetDetected()
