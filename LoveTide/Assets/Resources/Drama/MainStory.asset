@@ -700,7 +700,7 @@ MonoBehaviour:
   - talkID: "\u591C\u904A(\u4E8B\u4EF62)"
     notActor: 0
     displayCG:
-    - {fileID: 21300000, guid: 4aadf171477400c43a07bf8fc076119b, type: 3}
+    - {fileID: 21300000, guid: dbc970e5eee9e78468829273cdb1388d, type: 3}
     displayBackground:
     - {fileID: 21300000, guid: 43843af7be698f3418d871f50f4c7a33, type: 3}
     - {fileID: 21300000, guid: cef2f30909109524480dc81a74d44dde, type: 3}
