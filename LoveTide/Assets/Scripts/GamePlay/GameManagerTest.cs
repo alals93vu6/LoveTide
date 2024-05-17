@@ -66,6 +66,7 @@ public class GameManagerTest : MonoBehaviour
         await Task.Delay(80);
         SetClickObject(0);
         CheckActions();
+        numberCtrl.isPlayGame = true;
     }
 
     public async void TimePassCheck()

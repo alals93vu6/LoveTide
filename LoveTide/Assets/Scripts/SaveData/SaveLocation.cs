@@ -13,10 +13,11 @@ public class SaveLocation : MonoBehaviour
     [SerializeField] public Text slutty;//淫亂度
     [SerializeField] public Text lust;//慾望值
     [SerializeField] public Text playTime;//慾望值
+    [SerializeField] public GameObject[] clickButton;
     // Start is called before the first frame update
     void Start()
     {
-        DisplayDataInformation();
+        DisplayDataInformation(true);
     }
 
     // Update is called once per frame
@@ -25,13 +26,47 @@ public class SaveLocation : MonoBehaviour
         
     }
 
-    public void DisplayDataInformation()
+    public void DisplayDataInformation(bool isContinue)
     {
         aDay.text = "目前天數 : " + PlayerPrefs.GetInt("aDayData" + locationNumber);
         friendship.text = "好感度 : " +  PlayerPrefs.GetInt("friendshipData" + locationNumber);
         slutty.text = "淫亂值 : " +  PlayerPrefs.GetInt("sluttyData" + locationNumber);
         lust.text = "慾望值 : " +  PlayerPrefs.GetInt("lustData" + locationNumber);
         PlayTimeConversion();
+        DisplayChoseButton(isContinue);
+    }
+
+    private void DisplayChoseButton(bool isContinue)
+    {
+        for (int i = 0; i < clickButton.Length; i++)
+        {
+            clickButton[i].SetActive(false);
+        }
+        if (isContinue)
+        {
+            if (PlayerPrefs.GetInt("aDayData" + locationNumber) == 0)
+            {
+                clickButton[3].SetActive(true);
+                clickButton[4].SetActive(true);
+            }
+            else
+            {
+                clickButton[1].SetActive(true);
+                clickButton[2].SetActive(true);
+            }
+        }
+        else
+        {
+            if (PlayerPrefs.GetInt("aDayData" + locationNumber) == 0)
+            {
+                clickButton[0].SetActive(true);
+            }
+            else
+            {
+                clickButton[3].SetActive(true);
+                clickButton[4].SetActive(true);
+            }
+        }
     }
 
     private void PlayTimeConversion()

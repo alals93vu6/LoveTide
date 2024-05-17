@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class SaveDataManager : MonoBehaviour
 {
-    [SerializeField] public NumericalRecords playerData;
+    //[SerializeField] public NumericalRecords playerData;
+    [SerializeField] public bool isContinue;
+    [SerializeField] 
     // Start is called before the first frame update
     void Start()
     {
-        playerData.OnStart();
+        
     }
 
     // Update is called once per frame
@@ -16,4 +18,6 @@ public class SaveDataManager : MonoBehaviour
     {
         
     }
+    
+    
 }
