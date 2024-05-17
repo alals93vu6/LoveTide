@@ -229,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -151.2, y: 14.4}
+  m_AnchoredPosition: {x: -144.66, y: 7.7}
   m_SizeDelta: {x: 94.70502, y: 94.24153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &51605263
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 75828243}
   - component: {fileID: 75828242}
   m_Layer: 5
-  m_Name: Text (4)
+  m_Name: PlayTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,6 +929,50 @@ RectTransform:
   m_AnchoredPosition: {x: 208, y: 76}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &471712688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471712689}
+  - component: {fileID: 471712690}
+  m_Layer: 0
+  m_Name: SaveDataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &471712689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471712688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 326.96008, y: 292.04483, z: -180.80205}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &471712690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471712688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60a2f74a08a1a642a51304f3a349bd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData: {fileID: 1969765256}
 --- !u!1 &474017124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1215,7 @@ GameObject:
   - component: {fileID: 569299883}
   - component: {fileID: 569299882}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Delete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1520,7 +1564,7 @@ GameObject:
   - component: {fileID: 761681528}
   - component: {fileID: 761681527}
   m_Layer: 5
-  m_Name: Text
+  m_Name: DayText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2331,7 +2375,7 @@ GameObject:
   - component: {fileID: 1249691468}
   - component: {fileID: 1249691467}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: FDS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2593,7 +2637,7 @@ GameObject:
   - component: {fileID: 1421621927}
   - component: {fileID: 1421621926}
   m_Layer: 5
-  m_Name: Text (3)
+  m_Name: SLT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2907,7 +2951,7 @@ GameObject:
   - component: {fileID: 1634084345}
   - component: {fileID: 1634084344}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Action
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3141,6 +3185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1671567206}
+  - component: {fileID: 1671567207}
   m_Layer: 5
   m_Name: SaveLocationA
   m_TagString: Untagged
@@ -3176,6 +3221,25 @@ RectTransform:
   m_AnchoredPosition: {x: -186.00002, y: 76}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1671567207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671567205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecb4cd1bd7ce71439aa65a7ca1c785e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationNumber: 1
+  intNumber: 1
+  aDay: {fileID: 761681527}
+  friendship: {fileID: 1249691467}
+  slutty: {fileID: 1421621926}
+  lust: {fileID: 1952900356}
+  playTime: {fileID: 75828242}
 --- !u!1 &1723544902
 GameObject:
   m_ObjectHideFlags: 0
@@ -3470,7 +3534,7 @@ GameObject:
   - component: {fileID: 1952900357}
   - component: {fileID: 1952900356}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: LST
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3536,6 +3600,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952900354}
   m_CullTransparentMesh: 0
+--- !u!1 &1969765255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969765257}
+  - component: {fileID: 1969765256}
+  m_Layer: 0
+  m_Name: NumericalRecords
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1969765256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969765255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd25bf68beb3e94b8ce309fdb5a0650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nowData: 0
+  isPlayGame: 0
+  aDay: 0
+  aTimer: 0
+  aWeek: 0
+  friendship: 0
+  slutty: 0
+  lust: 0
+  playerName: 
+  playTime: 0
+  fdstest: 0
+  party: 0
+  alonOuting: 0
+  mainMission: 0
+  tavern: 0
+  dormitories: 0
+  beach: 0
+  hills: 0
+  park: 0
+  shoppingStreet: 0
+  getPropsLevel: 0
+--- !u!4 &1969765257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969765255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 326.96008, y: 292.04483, z: -180.80205}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1978219132
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class NumericalRecords : MonoBehaviour
 {
+    [SerializeField] public int nowData;
+    [SerializeField] public bool isPlayGame = false;
     [Header("玩家數值")]
     [SerializeField] public int aDay;//天數
     [SerializeField] public int aTimer;//時段
@@ -12,6 +15,7 @@ public class NumericalRecords : MonoBehaviour
     [SerializeField] public int slutty;//淫亂度
     [SerializeField] public int lust;//慾望值
     [SerializeField] public string playerName;
+    [SerializeField] public float playTime;
     [SerializeField] public int fdstest;
 
     [Header("事件經歷")] 
@@ -31,16 +35,26 @@ public class NumericalRecords : MonoBehaviour
     [ContextMenu("AAA")]
     private void ASASA()
     {
-        FindObjectOfType<GameManagerTest>().SetClickObject(0);
+        //FindObjectOfType<GameManagerTest>().SetClickObject(0);
+        GameDataSave();
     }
 
     public void OnStart()
     {
         GameDataLoad(PlayerPrefs.GetInt("GameDataNumber").ToString());
+        nowData = PlayerPrefs.GetInt("GameDataNumber");
         //GameDataLoad("20");
         FDS_Detected();
     }
-    
+
+    private void Update()
+    {
+        if (isPlayGame)
+        {
+            playTime += Time.deltaTime;
+        }
+    }
+
     private void GameDataLoad(string dataNumber)
     {
         aDay = PlayerPrefs.GetInt("aDayData" + dataNumber);
@@ -59,6 +73,7 @@ public class NumericalRecords : MonoBehaviour
         shoppingStreet = PlayerPrefs.GetInt("shoppingStreetData" + dataNumber);
         park = PlayerPrefs.GetInt("parkData" + dataNumber);
         getPropsLevel = PlayerPrefs.GetInt("PropsLevelData" + dataNumber);
+        playTime = PlayerPrefs.GetFloat("PlayTimeData" + dataNumber);
         playerName = PlayerPrefs.GetString("playerNameData" + dataNumber);
         if (aWeek == 0 || aWeek == 8)
         {
@@ -94,7 +109,6 @@ public class NumericalRecords : MonoBehaviour
             PlayerPrefs.SetInt("FDS_LV",4);
         }
     }
-
     public void GameDataSave()
     {
         string dataNumber = PlayerPrefs.GetInt("GameDataNumber").ToString();
@@ -114,6 +128,7 @@ public class NumericalRecords : MonoBehaviour
         PlayerPrefs.SetInt("shoppingStreetData" + dataNumber,shoppingStreet);
         PlayerPrefs.SetInt("parkData" + dataNumber,park);
         PlayerPrefs.SetInt("PropsLevelData" + dataNumber,getPropsLevel);
+        PlayerPrefs.SetFloat("PlayTimeData" + dataNumber,playTime);
     }
     
     
