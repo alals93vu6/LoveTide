@@ -17,7 +17,7 @@ public class SaveLocation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DisplayDataInformation(true);
+        
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class SaveLocation : MonoBehaviour
         DisplayChoseButton(isContinue);
     }
 
-    private void DisplayChoseButton(bool isContinue)
+    public void DisplayChoseButton(bool isContinue)
     {
         for (int i = 0; i < clickButton.Length; i++)
         {
