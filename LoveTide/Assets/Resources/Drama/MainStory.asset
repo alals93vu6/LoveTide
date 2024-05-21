@@ -342,7 +342,7 @@ MonoBehaviour:
       needTransition: 0
     - speaker: 2
       actorFace: 0
-      sentence: "\u5E97\u88E1\u7684\u4EBA\u662F\u90FD\u76F4\u63A5\u53EB\u6211pNamel\u5566\uFF0C\u770B\u59B3\u4E5F\u8981\u4E0D\u8981\u9019\u6A23\u53EB\u5C31\u597D\u3002"
+      sentence: "\u5E97\u88E1\u7684\u4EBA\u662F\u90FD\u76F4\u63A5\u53EB\u6211pName\u5566\uFF0C\u770B\u59B3\u4E5F\u8981\u4E0D\u8981\u9019\u6A23\u53EB\u5C31\u597D\u3002"
       stayLocation: 0
       switchCGDisplay: 0
       switchCGImage: 0
