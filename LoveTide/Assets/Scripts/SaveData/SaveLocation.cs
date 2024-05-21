@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SaveLocation : MonoBehaviour
@@ -79,28 +81,20 @@ public class SaveLocation : MonoBehaviour
         playTime.text = "遊玩時長 : " +  getHour + "h : " + getMinutes + "m : " + getSecond + "s";
     }
 
-    public void LoadThisData()
+    public async void LoadThisData()
     {
-        string dataNumber = PlayerPrefs.GetInt("GameDataNumber").ToString();
-        PlayerPrefs.SetInt("aDayData" + dataNumber,PlayerPrefs.GetInt("aDayData" + locationNumber));
-        PlayerPrefs.SetInt("aTimerData" + dataNumber,PlayerPrefs.GetInt("aTimerData" + locationNumber));
-        PlayerPrefs.SetInt("aWeekData" + dataNumber,PlayerPrefs.GetInt("aWeekData" + locationNumber));
-        PlayerPrefs.SetInt("friendshipData" + dataNumber,PlayerPrefs.GetInt("friendshipData" + locationNumber));
-        PlayerPrefs.SetInt("sluttyData" + dataNumber,PlayerPrefs.GetInt("sluttyData" + locationNumber));
-        PlayerPrefs.SetInt("lustData" + dataNumber,PlayerPrefs.GetInt("lustData" + locationNumber));
-        PlayerPrefs.SetInt("partyEvent" + dataNumber,PlayerPrefs.GetInt("partyEvent" + locationNumber));
-        PlayerPrefs.SetInt("outingEvent" + dataNumber,PlayerPrefs.GetInt("outingEvent" + locationNumber));
-        PlayerPrefs.SetInt("mainMissionEvent" + dataNumber,PlayerPrefs.GetInt("mainMissionEvent" + locationNumber));
-        PlayerPrefs.SetInt("tavernData" + dataNumber,PlayerPrefs.GetInt("tavernData" + locationNumber));
-        PlayerPrefs.SetInt("dormitoriesData" + dataNumber,PlayerPrefs.GetInt("dormitoriesData" + locationNumber));
-        PlayerPrefs.SetInt("beachData" + dataNumber,PlayerPrefs.GetInt("beachData" + locationNumber));
-        PlayerPrefs.SetInt("hillsData" + dataNumber,PlayerPrefs.GetInt("hillsData" + locationNumber));
-        PlayerPrefs.SetInt("shoppingStreetData" + dataNumber,PlayerPrefs.GetInt("shoppingStreetData" + locationNumber));
-        PlayerPrefs.SetInt("parkData" + dataNumber,PlayerPrefs.GetInt("parkData" + locationNumber));
-        PlayerPrefs.SetInt("PropsLevelData" + dataNumber,PlayerPrefs.GetInt("PropsLevelData" + locationNumber));
-        PlayerPrefs.SetFloat("PlayTimeData" + dataNumber,PlayerPrefs.GetFloat("PlayTimeData" + locationNumber));
-        PlayerPrefs.SetString("playerNameData" + dataNumber,PlayerPrefs.GetString("playerNameData" + locationNumber));
+        FindObjectOfType<DirtyTrickCtrl>().OnExitGamePlayScenes();
         PlayerPrefs.SetInt("GameDataNumber",intNumber);
+        await Task.Delay(3000);
+        if (PlayerPrefs.GetInt("mainMissionEvent" + locationNumber) == 0)
+        {
+            PlayerPrefs.SetString("playerNameData" + locationNumber,"阿金");
+            SceneManager.LoadScene("DramaScene");
+        }
+        else
+        {
+            SceneManager.LoadScene("Scenes/GamePlayScene");
+        }
     }
 
     public void CoverThisData()
@@ -127,3 +121,24 @@ public class SaveLocation : MonoBehaviour
         PlayerPrefs.SetInt("GameDataNumber",intNumber);
     }
 }
+
+
+    /*  string dataNumber = PlayerPrefs.GetInt("GameDataNumber").ToString();
+        PlayerPrefs.SetInt("aDayData" + dataNumber,PlayerPrefs.GetInt("aDayData" + locationNumber));
+        PlayerPrefs.SetInt("aTimerData" + dataNumber,PlayerPrefs.GetInt("aTimerData" + locationNumber));
+        PlayerPrefs.SetInt("aWeekData" + dataNumber,PlayerPrefs.GetInt("aWeekData" + locationNumber));
+        PlayerPrefs.SetInt("friendshipData" + dataNumber,PlayerPrefs.GetInt("friendshipData" + locationNumber));
+        PlayerPrefs.SetInt("sluttyData" + dataNumber,PlayerPrefs.GetInt("sluttyData" + locationNumber));
+        PlayerPrefs.SetInt("lustData" + dataNumber,PlayerPrefs.GetInt("lustData" + locationNumber));
+        PlayerPrefs.SetInt("partyEvent" + dataNumber,PlayerPrefs.GetInt("partyEvent" + locationNumber));
+        PlayerPrefs.SetInt("outingEvent" + dataNumber,PlayerPrefs.GetInt("outingEvent" + locationNumber));
+        PlayerPrefs.SetInt("mainMissionEvent" + dataNumber,PlayerPrefs.GetInt("mainMissionEvent" + locationNumber));
+        PlayerPrefs.SetInt("tavernData" + dataNumber,PlayerPrefs.GetInt("tavernData" + locationNumber));
+        PlayerPrefs.SetInt("dormitoriesData" + dataNumber,PlayerPrefs.GetInt("dormitoriesData" + locationNumber));
+        PlayerPrefs.SetInt("beachData" + dataNumber,PlayerPrefs.GetInt("beachData" + locationNumber));
+        PlayerPrefs.SetInt("hillsData" + dataNumber,PlayerPrefs.GetInt("hillsData" + locationNumber));
+        PlayerPrefs.SetInt("shoppingStreetData" + dataNumber,PlayerPrefs.GetInt("shoppingStreetData" + locationNumber));
+        PlayerPrefs.SetInt("parkData" + dataNumber,PlayerPrefs.GetInt("parkData" + locationNumber));
+        PlayerPrefs.SetInt("PropsLevelData" + dataNumber,PlayerPrefs.GetInt("PropsLevelData" + locationNumber));
+        PlayerPrefs.SetFloat("PlayTimeData" + dataNumber,PlayerPrefs.GetFloat("PlayTimeData" + locationNumber));
+        PlayerPrefs.SetString("playerNameData" + dataNumber,PlayerPrefs.GetString("playerNameData" + locationNumber));*/

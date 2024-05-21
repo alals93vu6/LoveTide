@@ -256,7 +256,7 @@ MonoBehaviour:
       switchCGDisplay: 0
       switchCGImage: 0
       needTransition: 0
-    - speaker: 12
+    - speaker: 13
       actorFace: 1
       sentence: "\u8F9B\u82E6\u5566\uFF01\u90A3\u9EBC\u5C31\u4EA4\u7D66\u4F60\u56C9\uFF5E\u6211\u8981\u4F86\u53BB\u5FD9\u5566\u3002"
       stayLocation: 4
@@ -540,7 +540,7 @@ MonoBehaviour:
     notActor: 0
     displayCG: []
     displayBackground:
-    - {fileID: 21300000, guid: f76ce976fb0e143458ee712d81ed737a, type: 3}
+    - {fileID: 21300000, guid: 9dbb0d4d1fd47384388b957c55db6a1e, type: 3}
     disPlayOrder: 0
     dialogDataDetails:
     - speaker: 1

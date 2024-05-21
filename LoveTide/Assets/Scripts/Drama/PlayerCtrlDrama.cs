@@ -65,11 +65,11 @@ public class PlayerCtrlDrama : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !texBox.isWait && !texBox.isEnd)
         {
             SetTextBox(true);
-            if (texBox.isover)
+            if (texBox.isover && !texBox.isEnd)
             {
                 texBox.DownText();
             }
-            else
+            else if (!texBox.isEnd)
             {
                 texBox.NextText();
                 talkOrder = texBox.textNumber;
@@ -124,7 +124,7 @@ public class PlayerCtrlDrama : MonoBehaviour
                     talkOrder = texBox.textNumber;
                     actorCtrl.ActorCtrl(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].stayLocation);
                     CGDisplay.DisplayCGChick(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGDisplay,
-                        diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGImage);
+                    diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGImage);
                 } 
             }  
         }

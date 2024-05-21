@@ -179,11 +179,11 @@ public class TextBoxTestPlaying : MonoBehaviour
         string friendshipText = "A";
         switch (PlayerPrefs.GetInt("FDS_LV"))
         {
-            case 1 : friendshipText = "總給人一種似乎有所保留的感覺，"; break;
-            case 2 : friendshipText = "雖然和以往比起來明顯感受到親近了不少，但多少還是會下意識的避嫌，"; break;
-            case 3 : friendshipText = "現在關係非常神奇，曖昧不清的感覺也總是不斷出現，"; break;
-            case 4 : friendshipText = "彼此明確成為了不可外傳的關係，"; break;
-            case 5 : friendshipText = "沉淪於背德感之中，屬實是無藥可救的一段關係，"; break;
+            case 0 : friendshipText = "總給人一種似乎有所保留的感覺，"; break;
+            case 1 : friendshipText = "雖然和以往比起來明顯感受到親近了不少，但多少還是會下意識的避嫌，"; break;
+            case 2 : friendshipText = "現在關係非常神奇，曖昧不清的感覺也總是不斷出現，"; break;
+            case 3 : friendshipText = "彼此明確成為了不可外傳的關係，"; break;
+            case 4 : friendshipText = "沉淪於背德感之中，屬實是無藥可救的一段關係，"; break;
         }
 
         string lustText = "B";

@@ -11,7 +11,7 @@ public class QuitGameObject : MonoBehaviour
     public async void OnQuitGame()
     {
         quitEffect.OnExitGamePlayScenes();
-        await Task.Delay(1000);
+        await Task.Delay(1500);
         Application.Quit();
     }
 

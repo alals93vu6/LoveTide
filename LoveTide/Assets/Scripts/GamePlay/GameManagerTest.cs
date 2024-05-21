@@ -47,7 +47,7 @@ public class GameManagerTest : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.S))
+       /* if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.S))
         {
             numberCtrl.GameDataSave();
             Debug.Log("SaveData");
@@ -58,7 +58,7 @@ public class GameManagerTest : MonoBehaviour
             numberCtrl.GameDataReset();
             Debug.Log("ResetData");
             SceneManager.LoadScene(0);
-        }
+        }*/
     }
 
     public async void OnStart()
@@ -66,7 +66,7 @@ public class GameManagerTest : MonoBehaviour
         await Task.Delay(80);
         SetClickObject(0);
         CheckActions();
-        numberCtrl.isPlayGame = true;
+        numberCtrl.isPlayGame = true;  
     }
 
     public async void TimePassCheck()
@@ -345,7 +345,6 @@ public class GameManagerTest : MonoBehaviour
 
     public void CheckupsButton()
     {
-        numberCtrl.GameDataSave();
         OnTalkEvent(70);
     }
     

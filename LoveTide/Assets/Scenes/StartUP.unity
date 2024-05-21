@@ -202,7 +202,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 26238593}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1483458009}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &26238593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,7 +562,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 101819887}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1125458759}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &101819887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1624,7 +1646,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: A
+  m_Text: D
 --- !u!222 &233968342
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2297,7 +2319,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 310927207}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 369007639}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &310927207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4082,7 +4115,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 745962453}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1919244828}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &745962453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4427,7 +4471,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 790113836}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1483458009}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &790113836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4612,7 +4667,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: A
+  m_Text: B
 --- !u!222 &814280296
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4633,12 +4688,12 @@ GameObject:
   - component: {fileID: 895920625}
   - component: {fileID: 895920624}
   m_Layer: 5
-  m_Name: BackGround
+  m_Name: Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &895920623
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4776,7 +4831,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 897201456}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 216830735}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &897201456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6358,7 +6424,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1360610900}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1125458759}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1360610900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7573,7 +7650,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1634084345}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1671567207}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1634084345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8310,7 +8398,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1719054161}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1919244828}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1719054161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8775,7 +8874,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1773708715}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1671567207}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1773708715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8960,7 +9070,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: A
+  m_Text: F
 --- !u!222 &1793558188
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9435,7 +9545,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1937669226}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 216830735}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1937669226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9542,7 +9663,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: A
+  m_Text: C
 --- !u!222 &1951258689
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9710,7 +9831,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1957049599}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 369007639}
+        m_MethodName: LoadThisData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1957049599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10538,7 +10670,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: A
+  m_Text: E
 --- !u!222 &2085069046
 CanvasRenderer:
   m_ObjectHideFlags: 0

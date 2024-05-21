@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SexyCtrl.unity
-    guid: 750e042151544c04ea880aaf45003c16
+  - enabled: 1
+    path: Assets/Scenes/StartUP.unity
+    guid: 0b40dc7e78b7dd84489e4a08f650457f
   - enabled: 1
     path: Assets/Scenes/GamePlayScene.unity
     guid: 16512faaf73d06d42a2779f2ae505f31
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/SexyCtrl.unity
+    guid: 750e042151544c04ea880aaf45003c16
+  - enabled: 1
     path: Assets/Scenes/DramaScene.unity
     guid: 8e0d9474e7104444a90dbb93c5791a66
   m_configObjects: {}

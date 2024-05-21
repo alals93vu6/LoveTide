@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ConfigureSystem : MonoBehaviour
 {
@@ -21,6 +23,13 @@ public class ConfigureSystem : MonoBehaviour
     {
         quitObject.gameObject.SetActive(true);
         this.gameObject.SetActive(false);
+    }
+
+    public async void OnBackMenu()
+    {
+        FindObjectOfType<DirtyTrickCtrl>().OnExitGamePlayScenes();
+        await Task.Delay(1500);
+        SceneManager.LoadScene("Scenes/StartUP");
     }
 
 }
