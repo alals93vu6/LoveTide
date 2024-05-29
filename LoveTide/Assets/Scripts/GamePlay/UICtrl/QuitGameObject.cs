@@ -20,4 +20,9 @@ public class QuitGameObject : MonoBehaviour
         configureObject.gameObject.SetActive(true);
         this.gameObject.SetActive(false);
     }
+    
+    public void BackMenu()
+    {
+        this.gameObject.SetActive(false);
+    }
 }
