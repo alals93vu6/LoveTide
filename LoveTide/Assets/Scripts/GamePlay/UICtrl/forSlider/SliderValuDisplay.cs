@@ -7,7 +7,7 @@ public class SliderValuDisplay : MonoBehaviour
 {
     [SerializeField] public Text displayText;
     [SerializeField] private int sliderNumber;
-    [SerializeField] private NumericalRecords_PlayerStting recordsPlayerSetting;
+    [SerializeField] public NumericalRecords_PlayerStting recordsPlayerSetting;
     // Start is called before the first frame update
     void Start()
     {
