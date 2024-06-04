@@ -14,9 +14,9 @@ public class GamePlayingManagerDrama : MonoBehaviour
     private void Awake()
     {
         //PlayerPrefs.SetInt("DramaNumber",1);
-        AAAAA();
         DialogDetected();
         playerCtrlManager.OnStart();
+        //AAAAA();
         
     }
     void Start()

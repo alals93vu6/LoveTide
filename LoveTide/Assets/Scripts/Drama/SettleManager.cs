@@ -46,7 +46,7 @@ public class SettleManager : MonoBehaviour
     {
         switch (targetNumber)
         {
-            case 0: SetGameDataNumerical(true,7,1,22);
+            case 0: SetGameDataNumerical(true,1,1,22);
                 numberCtrl.mainMission++; break;
             case 1: SetGameDataNumerical(true,1,-10,150);
                 numberCtrl.mainMission++;break;

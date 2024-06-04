@@ -110,7 +110,6 @@ public class TextBoxDrama : MonoBehaviour
                 await Task.Delay(200);
                 isWait = false;
             }
-            
         }
         else
         {

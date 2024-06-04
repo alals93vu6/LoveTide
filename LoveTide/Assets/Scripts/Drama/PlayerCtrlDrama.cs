@@ -42,7 +42,7 @@ public class PlayerCtrlDrama : MonoBehaviour
             skipInterval = 0f;
         }
 
-        if (skipInterval >= 0.07f)
+        if (skipInterval >= 0.07f && !texBox.isEnd)
         {
             PlayerSkip();
             skipInterval = 0f;
@@ -122,9 +122,12 @@ public class PlayerCtrlDrama : MonoBehaviour
                 {
                     texBox.NextText();
                     talkOrder = texBox.textNumber;
-                    actorCtrl.ActorCtrl(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].stayLocation);
-                    CGDisplay.DisplayCGChick(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGDisplay,
-                    diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGImage);
+                    if (talkOrder < diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails.Count - 1)
+                    {
+                        actorCtrl.ActorCtrl(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].stayLocation);
+                        CGDisplay.DisplayCGChick(diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGDisplay,
+                            diaLog.plotOptionsList[eventDetected.PlayDramaDetected(0)].dialogDataDetails[talkOrder].switchCGImage);
+                    }
                 } 
             }  
         }

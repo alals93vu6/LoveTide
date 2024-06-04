@@ -52,6 +52,7 @@ public class NumericalRecords : MonoBehaviour
         if (isPlayGame)
         {
             playTime += Time.deltaTime;
+            playTime += Time.deltaTime;
         }
     }
 
@@ -78,6 +79,11 @@ public class NumericalRecords : MonoBehaviour
         if (aWeek == 0 || aWeek == 8)
         {
             aWeek = 1;
+        }
+        
+        if (aDay == 0)
+        {
+            aDay = 1;
         }
         
         if (aTimer <= 0)

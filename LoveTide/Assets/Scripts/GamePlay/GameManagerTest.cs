@@ -43,6 +43,7 @@ public class GameManagerTest : MonoBehaviour
      void Start()
      {
          OnStart();
+         //PlayerPrefs.DeleteAll();
      }
 
     private void Update()
@@ -284,7 +285,7 @@ public class GameManagerTest : MonoBehaviour
     {
         switch (numberCtrl.aDay)
         {
-            case 4 :
+            case 3 :
                 PlayerPrefs.SetInt("DramaNumber",1);
                 getEvent = true;
                 break;
@@ -314,7 +315,7 @@ public class GameManagerTest : MonoBehaviour
                     
                 }
                 break;
-            case 38 :
+            case 37 :
                 PlayerPrefs.SetInt("DramaNumber",1);
                 getEvent = true;
                 break;
