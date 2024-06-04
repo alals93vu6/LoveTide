@@ -46,23 +46,25 @@ public class SettleManager : MonoBehaviour
     {
         switch (targetNumber)
         {
-            case 0: SetGameDataNumerical(true,1,1,22);
+            case 0: SetGameDataNumerical(true,0,1,0);
                 numberCtrl.mainMission++; break;
-            case 1: SetGameDataNumerical(true,1,-10,150);
+            case 1: SetGameDataNumerical(true,0,1,0);
+                numberCtrl.mainMission++; break;
+            case 2: SetGameDataNumerical(true,1,-10,150);
                 numberCtrl.mainMission++;break;
-            case 2: SetGameDataNumerical(true,2,-10,200);
+            case 3: SetGameDataNumerical(true,2,-10,200);
                 numberCtrl.mainMission++;break;
-            case 3: SetGameDataNumerical(true,1,-10,200);
+            case 4: SetGameDataNumerical(true,1,-10,200);
                 numberCtrl.mainMission++; numberCtrl.slutty += 50;  break;
-            case 4: SetGameDataNumerical(false,0,7,200);
+            case 5: SetGameDataNumerical(false,0,7,200);
                 numberCtrl.mainMission++; numberCtrl.slutty += 50; break;
-            case 5: SetGameDataNumerical(false,0,4,200);
+            case 6: SetGameDataNumerical(false,0,4,200);
                 numberCtrl.mainMission++; numberCtrl.slutty += 50; break;
-            case 6: SetGameDataNumerical(true,2,-10,350);
+            case 7: SetGameDataNumerical(true,2,-10,350);
                 numberCtrl.mainMission++; numberCtrl.slutty += 100; break;
-            case 7: SetGameDataNumerical(true,1,-10,300);
+            case 8: SetGameDataNumerical(true,1,-10,300);
                 numberCtrl.mainMission++;break;
-            case 8: SetGameDataNumerical(true,1,-10,400);
+            case 9: SetGameDataNumerical(true,1,-10,400);
                 numberCtrl.mainMission++; numberCtrl.slutty += 150; break;
         }
     }

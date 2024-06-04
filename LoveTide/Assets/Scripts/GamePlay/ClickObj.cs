@@ -10,17 +10,18 @@ public class ClickObj : MonoBehaviour
     [SerializeField] private int setSLT;
     [SerializeField] private int setLST;
     [SerializeField] private int FDSlv;
+    [SerializeField] private int actionNumber;
     // Start is called before the first frame update
 
     private void Start()
     {
         FDSlv = PlayerPrefs.GetInt("FDS_LV");
-        switch (eventNumber)
+        switch (actionNumber)
         {
-            case 2 : OperateNumberCtrl(); break;
-            case 3 : OlirtTalkNumberCtrl(); break;
-            case 4 : MolestNumberCtrl(); break;
-            case 5 : PeekingNumberCtrl(); break;
+            case 1 : OperateNumberCtrl(); break;
+            case 2 : OlirtTalkNumberCtrl(); break;
+            case 3 : MolestNumberCtrl(); break;
+            case 4 : PeekingNumberCtrl(); break;
         }
     }
 
