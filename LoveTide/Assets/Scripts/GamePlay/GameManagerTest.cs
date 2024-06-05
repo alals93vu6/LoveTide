@@ -61,7 +61,7 @@ public class GameManagerTest : MonoBehaviour
             SceneManager.LoadScene(0);
         }*/
     }
-
+    
     public async void OnStart()
     {
         timer.VacationDetected();
@@ -202,8 +202,14 @@ public class GameManagerTest : MonoBehaviour
         }
     }
     
-    public void TalkDownEvent()
+    public async void TalkDownEvent()
     {
+        if (textBox.listSerial == 61 || textBox.listSerial == 67)
+        {
+            FindObjectOfType<DirtyTrickCtrl>().OnChangeScenes();
+            await Task.Delay(500);
+        }
+
         if (timePass)
         {
             numberCtrl.aTimer++;
