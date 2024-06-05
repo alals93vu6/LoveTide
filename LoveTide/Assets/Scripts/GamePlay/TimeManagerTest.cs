@@ -30,13 +30,13 @@ public class TimeManagerTest : MonoBehaviour
 
     public void VacationDetected()
     {
-        if (numberCtrl.aWeek < 3 || numberCtrl.aWeek > 4)
+        if (numberCtrl.aWeek == 3 || numberCtrl.aWeek == 4)
         {
-            vacation = false;
+            vacation = true;
         }
         else
         {
-            vacation = true;
+            vacation = false;
         }
     }
 

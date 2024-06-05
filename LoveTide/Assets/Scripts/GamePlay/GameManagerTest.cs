@@ -64,6 +64,7 @@ public class GameManagerTest : MonoBehaviour
 
     public async void OnStart()
     {
+        timer.VacationDetected();
         await Task.Delay(80);
         SetClickObject(0);
         CheckActions();
