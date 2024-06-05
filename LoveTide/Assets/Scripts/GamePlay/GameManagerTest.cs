@@ -26,6 +26,7 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public bool timePass;
     [SerializeField] public bool isAlone;
     [SerializeField] private bool getEvent;
+    [SerializeField] public bool getSexy;
     
     
 
@@ -176,6 +177,13 @@ public class GameManagerTest : MonoBehaviour
         }
     }
 
+    public async void HaveSexyEvent()
+    {
+        FindObjectOfType<DirtyTrickCtrl>().OnExitGamePlayScenes();
+        await Task.Delay(750);
+        SceneManager.LoadScene("Scenes/SexyCtrl");
+    }
+
     public void OnTalkEvent(int talkID)
     {
         textBox.listSerial = talkID;
@@ -215,19 +223,27 @@ public class GameManagerTest : MonoBehaviour
             numberCtrl.aTimer++;
             timePass = false;
         }
-        textBox.stopLoop = false;
-        actorCtrl.StayTarget = 1;
-        var apparel = 0;
-        if (FindObjectOfType<TimeManagerTest>().vacation){apparel = 1;}else{apparel = 0;}
-        actorManager.ChangeFace(apparel,0);
-        TimePassCheck();
-        if (isTalk)
+        
+        if (getSexy)
         {
-            SetInteractiveObject(true);
+            HaveSexyEvent();
         }
         else
         {
-            SetInteractiveObject(false);
+            textBox.stopLoop = false;
+            actorCtrl.StayTarget = 1;
+            var apparel = 0;
+            if (FindObjectOfType<TimeManagerTest>().vacation){apparel = 1;}else{apparel = 0;}
+            actorManager.ChangeFace(apparel,0);
+            TimePassCheck();
+            if (isTalk)
+            {
+                SetInteractiveObject(true);
+            }
+            else
+            {
+                SetInteractiveObject(false);
+            }
         }
     }
 

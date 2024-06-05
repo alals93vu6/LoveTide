@@ -216,6 +216,47 @@ public class PlayerActorTest : MonoBehaviour
     public void Interactive_Sex()
     {
         //Debug.Log("Sex");
+        if (PlayerPrefs.GetInt("FDS_LV") < 2)
+        {
+            if (gameManager.numberCtrl.notRape == 0 && gameManager.timer.vacation)
+            {
+               Debug.Log("操哭他");
+            }
+        }
+        else
+        {
+            if (gameManager.timer.vacation)
+            {
+                if (gameManager.numberCtrl.lust >= 40)
+                {
+                    gameManager.OnTalkEvent(49);
+                }
+                else if (gameManager.numberCtrl.lust >= 20)
+                {
+                    gameManager.OnTalkEvent(48);
+                }
+                else
+                {
+                    gameManager.OnTalkEvent(47);
+                }
+            }
+            else
+            {
+                if (gameManager.numberCtrl.lust >= 40)
+                {
+                    gameManager.OnTalkEvent(22);
+                }
+                else if (gameManager.numberCtrl.lust >= 20)
+                {
+                    gameManager.OnTalkEvent(21);
+                }
+                else
+                {
+                    gameManager.OnTalkEvent(20);
+                }
+            }
+            gameManager.getSexy = true;
+        }
     }
     
     public void Interactive_Talk()

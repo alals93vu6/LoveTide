@@ -754,19 +754,61 @@ MonoBehaviour:
     displayCG: []
     displayBackground: []
     disPlayOrder: 0
-    dialogDataDetails: []
+    dialogDataDetails:
+    - speaker: 5
+      actorFace: 3
+      sentence: "\u73FE\u5728?!\u9019\u88E1??"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: .........
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 0
+      sentence: "\u61C9\u8A72\u4E0D\u6703\u88AB\u767C\u73FE\u5427?"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
   - talkID: "\u9152\u9928_\u6349i2"
     notActor: 0
     displayCG: []
     displayBackground: []
     disPlayOrder: 0
-    dialogDataDetails: []
+    dialogDataDetails:
+    - speaker: 5
+      actorFace: 3
+      sentence: "\u8981\u5728\u9019\u88E1\u505A\u55CE?"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 5
+      sentence: "\u4E5F\u4E0D\u662F\u4E0D\u884C\u5566...."
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
   - talkID: "\u9152\u9928_\u6349i3"
     notActor: 0
     displayCG: []
     displayBackground: []
     disPlayOrder: 0
-    dialogDataDetails: []
+    dialogDataDetails:
+    - speaker: 5
+      actorFace: 5
+      sentence: "\u62B1\u62B1\u6211....\u5FEB\u9EDE....."
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
   - talkID: "\u9152\u9928_\u5354\u52A9\u5DE5\u4F5C1"
     notActor: 0
     displayCG: []
@@ -1903,19 +1945,54 @@ MonoBehaviour:
     displayCG: []
     displayBackground: []
     disPlayOrder: 0
-    dialogDataDetails: []
+    dialogDataDetails:
+    - speaker: 4
+      actorFace: 2
+      sentence: "\u6B38~\u90FD\u9019\u9EBC\u665A\u4E86\u771F\u7684\u4E0D\u7761\u89BA\u55CE?"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 0
+      actorFace: 1
+      sentence: "\u54C8\u54C8\uFF0C\u597D\u5566\u4E5F\u4E0D\u662F\u4E0D\u884C\u5566~"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
   - talkID: "\u5BBF\u820D_\u6349i2"
     notActor: 0
     displayCG: []
     displayBackground: []
     disPlayOrder: 0
-    dialogDataDetails: []
+    dialogDataDetails:
+    - speaker: 4
+      actorFace: 5
+      sentence: "\u563F\u563F...\u90A3\u6211\u5011\u8D95\u5FEB\u5148\u53BB\u6C96\u500B\u6FA1\u5427~"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
   - talkID: "\u5BBF\u820D_\u6349i3"
     notActor: 0
     displayCG: []
     displayBackground: []
     disPlayOrder: 0
-    dialogDataDetails: []
+    dialogDataDetails:
+    - speaker: 4
+      actorFace: 5
+      sentence: "\u90FD\u9019\u6A23\u8B1B\u4E86\u9084\u7AD9\u5728\u90A3\u908A\u770B\u8457\u6211\u5E79\u561B?"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
+    - speaker: 1
+      actorFace: 0
+      sentence: "\u7531\u9999\u76F4\u63A5\u543B\u4E86\u4E0A\u4F86\uFF0C\u800C\u5169\u4EBA\u4E5F\u9806\u8457\u6C23\u6C1B\u6162\u6162\u5730\u79FB\u52D5\u5230\u4E86\u5E8A\u4E0A"
+      stayLocation: 0
+      switchCGDisplay: 0
+      switchCGImage: 0
+      needTransition: 0
   - talkID: "\u5BBF\u820D_\u559D\u91521"
     notActor: 0
     displayCG: []
