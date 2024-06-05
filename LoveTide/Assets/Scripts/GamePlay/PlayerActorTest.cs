@@ -71,7 +71,6 @@ public class PlayerActorTest : MonoBehaviour
 
     public async void Interactive_Speak(int fds,int slt, int lst)
     {
-        
         if (gameManager.numberCtrl.aTimer == 8)
         {
             gameManager.OnTalkEvent(68);
@@ -216,7 +215,7 @@ public class PlayerActorTest : MonoBehaviour
 
     public void Interactive_Sex()
     {
-        Debug.Log("Sex");
+        //Debug.Log("Sex");
     }
     
     public void Interactive_Talk()

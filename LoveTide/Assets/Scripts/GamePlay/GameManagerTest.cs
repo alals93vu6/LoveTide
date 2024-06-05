@@ -258,6 +258,10 @@ public class GameManagerTest : MonoBehaviour
     {
         interactiveButton[0].SetActive(isActive);
         actorCtrl.gameObject.SetActive(isActive);
+        if (isActive)
+        {
+            FindObjectOfType<SexyButton>().TextDetected();
+        }
     }
 
     public void SetClickObject(int displayObject)

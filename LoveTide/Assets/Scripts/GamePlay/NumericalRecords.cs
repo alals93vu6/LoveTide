@@ -28,6 +28,7 @@ public class NumericalRecords : MonoBehaviour
     [SerializeField] public int hills;//山丘
     [SerializeField] public int park;//公園
     [SerializeField] public int shoppingStreet;//商店街
+    [SerializeField] public int notRape;
 
     [Header("背包")] 
     [SerializeField] public int getPropsLevel;
@@ -74,6 +75,7 @@ public class NumericalRecords : MonoBehaviour
         shoppingStreet = PlayerPrefs.GetInt("shoppingStreetData" + dataNumber);
         park = PlayerPrefs.GetInt("parkData" + dataNumber);
         getPropsLevel = PlayerPrefs.GetInt("PropsLevelData" + dataNumber);
+        notRape = PlayerPrefs.GetInt("rapeData" + dataNumber);
         playTime = PlayerPrefs.GetFloat("PlayTimeData" + dataNumber);
         playerName = PlayerPrefs.GetString("playerNameData" + dataNumber);
         if (aWeek == 0 || aWeek == 8)
@@ -132,6 +134,7 @@ public class NumericalRecords : MonoBehaviour
         PlayerPrefs.SetInt("beachData" + dataNumber,beach);
         PlayerPrefs.SetInt("hillsData" + dataNumber,hills);
         PlayerPrefs.SetInt("shoppingStreetData" + dataNumber,shoppingStreet);
+        PlayerPrefs.SetInt("rapeData" + dataNumber,notRape);
         PlayerPrefs.SetInt("parkData" + dataNumber,park);
         PlayerPrefs.SetInt("PropsLevelData" + dataNumber,getPropsLevel);
         PlayerPrefs.SetFloat("PlayTimeData" + dataNumber,playTime);

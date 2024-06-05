@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Zero
   m_EditorClassIdentifier: 
   plotOptionsList:
-  - talkID: "\u958B\u8A71\u554F\u5019(00)"
+  - talkID: "\u958B\u8A71\u554F\u5019"
     notActor: 0
     displayCG: []
     displayBackground: []
