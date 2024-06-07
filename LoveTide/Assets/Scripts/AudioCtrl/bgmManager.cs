@@ -30,6 +30,6 @@ public class bgmManager : MonoBehaviour
 
     public void PlayAudio(int audioNumber)
     {
-        Debug.Log(audioNumber);
+        backgroundMusic[audioNumber].Play();
     }
 }
