@@ -3440,6 +3440,7 @@ MonoBehaviour:
   timePass: 0
   isAlone: 0
   getEvent: 0
+  getSexy: 0
 --- !u!1 &504473359
 GameObject:
   m_ObjectHideFlags: 0
@@ -6148,6 +6149,7 @@ MonoBehaviour:
   hills: 0
   park: 0
   shoppingStreet: 0
+  notRape: 0
   getPropsLevel: 0
 --- !u!1 &884706728
 GameObject:
