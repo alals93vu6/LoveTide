@@ -150,7 +150,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 42335e884c1b99d4090290c07fe739f3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -246,7 +246,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 848604078}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &755250645
 GameObject:
@@ -277,7 +277,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c3ef90c0d8f54a74986c75f1e6164a51, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -408,8 +408,8 @@ MonoBehaviour:
   - {fileID: 743202578}
   - {fileID: 1988146427}
   - {fileID: 755250646}
-  audioTrackA: {fileID: 0}
-  audioTrackB: {fileID: 0}
+  audioTrackA: {fileID: 1988146427}
+  audioTrackB: {fileID: 743202578}
   testFloatA: 0
   testFloatB: 0
   isAudioA: 0
@@ -424,8 +424,8 @@ Transform:
   m_LocalPosition: {x: 454.55515, y: 118.07668, z: -541.2814}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 743202579}
   - {fileID: 1988146428}
+  - {fileID: 743202579}
   - {fileID: 755250647}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -440,6 +440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1854998256}
   - component: {fileID: 1854998255}
+  - component: {fileID: 1854998257}
   - component: {fileID: 1854998254}
   m_Layer: 0
   m_Name: Main Camera
@@ -513,6 +514,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1854998257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854998253}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500d5ef49b98ef048be48a2089b68543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1988146426
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,8 +554,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 88dc2f6ddf6a677468eb19267cc490aa, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_PlayOnAwake: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -638,5 +651,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 848604078}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

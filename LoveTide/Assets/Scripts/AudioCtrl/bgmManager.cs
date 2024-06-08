@@ -26,13 +26,20 @@ public class bgmManager : MonoBehaviour
     [ContextMenu("MusicTest")]
     private void Test()
     {
-        SwitchAudio(1);
+        if (isAudioA)
+        {
+            SwitchAudio(2);
+        }
+        else
+        {
+            SwitchAudio(1);
+        }
     }
 
 
     void Start()
     {
-        
+        SwitchAudio(1);
     }
 
     // Update is called once per frame
@@ -41,44 +48,53 @@ public class bgmManager : MonoBehaviour
         
     }
 
+    private void FixedUpdate()
+    {
+        if (isAudioA)
+        {
+            audioTrackA.volume = Mathf.Lerp(audioTrackA.volume, 0.5f, 0.02f);
+            audioTrackB.volume = Mathf.Lerp(audioTrackB.volume, 0, 0.02f);
+        }
+        else
+        {
+            audioTrackB.volume = Mathf.Lerp(audioTrackB.volume, 0.5f, 0.02f);
+            audioTrackA.volume = Mathf.Lerp(audioTrackA.volume, 0, 0.02f);
+        }
+
+        if (isAudioA)
+        {
+            if (audioTrackB.volume <= 0.05f)
+            {
+                audioTrackB.volume = 0f;
+            }
+        }
+        else
+        {
+            if (audioTrackA.volume <= 0.05f)
+            {
+                audioTrackA.volume = 0f;
+            }
+        }
+    }
+
     public void PlayAudio(int audioNumber)
     {
         backgroundMusic[audioNumber].Play();
     }
 
-    public async void SwitchAudio(int targetAudioNumber)
+    private void SwitchAudio(int targetAudioNumber)
     {
         if (isAudioA)
         {
             isAudioA = false;
             audioTrackB = backgroundMusic[targetAudioNumber];
-            while (testFloatA <= 0.5f)
-            {
-                testFloatA += Time.deltaTime;
-            }
-
-            await Task.Delay(1000);
-            
-            while (testFloatB >= 0.5f)
-            {
-                testFloatB += Time.deltaTime;
-            }
+            audioTrackB.Play();
         }
         else
         {
             isAudioA = true;
             audioTrackA = backgroundMusic[targetAudioNumber];
-            while (testFloatB <= 0.5f)
-            {
-                testFloatB += Time.deltaTime;
-            }
-
-            await Task.Delay(1000);
-            
-            while (testFloatA >= 0.5f)
-            {
-                testFloatA += Time.deltaTime;
-            }
+            audioTrackA.Play();
         }
     }
 }
