@@ -39,7 +39,7 @@ public class bgmManager : MonoBehaviour
 
     void Start()
     {
-        SwitchAudio(1);
+        
     }
 
     // Update is called once per frame
@@ -52,13 +52,13 @@ public class bgmManager : MonoBehaviour
     {
         if (isAudioA)
         {
-            audioTrackA.volume = Mathf.Lerp(audioTrackA.volume, 0.5f, 0.02f);
-            audioTrackB.volume = Mathf.Lerp(audioTrackB.volume, 0, 0.02f);
+            audioTrackA.volume = Mathf.Lerp(audioTrackA.volume, PlayerPrefs.GetInt("bgmSet") /10f, 0.08f);
+            audioTrackB.volume = Mathf.Lerp(audioTrackB.volume, 0, 0.08f);
         }
         else
         {
-            audioTrackB.volume = Mathf.Lerp(audioTrackB.volume, 0.5f, 0.02f);
-            audioTrackA.volume = Mathf.Lerp(audioTrackA.volume, 0, 0.02f);
+            audioTrackB.volume = Mathf.Lerp(audioTrackB.volume, PlayerPrefs.GetInt("bgmSet") /10f, 0.08f);
+            audioTrackA.volume = Mathf.Lerp(audioTrackA.volume, 0, 0.08f);
         }
 
         if (isAudioA)
@@ -82,7 +82,7 @@ public class bgmManager : MonoBehaviour
         backgroundMusic[audioNumber].Play();
     }
 
-    private void SwitchAudio(int targetAudioNumber)
+    public void SwitchAudio(int targetAudioNumber)
     {
         if (isAudioA)
         {
@@ -95,6 +95,18 @@ public class bgmManager : MonoBehaviour
             isAudioA = true;
             audioTrackA = backgroundMusic[targetAudioNumber];
             audioTrackA.Play();
+        }
+    }
+
+    public void SetAudioVolume()
+    {
+        if (isAudioA)
+        {
+            audioTrackA.volume = PlayerPrefs.GetInt("bgmSet") /10f ;
+        }
+        else
+        {
+            audioTrackB.volume = PlayerPrefs.GetInt("bgmSet") /10f ;
         }
     }
 }

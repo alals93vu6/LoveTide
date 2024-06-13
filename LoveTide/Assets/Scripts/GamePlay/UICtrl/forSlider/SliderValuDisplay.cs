@@ -38,6 +38,11 @@ public class SliderValuDisplay : MonoBehaviour
             case 2: PlayerPrefs.SetInt("soundSet",(int)saveNumber); break;
             case 3: PlayerPrefs.SetInt("voicesSet",(int)saveNumber); break;
         }
+
+        if (sliderNumber == 1)
+        {
+            bgmManager.instance.SetAudioVolume();
+        }
     }
 
     public void OnOpen()

@@ -65,6 +65,7 @@ public class GameManagerTest : MonoBehaviour
     
     public async void OnStart()
     {
+        bgmManager.instance.SwitchAudio(2);
         timer.VacationDetected();
         await Task.Delay(80);
         SetClickObject(0);

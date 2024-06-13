@@ -13,6 +13,7 @@ public class StartUPUIManager : MonoBehaviour
     private void Start()
     {
         FirstSetCheck();
+        bgmManager.instance.SwitchAudio(1);
     }
 
     public void ClickConfigure(bool isOpen)

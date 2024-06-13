@@ -83,6 +83,7 @@ public class PlayerCtrlDrama : MonoBehaviour
         {
             DisplayTextBox(0);
         }
+        
     }
     
     
