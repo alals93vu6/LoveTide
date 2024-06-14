@@ -8,7 +8,7 @@ public class DisplayProduction : MonoBehaviour
 {
     [SerializeField] private DirtyTrickCtrl darkCtrl;
     // Start is called before the first frame update
-    async void Start()
+    void Start()
     {
         SceneManager.LoadScene("Scenes/StartUP");
         /*

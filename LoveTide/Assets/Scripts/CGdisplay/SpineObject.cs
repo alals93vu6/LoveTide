@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WatchImage : MonoBehaviour
+public class SpineObject : MonoBehaviour
 {
-    [SerializeField] public GameObject[] instantiateObject;
+    [SerializeField] public int animatorLimit;
     // Start is called before the first frame update
     void Start()
     {

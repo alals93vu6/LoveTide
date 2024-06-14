@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class CheckCGManager : MonoBehaviour
     [SerializeField] public WatchImage watchCG;
     [SerializeField] private ClickCGObject cgButton;
     [SerializeField] private PageObjectCtrl pageCtrl;
+    [SerializeField] public DirtyTrickCtrl darkCtrl;
+    [SerializeField] private GameObject uiObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,13 +42,18 @@ public class CheckCGManager : MonoBehaviour
         }
     }
 
-    public void StartWatch()
+    public async void StartWatch(int instantiateNumber)
     {
         cgPage = 1;
         isDisplay = true;
-        watchCG.gameObject.SetActive(true);
+        darkCtrl.OnChangeScenes();
+        await Task.Delay(500);
+        //watchCG.gameObject.SetActive(true);
+        uiObject.SetActive(false);
         SwitchWatch(0);
+        //Debug.Log(instantiateNumber);
     }
+    
 
     public void SwitchWatch(int setPage)
     {
@@ -53,23 +61,26 @@ public class CheckCGManager : MonoBehaviour
         if (nowPage <= 0)
         {
             cgPage = 1;
-            watchCG.GetComponent<Image>().sprite = watchCG.cgImage.ActorStandingDrawing[cgPage];
+            //watchCG.GetComponent<Image>().sprite = watchCG.cgImage.ActorStandingDrawing[cgPage];
         }
-        else  if(nowPage >= watchCG.cgImage.ActorStandingDrawing.Length)
+        else  if(nowPage >= 5)
         {
             QuitWatch();
         }
         else
         {
             cgPage = nowPage;
-            watchCG.GetComponent<Image>().sprite = watchCG.cgImage.ActorStandingDrawing[cgPage];
+            //watchCG.GetComponent<Image>().sprite = watchCG.cgImage.ActorStandingDrawing[cgPage];
         }
     }
 
-    public void QuitWatch()
+    private async void QuitWatch()
     {
         isDisplay = false;
-        watchCG.gameObject.SetActive(false);
+        darkCtrl.OnChangeScenes();
+        await Task.Delay(500);
+        uiObject.SetActive(true);
+        //watchCG.gameObject.SetActive(false);
     }
     
     public void ChangePage(bool isAdd)

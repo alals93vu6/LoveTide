@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 31111724}
   - component: {fileID: 31111723}
   m_Layer: 5
-  m_Name: Check10
+  m_Name: Check58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +201,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 31111724}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 58
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &31111724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +263,7 @@ GameObject:
   - component: {fileID: 96260480}
   - component: {fileID: 96260479}
   m_Layer: 5
-  m_Name: Check11
+  m_Name: Check47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,7 +330,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 96260480}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 47
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &96260480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,7 +486,7 @@ GameObject:
   - component: {fileID: 155221564}
   - component: {fileID: 155221563}
   m_Layer: 5
-  m_Name: Check10
+  m_Name: Check46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,7 +553,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 155221564}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 46
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &155221564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,7 +615,7 @@ GameObject:
   - component: {fileID: 182994094}
   - component: {fileID: 182994093}
   m_Layer: 5
-  m_Name: Check02
+  m_Name: Check14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,7 +682,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 182994094}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 14
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &182994094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,7 +744,7 @@ GameObject:
   - component: {fileID: 183967791}
   - component: {fileID: 183967790}
   m_Layer: 5
-  m_Name: Check08
+  m_Name: Check44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -767,7 +811,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 183967791}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 44
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &183967791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,7 +920,7 @@ GameObject:
   - component: {fileID: 188537483}
   - component: {fileID: 188537482}
   m_Layer: 5
-  m_Name: Check10
+  m_Name: Check22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -932,7 +987,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 188537483}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 22
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &188537483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,7 +1176,7 @@ GameObject:
   - component: {fileID: 207907224}
   - component: {fileID: 207907223}
   m_Layer: 5
-  m_Name: Check05
+  m_Name: Check41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1177,7 +1243,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 207907224}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 41
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &207907224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,7 +1398,7 @@ GameObject:
   - component: {fileID: 248297561}
   - component: {fileID: 248297560}
   m_Layer: 5
-  m_Name: Check11
+  m_Name: Check35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1388,7 +1465,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 248297561}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 35
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &248297561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,12 +1514,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248297558}
   m_CullTransparentMesh: 0
---- !u!224 &282507961 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-    type: 3}
-  m_PrefabInstance: {fileID: 834482796}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &286543774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,7 +1532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &286543775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1458,16 +1540,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286543774}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.02625, y: 1.02625, z: 1.02625}
   m_Children: []
-  m_Father: {fileID: 1123760511}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00022888}
+  m_AnchoredPosition: {x: 400, y: 225.09113}
   m_SizeDelta: {x: 800, y: 449.93872}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286543776
@@ -1519,7 +1601,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589454d1774fd34479b5f289154e145c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cgImage: {fileID: 11400000, guid: a5d7a2d5bd684ce4c99263d8f22aa5cd, type: 2}
+  instantiateObject:
+  - {fileID: 6403808391301731378, guid: 26268c2a70636c849803397f65360e92, type: 3}
+  - {fileID: 6403808391301731378, guid: 26268c2a70636c849803397f65360e92, type: 3}
+  - {fileID: 6403808391301731378, guid: 26268c2a70636c849803397f65360e92, type: 3}
 --- !u!1 &312747652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,7 +1618,7 @@ GameObject:
   - component: {fileID: 312747655}
   - component: {fileID: 312747654}
   m_Layer: 5
-  m_Name: Check04
+  m_Name: Check40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1600,7 +1685,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 312747655}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 40
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &312747655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1651,7 +1747,7 @@ GameObject:
   - component: {fileID: 376960453}
   - component: {fileID: 376960452}
   m_Layer: 5
-  m_Name: Check09
+  m_Name: Check21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1718,7 +1814,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 376960453}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 21
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &376960453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,11 +1947,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1914,7 +2021,7 @@ GameObject:
   - component: {fileID: 416459852}
   - component: {fileID: 416459851}
   m_Layer: 5
-  m_Name: Check04
+  m_Name: Check52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1981,7 +2088,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 416459852}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 52
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &416459852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2045,11 +2163,11 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425140843}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1123760511}
+  m_Father: {fileID: 881017513}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2150,7 +2268,7 @@ GameObject:
   - component: {fileID: 463097666}
   - component: {fileID: 463097665}
   m_Layer: 5
-  m_Name: Check06
+  m_Name: Check42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2217,7 +2335,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 463097666}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 42
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &463097666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2268,7 +2397,7 @@ GameObject:
   - component: {fileID: 466453305}
   - component: {fileID: 466453304}
   m_Layer: 5
-  m_Name: Check07
+  m_Name: Check19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2335,7 +2464,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 466453305}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 19
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &466453305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2471,7 +2611,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500206456}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2480,7 +2620,7 @@ RectTransform:
   - {fileID: 2073455235}
   - {fileID: 108002074}
   - {fileID: 187058130}
-  m_Father: {fileID: 1123760511}
+  m_Father: {fileID: 881017513}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2591,11 +2731,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2665,7 +2805,7 @@ GameObject:
   - component: {fileID: 525570406}
   - component: {fileID: 525570405}
   m_Layer: 5
-  m_Name: Check07
+  m_Name: Check55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2732,7 +2872,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 525570406}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 55
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &525570406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2783,7 +2934,7 @@ GameObject:
   - component: {fileID: 583257132}
   - component: {fileID: 583257131}
   m_Layer: 5
-  m_Name: Check03
+  m_Name: Check39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2850,7 +3001,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 583257132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 39
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &583257132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2901,7 +3063,7 @@ GameObject:
   - component: {fileID: 615263673}
   - component: {fileID: 615263672}
   m_Layer: 5
-  m_Name: Check04
+  m_Name: Check16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2968,7 +3130,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 615263673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 16
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &615263673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3019,7 +3192,7 @@ GameObject:
   - component: {fileID: 694011562}
   - component: {fileID: 694011561}
   m_Layer: 5
-  m_Name: Check01
+  m_Name: Check37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3086,7 +3259,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 694011562}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 37
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &694011562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3211,7 +3395,7 @@ GameObject:
   - component: {fileID: 724552077}
   - component: {fileID: 724552076}
   m_Layer: 5
-  m_Name: Check02
+  m_Name: Check50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3278,7 +3462,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 724552077}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &724552077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3492,11 +3687,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3566,7 +3761,7 @@ GameObject:
   - component: {fileID: 805147705}
   - component: {fileID: 805147704}
   m_Layer: 5
-  m_Name: Check08
+  m_Name: Check32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3633,7 +3828,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 805147705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 32
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &805147705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3745,125 +3951,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811865861}
   m_CullTransparentMesh: 0
---- !u!1001 &834482796
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1123760511}
-    m_Modifications:
-    - target: {fileID: 6133236048879688993, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtyTricks
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6133236048879688998, guid: 17818cc38772b9047b79bf302de5c89f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 17818cc38772b9047b79bf302de5c89f, type: 3}
 --- !u!1 &838091773
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,7 +3964,7 @@ GameObject:
   - component: {fileID: 838091776}
   - component: {fileID: 838091775}
   m_Layer: 5
-  m_Name: Check08
+  m_Name: Check20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3944,7 +4031,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 838091776}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &838091776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3995,7 +4093,7 @@ GameObject:
   - component: {fileID: 866468869}
   - component: {fileID: 866468868}
   m_Layer: 5
-  m_Name: Check12
+  m_Name: Check60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4062,7 +4160,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 866468869}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 60
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &866468869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4100,6 +4209,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866468866}
   m_CullTransparentMesh: 0
+--- !u!1 &881017512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 881017513}
+  m_Layer: 5
+  m_Name: WatchCGObject_UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &881017513
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881017512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1089798619}
+  - {fileID: 500206457}
+  - {fileID: 425140844}
+  - {fileID: 1066683274}
+  - {fileID: 1185799942}
+  - {fileID: 983996137}
+  m_Father: {fileID: 1123760511}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &881542830
 GameObject:
   m_ObjectHideFlags: 0
@@ -4113,7 +4263,7 @@ GameObject:
   - component: {fileID: 881542833}
   - component: {fileID: 881542832}
   m_Layer: 5
-  m_Name: Check06
+  m_Name: Check54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4180,7 +4330,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 881542833}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 54
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &881542833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4302,11 +4463,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4376,7 +4537,7 @@ GameObject:
   - component: {fileID: 895931568}
   - component: {fileID: 895931567}
   m_Layer: 5
-  m_Name: Check10
+  m_Name: Check34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4443,7 +4604,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 895931568}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 34
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &895931568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4494,7 +4666,7 @@ GameObject:
   - component: {fileID: 919754715}
   - component: {fileID: 919754714}
   m_Layer: 5
-  m_Name: Check08
+  m_Name: Check56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4561,7 +4733,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 919754715}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 56
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &919754715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4612,7 +4795,7 @@ GameObject:
   - component: {fileID: 947067638}
   - component: {fileID: 947067637}
   m_Layer: 5
-  m_Name: Check09
+  m_Name: Check33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4679,7 +4862,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 947067638}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 33
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &947067638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4730,7 +4924,7 @@ GameObject:
   - component: {fileID: 947956283}
   - component: {fileID: 947956282}
   m_Layer: 5
-  m_Name: Check01
+  m_Name: Check25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4797,7 +4991,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 947956283}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 25
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &947956283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4848,7 +5053,7 @@ GameObject:
   - component: {fileID: 957156317}
   - component: {fileID: 957156316}
   m_Layer: 5
-  m_Name: Check02
+  m_Name: Check38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4915,7 +5120,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 957156317}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 38
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &957156317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5051,7 +5267,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983996136}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5060,7 +5276,7 @@ RectTransform:
   - {fileID: 704826236}
   - {fileID: 811865862}
   - {fileID: 959342147}
-  m_Father: {fileID: 1123760511}
+  m_Father: {fileID: 881017513}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5100,7 +5316,7 @@ GameObject:
   - component: {fileID: 1045625239}
   - component: {fileID: 1045625238}
   m_Layer: 5
-  m_Name: Check09
+  m_Name: Check45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5167,7 +5383,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1045625239}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 45
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1045625239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5289,11 +5516,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5376,11 +5603,11 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066683273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1123760511}
+  m_Father: {fileID: 881017513}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5504,11 +5731,11 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089798618}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1123760511}
+  m_Father: {fileID: 881017513}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5566,7 +5793,7 @@ GameObject:
   - component: {fileID: 1101521253}
   - component: {fileID: 1101521252}
   m_Layer: 5
-  m_Name: Check03
+  m_Name: Check51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5633,7 +5860,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1101521253}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 51
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1101521253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5761,14 +5999,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1089798619}
-  - {fileID: 500206457}
-  - {fileID: 425140844}
-  - {fileID: 1066683274}
-  - {fileID: 1185799942}
-  - {fileID: 983996137}
-  - {fileID: 286543775}
-  - {fileID: 282507961}
+  - {fileID: 881017513}
+  - {fileID: 6133236048066850634}
   - {fileID: 2031444152}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -5804,11 +6036,11 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185799941}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1123760511}
+  m_Father: {fileID: 881017513}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5920,7 +6152,7 @@ GameObject:
   - component: {fileID: 1219068182}
   - component: {fileID: 1219068181}
   m_Layer: 5
-  m_Name: Check11
+  m_Name: Check59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5987,7 +6219,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1219068182}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 59
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1219068182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6038,7 +6281,7 @@ GameObject:
   - component: {fileID: 1227062852}
   - component: {fileID: 1227062851}
   m_Layer: 5
-  m_Name: Check09
+  m_Name: Check57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6105,7 +6348,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1227062852}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 57
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1227062852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6156,7 +6410,7 @@ GameObject:
   - component: {fileID: 1229943743}
   - component: {fileID: 1229943742}
   m_Layer: 5
-  m_Name: Check07
+  m_Name: Check43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6223,7 +6477,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1229943743}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 43
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1229943743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6392,11 +6657,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6466,7 +6731,7 @@ GameObject:
   - component: {fileID: 1268533326}
   - component: {fileID: 1268533325}
   m_Layer: 5
-  m_Name: Check12
+  m_Name: Check36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6533,7 +6798,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1268533326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 36
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1268533326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6584,7 +6860,7 @@ GameObject:
   - component: {fileID: 1281202613}
   - component: {fileID: 1281202612}
   m_Layer: 5
-  m_Name: Check03
+  m_Name: Check15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6651,7 +6927,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1281202613}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1281202613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6702,7 +6989,7 @@ GameObject:
   - component: {fileID: 1340562790}
   - component: {fileID: 1340562789}
   m_Layer: 5
-  m_Name: Check02
+  m_Name: Check26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6769,7 +7056,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1340562790}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 26
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1340562790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6891,11 +7189,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7031,7 +7329,7 @@ GameObject:
   - component: {fileID: 1401155689}
   - component: {fileID: 1401155688}
   m_Layer: 5
-  m_Name: Check11
+  m_Name: Check23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7098,7 +7396,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1401155689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1401155689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7149,7 +7458,7 @@ GameObject:
   - component: {fileID: 1427926168}
   - component: {fileID: 1427926167}
   m_Layer: 5
-  m_Name: Check04
+  m_Name: Check28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7216,7 +7525,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1427926168}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 28
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1427926168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7350,7 +7670,7 @@ GameObject:
   - component: {fileID: 1564657936}
   - component: {fileID: 1564657935}
   m_Layer: 5
-  m_Name: Check06
+  m_Name: Check18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7417,7 +7737,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1564657936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 18
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1564657936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7604,11 +7935,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7749,11 +8080,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7897,7 +8228,7 @@ GameObject:
   - component: {fileID: 1728696564}
   - component: {fileID: 1728696563}
   m_Layer: 5
-  m_Name: Check03
+  m_Name: Check27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7964,7 +8295,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1728696564}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 27
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1728696564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8086,11 +8428,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8160,7 +8502,7 @@ GameObject:
   - component: {fileID: 1734773549}
   - component: {fileID: 1734773548}
   m_Layer: 5
-  m_Name: Check12
+  m_Name: Check48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8227,7 +8569,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1734773549}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 48
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1734773549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8278,7 +8631,7 @@ GameObject:
   - component: {fileID: 1812091135}
   - component: {fileID: 1812091134}
   m_Layer: 5
-  m_Name: Check12
+  m_Name: Check24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8345,7 +8698,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1812091135}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 24
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1812091135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8396,7 +8760,7 @@ GameObject:
   - component: {fileID: 1820280654}
   - component: {fileID: 1820280653}
   m_Layer: 5
-  m_Name: Check01
+  m_Name: Check49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8463,7 +8827,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1820280654}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 49
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1820280654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8514,7 +8889,7 @@ GameObject:
   - component: {fileID: 1823385126}
   - component: {fileID: 1823385125}
   m_Layer: 5
-  m_Name: Check06
+  m_Name: Check30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8581,7 +8956,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1823385126}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1823385126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8632,7 +9018,7 @@ GameObject:
   - component: {fileID: 1824153745}
   - component: {fileID: 1824153744}
   m_Layer: 5
-  m_Name: Check07
+  m_Name: Check31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8699,7 +9085,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1824153745}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 31
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1824153745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8750,7 +9147,7 @@ GameObject:
   - component: {fileID: 1834276120}
   - component: {fileID: 1834276119}
   m_Layer: 5
-  m_Name: Check05
+  m_Name: Check29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8817,7 +9214,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1834276120}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 29
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1834276120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8868,7 +9276,7 @@ GameObject:
   - component: {fileID: 1865024254}
   - component: {fileID: 1865024253}
   m_Layer: 5
-  m_Name: Check01
+  m_Name: Check13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8935,7 +9343,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1865024254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 13
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1865024254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9057,22 +9476,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9178,6 +9586,8 @@ MonoBehaviour:
   watchCG: {fileID: 286543778}
   cgButton: {fileID: 500206458}
   pageCtrl: {fileID: 983996138}
+  darkCtrl: {fileID: 6133236048066850635}
+  uiObject: {fileID: 881017512}
 --- !u!1 &1958226475
 GameObject:
   m_ObjectHideFlags: 0
@@ -9262,11 +9672,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945108755}
         m_MethodName: StartWatch
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9336,7 +9746,7 @@ GameObject:
   - component: {fileID: 1967737765}
   - component: {fileID: 1967737764}
   m_Layer: 5
-  m_Name: Check05
+  m_Name: Check17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9403,7 +9813,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1967737765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 17
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1967737765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9471,7 +9892,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1123760511}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9525,7 +9946,7 @@ GameObject:
   - component: {fileID: 2066968316}
   - component: {fileID: 2066968315}
   m_Layer: 5
-  m_Name: Check05
+  m_Name: Check53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9592,7 +10013,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2066968316}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945108755}
+        m_MethodName: StartWatch
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 53
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2066968316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9677,3 +10109,160 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6133236047269569940
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133236047269569944}
+  m_CullTransparentMesh: 0
+--- !u!114 &6133236047269569941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133236047269569944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7053bb43ce7d849a85f66d0b0fafbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &6133236047269569942
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133236047269569944}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4371b02ba40de4b46b669ca50e93d9c1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6133236047269569943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133236047269569944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6133236047269569944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6133236047269569945}
+  - component: {fileID: 6133236047269569940}
+  - component: {fileID: 6133236047269569941}
+  - component: {fileID: 6133236047269569943}
+  - component: {fileID: 6133236047269569942}
+  m_Layer: 5
+  m_Name: DirtyTricksImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6133236047269569945
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133236047269569944}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6133236048066850634}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2.6, y: 0.8}
+  m_SizeDelta: {x: 820.4227, y: 472.8651}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &6133236048066850634
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133236048066850637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6133236047269569945}
+  m_Father: {fileID: 1123760511}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6133236048066850635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133236048066850637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6dbe51836106434481010e6a5118514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dirtyTrickObject: {fileID: 6133236047269569941}
+--- !u!1 &6133236048066850637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6133236048066850634}
+  - component: {fileID: 6133236048066850635}
+  m_Layer: 5
+  m_Name: DirtyTricks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
