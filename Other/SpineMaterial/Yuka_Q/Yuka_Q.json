@@ -1,0 +1,57 @@
+{ "skeleton": { "images": "E:/GitHub/LoveTide/Other/SpineMaterial/Yuka_Q/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "Yuka_Hair", "bone": "root", "attachment": "Yuka_Hair" },
+	{ "name": "Yuka_LeftFoodB", "bone": "root", "attachment": "Yuka_LeftFoodB" },
+	{ "name": "Yuka_LeftFootA", "bone": "root", "attachment": "Yuka_LeftFootA" },
+	{ "name": "Yuka_RightFoodB", "bone": "root", "attachment": "Yuka_RightFoodB" },
+	{ "name": "Yuka_RightFootA", "bone": "root", "attachment": "Yuka_RightFootA" },
+	{ "name": "Yuka_RightHand", "bone": "root", "attachment": "Yuka_RightHand" },
+	{ "name": "Yuka_LeftHand", "bone": "root", "attachment": "Yuka_LeftHand" },
+	{ "name": "Yuka_Body", "bone": "root", "attachment": "Yuka_Body" },
+	{ "name": "Yuka_Skin", "bone": "root", "attachment": "Yuka_Skin" },
+	{ "name": "Yuka_Eyes", "bone": "root", "attachment": "Yuka_Eyes" },
+	{ "name": "Yuka_EyesB", "bone": "root", "attachment": "Yuka_EyesB" }
+],
+"skins": {
+	"default": {
+		"Yuka_Hair": {
+			"Yuka_Hair": { "x": 253.5, "y": -243.5, "width": 297, "height": 443 }
+		},
+		"Yuka_LeftFoodB": {
+			"Yuka_LeftFoodB": { "x": 251.5, "y": -452.5, "width": 29, "height": 69 }
+		},
+		"Yuka_LeftFootA": {
+			"Yuka_LeftFootA": { "x": 252, "y": -424, "width": 38, "height": 50 }
+		},
+		"Yuka_RightFoodB": {
+			"Yuka_RightFoodB": { "x": 217.5, "y": -452.5, "width": 29, "height": 69 }
+		},
+		"Yuka_RightFootA": {
+			"Yuka_RightFootA": { "x": 218, "y": -424, "width": 38, "height": 50 }
+		},
+		"Yuka_RightHand": {
+			"Yuka_RightHand": { "x": 221.5, "y": -355, "width": 111, "height": 108 }
+		},
+		"Yuka_LeftHand": {
+			"Yuka_LeftHand": { "x": 277.5, "y": -355.5, "width": 59, "height": 111 }
+		},
+		"Yuka_Body": {
+			"Yuka_Body": { "x": 242, "y": -358.5, "width": 108, "height": 135 }
+		},
+		"Yuka_Skin": {
+			"Yuka_Skin": { "x": 247.5, "y": -214.5, "width": 275, "height": 167 }
+		},
+		"Yuka_Eyes": {
+			"Yuka_Eyes": { "x": 236, "y": -200, "width": 198, "height": 86 }
+		},
+		"Yuka_EyesB": {
+			"Yuka_EyesB": { "x": 235, "y": -206.5, "width": 222, "height": 189 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
