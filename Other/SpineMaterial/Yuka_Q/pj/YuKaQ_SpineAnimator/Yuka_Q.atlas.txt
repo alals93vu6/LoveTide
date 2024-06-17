@@ -1,0 +1,83 @@
+
+Yuka_Q.png
+size: 907,314
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Yuka_Body
+  rotate: false
+  xy: 807, 177
+  size: 98, 135
+  orig: 108, 135
+  offset: 0, 0
+  index: -1
+Yuka_Eyes
+  rotate: false
+  xy: 625, 2
+  size: 198, 86
+  orig: 198, 86
+  offset: 0, 0
+  index: -1
+Yuka_EyesB
+  rotate: true
+  xy: 616, 90
+  size: 222, 189
+  orig: 222, 189
+  offset: 0, 0
+  index: -1
+Yuka_Hair
+  rotate: true
+  xy: 2, 15
+  size: 297, 443
+  orig: 297, 443
+  offset: 0, 0
+  index: -1
+Yuka_LeftFoodB
+  rotate: true
+  xy: 554, 27
+  size: 29, 69
+  orig: 29, 69
+  offset: 0, 0
+  index: -1
+Yuka_RightFoodB
+  rotate: true
+  xy: 554, 27
+  size: 29, 69
+  orig: 29, 69
+  offset: 0, 0
+  index: -1
+Yuka_LeftFootA
+  rotate: false
+  xy: 807, 125
+  size: 38, 50
+  orig: 38, 50
+  offset: 0, 0
+  index: -1
+Yuka_RightFootA
+  rotate: false
+  xy: 807, 125
+  size: 38, 50
+  orig: 38, 50
+  offset: 0, 0
+  index: -1
+Yuka_LeftHand
+  rotate: true
+  xy: 447, 2
+  size: 54, 105
+  orig: 59, 111
+  offset: 0, 6
+  index: -1
+Yuka_RightHand
+  rotate: false
+  xy: 825, 17
+  size: 59, 106
+  orig: 111, 108
+  offset: 2, 2
+  index: -1
+Yuka_Skin
+  rotate: true
+  xy: 447, 58
+  size: 254, 167
+  orig: 275, 167
+  offset: 21, 0
+  index: -1
