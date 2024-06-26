@@ -49,23 +49,30 @@ public class PlayerActorTest : MonoBehaviour
         }
     }
 
-    public void OnClickActor(int eventNumber,int fds,int slt, int lst)
+    public void OnClickActor(int eventNumber,int fds,int slt, int lst)//to do
     {
-        switch (eventNumber)
+        if (FindObjectOfType<MouseDetected>().isYuka)
         {
-            case 1: Interactive_Speak(fds,slt,lst); break;//開話
-            case 2: Interactive_Operate(fds,slt,lst); break;//幫忙工作
-            case 3: Interactive_FlirtTalk(fds,slt,lst); break;//情話
-            case 5: Interactive_Peeking(fds,slt,lst); break;//偷聽、進房間
-            case 6: Interactive_Outing(); break;
-            case 7: Interactive_Sex(); break;
-            case 8: Interactive_Sleep(fds,slt,lst); break;
-            case 9: Interactive_OnBack(); break;
-            case 10: OnClickTextBox(); break;
-            case 11: Interactive_TwoPersonOuting(); break;
-            case 12: Interactive_MolestA(fds,slt,lst); break;//奶ㄗ
-            case 13: Interactive_MolestB(fds,slt,lst); break;//屁股
-            case 14: Interactive_MolestC(fds,slt,lst); break;//該逼
+            Interactive_Speak(fds,slt,lst);
+            FindObjectOfType<MouseDetected>().isYuka = false;
+        }
+        else
+        {
+            switch (eventNumber)
+            {
+                case 2: Interactive_Operate(fds,slt,lst); break;//幫忙工作
+                case 3: Interactive_FlirtTalk(fds,slt,lst); break;//情話
+                case 5: Interactive_Peeking(fds,slt,lst); break;//偷聽、進房間
+                case 6: Interactive_Outing(); break;
+                case 7: Interactive_Sex(); break;
+                case 8: Interactive_Sleep(fds,slt,lst); break;
+                case 9: Interactive_OnBack(); break;
+                case 10: OnClickTextBox(); break;
+                case 11: Interactive_TwoPersonOuting(); break;
+                case 12: Interactive_MolestA(fds,slt,lst); break;//奶ㄗ
+                case 13: Interactive_MolestB(fds,slt,lst); break;//屁股
+                case 14: Interactive_MolestC(fds,slt,lst); break;//該逼
+            }
         }
     }
 
