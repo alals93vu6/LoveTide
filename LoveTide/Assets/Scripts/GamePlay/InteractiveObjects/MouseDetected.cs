@@ -27,7 +27,7 @@ public class MouseDetected : MonoBehaviour
 
     private void YukaDetected()
     {
-        if (distance <= 50)
+        if (distance <= 65)
         {
             isYuka = true;
         }
