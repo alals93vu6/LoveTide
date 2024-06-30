@@ -55,13 +55,8 @@ public class PlayerActorTest : MonoBehaviour
         {
             if (FindObjectOfType<MouseDetected>().isYuka)
             {
-                switch (eventNumber)
-                {
-                    case 1:
-                        Interactive_Speak(fds,slt,lst);
-                        FindObjectOfType<MouseDetected>().isYuka = false; 
-                        break;
-                }
+                Interactive_Speak(fds,slt,lst);
+                FindObjectOfType<MouseDetected>().isYuka = false; 
             }
             else
             {
@@ -81,7 +76,6 @@ public class PlayerActorTest : MonoBehaviour
                     case 14: Interactive_MolestC(fds,slt,lst); break;//該逼
                 } 
             }
-            Debug.Log("A");
         }
         else
         {
@@ -100,7 +94,6 @@ public class PlayerActorTest : MonoBehaviour
                 case 13: Interactive_MolestB(fds,slt,lst); break;//屁股
                 case 14: Interactive_MolestC(fds,slt,lst); break;//該逼
             }
-            Debug.Log("B");
         }
     }
 
