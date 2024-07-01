@@ -32,4 +32,11 @@ public class ConfigureSystem : MonoBehaviour
         SceneManager.LoadScene("Scenes/StartUP");
     }
 
+    public async void ClickDisplayImage()
+    {
+        FindObjectOfType<DirtyTrickCtrl>().OnExitGamePlayScenes();
+        await Task.Delay(1500);
+        SceneManager.LoadScene("Scenes/DisplayCG");
+    }
+
 }

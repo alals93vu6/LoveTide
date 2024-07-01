@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CheckCGManager : MonoBehaviour
@@ -110,7 +111,12 @@ public class CheckCGManager : MonoBehaviour
             }
         }
     }
-    
-    
+
+    public async void OnClickBack()
+    {
+        FindObjectOfType<DirtyTrickCtrl>().OnExitGamePlayScenes();
+        await Task.Delay(1500);
+        SceneManager.LoadScene("Scenes/StartUP");
+    }
 
 }
