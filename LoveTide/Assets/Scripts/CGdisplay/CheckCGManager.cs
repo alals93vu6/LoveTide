@@ -9,8 +9,8 @@ public class CheckCGManager : MonoBehaviour
 {
     [SerializeField] public int nowPage;
     [SerializeField] public int cgPage;
+    [SerializeField] public int maxPage;
     [SerializeField] public bool isDisplay;
-    [SerializeField] public WatchImage watchCG;
     [SerializeField] private ClickCGObject cgButton;
     [SerializeField] private PageObjectCtrl pageCtrl;
     [SerializeField] public DirtyTrickCtrl darkCtrl;
@@ -47,13 +47,19 @@ public class CheckCGManager : MonoBehaviour
         cgPage = 1;
         isDisplay = true;
         darkCtrl.OnChangeScenes();
+        GetComponent<InstantiateManager>().OnInstantiateObject(instantiateNumber);
         await Task.Delay(500);
         //watchCG.gameObject.SetActive(true);
         uiObject.SetActive(false);
         SwitchWatch(0);
         //Debug.Log(instantiateNumber);
     }
-    
+
+    public void SetMaxPage(int setMax)
+    {
+        maxPage = setMax;
+    }
+
 
     public void SwitchWatch(int setPage)
     {
@@ -61,16 +67,15 @@ public class CheckCGManager : MonoBehaviour
         if (nowPage <= 0)
         {
             cgPage = 1;
-            //watchCG.GetComponent<Image>().sprite = watchCG.cgImage.ActorStandingDrawing[cgPage];
         }
-        else  if(nowPage >= 5)
+        else  if(nowPage > maxPage)
         {
             QuitWatch();
         }
         else
         {
             cgPage = nowPage;
-            //watchCG.GetComponent<Image>().sprite = watchCG.cgImage.ActorStandingDrawing[cgPage];
+            FindObjectOfType<DisplayObjectCtrl>().OnSwitchImage(cgPage);
         }
     }
 
@@ -80,6 +85,7 @@ public class CheckCGManager : MonoBehaviour
         darkCtrl.OnChangeScenes();
         await Task.Delay(500);
         uiObject.SetActive(true);
+        FindObjectOfType<DisplayObjectCtrl>().OnQuitWatchImage();
         //watchCG.gameObject.SetActive(false);
     }
     
