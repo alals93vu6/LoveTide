@@ -12,7 +12,6 @@ public class YukaIdleState : IState
         var yuka = (YukaManager)action;
         var rangeNumber = Random.Range(0, 2);
         yuka.yukaAnimator.AnimationState.SetAnimation(0, yuka.idleAnimator[rangeNumber], true);
-        Debug.Log(yuka.walkAnimator[rangeNumber]);
         passTime = 0f;
         readySwitchPosition = false;
     }

@@ -10,7 +10,6 @@ public class YukaMoveState : IState
         var yuka = (YukaManager)action;
         var rangeNumber = Random.Range(0, 2);
         yuka.yukaAnimator.AnimationState.SetAnimation(0, yuka.walkAnimator[rangeNumber], true);
-        Debug.Log(yuka.walkAnimator[rangeNumber]);
         isCheck = false;
     }
 
