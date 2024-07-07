@@ -22,6 +22,10 @@ public class YukaManager : MonoBehaviour
     [SerializeField] private float previousX;
     [SerializeField] private float switchTime;
 
+    /*[SerializeField] private float numberR;
+    [SerializeField] private float numberG;
+    [SerializeField] private float numberB;*/
+
     void Start()
     {
         OnStart();
@@ -98,6 +102,12 @@ public class YukaManager : MonoBehaviour
         }
         transform.position = wayPoint[startPosition].gameObject.transform.position;
         wayTarget = startPosition;
+        SetColor();
+    }
+
+    private void SetColor()
+    {
+        yukaAnimator.skeleton.SetColor(new Color(0.85f,0.85f,0.75f,1));
     }
 
     public void SwitchPosition()
