@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SliderQTE_PlayerCtrl : MonoBehaviour
 {
-
+    public bool isinArea;
     // Update is called once per frame
     public void PlayerMove()
     {
@@ -18,5 +18,17 @@ public class SliderQTE_PlayerCtrl : MonoBehaviour
     public void ResetPosition()
     {
         transform.localPosition = new Vector3(0,0,0);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "TargetArea")
+        {
+            isinArea = true;
+        }
+        else
+        {
+            isinArea = false;
+        }
     }
 }

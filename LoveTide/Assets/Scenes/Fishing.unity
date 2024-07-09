@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 1014392372}
   m_Layer: 0
   m_Name: TargetArea
-  m_TagString: Untagged
+  m_TagString: TargetArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -460,6 +460,7 @@ GameObject:
   - component: {fileID: 1980248028}
   - component: {fileID: 1980248029}
   - component: {fileID: 1980248030}
+  - component: {fileID: 1980248031}
   m_Layer: 0
   m_Name: TargetCtrl
   m_TagString: Untagged
@@ -543,6 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6305a209d6e314caa817a178cbf77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isinArea: 0
 --- !u!61 &1980248030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -569,6 +571,74 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.42}
   m_EdgeRadius: 0
+--- !u!50 &1980248031
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980248026}
+  m_BodyType: 0
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!1 &2016753042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2016753043}
+  - component: {fileID: 2016753044}
+  m_Layer: 0
+  m_Name: FishingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2016753043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016753042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.19904053, y: -2.6640174, z: -1.9644365}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2016753044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016753042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 788d96dfb13b5ed478e99e5f5d60532a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fish:
+  - {fileID: 11400000, guid: abd6f6457b663b84fb47498ffc542354, type: 2}
+  - {fileID: 11400000, guid: abd6f6457b663b84fb47498ffc542354, type: 2}
+  sliderQTE: {fileID: 1233902311}
 --- !u!1 &2038671977
 GameObject:
   m_ObjectHideFlags: 0
