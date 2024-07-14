@@ -7,6 +7,11 @@ public class SliderQTE_PlayerCtrl : MonoBehaviour
 {
     public bool isinArea;
     // Update is called once per frame
+    private void Update()
+    {
+        
+    }
+
     public void PlayerMove()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -26,7 +31,11 @@ public class SliderQTE_PlayerCtrl : MonoBehaviour
         {
             isinArea = true;
         }
-        else
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "TargetArea")
         {
             isinArea = false;
         }
