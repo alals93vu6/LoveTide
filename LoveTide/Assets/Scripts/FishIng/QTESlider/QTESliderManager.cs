@@ -6,51 +6,26 @@ using UnityEngine;
 
 public class QTESliderManager : MonoBehaviour
 {
-    [SerializeField] public bool QTEon;
-    [SerializeField] public bool isStop;
+    
 
     [SerializeField] private Animator sliderAnimator;
-    [SerializeField] private SliderQTE_PlayerCtrl QTECtrl;
+    [SerializeField] public SliderQTE_PlayerCtrl QTECtrl;
     [SerializeField] private SliderQTE_TargetArea QTEArea;
     // Start is called before the first frame update
     void Start()
     {
         sliderAnimator = GetComponent<Animator>();
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void QTESliderComponent()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            OnQTEDetected();
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (isStop)
-            {
-                isStop = false;
-            }
-            else
-            {
-                isStop = true;
-            }
-        }
+        QTEArea.TargetAreaComponent();
+        QTECtrl.PlayerMove();
     }
 
-    private void FixedUpdate()
+    public void OnQTEDetected(bool isQTE)
     {
-        if (!isStop && QTEon)
-        {
-            QTEArea.TargetAreaComponent();
-            QTECtrl.PlayerMove();
-        }
-    }
-
-    private void OnQTEDetected()
-    {
-        if (QTEon)
+        if (isQTE)
         {
             OnQuitQTE();
         }
@@ -63,7 +38,6 @@ public class QTESliderManager : MonoBehaviour
     private async void OnStartQTE()
     {
         sliderAnimator.Play("ReadyQTE");
-        QTEon = true;
         await Task.Delay(1000);
         QTEArea.ChangeMoveMode();
     }
@@ -71,7 +45,6 @@ public class QTESliderManager : MonoBehaviour
     private async void OnQuitQTE()
     {
         sliderAnimator.Play("QuitQTE");
-        QTEon = false;
         await Task.Delay(800);
         QTECtrl.ResetPosition();
         QTEArea.ResetPosition();
