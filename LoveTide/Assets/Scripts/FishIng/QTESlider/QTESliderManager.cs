@@ -35,14 +35,14 @@ public class QTESliderManager : MonoBehaviour
         }
     }
 
-    private async void OnStartQTE()
+    public async void OnStartQTE()
     {
         sliderAnimator.Play("ReadyQTE");
         await Task.Delay(1000);
         QTEArea.ChangeMoveMode();
     }
 
-    private async void OnQuitQTE()
+    public async void OnQuitQTE()
     {
         sliderAnimator.Play("QuitQTE");
         await Task.Delay(800);

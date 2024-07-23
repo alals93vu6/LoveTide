@@ -7,17 +7,12 @@ public class StaminaComponent : MonoBehaviour
 {
     [SerializeField] public Image staminaImage;
     [SerializeField] public Text staminaText;
+    [SerializeField] public Animator staminaAnimator;
     [SerializeField] public Color[] staminaColor;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        staminaAnimator = GetComponent<Animator>();
     }
     
     public void DisplayFishStaminaComponent(float proportionsNumber,float displayNumber)

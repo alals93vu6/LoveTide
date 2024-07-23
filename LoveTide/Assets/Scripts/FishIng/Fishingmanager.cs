@@ -10,17 +10,19 @@ public class Fishingmanager : MonoBehaviour
     
     
     [Header("狀態")] 
+    [SerializeField] private IState CurrenState = new Fishing_IdleState();
+    [SerializeField] public float loseTime;
     [SerializeField] public bool QTEon;
     [SerializeField] public bool isStop;
     
     [Header("魚種資訊")] 
-    [SerializeField] private float maxStamina;
-    [SerializeField] private float nowStamina;
-    [SerializeField] private float damageReduction;
+    [SerializeField] public float maxStamina;
+    [SerializeField] public float nowStamina;
+    [SerializeField] public float damageReduction;
     
     [Header("功能")]
-    [SerializeField] private QTESliderManager sliderQTE;
-    [SerializeField] private StaminaComponent fishStamina;
+    [SerializeField] public QTESliderManager sliderQTE;
+    [SerializeField] public StaminaComponent fishStamina;
     
     // Start is called before the first frame update
     void Start()
@@ -30,30 +32,7 @@ public class Fishingmanager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            sliderQTE.OnQTEDetected(QTEon);
-            if (QTEon)
-            {
-                QTEon = false;
-            }
-            else
-            {
-                QTEon = true;
-            }
-        }
-        
-        if (Input.GetKeyDown(KeyCode.E) && QTEon)
-        {
-            if (isStop)
-            {
-                isStop = false;
-            }
-            else
-            {
-                isStop = true;
-            }
-        }
+        CurrenState.OnStayState(this);
     }
 
     // Update is called once per frame
@@ -64,7 +43,12 @@ public class Fishingmanager : MonoBehaviour
             sliderQTE.QTESliderComponent();
             if (sliderQTE.QTECtrl.isinArea)
             {
+                loseTime = 0f;
                 nowStamina -= Time.deltaTime * damageReduction;
+            }
+            else
+            {
+                loseTime += Time.deltaTime;
             }
         }
         
@@ -72,5 +56,10 @@ public class Fishingmanager : MonoBehaviour
         fishStamina.DisplayFishStaminaComponent(maxStamina,nowStamina);
     }
 
-    
+    public void ChangeState(IState nextState)
+    {
+        CurrenState.OnExitState(this);
+        nextState.OnEnterState(this);
+        CurrenState = nextState;
+    }
 }
