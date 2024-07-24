@@ -23,6 +23,7 @@ public class Fishingmanager : MonoBehaviour
     [Header("功能")]
     [SerializeField] public QTESliderManager sliderQTE;
     [SerializeField] public StaminaComponent fishStamina;
+    [SerializeField] public Animator fishActor;
     
     // Start is called before the first frame update
     void Start()

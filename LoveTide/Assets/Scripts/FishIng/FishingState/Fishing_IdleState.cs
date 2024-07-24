@@ -23,11 +23,12 @@ public class Fishing_IdleState : IState
     public async void OnExitState(object action)
     {
         var manager = (Fishingmanager)action;
+        manager.fishActor.Play("FishActorTest_StartFishing");
+        await Task.Delay(2600);
         manager.sliderQTE.OnStartQTE();
         manager.fishStamina.staminaAnimator.Play("Stamina_StartQTE");
         manager.nowStamina = manager.maxStamina;
-
-        await Task.Delay(1000);
+        await Task.Delay(1200);
         
         manager.QTEon = true;
     }
