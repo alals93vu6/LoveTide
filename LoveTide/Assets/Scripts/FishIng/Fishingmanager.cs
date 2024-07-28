@@ -15,7 +15,7 @@ public class Fishingmanager : MonoBehaviour
     [SerializeField] public bool QTEon;
     [SerializeField] public bool isStop;
     
-    [Header("魚種資訊")] 
+    [Header("魚種資訊")]
     [SerializeField] public float maxStamina;
     [SerializeField] public float nowStamina;
     [SerializeField] public float damageReduction;
@@ -23,6 +23,7 @@ public class Fishingmanager : MonoBehaviour
     [Header("功能")]
     [SerializeField] public QTESliderManager sliderQTE;
     [SerializeField] public StaminaComponent fishStamina;
+    [SerializeField] public LevelSetingComponent levelSet;
     [SerializeField] public Animator fishActor;
     
     // Start is called before the first frame update

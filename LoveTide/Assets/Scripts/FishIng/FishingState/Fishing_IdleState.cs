@@ -9,6 +9,7 @@ public class Fishing_IdleState : IState
     {
         var manager = (Fishingmanager)action;
         manager.nowStamina = manager.maxStamina;
+        manager.levelSet.levelSetAnimator.Play("LevelSet_QTE_QuitQTE");
     }
 
     public void OnStayState(object action)
@@ -23,6 +24,7 @@ public class Fishing_IdleState : IState
     public async void OnExitState(object action)
     {
         var manager = (Fishingmanager)action;
+        manager.levelSet.levelSetAnimator.Play("levelSet_Ready_InQTE");
         manager.fishActor.Play("FishActorTest_StartFishing");
         await Task.Delay(2600);
         manager.sliderQTE.OnStartQTE();
