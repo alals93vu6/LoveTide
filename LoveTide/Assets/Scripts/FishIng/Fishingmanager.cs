@@ -8,12 +8,14 @@ public class Fishingmanager : MonoBehaviour
     [Header("釣魚")] 
     [SerializeField] private FishObject[] fish;
     
-    
     [Header("狀態")] 
     [SerializeField] private IState CurrenState = new Fishing_IdleState();
     [SerializeField] public float loseTime;
     [SerializeField] public bool QTEon;
     [SerializeField] public bool isStop;
+
+    [Header("數值")] 
+    [SerializeField] public float rewards;
     
     [Header("魚種資訊")]
     [SerializeField] public float maxStamina;
@@ -46,11 +48,13 @@ public class Fishingmanager : MonoBehaviour
             if (sliderQTE.QTECtrl.isinArea)
             {
                 loseTime = 0f;
-                nowStamina -= Time.deltaTime * damageReduction;
+                rewards = Mathf.Lerp(rewards, 1, 0.0075f);
+                nowStamina -= (Time.deltaTime * damageReduction) * rewards;
             }
             else
             {
                 loseTime += Time.deltaTime;
+                rewards = Mathf.Lerp(rewards, 0, 0.02f);
             }
         }
         
