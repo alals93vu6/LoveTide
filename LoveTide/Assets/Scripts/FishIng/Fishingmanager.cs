@@ -54,7 +54,7 @@ public class Fishingmanager : MonoBehaviour
             else
             {
                 loseTime += Time.deltaTime;
-                rewards = Mathf.Lerp(rewards, 0, 0.02f);
+                rewards = Mathf.Lerp(rewards, 0, 0.015f);
             }
         }
         

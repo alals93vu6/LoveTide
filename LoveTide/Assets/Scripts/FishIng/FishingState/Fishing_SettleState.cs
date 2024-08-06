@@ -10,6 +10,7 @@ public class Fishing_SettleState : IState
         var manager = (Fishingmanager)action;
         manager.sliderQTE.OnQuitQTE();
         manager.QTEon = false;
+        manager.rewards = 0f;
         manager.fishStamina.staminaAnimator.Play("Stamina_QuitQTE");
         manager.fishActor.Play("FishActorTest_GetFish");
         await Task.Delay(2000);
