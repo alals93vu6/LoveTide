@@ -88,6 +88,7 @@ public class SaveLocation : MonoBehaviour
         await Task.Delay(3000);
         if (PlayerPrefs.GetInt("mainMissionEvent" + locationNumber) == 0)
         {
+            PlayerPrefs.SetInt("DramaNumber", 1);
             PlayerPrefs.SetString("playerNameData" + locationNumber,"阿金");
             SceneManager.LoadScene("DramaScene");
         }

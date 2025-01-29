@@ -32,6 +32,11 @@ public class GamePlayingManagerDrama : MonoBehaviour
 
     private void DialogDetected()//01為主線 02外遇 03淫趴 04海灘 05山丘 06公園 07商店街 08上班 09宿舍
     {
+        if (PlayerPrefs.GetInt("DramaNumber") == 0)
+        {
+            PlayerPrefs.SetInt("DramaNumber", 1);
+        }
+        
         switch (PlayerPrefs.GetInt("DramaNumber"))
         {
             case 1:playerCtrlManager.diaLog = diaData[1]; break;
