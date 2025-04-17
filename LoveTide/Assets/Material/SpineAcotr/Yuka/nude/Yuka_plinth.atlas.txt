@@ -62,7 +62,7 @@ EyeBrowL_B
   index: -1
 EyeBrowL_C
   rotate: false
-  xy: 399, 1899
+  xy: 336, 1899
   size: 120, 17
   orig: 120, 17
   offset: 0, 0
@@ -76,7 +76,7 @@ EyeBrowL_D
   index: -1
 EyeBrowR_A
   rotate: false
-  xy: 309, 1848
+  xy: 405, 1847
   size: 85, 50
   orig: 85, 50
   offset: 0, 0
@@ -202,7 +202,7 @@ HandL_D
   index: -1
 HandR_A
   rotate: false
-  xy: 281, 1717
+  xy: 281, 1716
   size: 134, 129
   orig: 134, 129
   offset: 0, 0
@@ -244,7 +244,7 @@ HappyEyes_R
   index: -1
 HronyPupil_L
   rotate: false
-  xy: 492, 1846
+  xy: 492, 1845
   size: 60, 51
   orig: 60, 51
   offset: 0, 0
@@ -258,9 +258,9 @@ HronyPupil_R
   index: -1
 Mouth_Blush
   rotate: false
-  xy: 336, 1900
-  size: 61, 16
-  orig: 61, 16
+  xy: 512, 1898
+  size: 61, 18
+  orig: 61, 18
   offset: 0, 0
   index: -1
 Mouth_Cry
@@ -349,7 +349,7 @@ NomalEyesR_B
   index: -1
 NomalEyesR_C
   rotate: false
-  xy: 521, 1899
+  xy: 458, 1899
   size: 52, 17
   orig: 52, 17
   offset: 0, 0
@@ -398,7 +398,7 @@ NomalPupil_R
   index: -1
 Pendant
   rotate: true
-  xy: 396, 1848
+  xy: 309, 1848
   size: 49, 94
   orig: 63, 99
   offset: 14, 0
