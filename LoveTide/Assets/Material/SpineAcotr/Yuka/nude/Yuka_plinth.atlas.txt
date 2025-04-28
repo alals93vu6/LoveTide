@@ -1,19 +1,19 @@
 
 Yuka_plinth.png
-size: 2027,1918
+size: 2039,1919
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 AlaisePupil_L
   rotate: false
-  xy: 616, 1838
+  xy: 546, 1840
   size: 60, 51
   orig: 60, 51
   offset: 0, 0
   index: -1
 AlaisePupil_R
   rotate: false
-  xy: 1587, 1871
+  xy: 1587, 1872
   size: 54, 45
   orig: 54, 45
   offset: 0, 0
@@ -27,14 +27,14 @@ Body_A
   index: -1
 Body_B
   rotate: false
-  xy: 1391, 286
+  xy: 1391, 287
   size: 612, 525
   orig: 623, 564
   offset: 0, 39
   index: -1
 Chests_L
   rotate: true
-  xy: 2, 1060
+  xy: 2, 1070
   size: 327, 361
   orig: 338, 387
   offset: 1, 17
@@ -48,63 +48,63 @@ Chests_R
   index: -1
 EyeBrowL_A
   rotate: false
-  xy: 842, 1886
+  xy: 842, 1887
   size: 126, 30
   orig: 126, 30
   offset: 0, 0
   index: -1
 EyeBrowL_B
   rotate: false
-  xy: 92, 1903
+  xy: 92, 1904
   size: 118, 13
   orig: 118, 13
   offset: 0, 0
   index: -1
 EyeBrowL_C
   rotate: false
-  xy: 336, 1899
+  xy: 336, 1900
   size: 120, 17
   orig: 120, 17
   offset: 0, 0
   index: -1
 EyeBrowL_D
   rotate: false
-  xy: 970, 1885
+  xy: 970, 1886
   size: 98, 31
   orig: 98, 31
   offset: 0, 0
   index: -1
 EyeBrowR_A
   rotate: false
-  xy: 405, 1847
+  xy: 459, 1847
   size: 85, 50
   orig: 85, 50
   offset: 0, 0
   index: -1
 EyeBrowR_B
   rotate: false
-  xy: 1070, 1884
+  xy: 1070, 1885
   size: 75, 32
   orig: 75, 32
   offset: 0, 0
   index: -1
 EyeBrowR_C
   rotate: false
-  xy: 2, 1855
+  xy: 56, 1854
   size: 88, 48
   orig: 88, 48
   offset: 0, 0
   index: -1
 EyeBrowR_D
   rotate: false
-  xy: 2, 1905
+  xy: 2, 1906
   size: 88, 11
   orig: 88, 11
   offset: 0, 0
   index: -1
 FaceBottoms_Alaise
   rotate: true
-  xy: 1206, 813
+  xy: 1206, 814
   size: 401, 461
   orig: 401, 461
   offset: 0, 0
@@ -125,21 +125,21 @@ FaceBottoms_Blush
   index: -1
 FaceBottoms_Nomal
   rotate: true
-  xy: 928, 410
+  xy: 928, 411
   size: 401, 461
   orig: 401, 461
   offset: 0, 0
   index: -1
 FrontHair_A
   rotate: true
-  xy: 417, 1659
+  xy: 417, 1669
   size: 168, 307
   orig: 168, 314
   offset: 0, 1
   index: -1
 FrontHair_B
   rotate: true
-  xy: 726, 1615
+  xy: 726, 1611
   size: 206, 385
   orig: 207, 386
   offset: 0, 0
@@ -153,21 +153,21 @@ FrontHair_C
   index: -1
 FrontHair_D
   rotate: true
-  xy: 1213, 1803
+  xy: 1327, 1803
   size: 66, 432
   orig: 66, 432
   offset: 0, 0
   index: -1
 FrontHair_E
   rotate: true
-  xy: 786, 1823
+  xy: 900, 1819
   size: 58, 425
   orig: 58, 425
   offset: 0, 0
   index: -1
 HairShadow
   rotate: false
-  xy: 1620, 1507
+  xy: 1620, 1508
   size: 335, 248
   orig: 335, 248
   offset: 0, 0
@@ -181,14 +181,14 @@ HandL_A
   index: -1
 HandL_B
   rotate: true
-  xy: 1647, 1789
+  xy: 1761, 1790
   size: 79, 138
   orig: 79, 138
   offset: 0, 0
   index: -1
 HandL_C
   rotate: true
-  xy: 2, 1389
+  xy: 2, 1399
   size: 268, 572
   orig: 268, 573
   offset: 0, 0
@@ -202,14 +202,14 @@ HandL_D
   index: -1
 HandR_A
   rotate: false
-  xy: 281, 1716
+  xy: 281, 1719
   size: 134, 129
   orig: 134, 129
   offset: 0, 0
   index: -1
 HandR_B
   rotate: true
-  xy: 1581, 1216
+  xy: 1581, 1217
   size: 289, 416
   orig: 289, 416
   offset: 0, 0
@@ -223,185 +223,199 @@ HandR_C
   index: -1
 HandR_Finger
   rotate: true
-  xy: 1787, 1757
+  xy: 1901, 1758
   size: 111, 136
   orig: 111, 136
   offset: 0, 0
   index: -1
 HappyEyes_L
   rotate: false
-  xy: 1314, 1878
+  xy: 1314, 1879
   size: 105, 38
   orig: 105, 38
   offset: 0, 0
   index: -1
 HappyEyes_R
   rotate: false
-  xy: 1755, 1870
+  xy: 1755, 1871
   size: 84, 46
   orig: 84, 46
   offset: 0, 0
   index: -1
 HronyPupil_L
   rotate: false
-  xy: 492, 1845
+  xy: 608, 1839
   size: 60, 51
   orig: 60, 51
   offset: 0, 0
   index: -1
 HronyPupil_R
   rotate: false
-  xy: 1643, 1871
+  xy: 1643, 1872
   size: 54, 45
   orig: 54, 45
   offset: 0, 0
   index: -1
 Mouth_Blush
   rotate: false
-  xy: 512, 1898
+  xy: 512, 1899
   size: 61, 18
   orig: 61, 18
   offset: 0, 0
   index: -1
 Mouth_Cry
   rotate: false
-  xy: 92, 1853
+  xy: 146, 1852
   size: 87, 48
   orig: 87, 48
   offset: 0, 0
   index: -1
 Mouth_Happy
   rotate: false
-  xy: 1505, 1874
+  xy: 1505, 1875
   size: 80, 42
   orig: 80, 42
   offset: 0, 0
   index: -1
 Mouth_Negative
   rotate: false
-  xy: 212, 1901
+  xy: 212, 1902
   size: 48, 15
   orig: 48, 15
   offset: 0, 0
   index: -1
 Mouth_Superise
   rotate: false
-  xy: 1277, 1882
+  xy: 1277, 1883
   size: 35, 34
   orig: 35, 34
   offset: 0, 0
   index: -1
 Mouth_hrony
   rotate: false
-  xy: 575, 1892
+  xy: 575, 1893
   size: 75, 24
   orig: 75, 24
   offset: 0, 0
   index: -1
 NomalEyelids_L
   rotate: false
-  xy: 1841, 1870
+  xy: 1841, 1871
   size: 107, 46
   orig: 118, 54
   offset: 10, 0
   index: -1
 NomalEyelids_R
   rotate: false
-  xy: 652, 1891
+  xy: 652, 1892
   size: 83, 25
   orig: 83, 25
   offset: 0, 0
   index: -1
 NomalEyesBall_L
   rotate: false
-  xy: 678, 1829
+  xy: 792, 1825
   size: 106, 60
   orig: 106, 60
   offset: 0, 0
   index: -1
 NomalEyesBall_R
   rotate: false
-  xy: 1950, 1870
+  xy: 1950, 1871
   size: 75, 46
   orig: 75, 46
   offset: 0, 0
   index: -1
 NomalEyesL_A
   rotate: false
-  xy: 181, 1851
+  xy: 331, 1850
   size: 126, 48
   orig: 126, 48
   offset: 0, 0
   index: -1
 NomalEyesL_B
   rotate: true
-  xy: 810, 1889
+  xy: 810, 1890
   size: 27, 30
   orig: 27, 30
   offset: 0, 0
   index: -1
 NomalEyesR_B
   rotate: true
-  xy: 1147, 1884
+  xy: 1147, 1885
   size: 32, 33
   orig: 32, 33
   offset: 0, 0
   index: -1
 NomalEyesR_C
   rotate: false
-  xy: 458, 1899
+  xy: 458, 1900
   size: 52, 17
   orig: 52, 17
   offset: 0, 0
   index: -1
 NomalEyesShadow_L
   rotate: false
-  xy: 1421, 1878
+  xy: 1421, 1879
   size: 82, 38
   orig: 82, 38
   offset: 0, 0
   index: -1
 NomalEyesShadow_R
   rotate: false
-  xy: 737, 1891
+  xy: 737, 1892
   size: 71, 25
   orig: 71, 25
   offset: 0, 0
   index: -1
 NomalEyesl_C
   rotate: false
-  xy: 262, 1901
+  xy: 262, 1902
   size: 72, 15
   orig: 72, 15
   offset: 0, 0
   index: -1
 NomalEyseR_A
   rotate: false
-  xy: 1182, 1883
+  xy: 1182, 1884
   size: 93, 33
   orig: 94, 33
   offset: 0, 0
   index: -1
 NomalPupil_L
   rotate: false
-  xy: 554, 1839
+  xy: 670, 1839
   size: 60, 51
   orig: 60, 51
   offset: 0, 0
   index: -1
 NomalPupil_R
   rotate: false
-  xy: 1699, 1871
+  xy: 1699, 1872
   size: 54, 45
   orig: 54, 45
   offset: 0, 0
   index: -1
 Pendant
   rotate: true
-  xy: 309, 1848
+  xy: 235, 1851
   size: 49, 94
   orig: 63, 99
   offset: 14, 0
+  index: -1
+SuperisePupil_L
+  rotate: false
+  xy: 732, 1838
+  size: 58, 52
+  orig: 58, 52
+  offset: 0, 0
+  index: -1
+SuperisePupil_R
+  rotate: false
+  xy: 2, 1858
+  size: 52, 46
+  orig: 52, 46
+  offset: 0, 0
   index: -1
 
 Yuka_plinth2.png
