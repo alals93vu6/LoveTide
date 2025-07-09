@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: Yuka_plinth_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 54807f9a47695af49a7113556a416897, type: 3}
+  materials:
+  - {fileID: 2100000, guid: e62f80a659f724140bf26c59dc798a02, type: 2}
+  - {fileID: 2100000, guid: 0023ea87773eb524b8aaf3bad7f065a1, type: 2}
+  - {fileID: 2100000, guid: ba2d8fbc82700d34fb49c63d36b2fbf5, type: 2}
