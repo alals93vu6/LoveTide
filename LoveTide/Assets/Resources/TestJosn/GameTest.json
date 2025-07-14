@@ -1,0 +1,1690 @@
+[
+  {
+    "EventIndex": "0",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "開話問候_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "0",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "開話問候_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "0",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "開話問候_測試台詞3",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "1",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天1_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "1",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "酒館_聊天1_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "1",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "2",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天2_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "2",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "酒館_聊天2_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "2",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "3",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天3_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "3",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "酒館_聊天3_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "3",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "4",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天4_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "4",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "酒館_聊天4_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "4",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天4_測試台詞3",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "5",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天5_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "5",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "酒館_聊天5_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "5",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "酒館_聊天5_測試台詞3",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "6",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "酒館_調戲1_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "6",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "酒館_調戲1_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "6",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "酒館_調戲1_測試台詞3",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "7",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_調戲2_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "7",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_調戲2_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "7",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_調戲2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "8",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_調戲3_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "8",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_調戲3_測試台詞2",
+    "ActorFace": "Anxious",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "8",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_調戲3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "9",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_調戲4_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "9",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_調戲4_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "9",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_調戲4_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "10",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_調戲5_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "10",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_調戲5_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "10",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_調戲5_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "11",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_胸部1_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "11",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_胸部1_測試台詞2",
+    "ActorFace": "Nervous",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "11",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_胸部1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "12",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_胸部2_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "12",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_胸部2_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "12",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_胸部2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "13",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_胸部3_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "13",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_胸部3_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "13",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_胸部3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "14",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_屁股1_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "14",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_屁股1_測試台詞2",
+    "ActorFace": "Nervous",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "14",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_屁股1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "15",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_屁股2_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "15",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_屁股2_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "15",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_屁股2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "16",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_屁股3_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "16",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_屁股3_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "16",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_屁股3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "17",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_陰部1_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "17",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_陰部1_測試台詞2",
+    "ActorFace": "Nervous",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "17",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_陰部1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "18",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_陰部2_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "18",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_陰部2_測試台詞2",
+    "ActorFace": "horny",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "18",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_陰部2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "19",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_陰部3_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "19",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_陰部3_測試台詞2",
+    "ActorFace": "Anxious",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "19",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_陰部3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "20",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_捉i1_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "20",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_捉i1_測試台詞2",
+    "ActorFace": "Nervous",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "20",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_捉i1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "21",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_捉i2_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "21",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_捉i2_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "21",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_捉i2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "22",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_捉i3_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "22",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_捉i3_測試台詞2",
+    "ActorFace": "Disdain",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "22",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_捉i3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "23",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "酒館_協助工作1_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "23",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "酒館_協助工作1_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "23",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "酒館_協助工作1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "24",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "酒館_協助工作2_測試台詞1",
+    "ActorFace": "Sad",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "24",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "酒館_協助工作2_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "24",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "酒館_協助工作2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "25",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_協助工作3_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "25",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_協助工作3_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "25",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_協助工作3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "26",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "酒館_協助工作4_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "26",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "酒館_協助工作4_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "26",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "酒館_協助工作4_測試台詞3",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "27",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "酒館_協助工作5_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "27",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "酒館_協助工作5_測試台詞2",
+    "ActorFace": "Anxious",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "27",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "酒館_協助工作5_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "28",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_聊天1_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "28",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_聊天1_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "28",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_聊天1_測試台詞3",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "29",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_聊天2_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "29",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_聊天2_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "29",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_聊天2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "30",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_聊天3_測試台詞1",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "30",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_聊天3_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "30",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_聊天3_測試台詞3",
+    "ActorFace": "Nervous",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "31",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_聊天4_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "31",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_聊天4_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "31",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_聊天4_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "32",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_聊天5_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "32",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_聊天5_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "32",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_聊天5_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "33",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_調戲1_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "33",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_調戲1_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "33",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_調戲1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "34",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_調戲2_測試台詞1",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "34",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_調戲2_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "34",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_調戲2_測試台詞3",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "35",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_調戲3_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "35",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_調戲3_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "35",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_調戲3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "36",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_調戲4_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "36",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_調戲4_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "36",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_調戲4_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "37",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_調戲5_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "37",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_調戲5_測試台詞2",
+    "ActorFace": "Anxious",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "37",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_調戲5_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "38",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_胸部1_測試台詞1",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "38",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_胸部1_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "38",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_胸部1_測試台詞3",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "39",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_胸部2_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "39",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_胸部2_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "39",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_胸部2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "40",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_胸部3_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "40",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_胸部3_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "40",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_胸部3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "41",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_屁股1_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "41",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_屁股1_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "41",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_屁股1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "42",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_屁股2_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "42",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_屁股2_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "42",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_屁股2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "43",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_屁股3_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "43",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_屁股3_測試台詞2",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "43",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_屁股3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "44",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_陰部1_測試台詞1",
+    "ActorFace": "Nervous",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "44",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_陰部1_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "44",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_陰部1_測試台詞3",
+    "ActorFace": "horny",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "45",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_陰部2_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "45",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_陰部2_測試台詞2",
+    "ActorFace": "horny",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "45",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_陰部2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "46",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_陰部3_測試台詞1",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "46",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_陰部3_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "46",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_陰部3_測試台詞3",
+    "ActorFace": "horny",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "47",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_捉i1_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "47",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_捉i1_測試台詞2",
+    "ActorFace": "Nervous",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "47",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_捉i1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "48",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_捉i2_測試台詞1",
+    "ActorFace": "Shy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "48",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_捉i2_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "48",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_捉i2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "49",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_捉i3_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "49",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_捉i3_測試台詞2",
+    "ActorFace": "Angry",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "49",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_捉i3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "50",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_喝酒1_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "50",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_喝酒1_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "50",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_喝酒1_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "51",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_喝酒2_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "51",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_喝酒2_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "51",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_喝酒2_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "52",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_喝酒3_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "52",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_喝酒3_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "52",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_喝酒3_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "53",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "宿舍_喝酒4_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "53",
+    "DialogIndex": "2",
+    "ActorName": "由香",
+    "Dialog": "宿舍_喝酒4_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "53",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "宿舍_喝酒4_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "54",
+    "DialogIndex": "1",
+    "ActorName": "由香",
+    "Dialog": "宿舍_喝酒5_測試台詞1",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "54",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "宿舍_喝酒5_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫1"
+  },
+  {
+    "EventIndex": "54",
+    "DialogIndex": "3",
+    "ActorName": "由香",
+    "Dialog": "宿舍_喝酒5_測試台詞3",
+    "ActorFace": "Happy",
+    "ActorAnimator": "動畫2"
+  },
+  {
+    "EventIndex": "55",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_開業1_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "55",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_開業1_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "55",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_開業1_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "56",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_開業2_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "56",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_開業2_測試台詞2",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "56",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_開業2_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "57",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_開業3_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "57",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_開業3_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "57",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_開業3_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "58",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_開業4_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "58",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_開業4_測試台詞2",
+    "ActorFace": "Sad",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "58",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_開業4_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "59",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_開業5_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "59",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_開業5_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "59",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_開業5_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "60",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_放假_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "60",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_放假_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "60",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_放假_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "61",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_下班_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "61",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_下班_測試台詞2",
+    "ActorFace": "Sad",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "61",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_下班_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "62",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_睡覺1_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "62",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_睡覺1_測試台詞2",
+    "ActorFace": "Sad",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "62",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_睡覺1_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "63",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_睡覺2_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "63",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_睡覺2_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "63",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_睡覺2_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "64",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_睡覺3_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "64",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_睡覺3_測試台詞2",
+    "ActorFace": "Anxious",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "64",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_睡覺3_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "65",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_由香的房間(平時)_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "65",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_由香的房間(平時)_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "65",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_由香的房間(平時)_測試台詞3",
+    "ActorFace": "Shy",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "66",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_由香的房間(獨自一人)_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "66",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_由香的房間(獨自一人)_測試台詞2",
+    "ActorFace": "Anxious",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "66",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_由香的房間(獨自一人)_測試台詞3",
+    "ActorFace": "Sad",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "67",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_喝酒(獨自一人)_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "67",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_喝酒(獨自一人)_測試台詞2",
+    "ActorFace": "Sad",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "67",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_喝酒(獨自一人)_測試台詞3",
+    "ActorFace": "Anxious",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "68",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "自白_只剩自己一人時_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "68",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "自白_只剩自己一人時_測試台詞2",
+    "ActorFace": "Sad",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "68",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "自白_只剩自己一人時_測試台詞3",
+    "ActorFace": "Anxious",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "69",
+    "DialogIndex": "1",
+    "ActorName": "主角",
+    "Dialog": "已存檔_測試台詞1",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "69",
+    "DialogIndex": "2",
+    "ActorName": "主角",
+    "Dialog": "已存檔_測試台詞2",
+    "ActorFace": "Happy",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "69",
+    "DialogIndex": "3",
+    "ActorName": "主角",
+    "Dialog": "已存檔_測試台詞3",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  },
+  {
+    "EventIndex": "70",
+    "DialogIndex": "1",
+    "ActorName": "旁白",
+    "Dialog": "身體狀態測試",
+    "ActorFace": "Neutral",
+    "ActorAnimator": "不更動"
+  }
+]
