@@ -82,5 +82,14 @@ LoveTide/Library/StateCache/
 *.bin
 
 LoveTide/Library/
+LoveTide/Temp/
 
-*.md
+# 忽略 Library 中可能出現的 .md，但保留 docs、手冊等
+LoveTide/Library/**/*.md
+
+# 例外：docs 與知識文件
+!docs/
+!docs/**/*.md
+!ProjectLogs/
+!ProjectLogs/**/*.md
+!CLAUDE_WRITE_GUIDE.md
