@@ -12,9 +12,11 @@ UI架構設計負責管理遊戲中所有使用者介面的顯示、交互和狀
 
 ## 🧱 UI層級結構
 
-### 📊 Canvas 層級架構
+### 📊 Canvas 層級架構 (更新版)
+
+#### 🔄 **舊系統 Canvas 結構**
 ```
-🖼️ UI Root Canvas
+🖼️ UI Root Canvas (舊系統)
 ├── 📱 Background Layer (Order: 0)
 │   ├── 場景背景
 │   ├── 角色立繪
@@ -35,6 +37,41 @@ UI架構設計負責管理遊戲中所有使用者介面的顯示、交互和狀
     ├── 確認對話框
     ├── 提示訊息
     └── 載入畫面
+```
+
+#### 🆕 **新系統 Canvas 結構** (重製場景專用)
+```
+🖼️ UI Root Canvas (新系統)
+├── 📱 Background Canvas (Order: 0)
+│   ├── 場景背景圖片
+│   ├── 裝飾性元素
+│   └── 環境特效
+├── 🆕 Static Interaction Canvas (Order: 40)
+│   ├── 🚪 門互動按鈕
+│   ├── 🪑 桌子互動按鈕
+│   ├── 👥 客人互動按鈕 (協助工作)
+│   └── 🏠 其他場景物件按鈕
+├── 🆕 Dynamic Character Canvas (Order: 50)
+│   ├── 🚶‍♀️ 移動角色互動按鈕 (跟隨 Spine)
+│   ├── ✨ 角色互動視覺效果
+│   └── 🎯 角色互動提示
+├── 🎮 Game UI Canvas (Order: 60)
+│   ├── 💰 金錢顯示
+│   ├── ⏰ 時間顯示
+│   ├── ❤️ 好感度顯示
+│   └── ⚙️ 設定按鈕
+├── 💬 Dialog Canvas (Order: 70)
+│   ├── 對話框系統
+│   ├── 角色名稱顯示
+│   └── 選項按鈕
+├── 📋 Menu Canvas (Order: 80)
+│   ├── 主選單面板
+│   ├── 設定選單面板
+│   └── 存檔選單面板
+└── 🚨 Popup Canvas (Order: 90)
+    ├── 確認對話框
+    ├── 載入提示
+    └── 錯誤訊息
 ```
 
 ### 🎯 層級管理策略
@@ -398,8 +435,277 @@ public class UIDebugger : MonoBehaviour
 
 ---
 
+---
+
+## 🆕 **新系統：互動 UI 架構整合**
+
+> ⚠️ **架構擴展**: 新增移動角色互動系統的 UI 架構設計
+
+### 🏗️ **InteractionManager UI 整合**
+
+#### 🎯 **新增的 UI 管理組件**
+```csharp
+// GameUICtrlmanager 的擴展
+public class GameUICtrlmanager : MonoBehaviour
+{
+    [Header("新增：互動系統 Canvas")]
+    public Canvas staticInteractionCanvas;   // Order: 40 - 場景物件互動
+    public Canvas dynamicCharacterCanvas;    // Order: 50 - 移動角色互動
+    
+    [Header("新增：互動管理器")]
+    public InteractionManager interactionManager;
+    
+    [Header("新增：互動 UI 組件")]
+    public DynamicCharacterInteractionUI characterInteractionUI;
+    public StaticObjectInteractionUI sceneInteractionUI;
+    public InteractionFeedbackUI feedbackUI;
+    
+    // 🆕 新增：初始化互動 UI 系統
+    public void InitializeInteractionUI()
+    {
+        SetupInteractionCanvases();
+        InitializeInteractionComponents();
+        BindInteractionEvents();
+    }
+}
+```
+
+#### 🎨 **動態角色互動 UI**
+```csharp
+// 專門處理移動角色的 UI 組件
+public class DynamicCharacterInteractionUI : MonoBehaviour
+{
+    [Header("角色跟隨 Button")]
+    public Button characterInteractionButton;    // 透明跟隨按鈕
+    public RectTransform buttonRectTransform;    // Button 的 RectTransform
+    
+    [Header("視覺反饋元件")]
+    public GameObject interactionIndicator;      // 互動指示器 UI
+    public Image hoverEffectImage;               // Hover 效果圖片
+    public ParticleSystem clickEffectParticle;  // 點擊特效
+    
+    [Header("角色引用")]
+    public Transform yukaSpineTransform;         // Yuka 的 Spine Transform
+    
+    [Header("Button 設定")]
+    public Vector2 buttonSize = new Vector2(100, 150);
+    public Vector2 buttonOffset = Vector2.zero;
+    
+    // 核心功能：Button 跟隨角色移動
+    void Update()
+    {
+        UpdateButtonPosition();
+        UpdateButtonVisibility();
+    }
+    
+    void UpdateButtonPosition()
+    {
+        if (yukaSpineTransform != null)
+        {
+            // World Space → Screen Space 轉換
+            Vector3 worldPos = yukaSpineTransform.position + (Vector3)buttonOffset;
+            Vector2 screenPos = Camera.main.WorldToScreenPoint(worldPos);
+            buttonRectTransform.position = screenPos;
+        }
+    }
+    
+    void UpdateButtonVisibility()
+    {
+        // 檢查角色是否在螢幕範圍內
+        bool isOnScreen = IsCharacterOnScreen();
+        characterInteractionButton.gameObject.SetActive(isOnScreen);
+    }
+}
+```
+
+#### 🏠 **靜態物件互動 UI**
+```csharp
+// 處理場景物件的 UI 組件
+public class StaticObjectInteractionUI : MonoBehaviour
+{
+    [Header("場景互動按鈕")]
+    public List<SceneInteractionButton> sceneButtons;
+    
+    [System.Serializable]
+    public class SceneInteractionButton
+    {
+        public Button button;                    // 互動按鈕
+        public InteractionType type;             // 互動類型
+        public string objectName;                // 物件名稱
+        public Vector2 worldPosition;            // 世界座標位置
+        public bool isEnabled = true;            // 是否啟用
+    }
+    
+    void Start()
+    {
+        InitializeSceneButtons();
+    }
+    
+    void InitializeSceneButtons()
+    {
+        foreach (var sceneBtn in sceneButtons)
+        {
+            // 設定按鈕點擊事件
+            sceneBtn.button.onClick.AddListener(() => {
+                HandleSceneInteraction(sceneBtn.type, sceneBtn.objectName);
+            });
+            
+            // 設定按鈕 Hover 效果
+            AddHoverEffect(sceneBtn.button);
+        }
+    }
+}
+```
+
+### 🎪 **UI 動畫系統增強**
+
+#### ✨ **互動反饋動畫**
+```csharp
+// 專門處理互動反饋的動畫控制器
+public class InteractionFeedbackUI : MonoBehaviour
+{
+    [Header("Hover 動畫")]
+    public float hoverScaleMultiplier = 1.1f;
+    public float hoverAnimationDuration = 0.2f;
+    
+    [Header("點擊動畫")]
+    public float clickScaleMultiplier = 0.9f;
+    public float clickAnimationDuration = 0.1f;
+    
+    [Header("指示器動畫")]
+    public GameObject interactionIndicator;
+    public float indicatorPulseSpeed = 2f;
+    
+    // 🎯 Hover 進入動畫
+    public void OnHoverEnter(RectTransform target)
+    {
+        target.DOScale(hoverScaleMultiplier, hoverAnimationDuration)
+              .SetEase(Ease.OutBack);
+    }
+    
+    // 🎯 Hover 離開動畫
+    public void OnHoverExit(RectTransform target)
+    {
+        target.DOScale(1f, hoverAnimationDuration)
+              .SetEase(Ease.OutBack);
+    }
+    
+    // 🎯 點擊動畫
+    public void OnClick(RectTransform target)
+    {
+        target.DOScale(clickScaleMultiplier, clickAnimationDuration)
+              .SetEase(Ease.OutQuad)
+              .OnComplete(() => {
+                  target.DOScale(1f, clickAnimationDuration)
+                        .SetEase(Ease.OutBack);
+              });
+    }
+    
+    // 🎯 指示器脈衝動畫
+    void Update()
+    {
+        if (interactionIndicator != null && interactionIndicator.activeInHierarchy)
+        {
+            float pulse = Mathf.Sin(Time.time * indicatorPulseSpeed) * 0.1f + 1f;
+            interactionIndicator.transform.localScale = Vector3.one * pulse;
+        }
+    }
+}
+```
+
+### 📱 **響應式設計增強**
+
+#### 🔧 **多解析度適配**
+```csharp
+// 針對新互動系統的響應式設計
+public class InteractionUIScaler : MonoBehaviour
+{
+    [Header("互動 UI 縮放設定")]
+    public float minButtonSize = 80f;           // 最小按鈕尺寸
+    public float maxButtonSize = 120f;          // 最大按鈕尺寸
+    public float referenceWidth = 1920f;        // 參考寬度
+    
+    [Header("Canvas 引用")]
+    public Canvas dynamicCharacterCanvas;
+    public Canvas staticInteractionCanvas;
+    
+    void Start()
+    {
+        AdjustInteractionUIScale();
+    }
+    
+    void AdjustInteractionUIScale()
+    {
+        float screenRatio = Screen.width / referenceWidth;
+        float buttonScale = Mathf.Clamp(screenRatio, minButtonSize/100f, maxButtonSize/100f);
+        
+        // 調整動態角色互動按鈕大小
+        AdjustDynamicCharacterUI(buttonScale);
+        
+        // 調整靜態物件互動按鈕大小
+        AdjustStaticInteractionUI(buttonScale);
+    }
+}
+```
+
+### 🎮 **新的互動事件系統**
+
+#### 📡 **UI 事件管理**
+```csharp
+// 統一管理所有互動 UI 事件
+public class InteractionUIEventManager : MonoBehaviour
+{
+    [Header("事件系統")]
+    public UnityEvent<InteractionType> OnInteractionStart;
+    public UnityEvent<InteractionType> OnInteractionEnd;
+    public UnityEvent<Vector2> OnInteractionHover;
+    
+    [Header("音效整合")]
+    public UISoundManager soundManager;
+    
+    // 🎯 處理互動開始事件
+    public void HandleInteractionStart(InteractionType type)
+    {
+        // 播放互動音效
+        soundManager.PlayInteractionSound(type);
+        
+        // 觸發互動開始事件
+        OnInteractionStart?.Invoke(type);
+        
+        // 記錄互動統計
+        RecordInteractionStats(type);
+    }
+    
+    // 🎯 處理互動結束事件
+    public void HandleInteractionEnd(InteractionType type)
+    {
+        OnInteractionEnd?.Invoke(type);
+    }
+    
+    // 🎯 處理 Hover 事件
+    public void HandleInteractionHover(Vector2 position)
+    {
+        OnInteractionHover?.Invoke(position);
+    }
+}
+```
+
+### 🔄 **新舊系統 UI 對比**
+
+| 項目 | 舊系統 UI | 新系統 UI |
+|------|-----------|-----------|
+| **互動檢測** | OnMouseDown() | UI Button.onClick |
+| **Canvas 層級** | 5層固定 | 7層動態管理 |
+| **角色互動** | 固定區域 | 透明按鈕跟隨 |
+| **視覺反饋** | 基本 | 豐富動畫效果 |
+| **響應式支援** | 有限 | 完全響應式 |
+| **事件系統** | 分散 | 統一管理 |
+
+---
+
 ## 💬 Claude 使用提示
 
+### 🔍 **舊系統 UI 開發**
 了解UI架構時請：
 1. 先理解UI層級結構和管理方式
 2. 關注動畫和轉場效果
@@ -407,9 +713,23 @@ public class UIDebugger : MonoBehaviour
 4. 理解與其他系統的整合方式
 5. 搭配閱讀 `CodeModules/GameUICtrlmanager.md` 了解實作
 
+### 🆕 **新系統 UI 開發**
+開發新互動 UI 時請：
+1. **Canvas 分層** - 嚴格按照新的 7層 Canvas 架構
+2. **按鈕跟隨** - 理解 World Space ↔ Screen Space 轉換
+3. **事件綁定** - 使用統一的 InteractionUIEventManager
+4. **動畫系統** - 利用 InteractionFeedbackUI 提供反饋
+5. **響應式設計** - 確保各種解析度下的正確顯示
+
+### 🔄 **系統選擇指南**
+- **舊系統 UI**: 現有場景 UI 維護、快速修復
+- **新系統 UI**: 重製場景、需要動態互動效果
+- **混合開發**: 不同場景可以使用不同 UI 系統
+
 修改UI架構時需要：
 - 確保UI層級的正確性
 - 測試不同解析度的顯示效果
 - 考慮性能影響
 - 保持一致的視覺風格
 - 更新相關的動畫和音效配置
+- 🆕 **新增**: 驗證新舊 UI 系統的協調工作
