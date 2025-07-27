@@ -97,8 +97,6 @@ EventBus.Instance.Subscribe<AffectionData>("AffectionChanged", OnAffectionChange
 ```
 🖼️ UI Canvas 層級
 ├── HUD Layer (永久顯示)
-│   ├── 時間顯示
-│   ├── 好感度顯示
 │   └── 快捷按鈕
 ├── Dialog Layer (對話系統)
 │   ├── 對話框

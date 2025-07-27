@@ -93,3 +93,6 @@ LoveTide/Library/**/*.md
 !ProjectLogs/
 !ProjectLogs/**/*.md
 !CLAUDE_WRITE_GUIDE.md
+
+# 影片檔案 - 檔案過大不追蹤 (400MB+)
+LoveTide_demovideo.mp4
