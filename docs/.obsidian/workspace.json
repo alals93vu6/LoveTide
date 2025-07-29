@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Architecture/TextBox對話系統.md",
+                "file": "Architecture/NurturingMode/貓咪互動系統.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TextBox對話系統"
+              "title": "貓咪互動系統"
             }
           }
         ]
@@ -170,12 +170,34 @@
   },
   "active": "0f7368de39d5dc76",
   "lastOpenFiles": [
+    "Architecture/存檔系統架構.md",
+    "Architecture/NurturingMode/貓咪互動系統.md",
+    "Architecture/litleGame/fishing",
+    "Architecture/litleGame/新增資料夾",
+    "Architecture/litleGame/restaurant",
+    "Architecture/litleGame",
+    "Architecture/新增資料夾",
+    "Architecture/README.md.tmp.24196.1753771955817",
+    "Architecture/StoryMode/CG展示系統.md",
+    "project_memory.md.tmp.24196.1753771821026",
+    "Architecture/StoryMode/劇情場景管理.md",
+    "Architecture/StoryMode/劇情場景管理.md.tmp.24196.1753771683814",
+    "Architecture/SharedSystems/對話系統架構.md",
+    "Architecture/SharedSystems/演員控制架構.md",
+    "Architecture/SharedSystems/音效系統架構.md",
+    "Architecture/NurturingMode/養成遊戲流程.md",
+    "Architecture/NurturingMode/養成UI系統.md",
+    "Architecture/NurturingMode/小Yuka移動系統.md",
+    "Architecture/SharedSystems",
+    "Architecture/StoryMode",
     "Architecture/數據流架構.md",
+    "Architecture/README.md",
+    "Architecture/UI架構設計.md",
     "Architecture/TextBox對話系統.md",
+    "Architecture/遊戲流程架構.md",
     "Architecture/小Yuka移動系統.md",
-    "Architecture/演員控制架構.md",
-    "project_memory.md.tmp.22256.1753559519810",
     "project_memory.md",
+    "Architecture/演員控制架構.md",
     "實機畫面/養成模式_拉伸UI按鈕.png",
     "實機畫面/養成模式_下班後在宿舍對話.png",
     "實機畫面/養成模式_下班後在宿舍.png",
@@ -186,27 +208,13 @@
     "實機畫面/設定.png",
     "實機畫面/劇情模式對話_CG畫面.png",
     "實機畫面/劇情模式對話2.png",
-    "實機畫面",
-    "新增資料夾",
-    "LoveTide_demovideo.mp4",
     "claude_write_guide.md",
-    "Architecture/演員控制架構.md.tmp.22256.1753557814182",
-    "Architecture/演員控制架構.md.tmp.22256.1753557720838",
-    "Architecture/UI架構設計.md",
     "Architecture/音效系統架構.md",
-    "Architecture/遊戲流程架構.md",
-    "Architecture/README.md",
     "預計重構系統/養成模式重構.md",
     "預計重構系統/劇情模式重構.md",
     "GameMechanics/小遊戲_釣魚.md",
-    "未命名",
-    "預計重構系統",
     "GameMechanics/成人內容系統.md",
     "GameMechanics/養成互動系統.md",
-    "GameMechanics/README.md",
-    "ProjectLogs/README.md",
-    "ProjectLogs/2025_W29.md",
-    "CodeModules/TimeManagerTest.md",
-    "CodeModules/BackgroundCtrl.md"
+    "GameMechanics/README.md"
   ]
 }
