@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Architecture/NurturingMode/貓咪互動系統.md",
+                "file": "GameMechanics/小遊戲_餐廳.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "貓咪互動系統"
+              "title": "小遊戲_餐廳"
             }
           }
         ]
@@ -170,8 +170,18 @@
   },
   "active": "0f7368de39d5dc76",
   "lastOpenFiles": [
-    "Architecture/存檔系統架構.md",
+    "ProjectLogs/2025-07-30_小遊戲架構完善日誌.md",
+    "GameMechanics/小遊戲_餐廳.md.tmp.24732.1753863696076",
+    "GameMechanics/小遊戲_釣魚.md",
+    "Architecture/litleGame/restaurant/餐廳系統架構.md",
+    "GameMechanics/小遊戲_餐廳.md",
+    "GameMechanics/成人內容系統.md",
+    "Architecture/litleGame/fishing/釣魚系統架構.md",
+    "GameMechanics/養成互動系統.md",
+    "GameMechanics/小遊戲_釣魚.md.tmp.24732.1753859288441",
+    "GameMechanics/劇情播放系統.md",
     "Architecture/NurturingMode/貓咪互動系統.md",
+    "Architecture/存檔系統架構.md",
     "Architecture/litleGame/fishing",
     "Architecture/litleGame/新增資料夾",
     "Architecture/litleGame/restaurant",
@@ -188,8 +198,6 @@
     "Architecture/NurturingMode/養成遊戲流程.md",
     "Architecture/NurturingMode/養成UI系統.md",
     "Architecture/NurturingMode/小Yuka移動系統.md",
-    "Architecture/SharedSystems",
-    "Architecture/StoryMode",
     "Architecture/數據流架構.md",
     "Architecture/README.md",
     "Architecture/UI架構設計.md",
@@ -207,14 +215,6 @@
     "實機畫面/養成模式.png",
     "實機畫面/設定.png",
     "實機畫面/劇情模式對話_CG畫面.png",
-    "實機畫面/劇情模式對話2.png",
-    "claude_write_guide.md",
-    "Architecture/音效系統架構.md",
-    "預計重構系統/養成模式重構.md",
-    "預計重構系統/劇情模式重構.md",
-    "GameMechanics/小遊戲_釣魚.md",
-    "GameMechanics/成人內容系統.md",
-    "GameMechanics/養成互動系統.md",
-    "GameMechanics/README.md"
+    "實機畫面/劇情模式對話2.png"
   ]
 }
