@@ -4,28 +4,44 @@
 
 ---
 
-## 📁 架構文檔結構 (2025-07-29 重組)
+## 📁 架構文檔結構 (2025-07-30 完善)
 
-### 🎮 **雙模式架構分類**
+### 🎮 **完整架構分類**
 ```
 📁 Architecture/
 ├── 📋 README.md (本檔案 - 總導覽)
 ├── 💾 存檔系統架構.md (通用存檔系統)
 ├── 📊 數據流架構.md (核心資料流管理)
 │
+├── 📁 CoreSystems/ (核心系統技術架構)
+│   ├── 🎭 劇情播放系統架構.md
+│   └── 💖 養成互動系統架構.md
+│
+├── 📁 DataFlow/ (數據流架構專門)
+│   └── 🌊 CoreSystems數據流架構.md
+│
 ├── 📁 NurturingMode/ (養成模式專用)
 │   ├── 🎮 養成遊戲流程.md
-│   ├── 🎨 養成UI系統.md  
-│   └── 👤 小Yuka移動系統.md
+│   ├── 🎨 養成UI系統.md
+│   ├── 👤 小Yuka移動系統.md
+│   └── 🐱 貓咪互動系統.md
 │
 ├── 📁 StoryMode/ (劇情模式專用)
 │   ├── 🎬 劇情場景管理.md
 │   └── 🖼️ CG展示系統.md
 │
-└── 📁 SharedSystems/ (共用系統)
-    ├── 💬 對話系統架構.md
-    ├── 🎭 演員控制架構.md
-    └── 🎵 音效系統架構.md
+├── 📁 SharedSystems/ (共用系統)
+│   ├── 💬 對話系統架構.md
+│   ├── 🎭 演員控制架構.md
+│   ├── 🎵 音效系統架構.md
+│   ├── 🏠 主選單系統架構.md
+│   └── 🖼️ CG觀賞大廳架構.md
+│
+└── 📁 litleGame/ (小遊戲系統)
+    ├── 📁 fishing/ (釣魚系統)
+    │   └── 🎣 釣魚系統架構.md
+    └── 📁 restaurant/ (餐廳系統)
+        └── 🍽️ 餐廳系統架構.md
 ```
 
 ### 🚨 **重要架構更新通知**
@@ -370,12 +386,25 @@ public class TimeSystem
 - **🎬 劇情場景管理**: [`StoryMode/劇情場景管理.md`](./StoryMode/劇情場景管理.md) - 劇情模式的場景控制與多角色支援
 - **🖼️ CG展示系統**: [`StoryMode/CG展示系統.md`](./StoryMode/CG展示系統.md) - CG場景展示與視覺效果管理
 
+### 🎯 **核心系統技術架構** (NEW!)
+- **🎭 劇情播放系統架構**: [`CoreSystems/劇情播放系統架構.md`](./CoreSystems/劇情播放系統架構.md) - 完整的劇情播放引擎與對話管理系統
+- **💖 養成互動系統架構**: [`CoreSystems/養成互動系統架構.md`](./CoreSystems/養成互動系統架構.md) - 數值管理、互動處理與時間系統整合
+
+### 🌊 **數據流架構專門** (NEW!)
+- **🌊 CoreSystems數據流架構**: [`DataFlow/CoreSystems數據流架構.md`](./DataFlow/CoreSystems數據流架構.md) - 劇情與養成系統間的事件驅動數據流設計
+
 ### 🔗 **共用系統架構**
 - **💬 對話系統架構**: [`SharedSystems/對話系統架構.md`](./SharedSystems/對話系統架構.md) - 雙重對話系統 (養成+劇情)
 - **🎭 演員控制架構**: [`SharedSystems/演員控制架構.md`](./SharedSystems/演員控制架構.md) - 角色表情與動畫控制 ⚠️
 - **🎵 音效系統架構**: [`SharedSystems/音效系統架構.md`](./SharedSystems/音效系統架構.md) - 音效播放與管理
+- **🏠 主選單系統架構**: [`SharedSystems/主選單系統架構.md`](./SharedSystems/主選單系統架構.md) - 三周目支援的智能入口系統
+- **🖼️ CG觀賞大廳架構**: [`SharedSystems/CG觀賞大廳架構.md`](./SharedSystems/CG觀賞大廳架構.md) - JSON驅動的CG收藏館系統
 
-### 📊 **核心系統架構**
+### 🎮 **小遊戲系統架構**
+- **🎣 釣魚系統架構**: [`litleGame/fishing/釣魚系統架構.md`](./litleGame/fishing/釣魚系統架構.md) - 釣魚小遊戲的完整技術實現
+- **🍽️ 餐廳系統架構**: [`litleGame/restaurant/餐廳系統架構.md`](./litleGame/restaurant/餐廳系統架構.md) - 餐廳經營小遊戲系統
+
+### 📊 **基礎架構系統**
 - **💾 存檔系統架構**: [`存檔系統架構.md`](./存檔系統架構.md) - JSON驅動存檔與6槽位管理
 - **📊 數據流架構**: [`數據流架構.md`](./數據流架構.md) - 樹狀迴圈數據結構與JSON驅動
 
@@ -384,8 +413,8 @@ public class TimeSystem
 
 ---
 
-**最後更新**: 2025-07-29  
-**版本**: 3.0 (雙模式架構重組)  
+**最後更新**: 2025-07-30  
+**版本**: 4.0 (核心系統架構完善)  
 **維護者**: 開發團隊 + Claude AI
 
-> 🏗️ **架構重組完成**: LoveTide 架構文檔已完成雙模式分類重組，按照養成模式、劇情模式、共用系統進行分類管理，便於開發和維護。
+> 🏗️ **架構完善完成**: LoveTide 架構文檔已完成核心系統技術架構的補充，新增 CoreSystems 和 DataFlow 專門架構，實現了從 GameMechanics 到 Architecture 的完整技術文檔體系。系統架構涵蓋劇情播放、養成互動、數據流管理等核心功能的詳細技術實現。
