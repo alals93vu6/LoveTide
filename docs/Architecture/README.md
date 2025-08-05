@@ -37,6 +37,9 @@
 │   ├── 🏠 主選單系統架構.md
 │   └── 🖼️ CG觀賞大廳架構.md
 │
+├── 📁 AdultContentSystems/ (成人內容系統)
+│   └── 🔞 成人內容系統架構.md
+│
 └── 📁 litleGame/ (小遊戲系統)
     ├── 📁 fishing/ (釣魚系統)
     │   └── 🎣 釣魚系統架構.md
@@ -404,6 +407,9 @@ public class TimeSystem
 - **🎣 釣魚系統架構**: [`litleGame/fishing/釣魚系統架構.md`](./litleGame/fishing/釣魚系統架構.md) - 釣魚小遊戲的完整技術實現
 - **🍽️ 餐廳系統架構**: [`litleGame/restaurant/餐廳系統架構.md`](./litleGame/restaurant/餐廳系統架構.md) - 餐廳經營小遊戲系統
 
+### 🔞 **成人內容系統架構** (NEW!)
+- **🔞 成人內容系統架構**: [`AdultContentSystems/成人內容系統架構.md`](./AdultContentSystems/成人內容系統架構.md) - 節拍同步動畫、三大姿勢系統、多階段語音與結算系統的完整架構設計
+
 ### 📊 **基礎架構系統**
 - **💾 存檔系統架構**: [`存檔系統架構.md`](./存檔系統架構.md) - JSON驅動存檔與6槽位管理
 - **📊 數據流架構**: [`數據流架構.md`](./數據流架構.md) - 樹狀迴圈數據結構與JSON驅動
@@ -413,8 +419,8 @@ public class TimeSystem
 
 ---
 
-**最後更新**: 2025-07-30  
-**版本**: 4.0 (核心系統架構完善)  
+**最後更新**: 2025-08-05  
+**版本**: 5.0 (完整架構體系)  
 **維護者**: 開發團隊 + Claude AI
 
-> 🏗️ **架構完善完成**: LoveTide 架構文檔已完成核心系統技術架構的補充，新增 CoreSystems 和 DataFlow 專門架構，實現了從 GameMechanics 到 Architecture 的完整技術文檔體系。系統架構涵蓋劇情播放、養成互動、數據流管理等核心功能的詳細技術實現。
+> 🏗️ **架構完善完成**: LoveTide 架構文檔已完成所有核心系統的技術架構補充，包含劇情播放、養成互動、數據流管理和成人內容系統等完整功能架構。新增成人內容系統採用創新的節拍同步機制和模組化設計，實現了從 GameMechanics 到 Architecture 的完整技術文檔體系。
