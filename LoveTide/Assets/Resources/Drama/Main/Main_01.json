@@ -9,7 +9,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "Islands_01"
+    "Backgroundcontroller": "Islands_01",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "2",
@@ -21,7 +23,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "3",
@@ -33,7 +37,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "4",
@@ -45,7 +51,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "5",
@@ -57,7 +65,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "KaraOK_01"
+    "Backgroundcontroller": "KaraOK_01",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "6",
@@ -69,7 +79,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "7",
@@ -81,7 +93,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "8",
@@ -93,7 +107,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "9",
@@ -105,7 +121,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "10",
@@ -117,11 +135,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "11",
-    "ActorName": "Boss",
+    "ActorName": "Support1",
     "Dialog": "pName你現在有空嗎?來一下櫃檯呦～",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -129,7 +149,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "12",
@@ -141,11 +163,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "13",
-    "ActorName": "Boss",
+    "ActorName": "Support1",
     "Dialog": "哎唷不是啦～他最近像狗狗一樣乖，這次是別的事。我跟你說，你來了絕對不會後悔！",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -153,7 +177,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "14",
@@ -165,11 +191,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "15",
-    "ActorName": "Boss",
+    "ActorName": "Support1",
     "Dialog": "哪有～叔叔我可是很疼你的，這次真的是好康的啦，我哪次害過你？",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -177,7 +205,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "16",
@@ -189,7 +219,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "17",
@@ -201,7 +233,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "18",
@@ -213,7 +247,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "19",
@@ -225,7 +261,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "20",
@@ -237,11 +275,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "Tavem"
+    "Backgroundcontroller": "Tavem",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "21",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "這裡就跟電影裡演的一樣熱到不行啊……",
     "ActorFace": "Anxious",
     "ActorAnimator": "Idle",
@@ -249,11 +289,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "1",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "22",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "(呼……只要這次能撐得久一點就好了。)",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -261,11 +303,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "23",
-    "ActorName": "Boss",
+    "ActorName": "Support1",
     "Dialog": "那妳目前有什麼問題嗎？",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -273,11 +317,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "2",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "24",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "啊…！沒有沒有～很感謝您願意給我這個機會！",
     "ActorFace": "Happy",
     "ActorAnimator": "NoActor",
@@ -285,11 +331,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "3",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "25",
-    "ActorName": "Boss",
+    "ActorName": "Support1",
     "Dialog": "這裡工作氣氛很不錯的啦，我相信你一定會跟 pName 相處得很愉快的，他是那種，怎麼說呢……很會跟人打成一片的類型。",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -297,11 +345,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "26",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "這樣啊，那我就放心了～",
     "ActorFace": "Neutral",
     "ActorAnimator": "NoActor",
@@ -309,11 +359,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "27",
-    "ActorName": "Boss",
+    "ActorName": "Support1",
     "Dialog": "喔！他來了，來來來～我介紹一下。這位就是我們的店長，這間店從裡到外都他在打理，有什麼問題找他就對了。",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -321,7 +373,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "28",
@@ -333,11 +387,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "29",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "店長你好，我叫福原由香，是來這邊打工換宿的，請多多指教！",
     "ActorFace": "Happy",
     "ActorAnimator": "NoActor",
@@ -345,11 +401,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "30",
-    "ActorName": "Boss",
+    "ActorName": "Support1",
     "Dialog": "嘿嘿～這是我欠人情才帶來的妹子，你要好好照顧人家喔，聽到沒？",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -357,7 +415,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "31",
@@ -369,7 +429,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "32",
@@ -381,7 +443,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "33",
@@ -393,7 +457,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "34",
@@ -405,7 +471,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "35",
@@ -417,11 +485,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "36",
-    "ActorName": "Boss",
+    "ActorName": "Support1",
     "Dialog": "pName阿！相信妳可以讓她喜歡上這裡的！！",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -429,11 +499,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "37",
-    "ActorName": "Boss",
+    "ActorName": "Support1",
     "Dialog": "那麼就交給你囉～我要來去忙啦！！！",
     "ActorFace": "NoActor",
     "ActorAnimator": "NoActor",
@@ -441,7 +513,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "0",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "38",
@@ -453,7 +527,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "39",
@@ -465,7 +541,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "40",
@@ -477,11 +555,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "41",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "話說老闆那機車是不是上個世紀的了？都快長青苔了還在騎。",
     "ActorFace": "Nervous",
     "ActorAnimator": "NoActor",
@@ -489,7 +569,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "1",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "42",
@@ -501,11 +583,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "43",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "噗…這也太有感情了吧。",
     "ActorFace": "Happy",
     "ActorAnimator": "NoActor",
@@ -513,7 +597,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "44",
@@ -525,11 +611,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "45",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "這樣啊…….",
     "ActorFace": "Sad",
     "ActorAnimator": "NoActor",
@@ -537,7 +625,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "46",
@@ -549,11 +639,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "47",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "我叫福原由香，叫我由香就可以囉～",
     "ActorFace": "Happy",
     "ActorAnimator": "NoActor",
@@ -561,7 +653,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "48",
@@ -573,11 +667,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "49",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "哈哈我是混血兒，只有一半日本血統啦～",
     "ActorFace": "Neutral",
     "ActorAnimator": "NoActor",
@@ -585,7 +681,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "50",
@@ -597,11 +695,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "51",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "咦…直接叫名字不會太沒禮貌嗎？那我還是叫你「店長」好了～店長～！",
     "ActorFace": "Happy",
     "ActorAnimator": "NoActor",
@@ -609,7 +709,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "1",
+    "HasVoice": true
   },
   {
     "DialogIndex": "52",
@@ -621,7 +723,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "53",
@@ -633,7 +737,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "0",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "54",
@@ -645,7 +751,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "55",
@@ -657,7 +765,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "56",
@@ -669,7 +779,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "57",
@@ -681,7 +793,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "RoomA_01"
+    "Backgroundcontroller": "RoomA_01",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "58",
@@ -693,11 +807,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "59",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "哇～這房間還挺寬敞的欸！",
     "ActorFace": "Nervous",
     "ActorAnimator": "NoActor",
@@ -705,7 +821,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "1",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "2",
+    "HasVoice": true
   },
   {
     "DialogIndex": "60",
@@ -717,11 +835,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "61",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "居然是店長親自打掃的嗎？謝謝你～店～長～！",
     "ActorFace": "Happy",
     "ActorAnimator": "NoActor",
@@ -729,7 +849,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "2",
+    "HasVoice": true
   },
   {
     "DialogIndex": "62",
@@ -741,7 +863,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "63",
@@ -753,7 +877,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "64",
@@ -765,7 +891,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "65",
@@ -777,11 +905,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "66",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "嘿嘿～那不就代表這裡住得太舒服了嘛～",
     "ActorFace": "Neutral",
     "ActorAnimator": "NoActor",
@@ -789,7 +919,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "2",
+    "HasVoice": true
   },
   {
     "DialogIndex": "67",
@@ -801,11 +933,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "68",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "聽起來……還滿有道理的？",
     "ActorFace": "Sad",
     "ActorAnimator": "NoActor",
@@ -813,7 +947,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "2",
+    "HasVoice": true
   },
   {
     "DialogIndex": "69",
@@ -825,7 +961,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "70",
@@ -837,11 +975,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "71",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "九點！？也太棒了吧！",
     "ActorFace": "Nervous",
     "ActorAnimator": "NoActor",
@@ -849,11 +989,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "2",
+    "HasVoice": true
   },
   {
     "DialogIndex": "72",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "我以前那邊每天七點上班耶，根本人間地獄！",
     "ActorFace": "Anxious",
     "ActorAnimator": "NoActor",
@@ -861,7 +1003,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "2",
+    "HasVoice": true
   },
   {
     "DialogIndex": "73",
@@ -873,7 +1017,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "74",
@@ -885,7 +1031,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "75",
@@ -897,11 +1045,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "76",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "哈哈哈～太壞了啦店長～",
     "ActorFace": "Neutral",
     "ActorAnimator": "NoActor",
@@ -909,7 +1059,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "2",
+    "HasVoice": true
   },
   {
     "DialogIndex": "77",
@@ -921,11 +1073,13 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "78",
-    "ActorName": "Yuka",
+    "ActorName": "protagonist",
     "Dialog": "好～店長晚安！",
     "ActorFace": "Happy",
     "ActorAnimator": "NoActor",
@@ -933,7 +1087,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "2",
+    "HasVoice": true
   },
   {
     "DialogIndex": "79",
@@ -945,7 +1101,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "0",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "80",
@@ -957,7 +1115,9 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   },
   {
     "DialogIndex": "81",
@@ -969,6 +1129,8 @@
     "CGController": "NoActor",
     "Spinecontroller": "NoActor",
     "ActorPosition": "NoActor",
-    "Backgroundcomtroller": "NoActor"
+    "Backgroundcontroller": "NoActor",
+    "CostumeIndex": "0",
+    "HasVoice": false
   }
 ]
