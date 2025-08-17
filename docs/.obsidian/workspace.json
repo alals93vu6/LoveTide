@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重製操作手冊.md",
+                "file": "Architecture/CoreSystems/新版劇情系統完整架構.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "重製操作手冊"
+              "title": "新版劇情系統完整架構"
             }
           }
         ]
@@ -168,11 +168,13 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "02e1da8d44965e99",
+  "active": "7dc21a02fc2228ee",
   "lastOpenFiles": [
+    "ProjectLogs/2025-08-18_Scripts_NEW編譯成功但革命尚未結束.md",
+    "CodeModules/TimeManagerTest.md",
+    "重製操作手冊.md",
     "claude_write_guide.md",
     "Architecture/NurturingMode/養成遊戲流程.md",
-    "重製操作手冊.md",
     "Architecture/NurturingMode/互動系統完整設計_重製版.md",
     "Architecture/README.md",
     "Architecture/SharedSystems/CG觀賞大廳架構.md",
@@ -195,8 +197,6 @@
     "Architecture/存檔系統架構.md",
     "Architecture/CoreSystems/養成互動系統架構.md",
     "Architecture/CoreSystems/劇情播放系統架構.md",
-    "Architecture/數據流架構.md",
-    "Architecture/litleGame/fishing/釣魚系統架構.md",
     "ProjectLogs/2025-07-30_架構文檔完善完成日誌.md.tmp.26340.1753885026036",
     "Architecture/README.md.tmp.26340.1753884933793",
     "Architecture/README.md.tmp.26340.1753884922458",
