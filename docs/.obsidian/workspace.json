@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Architecture/CoreSystems/新版劇情系統完整架構.md",
+                "file": "Architecture/NurturingMode/養成遊戲流程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "新版劇情系統完整架構"
+              "title": "養成遊戲流程"
             }
           }
         ]
@@ -168,35 +168,35 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "7dc21a02fc2228ee",
+  "active": "02e1da8d44965e99",
   "lastOpenFiles": [
+    "Architecture/NurturingMode/互動系統完整設計_重製版.md",
+    "Architecture/NurturingMode/小Yuka移動系統.md",
+    "重製操作手冊.md",
+    "重製操作手冊.md.tmp.22492.1755570494764",
+    "project_memory.md",
+    "主線總整理.md",
+    "Architecture/CoreSystems/新版劇情系統完整架構.md",
+    "主線總整理_jira備份版.md",
     "ProjectLogs/2025-08-18_Scripts_NEW編譯成功但革命尚未結束.md",
     "CodeModules/TimeManagerTest.md",
-    "重製操作手冊.md",
     "claude_write_guide.md",
     "Architecture/NurturingMode/養成遊戲流程.md",
-    "Architecture/NurturingMode/互動系統完整設計_重製版.md",
     "Architecture/README.md",
     "Architecture/SharedSystems/CG觀賞大廳架構.md",
     "Architecture/SharedSystems/演員控制架構.md",
     "Architecture/SharedSystems/音效系統架構.md",
     "Architecture/SharedSystems/對話系統架構.md",
     "Architecture/SharedSystems/主選單系統架構.md",
-    "Architecture/NurturingMode/小Yuka移動系統.md",
     "ProjectLogs/2025-08-17_GamePlay場景重製工程啟動日誌.md",
     "Architecture/DataFlow/CoreSystems數據流架構.md",
     "GameMechanics/小遊戲_餐廳.md",
     "GameMechanics/小遊戲_釣魚.md",
-    "Architecture/CoreSystems/新版劇情系統完整架構.md",
     "GameMechanics/成人內容系統.md",
     "Architecture/AdultContentSystems/成人內容系統架構.md",
     "Architecture/AdultContentSystems",
     "GameMechanics/CG觀賞系統.md",
     "GameMechanics/劇情播放系統.md",
-    "project_memory.md",
-    "Architecture/存檔系統架構.md",
-    "Architecture/CoreSystems/養成互動系統架構.md",
-    "Architecture/CoreSystems/劇情播放系統架構.md",
     "ProjectLogs/2025-07-30_架構文檔完善完成日誌.md.tmp.26340.1753885026036",
     "Architecture/README.md.tmp.26340.1753884933793",
     "Architecture/README.md.tmp.26340.1753884922458",
@@ -205,7 +205,6 @@
     "Architecture/CoreSystems/養成互動系統架構.md.tmp.26340.1753884626689",
     "Architecture/CoreSystems/劇情播放系統架構.md.tmp.26340.1753884452820",
     "Architecture/CoreSystems",
-    "ProjectLogs/2025-07-30_架構文檔完善日誌.md.tmp.26340.1753883816237",
     "實機畫面/養成模式_拉伸UI按鈕.png",
     "實機畫面/養成模式_下班後在宿舍對話.png",
     "實機畫面/養成模式_下班後在宿舍.png",
