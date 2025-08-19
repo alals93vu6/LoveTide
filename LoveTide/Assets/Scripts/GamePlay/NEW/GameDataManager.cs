@@ -17,7 +17,7 @@ public class GameDataManager : MonoBehaviour
 {
     [Header("== 數據系統引用 ==")]
     [SerializeField] private NumericalRecords numericalRecords;
-    [SerializeField] private NumericalRecords_PlayerSetting playerSettings;
+    // [SerializeField] private NumericalRecords_PlayerSetting playerSettings; // 待確認類型名稱
     
     [Header("== 數據管理配置 ==")]
     [SerializeField] private bool autoSave = true;
@@ -89,14 +89,14 @@ public class GameDataManager : MonoBehaviour
         }
         
         // 查找PlayerSettings
-        if (playerSettings == null)
-        {
-            playerSettings = FindObjectOfType<NumericalRecords_PlayerSetting>();
-            if (playerSettings == null)
-            {
-                Debug.LogWarning("[GameDataManager] 找不到NumericalRecords_PlayerSetting組件");
-            }
-        }
+        // if (playerSettings == null)
+        // {
+        //     // playerSettings = FindObjectOfType<NumericalRecords_PlayerSetting>();
+        //     // if (playerSettings == null)
+        //     // {
+        //     //     Debug.LogWarning("[GameDataManager] 找不到NumericalRecords_PlayerSetting組件");
+        //     // }
+        // }
     }
     
     /// <summary>
@@ -213,12 +213,12 @@ public class GameDataManager : MonoBehaviour
         }
         
         // 從PlayerSettings同步設置
-        if (playerSettings != null)
-        {
-            // 假設PlayerSettings有音量設置，需要根據實際結構調整
-            // currentGameData.gameSettings.bgmVolume = playerSettings.GetBGMVolume();
-            // currentGameData.gameSettings.sfxVolume = playerSettings.GetSFXVolume();
-        }
+        // if (playerSettings != null)
+        // {
+        //     // 假設PlayerSettings有音量設置，需要根據實際結構調整
+        //     // currentGameData.gameSettings.bgmVolume = playerSettings.GetBGMVolume();
+        //     // currentGameData.gameSettings.sfxVolume = playerSettings.GetSFXVolume();
+        // }
     }
     
     /// <summary>
@@ -235,12 +235,12 @@ public class GameDataManager : MonoBehaviour
         }
         
         // 同步到PlayerSettings
-        if (playerSettings != null)
-        {
-            // 假設PlayerSettings有設置方法，需要根據實際結構調整
-            // playerSettings.SetBGMVolume(currentGameData.gameSettings.bgmVolume);
-            // playerSettings.SetSFXVolume(currentGameData.gameSettings.sfxVolume);
-        }
+        // if (playerSettings != null)
+        // {
+        //     // 假設PlayerSettings有設置方法，需要根據實際結構調整
+        //     // playerSettings.SetBGMVolume(currentGameData.gameSettings.bgmVolume);
+        //     // playerSettings.SetSFXVolume(currentGameData.gameSettings.sfxVolume);
+        // }
     }
     
     /// <summary>

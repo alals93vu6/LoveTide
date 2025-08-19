@@ -41,7 +41,7 @@ public class SkeletonGraphicController : MonoBehaviour
     public UnityEvent<string, string> OnAnimationEvent; // 動畫名稱, 事件名稱
     
     // Spine相關
-    private AnimationState animationState;
+    private Spine.AnimationState animationState;
     private Skeleton skeleton;
     private TrackEntry currentTrackEntry;
     

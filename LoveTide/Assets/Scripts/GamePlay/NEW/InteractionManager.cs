@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 
 /// <summary>
 /// 互動管理器
@@ -519,6 +520,10 @@ public class InteractionResult
     public bool success;
     public string message;
     public Dictionary<string, object> changedValues;
+    public object Data; // 通用數據屬性
+    
+    // 大寫別名屬性，用於兼容性
+    public bool Success { get => success; set => success = value; }
     
     public InteractionResult()
     {

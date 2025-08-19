@@ -28,7 +28,7 @@ public class EventBus : MonoBehaviour
     
     // 事件字典
     private Dictionary<Type, List<object>> eventListeners = new Dictionary<Type, List<object>>();
-    private Dictionary<string, UnityEvent<object>> stringEventListeners = new Dictionary<string, UnityEvent<object>>();
+    private Dictionary<string, UnityEvent> stringEventListeners = new Dictionary<string, UnityEvent>();
     
     // 事件歷史
     private Queue<EventHistoryEntry> eventHistory = new Queue<EventHistoryEntry>();
@@ -171,11 +171,11 @@ public class EventBus : MonoBehaviour
     /// <summary>
     /// 註冊字串事件監聽器
     /// </summary>
-    public void Subscribe(string eventName, UnityAction<object> listener)
+    public void Subscribe(string eventName, UnityAction listener)
     {
         if (!stringEventListeners.ContainsKey(eventName))
         {
-            stringEventListeners[eventName] = new UnityEvent<object>();
+            stringEventListeners[eventName] = new UnityEvent();
         }
         
         stringEventListeners[eventName].AddListener(listener);
@@ -187,21 +187,21 @@ public class EventBus : MonoBehaviour
         }
     }
     
-    /// <summary>
+    ///<summary>
     /// 取消註冊字串事件監聽器
     /// </summary>
-    public void Unsubscribe(string eventName, UnityAction<object> listener)
+    public void Unsubscribe(string eventName, UnityAction listener)
     {
         if (stringEventListeners.ContainsKey(eventName))
         {
             stringEventListeners[eventName].RemoveListener(listener);
             totalListeners--;
-            
+
             if (enableDebugLog)
             {
                 Debug.Log($"[EventBus] 取消註冊字串事件監聽器: {eventName} (總計: {totalListeners})");
             }
-            
+
             // 如果沒有監聽器了，移除字典項目
             if (stringEventListeners[eventName].GetPersistentEventCount() == 0)
             {
@@ -217,7 +217,7 @@ public class EventBus : MonoBehaviour
     {
         if (stringEventListeners.ContainsKey(eventName))
         {
-            stringEventListeners[eventName].Invoke(eventData);
+            stringEventListeners[eventName].Invoke();
             totalEventsSent++;
             
             if (enableDebugLog)

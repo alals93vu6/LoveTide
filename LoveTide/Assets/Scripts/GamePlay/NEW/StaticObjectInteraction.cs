@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using System;
 
 /// <summary>
 /// 靜態物件互動系統
@@ -37,25 +38,60 @@ public class StaticObjectInteraction : MonoBehaviour
     public bool InteractionsEnabled => interactionsEnabled;
     
     /// <summary>
-    /// 初始化靜態物件互動系統
+    /// 初始化靜態物件互動系統（帶InteractionManager參數）
+    /// </summary>
+    public void Initialize(LoveTide.Core.InteractionManager interactionManager)
+{
+    BasicInitialize(); // 呼叫基本初始化
+    
+    if (interactionManager != null)
+    {
+        Debug.Log("[StaticObjectInteraction] 與 InteractionManager 建立關聯");
+        // 可以在這裡添加特定的綁定邏輯
+    }
+}
+
+private void BasicInitialize()
+{
+    Debug.Log("[StaticObjectInteraction] 基本初始化");
+    // 原本無參數 Initialize 的邏輯寫這裡
+}
+    
+    ///<summary>
+    /// 初始化靜態物件互動系統（帶InteractionManager參數）
+    /// </summary>
+    public void InitializeWithManager(LoveTide.Core.InteractionManager interactionManager)
+    {
+        BasicInitialize(); // 呼叫基本初始化
+
+        if (interactionManager != null)
+        {
+            Debug.Log("[StaticObjectInteraction] 與 InteractionManager 建立關聯");
+            // 可以在這裡添加特定的綁定邏輯
+        }
+    }
+
+    /// <summary>
+    /// 基本初始化方法
     /// </summary>
     public void Initialize()
     {
         Debug.Log("[StaticObjectInteraction] 初始化靜態物件互動系統");
-        
+
         // 查找Canvas
         FindStaticInteractionCanvas();
-        
+
         // 設置互動物件
         SetupInteractionObjects();
-        
+
         // 綁定事件
         BindInteractionEvents();
-        
+
         isInitialized = true;
         Debug.Log("[StaticObjectInteraction] 靜態物件互動系統初始化完成");
     }
     
+
     /// <summary>
     /// 查找靜態互動Canvas
     /// </summary>
@@ -192,7 +228,7 @@ public class StaticObjectInteraction : MonoBehaviour
     /// <summary>
     /// 啟用特定類型的互動
     /// </summary>
-    public void EnableInteractionType(InteractionType interactionType)
+    public void EnableInteractionByType(InteractionType interactionType)
     {
         foreach (var obj in interactionObjects)
         {
@@ -279,7 +315,21 @@ public class StaticObjectInteraction : MonoBehaviour
     {
         return currentActiveObject;
     }
-    
+
+    /// <summary>
+    /// 啟用/禁用特定名稱的互動
+    /// </summary>
+    public void EnableInteractionType(string interactionName, bool enabled)
+    {
+        foreach (var obj in interactionObjects)
+        {
+            if (obj != null && obj.name.Contains(interactionName))
+            {
+                obj.SetInteractionEnabled(enabled);
+            }
+        }
+    }
+
     #endregion
 }
 

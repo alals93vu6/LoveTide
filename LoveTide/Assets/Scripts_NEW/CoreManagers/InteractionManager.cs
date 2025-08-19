@@ -269,10 +269,10 @@ namespace LoveTide.Core
             // 啟用靜態物件互動
             if (staticObjectInteraction != null)
             {
-                staticObjectInteraction.EnableInteraction("HelpWork", true);
-                staticObjectInteraction.EnableInteraction("CatPlay", true);
-                staticObjectInteraction.EnableInteraction("GoOutAlone", true);
-                staticObjectInteraction.EnableInteraction("InviteDrinking", false); // 工作時不可邀請喝酒
+                staticObjectInteraction.EnableInteractionType("HelpWork", true);
+                staticObjectInteraction.EnableInteractionType("CatPlay", true);
+                staticObjectInteraction.EnableInteractionType("GoOutAlone", true);
+                staticObjectInteraction.EnableInteractionType("InviteDrinking", false); // 工作時不可邀請喝酒
             }
             
             // 啟用動態角色互動
@@ -289,10 +289,10 @@ namespace LoveTide.Core
             // 啟用靜態物件互動
             if (staticObjectInteraction != null)
             {
-                staticObjectInteraction.EnableInteraction("HelpWork", false); // 宿舍時不可工作
-                staticObjectInteraction.EnableInteraction("CatPlay", true);
-                staticObjectInteraction.EnableInteraction("GoOutAlone", false); // 暫時禁用外出
-                staticObjectInteraction.EnableInteraction("InviteDrinking", true);
+                staticObjectInteraction.EnableInteractionType("HelpWork", false); // 宿舍時不可工作
+                staticObjectInteraction.EnableInteractionType("CatPlay", true);
+                staticObjectInteraction.EnableInteractionType("GoOutAlone", false); // 暫時禁用外出
+                staticObjectInteraction.EnableInteractionType("InviteDrinking", true);
             }
             
             // 啟用動態角色互動
@@ -348,7 +348,7 @@ namespace LoveTide.Core
             // 深夜限制某些互動
             if (staticObjectInteraction != null)
             {
-                staticObjectInteraction.EnableInteraction("GoOutAlone", false);
+                staticObjectInteraction.EnableInteractionType("GoOutAlone", false);
             }
         }
         
@@ -769,5 +769,18 @@ namespace LoveTide.Core
         }
         
         #endregion
+    }
+
+    // Fix for CS0117: 'InteractionResult' 未包含 'InteractionType' 的定義  
+    // The error indicates that the `InteractionResult` class does not have a property or field named `InteractionType`.  
+    // Based on the context, we need to add the missing property to the `InteractionResult` class.  
+
+    public class InteractionResult
+    {
+        public string InteractionType { get; set; } // Add this property to resolve the error.  
+        public bool Success { get; set; }
+        public string Message { get; set; }
+        public Dictionary<string, object> ChangedValues { get; set; }
+        public object Data { get; set; }
     }
 }

@@ -399,12 +399,4 @@ public enum InteractionMode
     CharacterDialog     // 角色對話模式
 }
 
-// 互動類型枚舉
-public enum InteractionType
-{
-    CharacterTalk,
-    Work,
-    CatInteraction,
-    GoOut,
-    SceneTransition
-}
+// InteractionType 枚舉定義已移至 InteractionManager.cs 以避免重複定義

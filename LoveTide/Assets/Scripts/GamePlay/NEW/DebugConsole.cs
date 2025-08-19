@@ -551,27 +551,21 @@ public class DebugConsole : MonoBehaviour
     
     private void CommandFPS(string[] args)
     {
-        if (PerformanceMonitor.Instance != null)
-        {
-            var data = PerformanceMonitor.Instance.CurrentData;
-            Log($"FPS: {data.fps:F1}", LogType.Log);
-            Log($"幀時間: {data.frameTime:F1}ms", LogType.Log);
-        }
-        else
-        {
-            Log("性能監控器未啟用", LogType.Warning);
-        }
+        // 使用Unity內建的FPS計算
+        float fps = 1.0f / Time.deltaTime;
+        Log($"FPS: {fps:F1}", LogType.Log);
+        Log($"幀時間: {Time.deltaTime * 1000:F1}ms", LogType.Log);
     }
-    
+
     private void CommandMemory(string[] args)
     {
-        long totalMemory = UnityEngine.Profiling.Profiler.GetTotalAllocatedMemory(false);
-        long reservedMemory = UnityEngine.Profiling.Profiler.GetTotalReservedMemory(false);
-        
+        long totalMemory = UnityEngine.Profiling.Profiler.GetTotalAllocatedMemoryLong();
+        long reservedMemory = UnityEngine.Profiling.Profiler.GetTotalReservedMemoryLong();
+
         Log($"已分配記憶體: {totalMemory / (1024 * 1024)}MB", LogType.Log);
         Log($"保留記憶體: {reservedMemory / (1024 * 1024)}MB", LogType.Log);
     }
-    
+      
     private void CommandScene(string[] args)
     {
         if (args.Length == 0)
