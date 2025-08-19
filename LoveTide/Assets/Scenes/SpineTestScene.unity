@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1042650655
+--- !u!1 &219528077
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,11 +129,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1042650659}
-  - component: {fileID: 1042650660}
-  - component: {fileID: 1042650658}
-  - component: {fileID: 1042650657}
-  - component: {fileID: 1042650656}
+  - component: {fileID: 219528082}
+  - component: {fileID: 219528081}
+  - component: {fileID: 219528080}
+  - component: {fileID: 219528079}
+  - component: {fileID: 219528078}
   m_Layer: 0
   m_Name: Spine GameObject (Yuka_plinth)
   m_TagString: Untagged
@@ -141,13 +141,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1042650656
+--- !u!114 &219528078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042650655}
+  m_GameObject: {fileID: 219528077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb53b6e15bd0c0408e0e88a29ab8de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdleAnimation: body_idle
+  eyesIdleAnimation: Eyes_Superise_Alaise
+  mouthIdleAnimation: Mouth_Superise
+  facIdleAnimation: FaceBottoms_Blush
+--- !u!114 &219528079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219528077}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
@@ -175,16 +191,16 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: body_idle
+  _animationName: 
   loop: 1
   timeScale: 1
---- !u!23 &1042650657
+--- !u!23 &219528080
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042650655}
+  m_GameObject: {fileID: 219528077}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -196,12 +212,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ba2d8fbc82700d34fb49c63d36b2fbf5, type: 2}
-  - {fileID: 2100000, guid: e62f80a659f724140bf26c59dc798a02, type: 2}
-  - {fileID: 2100000, guid: 0023ea87773eb524b8aaf3bad7f065a1, type: 2}
-  - {fileID: 2100000, guid: e62f80a659f724140bf26c59dc798a02, type: 2}
-  - {fileID: 2100000, guid: 0023ea87773eb524b8aaf3bad7f065a1, type: 2}
-  - {fileID: 2100000, guid: e62f80a659f724140bf26c59dc798a02, type: 2}
   - {fileID: 2100000, guid: 0023ea87773eb524b8aaf3bad7f065a1, type: 2}
   - {fileID: 2100000, guid: e62f80a659f724140bf26c59dc798a02, type: 2}
   m_StaticBatchInfo:
@@ -224,44 +234,28 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1042650658
+--- !u!33 &219528081
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042650655}
+  m_GameObject: {fileID: 219528077}
   m_Mesh: {fileID: 0}
---- !u!4 &1042650659
+--- !u!4 &219528082
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042650655}
+  m_GameObject: {fileID: 219528077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.04, y: -4.99, z: 0}
-  m_LocalScale: {x: 0.58432597, y: 0.58432597, z: 0.58432597}
+  m_LocalPosition: {x: -3.79, y: -5.28, z: 0}
+  m_LocalScale: {x: 0.64653903, y: 0.64653903, z: 0.64653903}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1042650660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042650655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcb53b6e15bd0c0408e0e88a29ab8de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bodyIdleAnimation: body_idle
-  eyesIdleAnimation: Eyes_Hrony
-  mouthIdleAnimation: Mouth_Happy
-  facIdleAnimation: FaceBottoms_Nomal
 --- !u!1 &1058527902
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyIdleAnimation: body_idle
-  eyesIdleAnimation: Eyes_Superise_Alaise
+  eyesIdleAnimation: Eyes_Happy
   mouthIdleAnimation: Mouth_Happy
   facIdleAnimation: FaceBottoms_Alaise
 --- !u!33 &1297812365
