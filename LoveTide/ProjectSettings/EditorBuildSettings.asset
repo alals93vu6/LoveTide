@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StartUP.unity
     guid: 0b40dc7e78b7dd84489e4a08f650457f
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene.unity
+    path: Assets/Scenes/GamePlayScene_test.unity
     guid: 16512faaf73d06d42a2779f2ae505f31
   - enabled: 1
     path: Assets/Scenes/SexyCtrl.unity
