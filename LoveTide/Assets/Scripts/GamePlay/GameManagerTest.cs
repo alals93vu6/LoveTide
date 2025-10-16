@@ -20,6 +20,7 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public ActorLocationCtrl actorCtrl;
     [SerializeField] public GameUICtrlmanager gameUICtrl;
     [SerializeField] private DialogData[] dialog;
+    [SerializeField] public DialogDataManager dialogManager;
 
     [Header("狀態")] 
     [SerializeField] public bool isTalk;

@@ -8,7 +8,6 @@ using UnityEngine.SocialPlatforms;
 public class PlayerActorTest : MonoBehaviour
 {
     [SerializeField] public GameManagerTest gameManager;
-    [SerializeField] public DialogDataDetected diaDetected;
     
     [SerializeField] public bool isAlon;
     [SerializeField] private bool isSkip;

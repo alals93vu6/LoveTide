@@ -5,10 +5,10 @@ using UnityEngine;
 public class DialogDataDetected : MonoBehaviour
 {
     [SerializeField] public string talkEvent;
-    // Start is called before the first frame update
-
     public void DiaLogListDetected()
     {
-        //PlayerActor回傳string 本地switch判斷
+        //判斷當前進度、語系，決定當前抓取的路徑
     }
+
+    
 }

@@ -17,7 +17,6 @@ public class TextBoxTestPlaying : MonoBehaviour
     [Header("物件")]
     [SerializeField] public DialogData diaLog;
     [SerializeField] public GameObject talkObject;
-    [SerializeField] public DialogDataDetected diaLogDetected;
     [SerializeField] public NumericalRecords numericalData;
     [SerializeField] public ActorManagerTest actorCtrl;
 

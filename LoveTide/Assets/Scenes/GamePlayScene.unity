@@ -121,6 +121,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &7020316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7020317}
+  - component: {fileID: 7020318}
+  m_Layer: 0
+  m_Name: DailogDetectedManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7020317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7020316}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -25.33435, y: -1.7424774, z: -6.182129}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 494522875}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7020318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7020316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb826d0c5c92014d8327ec2d2207b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testJson: {fileID: 4900000, guid: a8e287933d0616c438dac507c8cd1bc3, type: 3}
 --- !u!1 &20899417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1212,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 494522876}
-  diaDetected: {fileID: 0}
   isAlon: 0
   isSkip: 0
   isOuting: 0
@@ -3514,7 +3557,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 548.69293, y: 246.19234, z: -1765.7408}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7020317}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3555,6 +3599,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
+  dialogDetected: {fileID: 0}
   isTalk: 0
   timePass: 0
   isAlone: 0
@@ -12668,7 +12713,6 @@ MonoBehaviour:
   - 
   diaLog: {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   talkObject: {fileID: 1294787932}
-  diaLogDetected: {fileID: 0}
   numericalData: {fileID: 865394008}
   actorCtrl: {fileID: 1937069864}
   isover: 1
