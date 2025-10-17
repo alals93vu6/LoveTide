@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fb826d0c5c92014d8327ec2d2207b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DiaDataList: []
   testJson: {fileID: 4900000, guid: a8e287933d0616c438dac507c8cd1bc3, type: 3}
 --- !u!1 &20899417
 GameObject:
@@ -3599,7 +3600,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
-  dialogDetected: {fileID: 0}
+  dialogManager: {fileID: 0}
   isTalk: 0
   timePass: 0
   isAlone: 0

@@ -7,7 +7,17 @@ public class DiaDataItem : MonoBehaviour
 {
     [SerializeField] public List<GameDiaData> DiaDataList;
     [SerializeField] public TextAsset testJson;
+    private void Start()
+    {
+        var jsonData = testJson.text;
 
+        DiaDataList = JsonConvert.DeserializeObject<List<GameDiaData>>(jsonData);
+
+        for (int i = 0; i < DiaDataList.Count; i++)
+        {
+            Debug.Log(DiaDataList[i].Dailog);
+        }
+    }
 
     public void OnGetDiaLog(string resultJson)
     {

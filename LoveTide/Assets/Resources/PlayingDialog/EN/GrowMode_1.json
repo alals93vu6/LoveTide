@@ -1,1927 +1,1927 @@
 [
   {
     "EventIndex": "0",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka",
-    "Dailog": "原來是店長阿～找我有甚麼事嗎？",
+    "Dailog": "Oh, it's you, Manager! What can I do for you?",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "1",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "目前做下來覺得還可以嗎？",
+    "Dailog": "How's it going so far?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "1",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Worker",
-    "Dailog": "目前嗎？我覺得還可以阿～就是站了一整天腳很酸而已",
+    "Dailog": "So far? It's okay, I guess—just my feet are killing me from standing all day.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "1",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Worker",
-    "Dailog": "幸好有店長你會照顧我，不然我一定撐不住呢……",
+    "Dailog": "Thank goodness you're here to look out for me, Manager. Otherwise, I'd never make it through...",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "1",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "哈哈我很可靠吧！",
+    "Dailog": "Haha, I'm pretty dependable, right?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "1",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Worker",
-    "Dailog": "是是是～店長最棒了～",
+    "Dailog": "Yes, yes, yes~ You're the best, manager~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "1",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Narrator",
-    "Dailog": "和由香小聊了一下，從對話中可以感受到目前的工作量對她而言似乎有點多",
+    "Dailog": "Chatted with Yuka for a bit. From our conversation, it seems the current workload might be a bit much for her.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "2",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "好累喔…怎麼還那麼久才下班……",
+    "Dailog": "So tired... Why is it taking so long to get off work...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "2",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Worker",
-    "Dailog": "咦？你不是店長嗎！？真難想像你會說這種話",
+    "Dailog": "Huh? Aren't you the manager!? Hard to imagine you saying something like that.",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "2",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "雖然我靠這個吃飯的，但我肯定也跟大家一樣想要下班休息的，對吧？",
+    "Dailog": "Sure, this is how I make my living, but I definitely want to clock out and rest just like everyone else, right?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "2",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "我可不是那種可以整天往死裡做的工作狂",
+    "Dailog": "I'm not some workaholic who pushes themselves to the bone all day.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "2",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Worker",
-    "Dailog": "也是啦…而且要忙的事情肯定也比我這個普通員工多吧…",
+    "Dailog": "True... And you probably have way more on your plate than us regular staff...",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "2",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "當然，所以下班後我總是會去吃個燒烤然後來杯啤酒爽一下，要不要一起來？",
+    "Dailog": "Of course. That's why after work, I always grab some yakitori and a cold beer to unwind. Want to join me sometime?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "2",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Narrator",
-    "Dailog": "由香對著我露出了尷尬又不失禮貌地微笑，畢竟也才認識不久會被婉拒也挺正常的",
+    "Dailog": "Yuka gave me an awkward yet polite smile. We'd only just met, so a polite refusal was totally understandable.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "3",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "好久沒有去酒吧喝酒了，要不要加一我可以帶你多認識些新朋友，畢竟這裡人生地不熟的，多認識點人脈也比較好吧\n",
+    "Dailog": "It's been ages since I hit the bars. Want to grab a drink? I can introduce you to some new folks. You're new around here, so building connections is always good.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "3",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Worker",
-    "Dailog": "可是店長...現在還沒下班呢......",
+    "Dailog": "But manager... we're not off yet...",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "3",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "沒事啦，你看看旁邊那個小明多扛，根本就是沒有感情的工讀機器，交給他就好",
+    "Dailog": "No worries. Look at Xiao Ming over there—he's a workhorse, practically an emotionless part-timer. Leave it to him.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "3",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Worker",
-    "Dailog": "店長好狠～我們還是安分一點地把工作一起做完吧，等等下班有機會再一起去也不遲啦～",
+    "Dailog": "The manager's so ruthless~ Let's just focus on finishing our work together. We can go out together after we get off later~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "3",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Narrator",
-    "Dailog": "雖然看起來似乎答應了，但其實答案非常模糊，果然她對我還是有所保留吧",
+    "Dailog": "Even though she seemed to agree, her answer was actually very vague. She's still holding back with me, isn't she?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "4",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "兩個人一起站在櫃台各忙各的……",
+    "Dailog": "The two of us stood at the counter, each busy with our own tasks...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "4",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "唉～事情永遠都忙不完阿…",
+    "Dailog": "Sigh~ There's always so much to do...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "4",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Worker",
-    "Dailog": "沒有辦法嘛～沒事啦再撐一下就過去了！",
+    "Dailog": "What can you do~ It's fine, just hang in there a little longer!",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "4",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "受不了了，反正偷偷翹一天班不會有人發現",
+    "Dailog": "I can't take it anymore. No one will notice if I skip a day anyway.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "4",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Worker",
-    "Dailog": "我會！而且店長不在這裡我要怎麼辦呢！",
+    "Dailog": "I will! And what if the manager isn't here? What then?",
     "ActorFace": "Anxious"
   },
   {
     "EventIndex": "4",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Yuka-Worker",
-    "Dailog": "如果遇到奧客，甚至是會對我毛手毛腳的大叔怎麼辦……",
+    "Dailog": "What if we get a difficult customer, or even some creepy uncle who tries to grope me...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "4",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Player",
-    "Dailog": "好好好～我會待在這裡陪妳好不好…",
+    "Dailog": "Fine, fine~ I'll stay here with you, okay?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "4",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Yuka-Worker",
-    "Dailog": "嘿嘿～一起好好努力吧！",
+    "Dailog": "Hehe~ Let's work hard together!",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "4",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Narrator",
-    "Dailog": "就這樣繼續一邊帶著新人，一邊做著1.5人份的工作",
+    "Dailog": "And so it continued—training the newbie while handling 1.5 times the workload.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "5",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "好想睡喔天啊…",
+    "Dailog": "I'm so sleepy... Oh my god...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "5",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Worker",
-    "Dailog": "嗯…店長昨天幾點睡呢？",
+    "Dailog": "Hmm... What time did the manager go to bed yesterday?",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "5",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "肯定是準時2點就寢的吧！",
+    "Dailog": "Must have been right on schedule at 2 AM!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "5",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Worker",
-    "Dailog": "那看起來會這樣是正常的呢……",
+    "Dailog": "Well, that's probably why she looks like that...",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "5",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "我也想早睡啊！但每次想到好不容易下班怎麼可以就這樣睡了呢",
+    "Dailog": "I want to sleep early too! But every time I think, “I finally got off work—how could I just go to sleep now?”",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "5",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "結果顯而易見，呵呵，難道由香會早睡嗎？",
+    "Dailog": "The result is obvious, heh. Does Yuka ever go to bed early?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "5",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Yuka-Worker",
-    "Dailog": "哈哈，怎麼可能！看來我們一樣都是夜貓子呢～",
+    "Dailog": "Haha, no way! Looks like we're both night owls~",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "5",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Narrator",
-    "Dailog": "由香打了一個可愛的呵欠後各自繼續做著原本進行到一半的工作",
+    "Dailog": "After a cute yawn, Yuka went back to her half-finished work.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "6",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "妳來到這個島後有特別跑去吃吃喝喝大玩特玩嗎？",
+    "Dailog": "Since you came to this island, have you gone out to eat, drink, and play around?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "6",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Worker",
-    "Dailog": "嗯…好像沒有呢～總感覺下班完之後基本上都待在房間",
+    "Dailog": "Hmm... not really~ I feel like I mostly just stay in my room after work.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "6",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "走啊！下班我帶妳去玩好玩的，在海灘下沐浴著浪漫的月光散步，聽起來是不是很讚阿",
+    "Dailog": "Come on! After work, I'll take you somewhere fun. A romantic moonlit stroll along the beach—doesn't that sound amazing?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "6",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Worker",
-    "Dailog": "阿哈哈…如果沒有浪漫的感覺店長要怎麼負責？",
+    "Dailog": "Ahaha... If there's no romantic vibe, how will the manager take responsibility?",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "6",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "那我只好請你吃飯賠罪了",
+    "Dailog": "Then I'll just have to treat you to dinner as compensation.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "6",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Yuka-Worker",
-    "Dailog": "說好囉！到時候我可不會手軟喔～",
+    "Dailog": "Deal! I won't go easy on you then~",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "6",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Narrator",
-    "Dailog": "藉機獲得跟由香一起吃飯的機會了",
+    "Dailog": "Finally got a chance to grab dinner with Yuka.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "7",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "最近店裡生意有變好的感覺，妳有感受到嗎？",
+    "Dailog": "Business at the shop seems to be picking up lately. Have you noticed?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "7",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Worker",
-    "Dailog": "我才剛來這邊做，我沒有辦法跟之前的狀況做比較呢，不過確實是挺忙的",
+    "Dailog": "I just started working here, so I can't compare it to before, but it is pretty busy.",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "7",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "親愛的，你一個大美女待在這裡怎麼可能吸引不到人呢？",
+    "Dailog": "Honey, how could a gorgeous girl like you not attract customers?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "7",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Worker",
-    "Dailog": "哈哈真的嗎，既然這樣該幫我加點薪了吧！我現在可是個人體招牌呢～",
+    "Dailog": "Haha, really? Then you should give me a raise! I'm practically a walking advertisement now~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "7",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Narrator",
-    "Dailog": "由香調皮的朝我笑了笑，之後便回去自己的崗位工作了",
+    "Dailog": "Yuka gave me a mischievous smile before heading back to her station.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "話說由香你在這邊工作時會嘴饞嗎？畢竟我們在當地算是一間名聲挺好的餐酒館喔",
+    "Dailog": "Hey Yuka, do you ever get tempted by the food while working here? After all, we're a pretty well-known bistro locally.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Worker",
-    "Dailog": "嗯～確實有好多菜色好想吃吃看呢，畢竟我很喜歡吃義式料理呢！不過看到價格總覺得有點讓人卻步呢……",
+    "Dailog": "Hmm~ There are so many dishes I'd love to try! I adore Italian cuisine. But seeing the prices always makes me hesitate...",
     "ActorFace": "Sad"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Worker",
-    "Dailog": "對了！話說員工在這裡吃飯應該會有員工價吧？",
+    "Dailog": "Oh! Wait—do employees get staff discounts here?",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "通常是會有啦，但你吃久了就只會想要去吃外面的食物了",
+    "Dailog": "Usually, yes. But after eating here so often, you'll just crave food from outside places.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Worker",
-    "Dailog": "沒關係！至少讓我把這裡我想要吃的都品嘗過一遍，我就很滿足了～",
+    "Dailog": "That's okay! Just let me sample everything I want here first—that'll satisfy me~",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "哎呀偷偷告訴你，你剛好認識到一位不得了的人了，在我當上店長之前這裡的餐點可都是由我來負責的喔！",
+    "Dailog": "Oh, let me let you in on a little secret—you've just met someone pretty amazing. Before I became manager, I was the one in charge of all the food here!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Yuka-Worker",
-    "Dailog": "哇～真的假的！？",
+    "Dailog": "Wow~ Really!?",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Narrator",
-    "Dailog": "由香不可置性的看了過來，好像發現了新大陸似的",
+    "Dailog": "Yuka looked over with unmistakable excitement, like she'd discovered a new continent.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Player",
-    "Dailog": "今天回宿舍的時候告訴我你想要吃什麼，我下麵給你吃！",
+    "Dailog": "Tell me what you want to eat when we get back to the dorm today, and I'll cook it for you!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "10",
+    "DialogIndex": "10",
     "ActorName": "Yuka-Worker",
-    "Dailog": "哈哈，店長你這是性騷擾吧？",
+    "Dailog": "Haha, manager, isn't that sexual harassment?",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "11",
+    "DialogIndex": "11",
     "ActorName": "Narrator",
-    "Dailog": "我將身子靠近了由香並用氣音跟他講些悄悄話",
+    "Dailog": "I leaned closer to Yuka and whispered in a breathy voice.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "12",
+    "DialogIndex": "12",
     "ActorName": "Player",
-    "Dailog": "你在想什麼？我是說我會做青醬類的麵喔～",
+    "Dailog": "What are you thinking? I mean, I can make pesto pasta~",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "13",
+    "DialogIndex": "13",
     "ActorName": "Yuka-Worker",
-    "Dailog": "哈哈哈，你很煩耶～",
+    "Dailog": "Hahaha, you're so annoying~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "8",
-    "DailogIndex": "14",
+    "DialogIndex": "14",
     "ActorName": "Narrator",
-    "Dailog": "就這樣兩個人約好了一起共進晚餐，以及一個秀秀兩手的機會",
+    "Dailog": "And just like that, the two of us made plans to have dinner together—and for me to show off my skills.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "9",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "由香，我之前有沒有跟你說過不要這樣子弄？",
+    "Dailog": "Yuka, haven't I told you before not to do that?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "9",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Worker",
-    "Dailog": "嗚…抱歉…我哪裡做錯了嗎？",
+    "Dailog": "Waa... Sorry... What did I do wrong?",
     "ActorFace": "Anxious"
   },
   {
     "EventIndex": "9",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "你上班的時候可以不要這麼動人嗎？我很容易分心你知道嗎？",
+    "Dailog": "Can you please not be so captivating while you're working? You know I get distracted easily.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "9",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Worker",
-    "Dailog": "這是你的問題吧！！",
+    "Dailog": "That's your problem!!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "9",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "嗚嗚…抱歉…被由香兇了，我哪裡做錯了嗎？",
+    "Dailog": "Waa... Sorry... Yuka scolded me. What did I do wrong?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "9",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Yuka-Worker",
-    "Dailog": "不要學我啦！！",
+    "Dailog": "Don't copy me!!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "9",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Player",
-    "Dailog": "呵呵，真爽",
+    "Dailog": "Hehe, that felt good.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "9",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Yuka-Worker",
-    "Dailog": "店長還真是喜歡欺負新人呢…",
+    "Dailog": "The manager really loves picking on newbies, huh...",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "9",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Narrator",
-    "Dailog": "就這樣和由香打哈哈了一下下",
+    "Dailog": "After bantering with Yuka for a bit,",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "10",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "那個…店長我可以問你一些問題嗎？",
+    "Dailog": "Um... Manager, can I ask you a question?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "10",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "人家的三圍嗎？好害羞喔原來你那麼直接呢～",
+    "Dailog": "My measurements? How embarrassing! So you're that direct, huh~",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "10",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Worker",
-    "Dailog": "才沒有好嗎…！",
+    "Dailog": "No way, okay?!",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "10",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "真失望，原來不是想要更了解我啊…",
+    "Dailog": "What a letdown. So you weren't trying to get to know me better after all...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "10",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Worker",
-    "Dailog": "哈哈哈～之後一定會啦~不過話說回來...我剛剛要問什麼來著…",
+    "Dailog": "Hahaha~ You definitely will later~ But seriously... what was I about to ask again...",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "10",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Narrator",
-    "Dailog": "就這樣幫忙由香回憶了一下剛剛要問什麼問題，原來只是要問被我順走的筆拿去哪了",
+    "Dailog": "So I helped Yuka recall what she wanted to ask earlier. Turns out she just wanted to know where I put the pen I took.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "11",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "12",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "13",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "14",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "15",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "16",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "17",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "18",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "19",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "20",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "21",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "22",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "23",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "聽到旁邊傳來了吵鬧聲，轉頭看見由香似乎正在處理比較麻煩的客人",
+    "Dailog": "Hearing commotion nearby, I turned to see Yuka seemingly dealing with a troublesome customer.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "23",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "這裡讓我來吧，妳去處理旁邊的事情吧",
+    "Dailog": "“Let me handle this. You go take care of the other thing.”",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "23",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Worker",
-    "Dailog": "可以嗎～謝謝店長❤️那我去忙其他事情囉～",
+    "Dailog": "“Is that okay? Thanks, Manager ❤️ I'll go handle the other stuff then~”",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "23",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Narrator",
-    "Dailog": "由香開心的跑走了",
+    "Dailog": "Yuka happily ran off.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "23",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Narrator",
-    "Dailog": "......就這麼被一個奧客念了五分鐘，說好的帥氣英雄救美呢...",
+    "Dailog": "......And just like that, I got lectured by a difficult customer for five minutes. Where's the dashing hero saving the damsel in distress I was promised...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "24",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Worker",
-    "Dailog": "店長…這個東西很重可以幫我搬一下嗎?",
+    "Dailog": "Manager... This thing is heavy. Could you help me carry it?",
     "ActorFace": "Anxious"
   },
   {
     "EventIndex": "24",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "沒事，我來就好，你去幫我搬剩下的小東西就好",
+    "Dailog": "No problem, I'll handle it. You just help me move the remaining small items.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "24",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Worker",
-    "Dailog": "店長最好了，謝謝你❤️",
+    "Dailog": "You're the best, Manager. Thank you ❤️",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "24",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Narrator",
-    "Dailog": "就這樣幫忙由香把重物搬到後台，順便小聊了一下天當個薪水小偷",
+    "Dailog": "So I helped Yuka carry the heavy item to the backstage area, chatting a bit along the way—basically stealing time off the clock.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "25",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "看著由香一個人在櫃檯手忙腳亂的",
+    "Dailog": "Watching Yuka scrambling alone at the counter...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "25",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "怎麼了嗎?看你好像很忙的樣子",
+    "Dailog": "Is something wrong? You seem really busy.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "25",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Worker",
-    "Dailog": "阿哈哈…客人一直來點餐，然後又有電話一直打來詢問定位，感覺有點忙不過來呢…",
+    "Dailog": "Ahaha... Customers keep coming in to order, and the phone keeps ringing with reservation inquiries. Feels like I can't keep up...",
     "ActorFace": "Anxious"
   },
   {
     "EventIndex": "25",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "菜單交給我吧，我處理得比較快，有電話打來或後續的點菜就麻煩你了",
+    "Dailog": "Let me handle the menus. I'm faster with those. You take care of incoming calls and follow-up orders.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "25",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Worker",
-    "Dailog": "真的嗎！幫了大忙呢～",
+    "Dailog": "Really?! That's such a huge help~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "25",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Narrator",
-    "Dailog": "看著由香如釋重擔的樣子，看起來她還沒有完全習慣這份工作呢",
+    "Dailog": "Seeing Yuka look so relieved, it seemed she still wasn't fully used to this job yet.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "26",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "由香你這邊有需要幫忙的嗎？",
+    "Dailog": "Yuka, do you need any help over there?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "26",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Worker",
-    "Dailog": "嗯…我這邊其實忙得差不多了呢，除非有新客人進來不然就能提早下班了呢",
+    "Dailog": "Hmm... I'm actually almost done here. Unless new customers come in, I should be able to leave early.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "26",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "這麼巧，我也是事情做完了才來看妳需不需要幫忙的",
+    "Dailog": "What a coincidence! I just finished my tasks and came to see if you needed any help.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "26",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Worker",
-    "Dailog": "話說餐酒館的話似乎晚上生意才會是最好的吧…",
+    "Dailog": "Speaking of bistros, it seems like business is best in the evenings, right?",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "26",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "是阿，所以早班上班時間雖然久，不過至少沒有晚班那麼刺激呢",
+    "Dailog": "Yeah, that's why the morning shift is long, but at least it's not as hectic as the night shift.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "26",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "所以我說，要不要來去摸個魚阿！",
+    "Dailog": "So I say, wanna take a break?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "26",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Yuka-Worker",
-    "Dailog": "真是的…完全想不到你是怎麼當上店長的呢…",
+    "Dailog": "Seriously... I can't imagine how you became manager...",
     "ActorFace": "Disdain"
   },
   {
     "EventIndex": "26",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Player",
-    "Dailog": "哈哈！我有本事啊！",
+    "Dailog": "Haha! I've got skills!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "26",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Narrator",
-    "Dailog": "就這樣和由香閒聊了一陣子，後來有客人來時我們的對話才因此結束",
+    "Dailog": "We chatted like this for a while until customers arrived, interrupting our conversation.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "由香被幾個男人給包圍起來搭訕了，不過似乎都是些熟面孔",
+    "Dailog": "Yuka got surrounded by a few guys hitting on her, but they all seemed like familiar faces.",
     "ActorFace": "Anxious"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "嘿老兄～好久不見阿，怎麼突然有空來這玩玩啦",
+    "Dailog": "Hey dude~ Long time no see! What brings you here all of a sudden?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "guest",
-    "Dailog": "嘿！兄弟！還真的好久不見啦哈哈！",
+    "Dailog": "Hey! Bro! It really has been ages, haha!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "不過你在我的地盤騷擾我們家的妹妹是不是不太好啊",
+    "Dailog": "But isn't it a bit much to be hitting on our girl right here on my turf?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "guest",
-    "Dailog": "抱歉抱歉！不過看到這麼可愛的女孩肯定會想要去認識一下的嘛～",
+    "Dailog": "Sorry, sorry! But seeing such a cute girl, you just gotta try to get to know her, right?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "人家人生地不熟，你這樣害他太害怕辭職了怎麼辦呢～",
+    "Dailog": "She's new here and doesn't know anyone. If you scare her off like this, what if she quits?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "guest",
-    "Dailog": "哈哈～不然以後你可要找機會介紹給我們認識阿",
+    "Dailog": "Haha~ Well, you'll have to introduce her to us sometime then.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Narrator",
-    "Dailog": "我做了個手勢後讓由香先離開這個地方",
+    "Dailog": "I made a gesture and let Yuka leave the area first.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Yuka-Worker",
-    "Dailog": "那我先去忙囉…….",
+    "Dailog": "I gotta get back to work...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "27",
-    "DailogIndex": "10",
+    "DialogIndex": "10",
     "ActorName": "Narrator",
-    "Dailog": "閒聊了一下後他們一行人也離開了，感覺到由香的視線就像是看見了超人一樣地注視著我",
+    "Dailog": "After chatting for a bit, the group left too. I could feel Yuka staring at me like I was Superman.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "28",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "難得休息不出去晃晃嗎？",
+    "Dailog": "Rare day off—why not go out and explore?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "28",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Home",
-    "Dailog": "原本是這麼想的…不過工作完後一躺下來，就像是被黏在沙發上起不來了呀…",
+    "Dailog": "That was the plan... but after finishing work, I just collapsed on the couch and couldn't get up.",
     "ActorFace": "Anxious"
   },
   {
     "EventIndex": "28",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Home",
-    "Dailog": "雖然送菜清潔甚麼的沒有說到特別難，不過長時間累積下來還是會感到疲憊呢",
+    "Dailog": "Delivering food and cleaning aren't exactly grueling, but the long hours really take their toll.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "28",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "真的撐不過來可以跟我說一聲啦，畢竟我們有工讀超人王小明在奮戰",
+    "Dailog": "If you're really struggling, just let me know—we've got our part-timer superhero Wang Xiaoming fighting the good fight.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "28",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Home",
-    "Dailog": "哈哈～店長真愛開玩笑呢，店長平時要顧我們這些工讀生也很辛苦吧",
+    "Dailog": "Haha~ You really love joking around, Manager. You must work hard looking after us part-timers too.",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "28",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "確實蠻辛苦的，今天有好多麻煩的工作，但跟由香聊天之後感覺好多了",
+    "Dailog": "It is pretty tough. Today had so many troublesome tasks, but chatting with Yuka made me feel much better.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "28",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Yuka-Home",
-    "Dailog": "我也是，跟店長聊天後感覺心裡輕鬆很多，來島上後第一個認識的是你真是太好了",
+    "Dailog": "Me too. Talking with you made my heart feel lighter. I'm so glad you were the first person I met after arriving on the island.",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "28",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Narrator",
-    "Dailog": "和由香聊了一些工作上的瑣事，順便一起抱怨了一些很奇葩的奧客",
+    "Dailog": "We chatted about some work trivialities and complained together about some really weird customers.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "由香似乎泡了一杯咖啡後便在大廳休息",
+    "Dailog": "Yuka seems to have brewed some coffee and is resting in the lobby now.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "由香，你知道嗎？咖啡最提神的時候是潑在衣服上的時候",
+    "Dailog": "Yuka, did you know? Coffee's most invigorating moment is when it spills on your clothes.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Home",
-    "Dailog": "噗....！",
+    "Dailog": "Pfft...!",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Narrator",
-    "Dailog": "突如其來的爛笑話似乎讓她有點措手不及",
+    "Dailog": "The sudden lame joke seems to have caught her off guard.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Home",
-    "Dailog": "哈哈哈哈！太冷了吧，都還以為是我老爸突然在講話呢",
+    "Dailog": "Hahahaha! That's so cold! I thought my dad suddenly started talking.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "看你笑的這麼開心，我看妳其實很喜歡這種冷笑話吧",
+    "Dailog": "Seeing you laugh so hard, I bet you actually love these kinds of lame jokes.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Yuka-Home",
-    "Dailog": "因為沒想到店長你會一臉認真的講出這種話嘛",
+    "Dailog": "Because I never expected the manager to say something like that with a straight face!",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Player",
-    "Dailog": "叫我一聲爹地我可以講更多這種東西給你聽喔",
+    "Dailog": "Call me Daddy and I'll tell you more of these.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Yuka-Home",
-    "Dailog": "哈哈哈這才是你的目的吧～",
+    "Dailog": "Hahaha, that's your real goal, isn't it~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "29",
-    "DailogIndex": "10",
+    "DialogIndex": "10",
     "ActorName": "Narrator",
-    "Dailog": "雖然由香後來還是沒有叫我一聲爹地，但我還是講了很多老爸爛笑話把她逗的笑聲不斷",
+    "Dailog": "Even though Yuka never called me Daddy in the end, I still told her a bunch of dad jokes and kept her laughing nonstop.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "店長～你覺得我今天怎麼樣？",
+    "Dailog": "Manager~ How do you think I did today?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "由香今天也很漂亮呢",
+    "Dailog": "Yuka looks lovely as always.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Home",
-    "Dailog": "吼～才不是問這個，我是問工作的表現啦，不過…嘿嘿好開心",
+    "Dailog": "Huh? That's not what I meant—I was asking about your work performance! But... hehe, I'm so happy.",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "妳很努力了呢，工作也越來越熟練，幫了大忙呢！",
+    "Dailog": "You've been working really hard. You're getting more and more skilled at your job and helping out so much!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Narrator",
-    "Dailog": "摸了摸由香的頭",
+    "Dailog": "He ruffled Yuka's hair.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Yuka-Home",
-    "Dailog": "真的嗎？太好了，我還以為會拖店長後腿，能幫上你的忙我很開心",
+    "Dailog": "Really? That's great! I was worried I might be holding you back. I'm so glad I can be helpful.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Player",
-    "Dailog": "別擔心，只要妳待在我身邊就能給我很大的支持了，真希望能一直跟妳在一起共事呢",
+    "Dailog": "Don't worry. Just having you by my side gives me so much support. I really hope we can keep working together forever.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Yuka-Home",
-    "Dailog": "啊…嗯…",
+    "Dailog": "Ah... um...",
     "ActorFace": "Anxious"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Narrator",
-    "Dailog": "由香猶豫了一下",
+    "Dailog": "Yuka hesitated for a moment.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "10",
+    "DialogIndex": "10",
     "ActorName": "Player",
-    "Dailog": "說起來妳在這邊打工的約到期後就要回去了嗎？",
+    "Dailog": "Speaking of which, are you planning to go back after your part-time contract here ends?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "11",
+    "DialogIndex": "11",
     "ActorName": "Yuka-Home",
-    "Dailog": "嗯…我原本是這麼打算的",
+    "Dailog": "Well... that was my original plan.",
     "ActorFace": "Sad"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "12",
+    "DialogIndex": "12",
     "ActorName": "Player",
-    "Dailog": "嗚…真難過，那這樣以後就見不到由香了呢",
+    "Dailog": "Waaah... That's so sad. Then I won't get to see Yuka anymore.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "30",
-    "DailogIndex": "13",
+    "DialogIndex": "13",
     "ActorName": "Narrator",
-    "Dailog": "由香陷入了沉默後，不到片刻又回到了原來的樣子，後來也愉快的小聊了一陣子",
+    "Dailog": "After a moment of silence, Yuka quickly returned to her usual self, and they chatted happily for a while.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "好無聊啊……",
+    "Dailog": "This is so boring...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Home",
-    "Dailog": "那麼店長想要來聊點什麼嗎？",
+    "Dailog": "So, is there anything you'd like to talk about, Manager?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "好問題耶，不然你開個話題好了",
+    "Dailog": "Good question. Why don't you bring up a topic?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Home",
-    "Dailog": "明明是店長想聊天的呢，怎麼變成我要開話了呢！",
+    "Dailog": "You're the one who wanted to chat, yet now I have to start the conversation!",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Home",
-    "Dailog": "話說突然這樣一講，我好像也不知道要開什麼話了呢……",
+    "Dailog": "Now that you mention it, I don't really know what to talk about either...",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "所以由香平常會主動找人說話比較多還是被動接話比較多呢?",
+    "Dailog": "So, Yuka, do you usually initiate conversations more often, or do you tend to respond passively?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Yuka-Home",
-    "Dailog": "嗯…通常我比較被動一點吧，除非是甚麼很想要跟別人分享的東西我才會主動找人說話吧",
+    "Dailog": "Hmm... I'm usually more passive, unless it's something I really want to share with others—then I'll take the initiative to talk.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Player",
-    "Dailog": "真看不出來呢，妳看起來就像是人緣很好很會和他人交流的人耶",
+    "Dailog": "I wouldn't have guessed! You seem like the kind of person who's super popular and great at connecting with others.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Yuka-Home",
-    "Dailog": "哈哈哈～原來在店長眼中我這麼陽光的嗎～",
+    "Dailog": "Hahaha~ So in the manager's eyes, I come across as this sunny, outgoing person?",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "31",
-    "DailogIndex": "10",
+    "DialogIndex": "10",
     "ActorName": "Narrator",
-    "Dailog": "就這樣，兩個人用不知道怎麼開話開啟話題聊了一小陣子",
+    "Dailog": "And just like that, the two of them chatted for a while, starting with topics they didn't quite know how to bring up.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "32",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "話說由香看起來挺年輕的呢，是剛畢業嗎？",
+    "Dailog": "Speaking of which, Yuka looks pretty young. Did you just graduate?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "32",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Home",
-    "Dailog": "其實也已經大學畢業一兩年了啦～",
+    "Dailog": "Actually, I graduated from college a year or two ago~",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "32",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "那麼怎麼會跑來這種鳥不生蛋的地方來呢？",
+    "Dailog": "So why did you end up in this godforsaken place?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "32",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Home",
-    "Dailog": "其實一來是想要體驗看看不同的生活啦～而且.....",
+    "Dailog": "Well, partly because I wanted to experience a different kind of life~ And...",
     "ActorFace": "Sad"
   },
   {
     "EventIndex": "32",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "這邊物價很便宜，很容易存到錢對吧",
+    "Dailog": "The cost of living here is super cheap, so it's easy to save money, right?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "32",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Yuka-Home",
-    "Dailog": "咦！店長怎麼知道的！？……想想好像也滿正常的呢，店長你應該是本地人吧？",
+    "Dailog": "Huh! How did the manager know that!?... Come to think of it, it makes sense. You must be from around here, right?",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "32",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Player",
-    "Dailog": "當然囉，每個來這邊存錢的人結果最後都玩光光了，笑死怎麼存？",
+    "Dailog": "Of course! Everyone who comes here to save money ends up blowing it all. Haha, how could they save?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "32",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Narrator",
-    "Dailog": "就這樣和由香分享了許多個之前也是來這邊打工旅遊然後甚麼都沒有帶出去的其他大學生們的經歷",
+    "Dailog": "And so, I shared with Yuka many stories of other college students who came here to work and travel but ended up leaving with nothing.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "由香你今晚有空嗎？",
+    "Dailog": "Yuka, are you free tonight?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Home",
-    "Dailog": "嗯…應該沒空",
+    "Dailog": "Hmm... I don't think I am.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "真巧，我也沒空",
+    "Dailog": "Funny, I'm not free either",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Home",
-    "Dailog": "……",
+    "Dailog": ".......",
     "ActorFace": "Disdain"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Home",
-    "Dailog": "店長你在逗我嗎？",
+    "Dailog": "Are you messing with me, Manager?",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "哈哈哈不要生氣嘛，由香生氣起來也這麼可愛",
+    "Dailog": "Hahaha, don't get mad. You look adorable when you're upset, Yuka.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Narrator",
-    "Dailog": "(捏住了由香鼓起的雙頰)",
+    "Dailog": "(pinches Yuka's puffed cheeks)",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭～別欺負我了，店長你是不是都對其他女生用這招啊？",
+    "Dailog": "Ugh~ Stop teasing me! Do you pull this move on all the girls, Manager?",
     "ActorFace": "Shy"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Player",
-    "Dailog": "哪有，我只有對由香才這樣喔",
+    "Dailog": "No way, I only do this with Yuka.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "33",
-    "DailogIndex": "10",
+    "DialogIndex": "10",
     "ActorName": "Narrator",
-    "Dailog": "就這樣一邊逗由香一邊閒聊了一陣子，不過談到感情部分時由香不自然的迴避了話題，感覺由香似乎有什麼想隱藏的事",
+    "Dailog": "We chatted and teased each other for a while, but when the topic turned to relationships, Yuka awkwardly dodged it. It felt like she was hiding something.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "真想不到由香竟然是這麼勤勞的人耶...",
+    "Dailog": "Who knew Yuka was such a hard worker...",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Narrator",
-    "Dailog": "癱在沙發上的由香一臉疑惑的看著我，並且懷疑著現在的狀況",
+    "Dailog": "Yuka lay sprawled on the sofa, looking at me with confusion, clearly unsure of the situation.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "妳在宿舍裡面竟然也會化妝耶！",
+    "Dailog": "“You actually wear makeup in the dorm too?!”",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Home",
-    "Dailog": "嘿嘿，店長覺得我今天的妝怎麼樣？",
+    "Dailog": "“Hehe, what do you think of my makeup today, Manager?”",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "很可愛啊，但我一點也不開心",
+    "Dailog": "“It's cute, but I'm not happy at all.”",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Yuka-Home",
-    "Dailog": "為什麼？",
+    "Dailog": "“Why?”",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Player",
-    "Dailog": "這麼可愛的女孩子應該已經有男朋友了吧！真不公平！",
+    "Dailog": "“A girl this cute should already have a boyfriend! It's so unfair!”",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Yuka-Home",
-    "Dailog": "哈哈，店長稱讚我是我的榮幸～但在各方面的答案都答錯囉～",
+    "Dailog": "“Haha, it's an honor to get compliments from the Manager~ But you got all your guesses wrong~”",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Player",
-    "Dailog": "啊?哪個部分?！",
+    "Dailog": "Huh? Which part?!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "34",
-    "DailogIndex": "10",
+    "DialogIndex": "10",
     "ActorName": "Narrator",
-    "Dailog": "之後由香把話題轉移到了其他地方，從中套出的話幾乎指向她應該沒有男朋友，那看起來我的敵人是一堆人而不是只有一個人啊...",
+    "Dailog": "After that, Yuka steered the conversation elsewhere. From what I could gather, it seemed highly likely she didn't have a boyfriend. Looks like I've got a whole bunch of rivals instead of just one...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "今天天氣真好，不去外面晃晃還真可惜，由香你想跟我一起出門嗎？",
+    "Dailog": "The weather's so nice today, it'd be a shame not to go out. Yuka, wanna hang out with me?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Home",
-    "Dailog": "嗯…好熱……感覺出去外面就好麻煩阿...",
+    "Dailog": "Hmm... It's so hot... Going out feels like such a hassle...",
     "ActorFace": "Anxious"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "不然我請你吃飯也可以啊！",
+    "Dailog": "How about I treat you to dinner instead?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Home",
-    "Dailog": "我剛吃飽～不用了，躺在這邊吹著冷氣還更舒適，抱歉啦店長大人我是陪不了你啦～",
+    "Dailog": "I just ate~ No thanks, lounging here with the AC is way more comfy. Sorry, Boss, I can't keep you company~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "還是等到晚點比較涼爽的時候再出門也可以啊！一邊看著星星一邊吃著消夜不覺得聽起來浪漫到不行嗎？",
+    "Dailog": "We could wait until later when it cools down! Imagine eating snacks under the stars—doesn't that sound incredibly romantic?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Yuka-Home",
-    "Dailog": "聽起來我都要變胖了，況且要帶我出門的話先打贏這個沙發再說吧！好累阿…完全不想出門呢…",
+    "Dailog": "That sounds like a recipe for weight gain. Besides, if you want to take me out, you'll have to beat this couch first! I'm so tired... I really don't feel like going out...",
     "ActorFace": "Sad"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Player",
-    "Dailog": "我有個想法，那來去我房間怎麼樣，甚至還在這個宿舍範圍內，這提議超棒的對吧！",
+    "Dailog": "I've got an idea—how about we go to my room? It's still within the dorm grounds. Isn't that a great suggestion?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Yuka-Home",
-    "Dailog": "哈哈哈，這玩笑過頭了吧～哪有人家才剛來就想要誘拐人家的，不會店長就是家長要我們堤防的那種怪叔叔吧～",
+    "Dailog": "Hahaha, that joke's a bit much~ Who tries to kidnap someone the moment they arrive? Are you some creepy uncle the manager warned us about?",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Player",
-    "Dailog": "不然你倒是說說可以幹什麼啊！",
+    "Dailog": "Then tell me what we can actually do!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "35",
-    "DailogIndex": "10",
+    "DialogIndex": "10",
     "ActorName": "Narrator",
-    "Dailog": "就這樣和由香討論了可以去哪裡玩之類的想法，雖然到最後大家都還是待在宿舍裡面舒舒服服地吹冷氣",
+    "Dailog": "That's how Yuka and I brainstormed places to hang out, though in the end, we all just stayed cozy in the dorm room with the AC blasting.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "嗚…好餓喔……",
+    "Dailog": "Waaah... I'm so hungry...",
     "ActorFace": "Sad"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "怎麼了嗎？",
+    "Dailog": "What's wrong?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Home",
-    "Dailog": "突然好想吃點東西喔…可是零食我全部吃完了好懶得出門",
+    "Dailog": "I suddenly really want something to eat... But I ate all the snacks and I'm too lazy to go out.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "吃我。",
+    "Dailog": "Eat me",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Home",
-    "Dailog": "…….",
+    "Dailog": ".......",
     "ActorFace": "Disdain"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Player",
-    "Dailog": "好啦，想吃什麼跟我講，剛好我也想吃點東西",
+    "Dailog": "Alright, tell me what you want to eat. I was thinking of grabbing something too.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Yuka-Home",
-    "Dailog": "真的嗎！？太感謝了！",
+    "Dailog": "Really!? Thank you so much!",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Player",
-    "Dailog": "呵呵，舉手之勞，那麼什麼時候要出發？",
+    "Dailog": "Hehe, no big deal. So when do you want to head out?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Yuka-Home",
-    "Dailog": "咦？我以為我可以待在沙發上呢……",
+    "Dailog": "Huh? I thought I could just stay on the couch...",
     "ActorFace": "Neutral"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "10",
+    "DialogIndex": "10",
     "ActorName": "Narrator",
-    "Dailog": "由香用著閃亮亮的眼神看著我",
+    "Dailog": "Yuka looked at me with sparkling eyes.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "36",
-    "DailogIndex": "11",
+    "DialogIndex": "11",
     "ActorName": "Narrator",
-    "Dailog": "而我原本以為可以和由香出去一起吃飯，結果默默地變成消夜外送員了",
+    "Dailog": "And I thought I'd be going out to eat with Yuka, but somehow I ended up being her late-night delivery guy.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "37",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "好像到了睡覺時間時由香房間常常都會有滿多的動靜的呢…",
+    "Dailog": "It seems like Yuka's room is always pretty noisy around bedtime...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "37",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Home",
-    "Dailog": "……！",
+    "Dailog": "...!",
     "ActorFace": "shock"
   },
   {
     "EventIndex": "37",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Narrator",
-    "Dailog": "似乎有什麼事情怕被發現一樣，由香的眼睛直勾勾的看著我",
+    "Dailog": "As if afraid of being caught doing something, Yuka stared straight at me.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "37",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "不會這裡有老鼠或蟑螂吧？",
+    "Dailog": "Could there be mice or cockroaches here?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "37",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "哈哈，沒有那麼誇張啦～不過蟑螂偶爾會出現呢",
+    "Dailog": "Haha, it's not that bad~ Though cockroaches do show up occasionally.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "37",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Narrator",
-    "Dailog": "有什麼問題都可以找我喔！大聲喊我名字我馬上就會去妳房間支援了",
+    "Dailog": "If you have any problems, just let me know! Just yell my name and I'll rush over to your room for backup.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "37",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Yuka-Home",
-    "Dailog": "蟑螂和老鼠跑出來我才會叫你喔～其他時候就應該不用了呦",
+    "Dailog": "I'll only call you if cockroaches or mice come out~ Otherwise, you shouldn't need me.",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "37",
-    "DailogIndex": "8",
+    "DialogIndex": "8",
     "ActorName": "Player",
-    "Dailog": "妳在低估我的業務範圍嗎？",
+    "Dailog": "Are you underestimating my service range?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "37",
-    "DailogIndex": "9",
+    "DialogIndex": "9",
     "ActorName": "Yuka-Home",
-    "Dailog": "嘿嘿，下次有蟑螂一定會叫你啦～",
+    "Dailog": "Hehe, next time there's a cockroach, I'll definitely call you~",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "38",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "39",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "40",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "41",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "42",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "43",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "44",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "45",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "46",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "47",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "48",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "49",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "討厭！店長再看哪裡呢！！",
+    "Dailog": "Ugh! Where is the manager looking again?!",
     "ActorFace": "Angry"
   },
   {
     "EventIndex": "50",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "這是我們島上特產的水果，甜甜的很好入口，妳要試試看嗎？",
+    "Dailog": "This is a special fruit from our island—sweet and easy to eat. Would you like to try some?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "50",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Home",
-    "Dailog": "阿…沒關係…我不太喝酒的，我可以在旁邊看著你喝就好……",
+    "Dailog": "Ah... it's okay... I don't really drink much. I can just watch you drink from the side...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "50",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Narrator",
-    "Dailog": "就這樣和由香一邊聊天，一邊小酌了一下",
+    "Dailog": "So I chatted with Yuka while sipping a little drink.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "51",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "下班後喝點小酒聊個天是件很放鬆的事情，要來一杯嗎？",
+    "Dailog": "Having a drink and chatting after work is so relaxing. Want to join me for a glass?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "51",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka",
-    "Dailog": "嗚嗚我的酒量不是很好，雖然沒有辦法陪你喝太久，但陪你聊天還是可以的～",
+    "Dailog": "Wah, I'm not much of a drinker. I can't keep up with you for long, but I can definitely keep you company while we chat~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "51",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Narrator",
-    "Dailog": "就這樣和由香一邊聊天，一邊小酌了一下",
+    "Dailog": "So we chatted and sipped drinks together.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "52",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Yuka-Home",
-    "Dailog": "桌上這個是酒嗎？包裝看起來好像挺高級的呢…",
+    "Dailog": "Is that liquor on the table? The packaging looks pretty fancy...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "52",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Player",
-    "Dailog": "這是我們島上挺有名的水果酒，我跟酒廠老闆很熟，店裡有滿多的酒都是跟他們訂的，想要喝喝看嗎？",
+    "Dailog": "This is a pretty famous fruit wine from our island. I'm good friends with the distillery owner, and we get a lot of our stock from them. Want to try some?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "52",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Yuka-Home",
-    "Dailog": "我不太喝酒的啦哈哈…我喝醉的話不知道會做出什麼事情",
+    "Dailog": "I don't really drink much, haha... Who knows what I'd do if I got drunk.",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "52",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Player",
-    "Dailog": "喔？難道由香是那種會酒後亂性的人？真想見識一下啊...",
+    "Dailog": "Oh? Could Yuka be the type to lose control when drunk? I'd love to see that...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "52",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Yuka-Home",
-    "Dailog": "真是的，店長現在是不是在亂想些奇怪的東西阿！",
+    "Dailog": "Seriously, is the shopkeeper thinking weird thoughts right now?!",
     "ActorFace": "Shy"
   },
   {
     "EventIndex": "52",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Narrator",
-    "Dailog": "由香明明沒喝酒臉頰卻變得通紅",
+    "Dailog": "Yuka hadn't even had a sip, yet her cheeks were flushed bright red.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "52",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Narrator",
-    "Dailog": "就這樣和由香一邊聊天，一邊小酌了一下",
+    "Dailog": "So we chatted with Yuka while sipping lightly.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "53",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "將酒倒入杯子後蓋上蓋子，並且用力旋轉了起來",
+    "Dailog": "After pouring the liquor into a cup, I capped it and began spinning it vigorously.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "53",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Narrator",
-    "Dailog": "慢慢的酒瓶的口朝向了由香，而由香似乎很納悶的看著桌上旋轉的酒瓶思考發生了什麼",
+    "Dailog": "Slowly, the bottle's opening turned toward Yuka. She stared at the spinning bottle on the table, puzzled, wondering what was happening.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "53",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "真心話還大冒險！",
+    "Dailog": "Truth or Dare!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "53",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Home",
-    "Dailog": "阿…….蛤！？…….真心話…？",
+    "Dailog": "Ah... Huh!?... Truth...?",
     "ActorFace": "shock"
   },
   {
     "EventIndex": "53",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "嗯…知道了！由香覺得我看起來怎麼樣呢？",
+    "Dailog": "Hmm... Got it! What does Yuka think of my look?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "53",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Yuka-Home",
-    "Dailog": "哈哈哈…我現在選大冒險還來的及嗎？",
+    "Dailog": "Hahaha... Is it too late to choose Truth or Dare now?",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "53",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Narrator",
-    "Dailog": "就這樣由香的頭頂頂著一瓶水果酒繞了客廳五圈",
+    "Dailog": "And so Yuka circled the living room five times with a bottle of fruit wine balanced on her head.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "54",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "話說由香在上班時看著客人的食物會有想要吃的想法嗎？",
+    "Dailog": "By the way, does Yuka ever get hungry looking at customers' food while working?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "54",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Yuka-Home",
-    "Dailog": "嘻嘻當然有阿！這裡好多食物都看起來很好吃呢～",
+    "Dailog": "Hehe, of course! So much of it looks delicious here~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "54",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Player",
-    "Dailog": "偷偷告訴你，現在我在喝的這杯就是價格上面最貴的那一排喔！",
+    "Dailog": "Let me tell you a secret—the one I'm drinking right now is from the priciest row on the menu!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "54",
-    "DailogIndex": "4",
+    "DialogIndex": "4",
     "ActorName": "Yuka-Home",
-    "Dailog": "咦！？難道店長也是超級有錢人嗎？",
+    "Dailog": "Huh!? Does that mean the manager is super rich too?",
     "ActorFace": "Surprise"
   },
   {
     "EventIndex": "54",
-    "DailogIndex": "5",
+    "DialogIndex": "5",
     "ActorName": "Player",
-    "Dailog": "當然是直接拿回來的啊！不過老闆好像也沒啥要管我的意思，想要喝一杯嗎？",
+    "Dailog": "Of course I just took it home! But the boss doesn't seem to mind. Want a sip?",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "54",
-    "DailogIndex": "6",
+    "DialogIndex": "6",
     "ActorName": "Yuka-Home",
-    "Dailog": "欸…沒關係啦～店長你喝就好～",
+    "Dailog": "Eh... it's fine~ You drink up, Manager~",
     "ActorFace": "Happy"
   },
   {
     "EventIndex": "54",
-    "DailogIndex": "7",
+    "DialogIndex": "7",
     "ActorName": "Narrator",
-    "Dailog": "就這樣和由香一邊聊天，一邊小酌了一下",
+    "Dailog": "So I chatted with Yuka while sipping a little.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "55",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "幹…殺了我…….如果店裡多來點妹子的話我可能會好受點…",
+    "Dailog": "Damn... Kill me... If there were more girls in the shop, I might feel better...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "56",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "往好處想…至少我學乖了昨天有早點睡…",
+    "Dailog": "Look on the bright side... At least I learned my lesson and went to bed early yesterday...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "57",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "早知道就叫那個老頭再請一個工讀生，這樣我就能天天睡到自然醒了",
+    "Dailog": "I should've told that old man to hire another part-timer. Then I could sleep in every day.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "58",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "幹…天啊，我現在一刻都不想待在這裡…",
+    "Dailog": "Damn... God, I don't want to stay here another minute...",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "59",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "playerName…你可以的，今天最後一天了！",
+    "Dailog": "playerName…You can do it! Today's the last day!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "60",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "爽啊！放假了，可以好好放鬆爽一天了！",
+    "Dailog": "Awesome! It's the weekend—time to chill out and enjoy a day of pure bliss!",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "61",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Player",
-    "Dailog": "終於下班了，可以輪班換我去爽了",
+    "Dailog": "Finally off work—my shift's over and it's my turn to enjoy myself.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "61",
-    "DailogIndex": "2",
+    "DialogIndex": "2",
     "ActorName": "Narrator",
-    "Dailog": "好的～這邊弄完我也就可以交班了～",
+    "Dailog": "Got it~ Once I finish up here, I can hand over my shift~",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "61",
-    "DailogIndex": "3",
+    "DialogIndex": "3",
     "ActorName": "Narrator",
-    "Dailog": "完成交接的工作後，便回去了宿舍",
+    "Dailog": "After completing the handover, I headed back to the dorm.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "62",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "反正也不知道幹嘛，就這麼躺在床上耍廢，然後一天就過了",
+    "Dailog": "Not really sure what to do anyway, so I just lazed around in bed and the day slipped by.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "63",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "今天挺累的，還是早點休息吧",
+    "Dailog": "Pretty tired today—better get some rest early.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "64",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "時間也不晚了，再不睡明天就起不來了",
+    "Dailog": "It's getting late—if I don't sleep now, I won't be able to get up tomorrow.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "65",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "沒事還是不要亂進別人房間好了",
+    "Dailog": "Probably shouldn't wander into other people's rooms unless I have to.",
     "ActorFace": "NoActor"
   },
   {
     "EventIndex": "66",
-    "DailogIndex": "1",
+    "DialogIndex": "1",
     "ActorName": "Narrator",
-    "Dailog": "已完成存檔！",
+    "Dailog": "Save completed!",
     "ActorFace": "NoActor"
   }
 ]
