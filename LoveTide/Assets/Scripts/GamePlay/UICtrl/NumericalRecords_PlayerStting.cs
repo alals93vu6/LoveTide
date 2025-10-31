@@ -9,22 +9,12 @@ public class NumericalRecords_PlayerStting : MonoBehaviour
     [SerializeField] public int bgmLoudness;
     [SerializeField] public int soundLoudness;
     [SerializeField] public int voicesLoudness;
-    
+    [SerializeField] public int languageLoudness;
+
     // Start is called before the first frame update
     private void Awake()
     {
         LoadGameSetData();
-    }
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void LoadGameSetData()
@@ -32,5 +22,6 @@ public class NumericalRecords_PlayerStting : MonoBehaviour
         bgmLoudness = PlayerPrefs.GetInt("bgmSet");
         soundLoudness = PlayerPrefs.GetInt("soundSet");
         voicesLoudness = PlayerPrefs.GetInt("voicesSet");
+        languageLoudness = PlayerPrefs.GetInt("LanguageSet");
     }
 }

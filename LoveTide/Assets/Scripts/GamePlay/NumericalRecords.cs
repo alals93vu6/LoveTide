@@ -94,6 +94,34 @@ public class NumericalRecords : MonoBehaviour
         }
     }
 
+    public int DialogueDetected()
+    {
+        var result = 0;
+
+        if (mainMission <= 3)
+        {
+            result = 0;
+        }
+        else if (mainMission > 3 && mainMission <= 4)
+        {
+            result = 1;
+        }
+        else if (mainMission > 4 && mainMission <= 5)
+        {
+            result = 2;
+        }
+        else if (mainMission > 5 && mainMission <= 6)
+        {
+            result = 3;
+        }
+        else if (mainMission > 6)
+        {
+            result = 4;
+        }
+
+        return result;
+    }
+
     private void FDS_Detected()
     {
         if (friendship <= 200)
