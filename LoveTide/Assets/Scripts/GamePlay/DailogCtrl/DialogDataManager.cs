@@ -9,12 +9,8 @@ public class DialogDataManager : MonoBehaviour
     [SerializeField] public DialogDataDetected dialogDataDetected;
     [SerializeField] public List<GameDiaData> DiaDataList;
     [SerializeField] public TextAsset testJson;
-    private void Start()
-    {
 
-    }
-
-    public void OnStart(int progress)
+    public void OnLoadDialogData(int progress)
     {
         var route =  dialogDataDetected.DiaLogListDetected(progress);
         testJson = Resources.Load<TextAsset>(route);
@@ -30,14 +26,4 @@ public class DialogDataManager : MonoBehaviour
         DiaDataList = JsonConvert.DeserializeObject<List<GameDiaData>>(jsonData);
     }
 }
-
-[System.Serializable]
-    public class GameDiaData
-    {
-        public int EventIndex { get; set; }
-        public int DailogIndex { get; set; }
-        public string ActorName { get; set; }
-        public string Dailog { get; set; }
-        public string ActorFace { get; set; }
-    }
 

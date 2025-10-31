@@ -36,7 +36,7 @@ public class GameManagerTest : MonoBehaviour
     {
         //Debug.Log(PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()));
         numberCtrl.OnStart();
-        dialogManager.OnStart(numberCtrl.DialogueDetected());
+        dialogManager.OnLoadDialogData(numberCtrl.DialogueDetected());
         textBox.OnStart_TextBox(dialog[PlayerPrefs.GetInt("FDS_LV")]);
         actorManager.OnStart(dialog[PlayerPrefs.GetInt("FDS_LV")]);
         CheckActions();
@@ -193,7 +193,7 @@ public class GameManagerTest : MonoBehaviour
     public void OnTalkEvent(int talkID)
     {
         textBox.listSerial = talkID;
-        textBox.OnDisplayText();
+        textBox.OnDisplayText(dialogManager.DiaDataList);
         SetClickObject(6);
         gameUICtrl.informationButtonObject.SetActive(false);
         if (numberCtrl.aTimer == 7 && !timer.vacation) { }

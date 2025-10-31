@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DialogDataDetected : MonoBehaviour
 {
-    [SerializeField] public string talkEvent;
     public string DiaLogListDetected(int progress)
     {
         return $"PlayingDialog/{LanguageDetected()}/{ProgressDetected(progress)}";

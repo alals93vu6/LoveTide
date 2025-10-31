@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,20 +40,26 @@ public class TextBoxTestPlaying : MonoBehaviour
     public void OnStart_TextBox(DialogData diadata)
     {
         diaLog = diadata;
-        TextDataLoad(listSerial);
+        //TextDataLoad(listSerial);
         //Debug.Log(diaLog.name);
         //ChickName();
         //StartCoroutine(DisplayTextWithTypingEffect(false)); 
     }
 
-    public void TextDataLoad(int ID)
+    public void TextDataLoad(int ID,List<GameDiaData> diaDatas)
     {
+        getTextDate = diaDatas
+            .Where(data => data.EventIndex == ID)
+            .Select(data => data.Dailog.Replace("playername", numericalData.playerName))
+            .ToArray();
+
         //Array.Clear(getTextDate,0,50);
         //Debug.Log(arraySize);
+        /*
         for (int i = 0; i < diaLog.plotOptionsList[ID].dialogDataDetails.Count; i++)
         {
             getTextDate[i] = diaLog.plotOptionsList[ID].dialogDataDetails[i].sentence.Replace("playername",numericalData.playerName);
-        }
+        }*/
         //Debug.Log("Onload");
     }
     
@@ -86,7 +93,7 @@ public class TextBoxTestPlaying : MonoBehaviour
         }
     }
 
-    public void OnDisplayText()
+    public void OnDisplayText(List<GameDiaData> diaDatas)
     {
         
         if (listSerial == 70)
@@ -96,7 +103,7 @@ public class TextBoxTestPlaying : MonoBehaviour
         }
         else
         {
-            TextDataLoad(listSerial);
+            TextDataLoad(listSerial,diaDatas);
         }
         textNumber = 0;
         ChickName();

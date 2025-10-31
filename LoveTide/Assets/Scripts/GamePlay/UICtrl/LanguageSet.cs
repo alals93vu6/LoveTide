@@ -40,6 +40,7 @@ public class LanguageSet : MonoBehaviour
                 PlayerPrefs.SetInt("LanguageSet",3);
                 break;
         }
-        
+
+        FindObjectOfType<DialogDataManager>().OnLoadDialogData(FindObjectOfType<NumericalRecords>().DialogueDetected());
     }
 }
