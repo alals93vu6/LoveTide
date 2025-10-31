@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7020317}
   - component: {fileID: 7020318}
+  - component: {fileID: 7020319}
   m_Layer: 0
   m_Name: DailogDetectedManager
   m_TagString: Untagged
@@ -161,11 +162,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7020316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fb826d0c5c92014d8327ec2d2207b16, type: 3}
+  m_Script: {fileID: 11500000, guid: d5b76b341902da141b9e9c59d49c3e0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DiaDataList: []
-  testJson: {fileID: 4900000, guid: a8e287933d0616c438dac507c8cd1bc3, type: 3}
+  dialogDataDetected: {fileID: 7020319}
+  testJson: {fileID: 0}
+--- !u!114 &7020319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7020316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06eda022ef8f231469ecca8e07f8d2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &20899417
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,7 +3613,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
   - {fileID: 11400000, guid: d6d35469e328a5949a0ab881161e0d06, type: 2}
-  dialogManager: {fileID: 0}
+  dialogManager: {fileID: 7020318}
   isTalk: 0
   timePass: 0
   isAlone: 0
@@ -11996,6 +12009,7 @@ MonoBehaviour:
   bgmLoudness: 0
   soundLoudness: 0
   voicesLoudness: 0
+  languageLoudness: 0
 --- !u!1 &1563919647
 GameObject:
   m_ObjectHideFlags: 0
