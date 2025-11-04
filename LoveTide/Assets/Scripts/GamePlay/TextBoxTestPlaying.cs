@@ -13,10 +13,9 @@ public class TextBoxTestPlaying : MonoBehaviour
     [SerializeField] public Text showText;
     [SerializeField] public float letterSpeed = 0.02f;
     [SerializeField] public int textNumber = 0;
-    [SerializeField] public string[] getTextDate;
+    [SerializeField] public List<GameTextBoxDiaData> gameTextBoxDiaDatas;
 
     [Header("物件")]
-    [SerializeField] public DialogData diaLog;
     [SerializeField] public GameObject talkObject;
     [SerializeField] public NumericalRecords numericalData;
     [SerializeField] public ActorManagerTest actorCtrl;
@@ -37,38 +36,33 @@ public class TextBoxTestPlaying : MonoBehaviour
         
     }
 
-    public void OnStart_TextBox(DialogData diadata)
+    public void OnStart_TextBox()
     {
-        diaLog = diadata;
-        //TextDataLoad(listSerial);
-        //Debug.Log(diaLog.name);
-        //ChickName();
-        //StartCoroutine(DisplayTextWithTypingEffect(false)); 
+         
     }
 
     public void TextDataLoad(int ID,List<GameDiaData> diaDatas)
     {
-        getTextDate = diaDatas
+        gameTextBoxDiaDatas = diaDatas
             .Where(data => data.EventIndex == ID)
-            .Select(data => data.Dailog.Replace("playername", numericalData.playerName))
-            .ToArray();
+            .Select(data => new GameTextBoxDiaData
+            {
+                DailogIndex = data.DailogIndex,
+                ActorName = data.ActorName,
+                Dailog = data.Dailog.Replace("playername", numericalData.playerName)
+            })
+            .ToList();
 
-        //Array.Clear(getTextDate,0,50);
-        //Debug.Log(arraySize);
-        /*
-        for (int i = 0; i < diaLog.plotOptionsList[ID].dialogDataDetails.Count; i++)
-        {
-            getTextDate[i] = diaLog.plotOptionsList[ID].dialogDataDetails[i].sentence.Replace("playername",numericalData.playerName);
-        }*/
-        //Debug.Log("Onload");
+        /*Debug.Log($"[TextDataLoad] 共載入 {gameTextBoxDiaDatas.Count} 筆資料：\n" +
+        string.Join("\n", gameTextBoxDiaDatas.Select(x => $"{x.ActorName}: {x.Dailog}")));*/
     }
     
     private IEnumerator DisplayTextWithTypingEffect(bool OnWork)
     {
         isover = true;
-        if ( getTextDate.Length > textNumber)
+        if (gameTextBoxDiaDatas.Count > textNumber)
         {
-            string targetText = getTextDate[textNumber];
+            string targetText = gameTextBoxDiaDatas[textNumber].Dailog;
             showText.text = "";
             
             if (!OnWork)
@@ -98,15 +92,15 @@ public class TextBoxTestPlaying : MonoBehaviour
         
         if (listSerial == 70)
         {
-            getTextDate[0] = NumericalLog("A");
-            getTextDate[1] = ConditionLog("B");
+            gameTextBoxDiaDatas[0].Dailog = NumericalLog("A");
+            gameTextBoxDiaDatas[1].Dailog = ConditionLog("B");
         }
         else
         {
             TextDataLoad(listSerial,diaDatas);
         }
         textNumber = 0;
-        ChickName();
+        OnChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
         DisplayTextBox(true);
         //actorCtrl.ActorCtrl();
@@ -115,11 +109,11 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     public void NextText()
     {
-        if (textNumber < diaLog.plotOptionsList[listSerial].dialogDataDetails.Count-1)
+        if (textNumber < gameTextBoxDiaDatas.Count-1)
         {
             stopLoop = false;
             textNumber++;
-            ChickName();
+            OnChickName();
             //actorCtrl.TheActor[1].gameObject.SetActive(false);
             actorCtrl.ActorCtrl();
             StartCoroutine(DisplayTextWithTypingEffect(false));
@@ -144,22 +138,81 @@ public class TextBoxTestPlaying : MonoBehaviour
         talkObject.SetActive(display);
     }
 
-    private void ChickName()
+    private void OnChickName()
     {
-       switch (diaLog.plotOptionsList[listSerial].dialogDataDetails[textNumber].speaker)
+        Debug.Log($"NameDetected:{gameTextBoxDiaDatas[textNumber].ActorName}");
+        switch (PlayerPrefs.GetInt("LanguageSet"))
         {
-            case Speaker.Chorus: nameText.text = " "; break;
-            case Speaker.Player: nameText.text = PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString());; break;
-            case Speaker.GirlFriend: nameText.text = "由香"; break;
-            case Speaker.BoyFriend: nameText.text = "苦主"; break;
-            case Speaker.Steve: nameText.text = "史帝夫"; break;
-            case Speaker.PoliceA: nameText.text = "警察A"; break;
-            case Speaker.PoliceB: nameText.text = "警察B"; break;
-            case Speaker.PassersbyA: nameText.text = "路人"; break;
-            case Speaker.PassersbyB: nameText.text = "客人"; break;
+            case 0: ChickName_EN(); break;
+            case 1: ChickName_JP(); break;
+            case 2: ChickName_TW(); break;
+            case 3: ChickName_CN(); break;
         }
     }
 
+    private void ChickName_TW()
+    {
+        switch (gameTextBoxDiaDatas[textNumber].ActorName)
+        {
+            case "Narrator": nameText.text = " "; break;
+            case "Player": nameText.text = PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()); ; break;
+            case "Yuka": nameText.text = "由香"; break;
+            case "Yuka-Worker": nameText.text = "由香"; break;
+            case "Yuka-Home": nameText.text = "由香"; break;
+            case "guest": nameText.text = "兄弟"; break;
+            default:
+                nameText.text = "???";
+                break;
+        }
+    }
+
+    private void ChickName_CN()
+    {
+        switch (gameTextBoxDiaDatas[textNumber].ActorName)
+        {
+            case "Narrator": nameText.text = " "; break;
+            case "Player": nameText.text = PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()); ; break;
+            case "Yuka": nameText.text = "由香"; break;
+            case "Yuka-Worker": nameText.text = "由香"; break;
+            case "Yuka-Home": nameText.text = "由香"; break;
+            case "guest": nameText.text = "兄弟"; break;
+            default:
+                nameText.text = "???";
+                break;
+        }
+    }
+
+    private void ChickName_EN()
+    {
+        switch (gameTextBoxDiaDatas[textNumber].ActorName)
+        {
+            case "Narrator": nameText.text = " "; break;
+            case "Player": nameText.text = PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()); ; break;
+            case "Yuka": nameText.text = "Yuka"; break;
+            case "Yuka-Worker": nameText.text = "Yuka"; break;
+            case "Yuka-Home": nameText.text = "由香"; break;
+            case "guest": nameText.text = "Bro"; break;
+            default:
+                nameText.text = "???";
+                break;
+        }
+    }
+
+    private void ChickName_JP()
+    {
+        switch (gameTextBoxDiaDatas[textNumber].ActorName)
+        {
+            case "Narrator": nameText.text = " "; break;
+            case "Player": nameText.text = PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()); ; break;
+            case "Yuka": nameText.text = "由香"; break;
+            case "Yuka-Worker": nameText.text = "由香"; break;
+            case "Yuka-Home": nameText.text = "由香"; break;
+            case "guest": nameText.text = "ダチ"; break;
+            default:
+                nameText.text = "???";
+                break;
+        }
+    }
     private string NumericalLog(string numericalText)
     {
         string periodText = "LogText";
@@ -231,4 +284,11 @@ public class TextBoxTestPlaying : MonoBehaviour
 
         return lustNumber;
     }
+}
+
+public class GameTextBoxDiaData
+{
+    public int DailogIndex;
+    public string ActorName;
+    public string Dailog;
 }

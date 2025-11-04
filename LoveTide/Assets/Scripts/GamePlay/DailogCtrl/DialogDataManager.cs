@@ -24,6 +24,10 @@ public class DialogDataManager : MonoBehaviour
         var jsonData = jsonFile.text;
 
         DiaDataList = JsonConvert.DeserializeObject<List<GameDiaData>>(jsonData);
+        /*for (int i = 0; i < DiaDataList.Count; i++)
+        {
+            Debug.Log(DiaDataList[i].ActorName);
+        }*/
     }
 }
 
