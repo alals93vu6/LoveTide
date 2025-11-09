@@ -86,22 +86,22 @@ public class CharacterStartAnimation : MonoBehaviour
                 SetFullExpression(0, 0, 0, 0);
                 break;
             case "Anxious":
-                SetFullExpression(0, 0, 0, 0);
+                SetFullExpression(2, 0, 5, 2);
                 break;
             case "Sad":
-                SetFullExpression(0, 0, 0, 0);
+                SetFullExpression(2, 0, 5, 0);
                 break;
             case "Angry":
-                SetFullExpression(0, 0, 0, 0);
+                SetFullExpression(3, 0, 5, 0);
                 break;
             case "Disdain":
-                SetFullExpression(0, 0, 0, 0);
+                SetFullExpression(1, 2, 5, 2);
                 break;
             case "Shy":
-                SetFullExpression(0, 0, 0, 0);
+                SetFullExpression(3, 0, 2, 1);
                 break;
             case "shock":
-                SetFullExpression(0, 0, 0, 0);
+                SetFullExpression(0, 5, 0, 2);
                 break;
         }
     }

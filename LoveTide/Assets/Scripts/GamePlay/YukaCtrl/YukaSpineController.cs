@@ -23,4 +23,20 @@ public class YukaSpineController : MonoBehaviour
         
     }
 
+    public void ChangeYukaApparel(bool isvacation,string action)
+    {
+        if (isvacation)
+        {
+            workerYuka.SetActive(false);
+            normalYuka.SetActive(true);
+            normalYukaAnimator.OnSetActorFace(action);
+        }
+        else
+        {
+            normalYuka.SetActive(false);
+            workerYuka.SetActive(true);
+            workerYukaAnimator.OnSetActorFace(action);
+        }
+    }
+
 }

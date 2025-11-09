@@ -155,8 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyIdleAnimation: body_idle
   eyesIdleAnimation: Eyes_Nomal
-  eyebrowIdleAnimation: EyeBrow_A
-  mouthIdleAnimation: Eyes_Superise_Hrony
+  eyebrowIdleAnimation: EyeBrow_B
+  mouthIdleAnimation: Mouth_Negative
   facIdleAnimation: FaceBottoms_Nomal
 --- !u!114 &219528079
 MonoBehaviour:
