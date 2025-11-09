@@ -420,7 +420,7 @@ namespace LoveTide.Core
             // 通知演員管理器
             if (actorManager != null)
             {
-                actorManager.ActorCtrl();
+                //actorManager.ActorCtrl();
             }
             
             // TODO: 這裡會整合新版對話系統

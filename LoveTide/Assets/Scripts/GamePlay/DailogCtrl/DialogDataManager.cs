@@ -15,6 +15,11 @@ public class DialogDataManager : MonoBehaviour
         var route =  dialogDataDetected.DiaLogListDetected(progress);
         testJson = Resources.Load<TextAsset>(route);
         OnGetDiaLog(route);
+
+        for (int i = 0; i < DiaDataList.Count; i++)
+        {
+            Debug.Log(DiaDataList[i].ActorFace);
+        }
     }
 
     public void OnGetDiaLog(string resultJson)

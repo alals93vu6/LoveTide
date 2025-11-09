@@ -37,8 +37,6 @@ public class GameManagerTest : MonoBehaviour
         //Debug.Log(PlayerPrefs.GetString("playerNameData" + PlayerPrefs.GetInt("GameDataNumber").ToString()));
         numberCtrl.OnStart();
         dialogManager.OnLoadDialogData(numberCtrl.DialogueDetected());
-        textBox.OnStart_TextBox(dialog[PlayerPrefs.GetInt("FDS_LV")]);
-        actorManager.OnStart(dialog[PlayerPrefs.GetInt("FDS_LV")]);
         CheckActions();
     }
 

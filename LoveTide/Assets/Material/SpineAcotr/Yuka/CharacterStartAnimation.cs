@@ -70,6 +70,42 @@ public class CharacterStartAnimation : MonoBehaviour
         }
     }
 
+    public void OnSetActorFace(string action)
+    {
+        switch (action)
+        {
+            case "NoActor":
+                break;
+            case "Happy":
+                SetFullExpression(1, 1, 1, 0);
+                break;
+            case "Surprise":
+                SetFullExpression(1, 4, 3, 0);
+                break;
+            case "Neutral":
+                SetFullExpression(0, 0, 0, 0);
+                break;
+            case "Anxious":
+                SetFullExpression(0, 0, 0, 0);
+                break;
+            case "Sad":
+                SetFullExpression(0, 0, 0, 0);
+                break;
+            case "Angry":
+                SetFullExpression(0, 0, 0, 0);
+                break;
+            case "Disdain":
+                SetFullExpression(0, 0, 0, 0);
+                break;
+            case "Shy":
+                SetFullExpression(0, 0, 0, 0);
+                break;
+            case "shock":
+                SetFullExpression(0, 0, 0, 0);
+                break;
+        }
+    }
+
     // 完整表情設定
     public void SetFullExpression(int eyebrowIndex, int eyesIndex, int mouthIndex, int faceIndex)
     {

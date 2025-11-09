@@ -7,9 +7,11 @@ using UnityEngine.UI;
 
 public class ActorManagerTest : MonoBehaviour
 {
-    public Image[] TheActor;
+    public Image[] TheActorOld;
     public ActorScObj[] ActorImage;
-    [SerializeField]private DialogData dialog;
+    public YukaSpineController TheActor;
+    [SerializeField] private DialogData dialog;
+    [SerializeField] private string[] actorAction;
     [SerializeField] private int idleActor = 0;
     // Start is called before the first frame update
     public void OnStart(DialogData diadata)
@@ -18,7 +20,7 @@ public class ActorManagerTest : MonoBehaviour
         var startApparel = 0;
         if (FindObjectOfType<TimeManagerTest>().vacation){startApparel = 1;}else{startApparel = 0;}
         ChangeFace(startApparel,0);
-        TheActor[0].gameObject.SetActive(false);
+        TheActorOld[0].gameObject.SetActive(false);
     }
 
     private void Start()
@@ -38,12 +40,12 @@ public class ActorManagerTest : MonoBehaviour
     public void ChangeFace(int targetActor,int targetFace)
     {
         //Debug.Log("ChangeFace");
-        TheActor[targetActor].sprite = ActorImage[targetActor].ActorStandingDrawing[targetFace];
+        TheActorOld[targetActor].sprite = ActorImage[targetActor].ActorStandingDrawing[targetFace];
     }
 
     public void MoveActorLocation(int targetActor,int targetLocation)
     {
-        TheActor[targetActor].GetComponent<ActorLocationCtrl>().StayTarget = targetLocation;
+        TheActorOld[targetActor].GetComponent<ActorLocationCtrl>().StayTarget = targetLocation;
     }
     
     
