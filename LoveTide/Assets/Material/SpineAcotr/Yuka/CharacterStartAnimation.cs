@@ -30,6 +30,8 @@ public class CharacterStartAnimation : MonoBehaviour
         state.SetAnimation(2, eyebrowIdleAnimation, true);   // 眉毛播放在 Track 2 (新增)
         state.SetAnimation(3, mouthIdleAnimation, true);     // 嘴巴播放在 Track 3
         state.SetAnimation(4, facIdleAnimation, true);       // 臉部播放在 Track 4
+
+        this.gameObject.SetActive(false); // 初始時隱藏角色
     }
 
     // 外部接口：動態切換表情
@@ -44,8 +46,8 @@ public class CharacterStartAnimation : MonoBehaviour
 
     public void SetEyesExpression(int index)
     {
-        string[] eyesAnims = {"Eyes_Nomal", "Eyes_Happy", "Eyes_Alaise", "Eyes_Hrony", "Eyes_Surprise_Nomal", "Eyes_Surprise_Alaise",
-  "Eyes_Surprise_Hrony"};
+        string[] eyesAnims = {"Eyes_Nomal", "Eyes_Happy", "Eyes_Alaise", "Eyes_Hrony", "Eyes_Superise_Nomal", "Eyes_Superise_Alaise",
+  "Eyes_Superise_Hrony"};
         if (index >= 0 && index < eyesAnims.Length)
         {
             skeletonAnimation.AnimationState.SetAnimation(1, eyesAnims[index], true);
@@ -54,7 +56,7 @@ public class CharacterStartAnimation : MonoBehaviour
 
     public void SetMouthExpression(int index)
     {
-        string[] mouthAnims = { "Mouth_Happy", "Mouth_Blush", "Mouth_Hrony", "Mouth_Surprise", "Mouth_Cry", "Mouth_Negative" };
+        string[] mouthAnims = { "Mouth_Happy", "Mouth_Blush", "Mouth_Hrony", "Mouth_Superise", "Mouth_Cry", "Mouth_Negative" };
         if (index >= 0 && index < mouthAnims.Length)
         {
             skeletonAnimation.AnimationState.SetAnimation(3, mouthAnims[index], true);
@@ -76,11 +78,14 @@ public class CharacterStartAnimation : MonoBehaviour
         {
             case "NoActor":
                 break;
+            case "Normal":
+                SetFullExpression(0, 0, 0, 0);
+                break;
             case "Happy":
-                SetFullExpression(1, 1, 1, 0);
+                SetFullExpression(0, 1, 0, 0);
                 break;
             case "Surprise":
-                SetFullExpression(1, 4, 3, 0);
+                SetFullExpression(0, 4, 3, 0);
                 break;
             case "Neutral":
                 SetFullExpression(0, 0, 0, 0);

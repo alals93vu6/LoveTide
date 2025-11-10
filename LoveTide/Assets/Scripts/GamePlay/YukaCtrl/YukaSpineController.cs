@@ -7,8 +7,8 @@ public class YukaSpineController : MonoBehaviour
 {
     [SerializeField] GameObject workerYuka;
     [SerializeField] GameObject normalYuka;
-    [SerializeField] CharacterStartAnimation workerYukaAnimator;
-    [SerializeField] CharacterStartAnimation normalYukaAnimator;
+    [SerializeField] public CharacterStartAnimation workerYukaAnimator;
+    [SerializeField] public CharacterStartAnimation normalYukaAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +37,7 @@ public class YukaSpineController : MonoBehaviour
             workerYuka.SetActive(true);
             workerYukaAnimator.OnSetActorFace(action);
         }
+        //Debug.Log(action);
     }
 
 }

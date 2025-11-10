@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Task = System.Threading.Tasks.Task;
@@ -19,7 +20,6 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public GameObject[] interactiveButton;
     [SerializeField] public ActorLocationCtrl actorCtrl;
     [SerializeField] public GameUICtrlmanager gameUICtrl;
-    [SerializeField] private DialogData[] dialog;
     [SerializeField] public DialogDataManager dialogManager;
 
     [Header("狀態")] 
@@ -28,6 +28,7 @@ public class GameManagerTest : MonoBehaviour
     [SerializeField] public bool isAlone;
     [SerializeField] private bool getEvent;
     [SerializeField] public bool getSexy;
+    [SerializeField] public int talkIndex;
     
     
 
@@ -177,7 +178,12 @@ public class GameManagerTest : MonoBehaviour
         }
         else
         {
+            talkIndex++;
             textBox.NextText();
+            if (textBox.textNumber < textBox.gameTextBoxDiaDatas.Count - 1)
+            {
+                actorManager.ActorCtrl(timer.vacation, GetAction());
+            }
         }
     }
 
@@ -190,6 +196,7 @@ public class GameManagerTest : MonoBehaviour
 
     public void OnTalkEvent(int talkID)
     {
+        talkIndex = 1;
         textBox.listSerial = talkID;
         textBox.OnDisplayText(dialogManager.DiaDataList);
         SetClickObject(6);
@@ -202,7 +209,7 @@ public class GameManagerTest : MonoBehaviour
         } 
         actorCtrl.StayTarget = 0;
         
-        if (dialog[PlayerPrefs.GetInt("FDS_LV")].plotOptionsList[textBox.listSerial].notActor)
+        if (talkID >= 59 && talkID != 61)
         {
             SetInteractiveObject(false);
         }
@@ -210,7 +217,7 @@ public class GameManagerTest : MonoBehaviour
         {
             actorCtrl.gameObject.SetActive(true);
             interactiveButton[0].SetActive(false);
-            actorManager.ActorCtrl();
+            actorManager.ActorCtrl(timer.vacation, GetAction());
         }
     }
     
@@ -236,9 +243,7 @@ public class GameManagerTest : MonoBehaviour
         {
             textBox.stopLoop = false;
             actorCtrl.StayTarget = 1;
-            var apparel = 0;
-            if (FindObjectOfType<TimeManagerTest>().vacation){apparel = 1;}else{apparel = 0;}
-            actorManager.ChangeFace(apparel,0);
+            actorManager.ActorCtrl(timer.vacation, "Normal");
             TimePassCheck();
             if (isTalk)
             {
@@ -249,6 +254,32 @@ public class GameManagerTest : MonoBehaviour
                 SetInteractiveObject(false);
             }
         }
+    }
+
+    private string GetAction()
+    {
+        // 先抓出符合 EventIndex 與 DailogIndex 的那筆資料
+        var matchData = dialogManager.DiaDataList
+            .FirstOrDefault(data => data.EventIndex == textBox.listSerial
+                                 && data.DailogIndex == talkIndex);
+
+        // 若沒有符合資料則直接回傳預設 "NoActor"
+        if (matchData == null)
+            return "NoActor";
+
+        // 特殊條件：若角色是 Player 或 Narrator，且 DialogIndex == 1 且 ActorFace == "NoActor"
+        if ((matchData.ActorName == "Player" || matchData.ActorName == "Narrator")
+            && matchData.DailogIndex == 1
+            && matchData.ActorFace == "NoActor")
+        {
+            //Debug.Log($"特殊事件為：{textBox.listSerial}  編號為：{talkIndex}  表情為：{matchData.ActorFace}");
+            return "Normal";
+        }
+
+        // 其他情況就照原本邏輯回傳 ActorFace
+        //Debug.Log($"事件為：{textBox.listSerial}  編號為：{talkIndex}  表情為：{matchData.ActorFace}");
+        return matchData.ActorFace ?? "NoActor";
+
     }
 
     public void ReadyOuting()
@@ -377,13 +408,13 @@ public class GameManagerTest : MonoBehaviour
 
     public void CheckupsButton()
     {
-        OnTalkEvent(70);
+        OnTalkEvent(67);
     }
     
     public void SaveGameDataButton()
     {
         numberCtrl.GameDataSave();
-        OnTalkEvent(69);
+        OnTalkEvent(66);
     }
 
     private int ChangeBackGroundNumber(int BackNumber)

@@ -42,7 +42,7 @@ public class TextBoxTestPlaying : MonoBehaviour
     }
 
     public void TextDataLoad(int ID,List<GameDiaData> diaDatas)
-    {
+    {       
         gameTextBoxDiaDatas = diaDatas
             .Where(data => data.EventIndex == ID)
             .Select(data => new GameTextBoxDiaData
@@ -52,7 +52,11 @@ public class TextBoxTestPlaying : MonoBehaviour
                 Dailog = data.Dailog.Replace("playername", numericalData.playerName)
             })
             .ToList();
-
+        if (ID == 67)
+        {
+            gameTextBoxDiaDatas[0].Dailog = NumericalLog("A");
+            gameTextBoxDiaDatas[1].Dailog = ConditionLog("B");
+        }
         /*Debug.Log($"[TextDataLoad] 共載入 {gameTextBoxDiaDatas.Count} 筆資料：\n" +
         string.Join("\n", gameTextBoxDiaDatas.Select(x => $"{x.ActorName}: {x.Dailog}")));*/
     }
@@ -89,22 +93,12 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     public void OnDisplayText(List<GameDiaData> diaDatas)
     {
-        
-        if (listSerial == 70)
-        {
-            gameTextBoxDiaDatas[0].Dailog = NumericalLog("A");
-            gameTextBoxDiaDatas[1].Dailog = ConditionLog("B");
-        }
-        else
-        {
-            TextDataLoad(listSerial,diaDatas);
-        }
+        TextDataLoad(listSerial, diaDatas);
         textNumber = 0;
         OnChickName();
         StartCoroutine(DisplayTextWithTypingEffect(false));
         DisplayTextBox(true);
         //actorCtrl.ActorCtrl();
-        
     }
 
     public void NextText()
@@ -115,7 +109,6 @@ public class TextBoxTestPlaying : MonoBehaviour
             textNumber++;
             OnChickName();
             //actorCtrl.TheActor[1].gameObject.SetActive(false);
-            actorCtrl.ActorCtrl();
             StartCoroutine(DisplayTextWithTypingEffect(false));
         }
         else
@@ -140,7 +133,7 @@ public class TextBoxTestPlaying : MonoBehaviour
 
     private void OnChickName()
     {
-        Debug.Log($"NameDetected:{gameTextBoxDiaDatas[textNumber].ActorName}");
+        //Debug.Log($"NameDetected:{gameTextBoxDiaDatas[textNumber].ActorName}");
         switch (PlayerPrefs.GetInt("LanguageSet"))
         {
             case 0: ChickName_EN(); break;

@@ -1923,5 +1923,19 @@
     "ActorName": "Narrator",
     "Dailog": "Save completed!",
     "ActorFace": "NoActor"
+  },
+  {
+    "EventIndex": "67",
+    "DailogIndex": "1",
+    "ActorName": "Narrator",
+    "Dailog": "",
+    "ActorFace": "NoActor"
+  },
+  {
+    "EventIndex": "67",
+    "DailogIndex": "2",
+    "ActorName": "Narrator",
+    "Dailog": "",
+    "ActorFace": "NoActor"
   }
 ]

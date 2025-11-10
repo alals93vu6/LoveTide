@@ -116,7 +116,6 @@ public class TextManagerTest : MonoBehaviour
         {
             StopLoop = false;
             TextNumber++;
-            ChangeFace();
             ChickName();
             //actorManager.ActorCtrl();
             CGCtrl();
@@ -149,7 +148,7 @@ public class TextManagerTest : MonoBehaviour
         }
     }
 
-    private void ChangeFace()
+    /*private void ChangeFace()
     {
         var targetActorInt =0;
         var targetFaceInt =0;
@@ -177,7 +176,7 @@ public class TextManagerTest : MonoBehaviour
         
         actorManager.ChangeFace(targetActorInt,targetFaceInt);
         actorManager.MoveActorLocation(targetActorInt,DiaLog.dialogDataDetailstest[TextNumber].actorLocation);
-    }
+    }*/
 
     private void DownText()
     {
