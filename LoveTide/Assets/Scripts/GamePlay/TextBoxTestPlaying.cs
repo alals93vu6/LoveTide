@@ -47,7 +47,7 @@ public class TextBoxTestPlaying : MonoBehaviour
             .Where(data => data.EventIndex == ID)
             .Select(data => new GameTextBoxDiaData
             {
-                DailogIndex = data.DailogIndex,
+                DailogIndex = data.DialogIndex,
                 ActorName = data.ActorName,
                 Dailog = data.Dailog.Replace("playername", numericalData.playerName)
             })

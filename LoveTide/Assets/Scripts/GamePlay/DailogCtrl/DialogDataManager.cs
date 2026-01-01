@@ -8,12 +8,12 @@ public class DialogDataManager : MonoBehaviour
 {
     [SerializeField] public DialogDataDetected dialogDataDetected;
     [SerializeField] public List<GameDiaData> DiaDataList;
-    [SerializeField] public TextAsset testJson;
+    [SerializeField] public TextAsset targetJson;
 
     public void OnLoadDialogData(int progress)
     {
         var route =  dialogDataDetected.DiaLogListDetected(progress);
-        testJson = Resources.Load<TextAsset>(route);
+        targetJson = Resources.Load<TextAsset>(route);
         OnGetDiaLog(route);
         /*
         for (int i = 0; i < DiaDataList.Count; i++)

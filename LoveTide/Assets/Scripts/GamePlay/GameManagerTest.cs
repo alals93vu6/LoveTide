@@ -261,7 +261,7 @@ public class GameManagerTest : MonoBehaviour
         // 先抓出符合 EventIndex 與 DailogIndex 的那筆資料
         var matchData = dialogManager.DiaDataList
             .FirstOrDefault(data => data.EventIndex == textBox.listSerial
-                                 && data.DailogIndex == talkIndex);
+                                 && data.DialogIndex == talkIndex);
 
         // 若沒有符合資料則直接回傳預設 "NoActor"
         if (matchData == null)
@@ -269,7 +269,7 @@ public class GameManagerTest : MonoBehaviour
 
         // 特殊條件：若角色是 Player 或 Narrator，且 DialogIndex == 1 且 ActorFace == "NoActor"
         if ((matchData.ActorName == "Player" || matchData.ActorName == "Narrator")
-            && matchData.DailogIndex == 1
+            && matchData.DialogIndex == 1
             && matchData.ActorFace == "NoActor")
         {
             //Debug.Log($"特殊事件為：{textBox.listSerial}  編號為：{talkIndex}  表情為：{matchData.ActorFace}");
