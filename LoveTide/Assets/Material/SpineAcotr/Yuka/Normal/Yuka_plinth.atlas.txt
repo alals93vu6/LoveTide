@@ -1,0 +1,452 @@
+
+Yuka_plinth.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+AlaisePupil_L
+  rotate: false
+  xy: 1973, 1989
+  size: 60, 51
+  orig: 60, 51
+  offset: 0, 0
+  index: -1
+AlaisePupil_R
+  rotate: false
+  xy: 1588, 1995
+  size: 54, 45
+  orig: 54, 45
+  offset: 0, 0
+  index: -1
+Body_B
+  rotate: false
+  xy: 2, 262
+  size: 764, 564
+  orig: 764, 564
+  offset: 0, 0
+  index: -1
+EyeBrowL_A
+  rotate: false
+  xy: 842, 2010
+  size: 126, 30
+  orig: 126, 30
+  offset: 0, 0
+  index: -1
+EyeBrowL_B
+  rotate: false
+  xy: 92, 2027
+  size: 118, 13
+  orig: 118, 13
+  offset: 0, 0
+  index: -1
+EyeBrowL_C
+  rotate: false
+  xy: 399, 2023
+  size: 120, 17
+  orig: 120, 17
+  offset: 0, 0
+  index: -1
+EyeBrowL_D
+  rotate: false
+  xy: 970, 2009
+  size: 98, 31
+  orig: 98, 31
+  offset: 0, 0
+  index: -1
+EyeBrowR_A
+  rotate: false
+  xy: 309, 1972
+  size: 85, 50
+  orig: 85, 50
+  offset: 0, 0
+  index: -1
+EyeBrowR_B
+  rotate: false
+  xy: 1070, 2008
+  size: 75, 32
+  orig: 75, 32
+  offset: 0, 0
+  index: -1
+EyeBrowR_C
+  rotate: false
+  xy: 2, 1979
+  size: 88, 48
+  orig: 88, 48
+  offset: 0, 0
+  index: -1
+EyeBrowR_D
+  rotate: false
+  xy: 2, 2029
+  size: 88, 11
+  orig: 88, 11
+  offset: 0, 0
+  index: -1
+FaceBottoms_Alaise
+  rotate: true
+  xy: 1008, 930
+  size: 401, 461
+  orig: 401, 461
+  offset: 0, 0
+  index: -1
+FaceBottoms_Anxious
+  rotate: true
+  xy: 2, 828
+  size: 401, 461
+  orig: 401, 461
+  offset: 0, 0
+  index: -1
+FaceBottoms_Blush
+  rotate: true
+  xy: 465, 828
+  size: 401, 461
+  orig: 401, 461
+  offset: 0, 0
+  index: -1
+FaceBottoms_Nomal
+  rotate: true
+  xy: 928, 527
+  size: 401, 461
+  orig: 401, 461
+  offset: 0, 0
+  index: -1
+FrontHair_A
+  rotate: true
+  xy: 417, 1783
+  size: 168, 314
+  orig: 168, 314
+  offset: 0, 0
+  index: -1
+FrontHair_B
+  rotate: true
+  xy: 733, 1738
+  size: 207, 386
+  orig: 207, 386
+  offset: 0, 0
+  index: -1
+FrontHair_C
+  rotate: true
+  xy: 2, 1231
+  size: 235, 1004
+  orig: 235, 1004
+  offset: 0, 0
+  index: -1
+FrontHair_D
+  rotate: true
+  xy: 1330, 1926
+  size: 66, 432
+  orig: 66, 432
+  offset: 0, 0
+  index: -1
+FrontHair_E
+  rotate: true
+  xy: 802, 1947
+  size: 58, 425
+  orig: 58, 425
+  offset: 0, 0
+  index: -1
+HairShadow
+  rotate: false
+  xy: 1121, 1676
+  size: 335, 248
+  orig: 335, 248
+  offset: 0, 0
+  index: -1
+HandL_A
+  rotate: true
+  xy: 2, 1856
+  size: 117, 277
+  orig: 117, 277
+  offset: 0, 0
+  index: -1
+HandL_B
+  rotate: true
+  xy: 1764, 1913
+  size: 79, 138
+  orig: 79, 138
+  offset: 0, 0
+  index: -1
+HandL_C
+  rotate: true
+  xy: 480, 1468
+  size: 268, 573
+  orig: 268, 573
+  offset: 0, 0
+  index: -1
+HandL_D
+  rotate: true
+  xy: 1458, 1624
+  size: 250, 545
+  orig: 250, 545
+  offset: 0, 0
+  index: -1
+HandL_E
+  rotate: true
+  xy: 2, 1524
+  size: 257, 476
+  orig: 257, 476
+  offset: 0, 0
+  index: -1
+HandR_A
+  rotate: false
+  xy: 281, 1839
+  size: 134, 129
+  orig: 134, 129
+  offset: 0, 0
+  index: -1
+HandR_B
+  rotate: true
+  xy: 1055, 1333
+  size: 289, 416
+  orig: 289, 416
+  offset: 0, 0
+  index: -1
+HandR_C
+  rotate: false
+  xy: 1471, 848
+  size: 472, 397
+  orig: 472, 397
+  offset: 0, 0
+  index: -1
+HandR_D
+  rotate: false
+  xy: 1473, 1247
+  size: 399, 375
+  orig: 399, 375
+  offset: 0, 0
+  index: -1
+HandR_Finger
+  rotate: true
+  xy: 1904, 1876
+  size: 111, 136
+  orig: 111, 136
+  offset: 0, 0
+  index: -1
+HappyEyes_L
+  rotate: false
+  xy: 1315, 2002
+  size: 105, 38
+  orig: 105, 38
+  offset: 0, 0
+  index: -1
+HappyEyes_R
+  rotate: false
+  xy: 1756, 1994
+  size: 84, 46
+  orig: 84, 46
+  offset: 0, 0
+  index: -1
+HronyPupil_L
+  rotate: false
+  xy: 396, 1970
+  size: 60, 51
+  orig: 60, 51
+  offset: 0, 0
+  index: -1
+HronyPupil_R
+  rotate: false
+  xy: 1644, 1995
+  size: 54, 45
+  orig: 54, 45
+  offset: 0, 0
+  index: -1
+Mouth_Blush
+  rotate: false
+  xy: 336, 2024
+  size: 61, 16
+  orig: 61, 16
+  offset: 0, 0
+  index: -1
+Mouth_Cry
+  rotate: false
+  xy: 92, 1977
+  size: 87, 48
+  orig: 87, 48
+  offset: 0, 0
+  index: -1
+Mouth_Happy
+  rotate: false
+  xy: 1506, 1998
+  size: 80, 42
+  orig: 80, 42
+  offset: 0, 0
+  index: -1
+Mouth_Negative
+  rotate: false
+  xy: 212, 2025
+  size: 48, 15
+  orig: 48, 15
+  offset: 0, 0
+  index: -1
+Mouth_Superise
+  rotate: false
+  xy: 1278, 2006
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+Mouth_hrony
+  rotate: false
+  xy: 575, 2016
+  size: 75, 24
+  orig: 75, 24
+  offset: 0, 0
+  index: -1
+NomalEyelids_L
+  rotate: false
+  xy: 574, 1959
+  size: 118, 54
+  orig: 118, 54
+  offset: 0, 0
+  index: -1
+NomalEyelids_R
+  rotate: false
+  xy: 652, 2015
+  size: 83, 25
+  orig: 83, 25
+  offset: 0, 0
+  index: -1
+NomalEyesBall_L
+  rotate: false
+  xy: 694, 1953
+  size: 106, 60
+  orig: 106, 60
+  offset: 0, 0
+  index: -1
+NomalEyesBall_R
+  rotate: false
+  xy: 1842, 1994
+  size: 75, 46
+  orig: 75, 46
+  offset: 0, 0
+  index: -1
+NomalEyesL_A
+  rotate: false
+  xy: 181, 1975
+  size: 126, 48
+  orig: 126, 48
+  offset: 0, 0
+  index: -1
+NomalEyesL_B
+  rotate: true
+  xy: 810, 2013
+  size: 27, 30
+  orig: 27, 30
+  offset: 0, 0
+  index: -1
+NomalEyesR_B
+  rotate: true
+  xy: 1147, 2008
+  size: 32, 33
+  orig: 32, 33
+  offset: 0, 0
+  index: -1
+NomalEyesR_C
+  rotate: false
+  xy: 521, 2023
+  size: 52, 17
+  orig: 52, 17
+  offset: 0, 0
+  index: -1
+NomalEyesShadow_L
+  rotate: false
+  xy: 1422, 2002
+  size: 82, 38
+  orig: 82, 38
+  offset: 0, 0
+  index: -1
+NomalEyesShadow_R
+  rotate: false
+  xy: 737, 2015
+  size: 71, 25
+  orig: 71, 25
+  offset: 0, 0
+  index: -1
+NomalEyesl_C
+  rotate: false
+  xy: 262, 2025
+  size: 72, 15
+  orig: 72, 15
+  offset: 0, 0
+  index: -1
+NomalEyseR_A
+  rotate: false
+  xy: 1182, 2007
+  size: 94, 33
+  orig: 94, 33
+  offset: 0, 0
+  index: -1
+NomalPupil_L
+  rotate: false
+  xy: 458, 1970
+  size: 60, 51
+  orig: 60, 51
+  offset: 0, 0
+  index: -1
+NomalPupil_R
+  rotate: false
+  xy: 1700, 1995
+  size: 54, 45
+  orig: 54, 45
+  offset: 0, 0
+  index: -1
+Pendant
+  rotate: true
+  xy: 1229, 1937
+  size: 63, 99
+  orig: 63, 99
+  offset: 0, 0
+  index: -1
+SuperisePupil_L
+  rotate: true
+  xy: 520, 1963
+  size: 58, 52
+  orig: 58, 52
+  offset: 0, 0
+  index: -1
+SuperisePupil_R
+  rotate: false
+  xy: 1919, 1994
+  size: 52, 46
+  orig: 52, 46
+  offset: 0, 0
+  index: -1
+
+Yuka_plinth2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body_A
+  rotate: true
+  xy: 2, 282
+  size: 644, 1009
+  orig: 644, 1009
+  offset: 0, 0
+  index: -1
+Feet_L
+  rotate: true
+  xy: 2, 928
+  size: 605, 1855
+  orig: 605, 1855
+  offset: 0, 0
+  index: -1
+Feet_R
+  rotate: true
+  xy: 2, 1535
+  size: 463, 1996
+  orig: 463, 1996
+  offset: 0, 0
+  index: -1
+
+Yuka_plinth3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Hair_Behide
+  rotate: false
+  xy: 2, 2
+  size: 1482, 1877
+  orig: 1482, 1877
+  offset: 0, 0
+  index: -1
