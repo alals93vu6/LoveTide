@@ -11,7 +11,7 @@ public class TimeManagerTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        DetectedPeriod();
     }
 
     // Update is called once per frame

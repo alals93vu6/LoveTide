@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogDataDetected: {fileID: 7020319}
-  testJson: {fileID: 0}
+  targetJson: {fileID: 0}
 --- !u!114 &7020319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2946,7 +2946,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1.\u66F4\u8C50\u5BCC\u7684\u6587\u672C\n2.UI\u898F\u5283"
+  m_Text: "To do\n\u4FEE\u5FA9\u665A\u4E0A\u80CC\u666F\u932F\u8AA4\u554F\u984C"
 --- !u!222 &398364884
 CanvasRenderer:
   m_ObjectHideFlags: 0

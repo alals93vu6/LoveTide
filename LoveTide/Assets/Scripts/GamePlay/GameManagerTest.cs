@@ -120,7 +120,15 @@ public class GameManagerTest : MonoBehaviour
                     timer.vacation = true;
                 }
             }
-            else if (numberCtrl.aTimer == 8 && !isAlone)
+            else
+            {
+                SetClickObject(0);
+                CheckActions();
+            }
+
+
+            /*
+             else if (numberCtrl.aTimer == 8 && !isAlone)
             {
                 isTalk = false;
                 gameUICtrl.darkCtrl.OnChangeScenes();
@@ -129,11 +137,7 @@ public class GameManagerTest : MonoBehaviour
                 OnTalkEvent(68);
                 isAlone = true;
             }
-            else
-            {
-                SetClickObject(0);
-                CheckActions();
-            }
+             */
         }
     }
 
@@ -424,25 +428,27 @@ public class GameManagerTest : MonoBehaviour
             
             if (isTalk)
             {
-                if (numberCtrl.aTimer == 8)
+                BackNumber += 9;
+                /*if (numberCtrl.aTimer == 8)
                 {
                     BackNumber += 10;
                 }
                 else
                 {
                     BackNumber += 9;
-                }
+                }*/
             }
             else
             {
-                if (numberCtrl.aTimer == 8)
+                BackNumber += 4;
+                /*if (numberCtrl.aTimer == 8)
                 {
                     BackNumber += 5;
                 }
                 else
                 {
                     BackNumber += 4;
-                }
+                }*/
             }
         }
         else
